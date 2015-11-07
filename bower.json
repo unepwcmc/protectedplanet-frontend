@@ -1,10 +1,11 @@
 {
   "name": "pp-style",
-  "version": "0.0.0",
+  "private": true,
+  "version": "0.0.1",
   "authors": [
     "Andrea Rossi <andrea.rossi@unep-wcmc.org>"
   ],
-  "main": "main.scss",
+  "main": "sass/main.scss",
   "keywords": [
     "protectedplanet",
     "wcmc",
