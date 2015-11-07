@@ -1,0 +1,23 @@
+{
+  "name": "pp-style",
+  "version": "0.0.0",
+  "authors": [
+    "Andrea Rossi <andrea.rossi@unep-wcmc.org>"
+  ],
+  "main": "main.scss",
+  "keywords": [
+    "protectedplanet",
+    "wcmc",
+    "pp",
+    "sass"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/unepwcmc/pp-style",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
