@@ -1,1 +1,26 @@
-@import 'pages/profile.scss';
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+@import "../bower_components/neat/app/assets/stylesheets/neat-helpers";
+
+// from old pp assets
+// to be ported
+@import "old/neat-grid";
+@import "old/colors";
+@import "old/z-index";
+@import "old/transitions";
+@import "old/leaflet_overrides";
+@import "old/map";
+@import "old/base";
+@import "old/navigation";
+@import "old/search_bar";
+@import "old/buttons";
+@import "old/footer";
+@import "old/modals";
+@import "old/home";
+@import "old/protected_areas";
+@import "old/projects";
+@import "old/search";
+@import "old/devise";
+@import "old/countries";
+@import "old/static_pages";
+@import "old/select2_flat";
