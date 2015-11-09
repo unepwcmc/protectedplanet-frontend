@@ -30,7 +30,6 @@
   li {
     margin: 15px 0;
     height: 15px;
-    background: url("/assets/official-record-bg.png") repeat-x 0px 6px;
     clear: left;
 
     &.ellipsed {
@@ -185,7 +184,7 @@
 
   a {
     color: $green;
-    background: url("/assets/external-link.png") right no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAD1BMVEX///94nzGRtkzL3avX5b7nSZYyAAAAAXRSTlMAQObYZgAAAC9JREFUeAFFjFEKAFEIhPRN9z/zQhs1/YhgQOwFkJ5E4Sn/UYtl3uAkXuY9W8c5PhJyAFT42ovRAAAAAElFTkSuQmCC) right no-repeat;
     padding: 0 15px 0 0;
   }
 

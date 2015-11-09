@@ -1,9 +1,24 @@
-@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "../bower_components/neat/app/assets/stylesheets/neat";
-@import "../bower_components/neat/app/assets/stylesheets/neat-helpers";
+// Bower components //
+  // grids
+  @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+  @import "../bower_components/neat/app/assets/stylesheets/neat";
+  @import "../bower_components/neat/app/assets/stylesheets/neat-helpers";
+
+  // forms
+  @import "../bower_components/select2/select2";
+// Bower components //
+
+// utilities
+@import "utilities/reset";
+
+// maps
+@import "../bower_components/leaflet/dist/leaflet.css";
+@import "../bower_components/leaflet.markercluster/dist/MarkerCluster.css";
+@import "../bower_components/mapbox.js/mapbox.css";
 
 // from old pp assets
 // to be ported
+@import "old/fonts";
 @import "old/neat-grid";
 @import "old/colors";
 @import "old/z-index";
