@@ -59,7 +59,7 @@ footer, .container:after {
 .wcmc-footer-logo {
   width: 90px;
   height: $footer-height;
-  background: image-url('wcmc-footer-logo@2x.png') no-repeat;
+  background: url('images/wcmc-footer-logo@2x.png') no-repeat;
   background-size: auto 50%;
   background-position: 10px;
 }
@@ -67,7 +67,7 @@ footer, .container:after {
 .iucn-footer-logo {
   width: 60px;
   height: $footer-height;
-  background: image-url('iucn-footer-logo@2x.png') no-repeat;
+  background: url('images/iucn-footer-logo@2x.png') no-repeat;
   background-size: auto 50%;
   background-position: 10px;
 }
