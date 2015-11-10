@@ -1,4 +1,4 @@
-// Bower components //
+// Bower components
   // grids
   @import "../../../bourbon/app/assets/stylesheets/bourbon";
   @import "../../../neat/app/assets/stylesheets/neat";
@@ -11,32 +11,38 @@
   @import "../../../leaflet/dist/leaflet";
   @import "../../../leaflet.markercluster/dist/MarkerCluster";
   @import "../../../mapbox.js/mapbox";
-// Bower components //
+// Bower components
 
 // utilities
-@import "utilities/reset";
+  @import "utilities/reset";
+// utilities
 
+// atoms
+  @import "old/fonts";
+// atoms
 
 // from old pp assets
 // to be ported
-@import "old/fonts";
-@import "old/neat-grid";
-@import "old/colors";
-@import "old/z-index";
-@import "old/transitions";
-@import "old/leaflet_overrides";
-@import "old/map";
-@import "old/base";
-@import "old/navigation";
-@import "old/search_bar";
-@import "old/buttons";
-@import "old/footer";
-@import "old/modals";
-@import "old/home";
-@import "old/protected_areas";
-@import "old/projects";
-@import "old/search";
-@import "old/devise";
-@import "old/countries";
-@import "old/static_pages";
-@import "old/select2_flat";
+  @import "old/neat-grid";
+  @import "old/colors";
+  @import "old/z-index";
+  @import "old/transitions";
+  @import "old/leaflet_overrides";
+  @import "old/map";
+  @import "old/base";
+  @import "old/navigation";
+  @import "old/search_bar";
+  @import "old/buttons";
+  @import "old/footer";
+  @import "old/modals";
+  @import "old/home";
+  @import "old/protected_areas";
+  @import "old/projects";
+  @import "old/search";
+  @import "old/devise";
+  @import "old/countries";
+  @import "old/static_pages";
+  @import "old/select2_flat";
+// from old pp assets
+// to be ported
+
