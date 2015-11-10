@@ -21,9 +21,17 @@ gulp.task("fonts", function() {
   return gulp.src(fontsSrcPath).pipe(gulp.dest(fontsDistPath));
 });
 
+gulp.task("images", function() {
+  var imagesSrcPath = './src/style/images/*';
+  var imagesDistPath = './dist/style/images';
+
+  return gulp.src(imagesSrcPath).pipe(gulp.dest(imagesDistPath));
+});
+
 gulp.task("watch", function () {
   gulp.watch("./src/style/**/*.scss", ["sass"]);
   gulp.watch("./src/style/fonts/*", ["fonts"]);
+  gulp.watch("./src/style/images/*", ["images"]);
 });
 
-gulp.task("default", ["sass", "fonts", "watch"]);
+gulp.task("default", ["sass", "fonts", "images", "watch"]);

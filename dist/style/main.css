@@ -2285,7 +2285,7 @@ nav li {
     width: 265px;
     height: 60px;
     text-indent: -9999px;
-    background: image-url("logo-white-nowrap.png") no-repeat;
+    background: url("images/logo-white-nowrap.png") no-repeat;
     background-size: 190px 40px;
     background-position: 18px 12px; }
     nav li.logo:hover {
@@ -2298,12 +2298,12 @@ nav li {
     text-indent: -9999px;
     border-right: 1px solid #f7f7f7;
     border-left: 1px solid #f7f7f7;
-    background: image-url("icon-search.png") no-repeat;
+    background: url("images/icon-search.png") no-repeat;
     background-size: 30px 30px;
     background-position: 15px 15px;
     margin-right: 20px; }
     nav li.search-button.opened {
-      background-image: image-url("icon-search-grey.png"); }
+      background-image: url("images/icon-search-grey.png"); }
       nav li.search-button.opened, nav li.search-button.opened:hover {
         background-color: white; }
     nav li.search-button:hover {
@@ -2492,14 +2492,14 @@ footer, .container:after {
 .wcmc-footer-logo {
   width: 90px;
   height: 75px;
-  background: image-url("wcmc-footer-logo@2x.png") no-repeat;
+  background: url("images/wcmc-footer-logo@2x.png") no-repeat;
   background-size: auto 50%;
   background-position: 10px; }
 
 .iucn-footer-logo {
   width: 60px;
   height: 75px;
-  background: image-url("iucn-footer-logo@2x.png") no-repeat;
+  background: url("images/iucn-footer-logo@2x.png") no-repeat;
   background-size: auto 50%;
   background-position: 10px; }
 
@@ -2600,9 +2600,9 @@ footer, .container:after {
   .nav-main.home-nav-main li a:hover {
     background-color: #f7f7f7; }
   .nav-main.home-nav-main li.logo {
-    background-image: image-url("logo-grey.png"); }
+    background-image: url("images/logo-grey.png"); }
   .nav-main.home-nav-main li.search {
-    background-image: image-url("icon-search-grey.png"); }
+    background-image: url("images/icon-search-grey.png"); }
 
 nav .download-type-dropdown {
   position: absolute; }
