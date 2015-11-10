@@ -1,10 +1,10 @@
 {
   "name": "protectedplanet-frontend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Andrea Rossi <andrea.rossi@unep-wcmc.org>"
   ],
-  "main": ["dist/style/main.css"],
+  "main": ["src/style/main.scss", "dist/style/main.css"],
   "keywords": [
     "protectedplanet",
     "wcmc",
@@ -17,7 +17,6 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "src",
     "test",
     "tests"
   ],
