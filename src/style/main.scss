@@ -1,16 +1,16 @@
 // Bower components //
   // grids
-  @import "bourbon/app/assets/stylesheets/bourbon";
-  @import "neat/app/assets/stylesheets/neat";
-  @import "neat/app/assets/stylesheets/neat-helpers";
+  @import "../../../bourbon/app/assets/stylesheets/bourbon";
+  @import "../../../neat/app/assets/stylesheets/neat";
+  @import "../../../neat/app/assets/stylesheets/neat-helpers";
 
   // forms
-  @import "select2/select2";
+  @import "../../../select2/select2";
 
   // maps
-  @import "leaflet/dist/leaflet";
-  @import "leaflet.markercluster/dist/MarkerCluster";
-  @import "mapbox.js/mapbox";
+  @import "../../../leaflet/dist/leaflet";
+  @import "../../../leaflet.markercluster/dist/MarkerCluster";
+  @import "../../../mapbox.js/mapbox";
 // Bower components //
 
 // utilities

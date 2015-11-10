@@ -5,12 +5,8 @@ var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
 
 gulp.task("sass", function () {
-  var sassOpts = {
-    includePaths: ["./bower_components"]
-  }
-
   return gulp.src("./src/style/main.scss")
-    .pipe(sass(sassOpts).on("error", sass.logError))
+    .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest("./dist/style"));
 });
 
