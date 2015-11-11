@@ -1,0 +1,20 @@
+.navbar {
+  @extend %clearfix;
+
+  font-size: 0.938em;
+  width: 100%;
+  list-style: none;
+  background-color: $navbar__bg-color;
+
+  &__element {
+    @include text--headline($line-height: $navbar__height);
+    color: $navbar-element__color;
+
+    &.active {
+      a {
+        background-color: $color--header-active-link;
+      }
+    }
+    a:hover { background-color: $color--header-hover-link; }
+  }
+}

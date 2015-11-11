@@ -1,0 +1,29 @@
+.hero {
+  font-size: 1rem;
+  margin: {
+    top: 2em;
+    bottom: 2em;
+  }
+
+  &__top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include text--large;
+    color: $hero-title__color;
+  }
+
+  @include download-link(
+    $hero-title__color,
+    $namespace: &
+  );
+
+  @include map(
+    $height: $hero-map__height,
+    $width: $hero-map__width,
+    $namespace: &
+  );
+}
