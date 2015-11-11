@@ -1,7 +1,3 @@
-@import 'z-index';
-@import 'transitions';
-@import 'colors';
-
 .btn.btn-map-download {
   transition: top $search-bar-transition-time ease;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
