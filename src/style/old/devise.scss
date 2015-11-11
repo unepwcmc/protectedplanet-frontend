@@ -2,7 +2,7 @@ div {
 
   &.login-right-panel {
     position:absolute;
-    background: $light-grey;
+    background: $grey-33;
     right: 0px;
     padding: 40px;
     overflow:hidden
@@ -21,7 +21,7 @@ div {
     h1 {
       font-size: 36px;
       text-transform: uppercase;
-      color: $medium-grey;
+      color: $grey-77;
     }
 
     article { @include outer-container;
@@ -36,7 +36,7 @@ div {
     padding: 50px;
 
     input {
-      border: 1px solid $light-grey;
+      border: 1px solid $grey-33;
       font-size: 24px;
       padding: 5px;
       width: 100%;
@@ -52,7 +52,7 @@ div {
     }
 
     label {
-      color: $medium-grey;
+      color: $grey-77;
       display: block;
       margin-bottom: 10px;
     }
@@ -93,11 +93,11 @@ div {
 
       a {
         text-decoration: none;
-        color: $grey;
+        color: $grey-55;
         margin-right: 20px;
       }
 
-      a:hover { color: $dark-grey; }
+      a:hover { color: $grey-100; }
 
       a:last-child { margin-right: 0px; }
     }

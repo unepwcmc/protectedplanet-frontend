@@ -15,7 +15,7 @@
   height: 40px;
   font-size: 1em;
 
-  background-color: $dark-grey;
+  background-color: $grey-100;
   transition: top $search-bar-transition-time ease;
 
   i {
@@ -29,12 +29,12 @@
 
   &:hover {
     background-color: $white;
-    color: $dark-grey;
+    color: $grey-100;
   }
 }
 
 .nav-main.home-nav-main {
-  background-color: $color--header-bg;
+  background-color: $navbar__bg-color;
 
   li.active {
     a {
@@ -52,10 +52,6 @@
     }
   }
 
-  li.logo {
-    background-image: url('images/logo-grey.png');
-  }
-
   li.search {
     background-image: url('images/icon-search-grey.png');
   }
@@ -70,7 +66,7 @@ nav .download-type-dropdown {
   display: none;
 
   li {
-    background-color: $dark-green;
+    background-color: $green--dark;
     border-top: solid 1px $white;
     float: none;
     line-height: 1rem;

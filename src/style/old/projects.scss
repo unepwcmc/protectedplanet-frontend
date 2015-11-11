@@ -46,10 +46,10 @@
       padding: 0px 20px;
       display: block;
       box-sizing: border-box;
-      color: $medium-grey;
+      color: $grey-77;
 
-      &:hover { color: $dark-grey; }
-      &.active { background-color: $light-grey; }
+      &:hover { color: $grey-100; }
+      &.active { background-color: $grey-33; }
     }
 
     h2, a { font-size: 14px; }
@@ -82,7 +82,7 @@
   }
 
   h2 {
-    color: $medium-grey;
+    color: $grey-77;
   }
 
 }

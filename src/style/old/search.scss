@@ -17,7 +17,7 @@ $width--search-sidebar: 270px;
     }
 
     h2 {
-      color: $medium-grey;
+      color: $grey-77;
     }
 
     .btn-search-download {
@@ -105,13 +105,13 @@ $width--search-sidebar: 270px;
       a {
         float: right;
         color: $white;
-        background: $grey;
+        background: $grey-55;
         padding: 3px 5px;
         font-size: 13px;
         margin: 0 10px 0 0;
 
         &:hover {
-          background: $dark-grey;
+          background: $grey-100;
           text-decoration: none;
         }
       }
@@ -183,8 +183,8 @@ $width--search-sidebar: 270px;
 .search-grid ul {
   width: 100%;
   float: left;
-  border-top: 20px solid $light-grey;
-  border-left: 20px solid $light-grey;
+  border-top: 20px solid $grey-33;
+  border-left: 20px solid $grey-33;
 }
 
 li.result {
@@ -193,7 +193,7 @@ li.result {
   @include fill-parent;
   margin-right: 0px;
   width: 25%;
-  border: solid 20px $light-grey;
+  border: solid 20px $grey-33;
   border-top: 0;
   border-left: 0;
 }
@@ -203,7 +203,7 @@ li.result {
   position: relative;
   height: 128px;
   margin-top: -4px;
-  border-bottom: 3px solid $medium-light-grey;
+  border-bottom: 3px solid $grey-15;
 
   h3 {
     margin-top: 4px;
@@ -230,7 +230,7 @@ li.result {
 
       border-top: 1px solid $green;
       display:block;
-      color: $medium-grey;
+      color: $grey-77;
     }
   }
 
@@ -239,10 +239,10 @@ li.result {
     left: 8px;
     right: 8px;
     bottom: 8px;
-    color: $medium-grey;
+    color: $grey-77;
     padding: 3px 5px;
     font-size: 12px;
-    background: $light-grey;
+    background: $grey-33;
   }
 }
 

@@ -1,7 +1,8 @@
 $footer-height: 75px;
 
 footer {
-  position: fixed;
+  position: absolute;
+  bottom: 0;
 
   width: 100%;
   line-height: $footer-height;
@@ -48,7 +49,7 @@ footer {
 
 .footer-links { float: right; }
 
-footer, .container:after {
+footer {
   height: $footer-height;
 }
 
@@ -71,7 +72,7 @@ footer, .container:after {
 }
 
 .uservoice {
-  background-color: $dark-green;
+  background-color: $green--dark;
   margin-left: 10px;
 
   &:hover {
