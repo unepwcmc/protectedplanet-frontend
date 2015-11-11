@@ -1,0 +1,14 @@
+$font-family--large: 'MuseoSans-500' !default;
+$font-size--large: 1.6em !default;
+$line-height--large: 2em !default;
+
+$font-family--body: 'MuseoSans-500' !default;
+$font-size--body: 1em !default;
+$line-height--body: 1.333em !default;
+
+$font-family--headline: 'MuseoSans-700' !default;
+$font-size--headline: 1.2em !default;
+$line-height--headline: 1.666em !default;
+
+// atoms/leaflet-control
+  $leaflet-control__font-size: $font-size--body !default;
