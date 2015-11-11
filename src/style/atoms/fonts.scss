@@ -44,3 +44,26 @@
         url('fonts/MuseoSlab-500.ttf') format('ttf'),
         url('fonts/MuseoSlab-500.woff') format('woff');
 }
+
+@mixin text--primary-color($color: $green) {
+  color: $color;
+}
+
+@mixin text--large($font-family: $font-family--large, $font-size: $font-size--large, $line-height: $line-height--large) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin text--headline($font-family: $font-family--headline, $font-size: $font-size--headline, $line-height: $line-height--headline) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin text--body($font-family: $font-family--body, $font-size: $font-size--body, $line-height: $line-height--body) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
