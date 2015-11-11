@@ -1,0 +1,9 @@
+@mixin map($height, $width, $namespace: "global") {
+  #{$namespace}__map {
+    height: $height;
+    width: $width;
+  }
+
+  @include leaflet-control-zoom;
+  @include leaflet-control-layers;
+}

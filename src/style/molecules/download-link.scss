@@ -1,0 +1,9 @@
+@mixin download-link($color, $namespace: "global") {
+  #{$namespace}__download-link {
+    @include text--body;
+    color: $color;
+  }
+  #{$namespace}__download-icon {
+    margin-right: $download-icon__margin-right;
+  }
+}
