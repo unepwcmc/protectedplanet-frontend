@@ -1148,10 +1148,13 @@ table {
     line-height: 2em;
     color: #71a32b; }
   .hero .hero__download-link {
+    border: 0;
     font-family: "MuseoSans-500";
     font-size: 1em;
     line-height: 1.333em;
-    color: #71a32b; }
+    color: #71a32b;
+    background-color: #ffffff;
+    cursor: pointer; }
   .hero .hero__download-icon {
     margin-right: 10px; }
   .hero .hero__map {
@@ -1614,7 +1617,7 @@ nav li {
     margin-right: 10px;
     padding: 10px; }
 
-a.btn, button {
+a.btn {
   display: inline-block;
   font-weight: normal;
   background: #71a32b;
@@ -1624,7 +1627,7 @@ a.btn, button {
   transition: background-color 0.3s;
   text-align: center;
   color: #ffffff; }
-  a.btn:hover, button:hover {
+  a.btn:hover {
     transition: background-color 0.3s;
     background-color: #699728;
     cursor: pointer; }

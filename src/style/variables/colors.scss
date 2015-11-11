@@ -51,6 +51,10 @@ $blue: #317fce;
   $leaflet-control__disabled-color: $grey-5 !default;
   $leaflet-control__border: $grey-15 !default;
 
+// molecules/download-link
+  $download-link__color: $green !default;
+  $download-link__bg-color: $white !default;
+
 // organisms/navbar
   $navbar__bg-color: $green !default;
   $navbar-element__color: $white !default;
