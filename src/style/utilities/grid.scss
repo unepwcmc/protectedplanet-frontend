@@ -1,0 +1,12 @@
+.container--profile {
+  width: 80%;
+  margin: auto;
+}
+
+%clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
