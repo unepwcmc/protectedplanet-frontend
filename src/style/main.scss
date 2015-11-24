@@ -1,4 +1,7 @@
 // bower components
+  // flexbox
+  @import "../../../sass-flex-mixin/flexbox";
+
   // grids
   @import "../../../bourbon/app/assets/stylesheets/bourbon";
   @import "../../../neat/app/assets/stylesheets/neat";
@@ -22,22 +25,36 @@
 
 // utilities
   @import "utilities/reset";
+  @import "utilities/bem";
   @import "utilities/grid";
 // utilities
 
 // atoms
   @import "atoms/fonts";
+  @import "atoms/colors";
+  @import "atoms/headers";
   @import "atoms/leaflet-controls";
+  @import "atoms/sort-arrows";
 // atoms
 
 // molecules
   @import "molecules/download-link";
   @import "molecules/map";
+  @import "molecules/table";
+  @import "molecules/reference";
+  @import "molecules/big-button";
+  @import "molecules/horizontal-bar";
+  @import "molecules/header-with-image";
+  @import "molecules/cube";
+  @import "molecules/value";
 // molecules
 
 // organisms
   @import "organisms/hero";
   @import "organisms/navbar";
+  @import "organisms/fact";
+  @import "organisms/footer";
+  @import "organisms/stats-card";
 // organisms
 
 // old pp assets
