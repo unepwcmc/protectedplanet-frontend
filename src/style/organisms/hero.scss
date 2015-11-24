@@ -9,6 +9,9 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+    padding: 0 .666rem;
+    margin-bottom: .666rem;
   }
 
   &__title {
@@ -17,13 +20,11 @@
   }
 
   @include download-link(
-    $hero-title__color,
-    $namespace: &
+    $hero-title__color
   );
 
   @include map(
     $height: $hero-map__height,
-    $width: $hero-map__width,
-    $namespace: &
+    $width: $hero-map__width
   );
 }

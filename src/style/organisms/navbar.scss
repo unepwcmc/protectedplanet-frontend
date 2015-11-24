@@ -8,7 +8,7 @@
 
   &__element {
     @include text--headline($line-height: $navbar__height);
-    color: $navbar-element__color;
+    @include color($navbar-element__color);
 
     &.active {
       a {
