@@ -1,0 +1,5 @@
+@mixin color($color) {
+  color: $color;
+}
+
+%color-base { @include color($color--base); }
