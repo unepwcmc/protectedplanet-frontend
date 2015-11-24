@@ -1,15 +1,12 @@
-@mixin download-link($color: $download-link__color, $bg-color: $download-link__bg-color, $namespace: "global") {
-  #{$namespace}__download-link {
-    border: 0;
-
+@mixin download-link($color: $download-link__color, $bg-color: $download-link__bg-color) {
+  #{&}__download-link {
     @include text--body;
     color: $color;
-    background-color: $bg-color;
 
     cursor: pointer;
   }
 
-  #{$namespace}__download-icon {
+  #{&}__download-icon {
     margin-right: $download-icon__margin-right;
   }
 }

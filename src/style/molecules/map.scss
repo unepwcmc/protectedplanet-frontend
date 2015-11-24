@@ -1,5 +1,5 @@
-@mixin map($height, $width, $namespace: "global") {
-  #{$namespace}__map {
+@mixin map($height, $width) {
+  #{&}__map {
     height: $height;
     width: $width;
   }
