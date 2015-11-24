@@ -25,6 +25,7 @@
     "leaflet.markercluster": "~0.4.0",
     "mapbox.js": "~2.2.3",
     "neat": "~1.7.2",
-    "select2": "3.5.2"
+    "select2": "3.5.2",
+    "sass-flex-mixin": "1.0.1"
   }
 }
