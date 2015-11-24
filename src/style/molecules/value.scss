@@ -1,0 +1,22 @@
+@mixin value($number__color: $value-number__color, $number-alt-color__color: $value-number-alt-color__color) {
+  @include b(value) { $block: &;
+    @include e(number) {
+      @include color($number__color);
+      @include text--medium-alt;
+
+      @include m(xxlarge) {
+        @include text--xxlarge;
+      }
+
+      @include m(large) {
+        @include text--large;
+      }
+
+      @include m(alt-color) {
+        @include color($number-alt-color__color);
+      }
+    }
+  }
+}
+
+@include value;

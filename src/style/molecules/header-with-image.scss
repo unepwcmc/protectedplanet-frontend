@@ -1,0 +1,11 @@
+@mixin header-with-image {
+  @include b(header) {
+    @include text--medium;
+    margin-bottom: 20px;
+
+    @include e(image) {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+}

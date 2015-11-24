@@ -1,0 +1,14 @@
+@include b(big-button) {
+  text-align: center;
+  @include text--body-bolder;
+
+  color: $big-button__color;
+  background-color: $big-button__bg-color;
+
+  border-radius: $big-button__border-radius;
+  padding: $big-button__padding;
+
+  @include e(icon) {
+    margin-right: $big-button-icon__margin-right;
+  }
+}

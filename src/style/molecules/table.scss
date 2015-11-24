@@ -1,0 +1,73 @@
+@include b(table) { $block: &;
+  width: 100%;
+
+  @include e(header) {
+    line-height: 2rem;
+    border-bottom: solid 1px $grey-33;
+  };
+
+  @include e(column) {
+    cursor: pointer;
+
+    @include text--body-alt;
+    text-align: right;
+    &:first-child { text-align: left; }
+
+    padding-bottom: 0.5em;
+
+    &:after {
+      @include color($green);
+      @include sort-arrow(both, $margin: (direction: left, value: 5px));
+    }
+
+    @include m(sort-asc) {
+      &:after {
+        @include color($green);
+        @include sort-arrow(up, $margin: (direction: left, value: 5px));
+      }
+    }
+
+    @include m(sort-desc) {
+      &:after {
+        @include color($green);
+        @include sort-arrow(down, $margin: (direction: left, value: 5px));
+      }
+    }
+  }
+
+
+  @include e(row) {
+    border-bottom: solid 1px $grey-15;
+    margin-bottom: 10px;
+    padding: 5px 0;
+  };
+
+  @include e(value) {
+    text-align: right;
+
+    @include m(link) {
+      color: $table-link__color;
+    }
+  }
+
+  @include e(label) {
+    @include text--body($line-height: 1.666em);
+
+    @include m(link) {
+      color: $table-link__color;
+    }
+
+    padding-top: 0.65em;
+    text-align: left;
+  };
+
+  @include m(with-total) {
+    @include e(row, $this: $block) {
+      &:last-child {
+        font-weight: bolder;
+
+        td { padding-top: 1em; }
+      }
+    }
+  }
+}
