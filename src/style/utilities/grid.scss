@@ -1,6 +1,38 @@
 .container--profile {
+  @extend %clearfix;
   width: 80%;
   margin: auto;
+}
+
+@include b(one-thirds) {
+  @include span-columns(4);
+
+  @include m(no-margin) {
+    width: 33.33%;
+    margin: 0;
+  }
+
+  @include media(max-width 769px) {
+    @include span-columns(12);
+  }
+
+}
+
+@include b(two-thirds) {
+  @include span-columns(8);
+
+  @include media(max-width 769px) {
+    @include span-columns(12);
+  }
+}
+
+@include b(space-between) {
+  @extend %flexbox;
+  @include justify-content(space-between);
+}
+
+.row {
+  margin-bottom: 1em;
 }
 
 %clearfix {
