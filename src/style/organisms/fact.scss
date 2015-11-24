@@ -1,0 +1,44 @@
+@include b(fact) { $block: &;
+  margin-bottom: 0.666em;
+
+  @include e(header) {
+    @include header-with-delimiter($border-bottom: (
+      color: $fact-header__border-bottom-color,
+      size: $fact-header__border-bottom-size
+    ))
+  }
+
+  @include e(subheader) {
+    @include text--body;
+    font-weight: bolder;
+    padding: 1em 0 0.25em;
+  }
+
+  @include e(body) {
+    width: 100%;
+    padding: $fact-body__padding-top-bottom  0;
+
+    @include m(no-padding) {
+      padding: 0;
+    }
+
+    @include m(lateral-padding) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @include e(single-figure) {
+    @include text--xxxxlarge($color: $green);
+
+    @include m(push-down) {
+      margin-bottom: 0.4em;
+    }
+  }
+
+  @include e(external-link) {
+    margin-left: 0.25em;
+    color: $fact-external-link__color;
+  }
+
+}

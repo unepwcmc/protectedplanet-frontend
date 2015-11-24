@@ -1,0 +1,49 @@
+@include b(footer) { $block: &;
+  @include m(for-profile) {
+    @extend %clearfix;
+
+    background-color: $footer__bg-color;
+    padding: $footer__padding;
+    margin-bottom: $footer__margin-bottom;
+
+    @include e(header, $this: $block) {
+      @include header-with-delimiter($border-bottom: (
+        color: $fact-header__border-bottom-color,
+        size: $fact-header__border-bottom-size
+      ))
+    }
+
+    @include e(column, $this: $block) {
+      @extend .one-thirds;
+    }
+
+    @include e(body, $this: $block) {
+      padding: $footer-body__padding;
+
+      @include m(no-padding) {
+        padding: 0;
+      }
+    }
+
+    @include e(row, $this: $block) {
+      width: 100%;
+
+      padding-top: 1rem;
+      &:not(:last-child) {
+        border-bottom: solid 1px $footer-row__border-bottom;
+      }
+    }
+
+    @include e(link, $this: $block) {
+      @include text--body-bolder;
+      color: $footer-link__color;
+
+      padding-bottom: $footer-link__padding-bottom;
+    }
+
+    @include e(link-icon, $this: $block) {
+      color: $footer-link__color;
+      margin-right: $footer-link-icon__margin-right;
+    }
+  }
+}
