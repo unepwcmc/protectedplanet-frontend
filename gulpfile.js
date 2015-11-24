@@ -6,7 +6,7 @@ var sourcemaps = require("gulp-sourcemaps");
 
 gulp.task("sass", function () {
   return gulp.src("./src/style/main.scss")
-    .pipe(sass().on("error", sass.logError))
+    .pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
     .pipe(gulp.dest("./dist/style"));
 });
 
