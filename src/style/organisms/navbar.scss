@@ -1,4 +1,4 @@
-.navbar {
+@include b(navbar) {
   @extend %clearfix;
 
   font-size: 0.938em;
@@ -6,8 +6,19 @@
   list-style: none;
   background-color: $navbar__bg-color;
 
-  &__element {
-    @include text--headline($line-height: $navbar__height);
+  @include e(element) {
+    @include m(bigger) {
+      @include text--headline(
+        $line-height: $navbar__height,
+        $font-family: 'MuseoSans-500'
+      );
+    }
+
+    @include text--body(
+      $line-height: $navbar__height,
+      $font-family: 'MuseoSans-500'
+    );
+
     @include color($navbar-element__color);
 
     &.active {

@@ -1,11 +1,5 @@
-.hero {
-  font-size: 1rem;
-  margin: {
-    top: 2em;
-    bottom: 2em;
-  }
-
-  &__top {
+@mixin _top {
+  @include e(top) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
