@@ -1,0 +1,47 @@
+@include b(info-box) { $block: &;
+  @extend %clearfix;
+
+  background-color: $info-box__bg-color;
+  padding: $info-box__padding;
+  margin-bottom: $info-box__margin-bottom;
+
+  @include e(header, $this: $block) {
+    @include header-with-delimiter($border-bottom: (
+      color: $fact-header__border-bottom-color,
+      size: $fact-header__border-bottom-size
+    ))
+  }
+
+  @include e(column, $this: $block) {
+    @extend .one-thirds;
+  }
+
+  @include e(body, $this: $block) {
+    padding: $info-box-body__padding;
+
+    @include m(no-padding) {
+      padding: 0;
+    }
+  }
+
+  @include e(row, $this: $block) {
+    width: 100%;
+
+    padding-top: 1rem;
+    &:not(:last-child) {
+      border-bottom: solid 1px $info-box-row__border-bottom;
+    }
+  }
+
+  @include e(link, $this: $block) {
+    @include text--body-bolder;
+    color: $info-box-link__color;
+
+    padding-bottom: $info-box-link__padding-bottom;
+  }
+
+  @include e(link-icon, $this: $block) {
+    color: $info-box-link__color;
+    margin-right: $info-box-link-icon__margin-right;
+  }
+}

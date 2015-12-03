@@ -1,0 +1,30 @@
+@include b(article) {
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
+
+  @include e(title) {
+    @include m(paragraph) {
+      margin-bottom: 2rem;
+
+      @include text--headline;
+      @extend %color-base;
+    }
+  }
+
+  @include e(paragraph) {
+    margin-bottom: 3rem;
+
+    @include text--body;
+    @extend %color-base;
+
+    @include m(bigger) {
+      @include text--headline-alt;
+    }
+  }
+
+  @include e(bold-text) {
+    font-family: 'MuseoSlab-700';
+  }
+}

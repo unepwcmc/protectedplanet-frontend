@@ -88,11 +88,11 @@ $blue: #317fce;
   $fact-header__border-bottom-color: $grey-33 !default;
   $fact-external-link__color: $green !default;
 
-// organisms/footer
-  $footer__bg-color: $grey-5 !default;
-  $footer-link__color: $green !default;
-  $footer-link-icon__color: $green !default;
-  $footer-row__border-bottom: $grey-33 !default;
+// organisms/info-box
+  $info-box__bg-color: $grey-5 !default;
+  $info-box-link__color: $green !default;
+  $info-box-link-icon__color: $green !default;
+  $info-box-row__border-bottom: $grey-33 !default;
 
 $color--base: $grey-77;
 $color--base-btn-bg: $green;
