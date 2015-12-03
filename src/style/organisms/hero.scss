@@ -8,17 +8,61 @@
     margin-bottom: .666rem;
   }
 
-  &__title {
+  @include e(title) {
     @include text--large;
-    color: $hero-title__color;
+    @include color($hero-title__color);
+
+    @include m(article) {
+      padding: {
+        left: .5rem;
+        right: .5rem;
+      }
+
+      @include text--xxlarge-alt;
+      @include color($color--base);
+    }
   }
 
-  @include download-link(
-    $hero-title__color
-  );
+  @include e(link) {
+    @include color($hero-title__color);
+  }
+}
+
+@include b(hero) {
+  font-size: 1rem;
+  margin: {
+    top: 2em;
+    bottom: 2em;
+  }
+
+  @include _top;
+
 
   @include map(
     $height: $hero-map__height,
     $width: $hero-map__width
   );
+
+  @include e(cover) {
+    @extend %flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-direction(column);
+
+
+    height: 300px;
+    background: url('images/background.jpg') no-repeat;
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  @include e(cover-text) {
+    @include text--xxlarge-alt-bold;
+    @include color($white);
+
+    @include m(alt) {
+      @include text--xxlarge-bold;
+    }
+  }
 }
+
