@@ -35,14 +35,16 @@
   @import "atoms/headers";
   @import "atoms/leaflet-controls";
   @import "atoms/sort-arrows";
+  @import "atoms/logos";
 // atoms
 
 // molecules
-  @import "molecules/download-link";
+  @import "molecules/link-with-icon";
   @import "molecules/map";
   @import "molecules/table";
   @import "molecules/reference";
   @import "molecules/big-button";
+  @import "molecules/breadcrumbs";
   @import "molecules/horizontal-bar";
   @import "molecules/header-with-image";
   @import "molecules/cube";

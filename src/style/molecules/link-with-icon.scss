@@ -1,0 +1,14 @@
+@mixin link-with-icon($color: $link-with-icon__color, $bg-color: $link-with-icon__bg-color) {
+  @include b(link-with-icon) {
+    @include text--body;
+    color: $color;
+
+    cursor: pointer;
+
+    @include e(icon) {
+      margin-right: $link-with-icon-icon__margin-right;
+    }
+  }
+}
+
+@include link-with-icon;
