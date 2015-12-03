@@ -1,49 +1,35 @@
-@include b(footer) { $block: &;
-  @include m(for-profile) {
-    @extend %clearfix;
+@include b(footer) {
+  @extend %flexbox;
+  @include align-items(center);
 
-    background-color: $footer__bg-color;
-    padding: $footer__padding;
-    margin-bottom: $footer__margin-bottom;
+  width: 100%;
 
-    @include e(header, $this: $block) {
-      @include header-with-delimiter($border-bottom: (
-        color: $fact-header__border-bottom-color,
-        size: $fact-header__border-bottom-size
-      ))
+  padding: {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+
+  font-size: 0.938em;
+  background-color: $navbar__bg-color;
+
+  @include e(element) {
+    @include m(hobbit) { height: 75%; }
+    @include m(no-push) { margin-right: 0; }
+    @include m(right) {
+      // this is insane
+      &:nth-child(2) { margin-left: auto; }
+    }
+    @include m(with-separator) {
+      padding-left: 1rem;
+      border-left: solid 0.125rem $white;
     }
 
-    @include e(column, $this: $block) {
-      @extend .one-thirds;
-    }
+    margin-right: 1rem;
 
-    @include e(body, $this: $block) {
-      padding: $footer-body__padding;
-
-      @include m(no-padding) {
-        padding: 0;
-      }
-    }
-
-    @include e(row, $this: $block) {
-      width: 100%;
-
-      padding-top: 1rem;
-      &:not(:last-child) {
-        border-bottom: solid 1px $footer-row__border-bottom;
-      }
-    }
-
-    @include e(link, $this: $block) {
-      @include text--body-bolder;
-      color: $footer-link__color;
-
-      padding-bottom: $footer-link__padding-bottom;
-    }
-
-    @include e(link-icon, $this: $block) {
-      color: $footer-link__color;
-      margin-right: $footer-link-icon__margin-right;
-    }
+    @include color($navbar-element__color);
+    @include text--headline(
+      $line-height: null,
+      $font-family: 'MuseoSans-500'
+    );
   }
 }
