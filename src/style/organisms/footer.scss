@@ -13,7 +13,6 @@
   background-color: $navbar__bg-color;
 
   @include e(element) {
-    @include m(hobbit) { height: 75%; }
     @include m(no-push) { margin-right: 0; }
     @include m(right) {
       // this is insane
@@ -21,7 +20,7 @@
     }
     @include m(with-separator) {
       padding-left: 1rem;
-      border-left: solid 0.125rem $white;
+      border-left: solid 0.125rem $green--dark;
     }
 
     margin-right: 1rem;

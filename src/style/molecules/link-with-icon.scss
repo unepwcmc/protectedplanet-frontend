@@ -1,14 +1,24 @@
-@mixin link-with-icon($color: $link-with-icon__color, $bg-color: $link-with-icon__bg-color) {
-  @include b(link-with-icon) {
-    @include text--body;
-    color: $color;
+@mixin link-with-icon($color: $link-with-icon__color, $bg-color: $link-with-icon__bg-color, $icon__margin-right: $link-with-icon-icon__margin-right) {
+  @include text--body;
+  color: $color;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    @include e(icon) {
-      margin-right: $link-with-icon-icon__margin-right;
-    }
+  @include e(icon) {
+    margin-right: $icon__margin-right;
   }
+
+  @include m(no-color) {
+    color: inherit;
+  }
+
+  @include m(bold) {
+    @include text--small-bolder;
+  }
+
+  @content;
 }
 
-@include link-with-icon;
+@include b(link-with-icon) {
+  @include link-with-icon;
+}

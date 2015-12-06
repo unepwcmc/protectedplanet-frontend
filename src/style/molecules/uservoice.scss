@@ -1,0 +1,11 @@
+@mixin uservoice {
+  @include link-with-icon($icon__margin-right: .25rem) {
+    @include text--small-bolder($line-height: 2rem);
+  }
+
+  @content;
+}
+
+@include b(uservoice) {
+  @include uservoice;
+}

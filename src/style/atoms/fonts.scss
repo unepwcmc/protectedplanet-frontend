@@ -165,8 +165,19 @@
   line-height: $line-height;
 }
 
-@mixin text--body-bolder($color: $color--base, $font-family: $font-family--body-bolder, $font-size: $font-size--body-bolder, $line-height: $line-height--body-bolder) {
-  color: $color;
+@mixin text--body-bolder($font-family: $font-family--body-bolder, $font-size: $font-size--body-bolder, $line-height: $line-height--body-bolder) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin text--small($font-family: $font-family--small, $font-size: $font-size--small, $line-height: $line-height--small) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin text--small-bolder($font-family: $font-family--small-bolder, $font-size: $font-size--small-bolder, $line-height: $line-height--small-bolder) {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
