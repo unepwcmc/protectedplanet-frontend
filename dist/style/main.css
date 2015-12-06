@@ -1473,6 +1473,16 @@ table {
   margin-right: 10px;
 }
 
+.link-with-icon--no-color {
+  color: inherit;
+}
+
+.link-with-icon--bold {
+  font-family: "MuseoSans-700";
+  font-size: 0.8125em;
+  line-height: 1.333em;
+}
+
 .table {
   width: 100%;
 }
@@ -1567,7 +1577,6 @@ table {
 }
 
 .reference__link {
-  color: #666666;
   font-family: "MuseoSans-700";
   font-size: 1em;
   line-height: 1.333em;
@@ -1581,7 +1590,6 @@ table {
 
 .big-button {
   text-align: center;
-  color: #666666;
   font-family: "MuseoSans-700";
   font-size: 1em;
   line-height: 1.333em;
@@ -1647,6 +1655,32 @@ table {
 
 .value__number--alt-color {
   color: #415519;
+}
+
+.uservoice {
+  color: #666666;
+  font-family: "MuseoSans-300";
+  font-size: 1em;
+  line-height: 1.333em;
+  color: #71a32b;
+  cursor: pointer;
+  font-family: "MuseoSans-700";
+  font-size: 0.8125em;
+  line-height: 2.5rem;
+}
+
+.uservoice__icon {
+  margin-right: 0.25rem;
+}
+
+.uservoice--no-color {
+  color: inherit;
+}
+
+.uservoice--bold {
+  font-family: "MuseoSans-700";
+  font-size: 0.8125em;
+  line-height: 1.333em;
 }
 
 .hero {
@@ -1959,7 +1993,6 @@ table {
 }
 
 .info-box__link {
-  color: #666666;
   font-family: "MuseoSans-700";
   font-size: 1em;
   line-height: 1.333em;
@@ -1996,10 +2029,6 @@ table {
   font-size: 1.2em;
 }
 
-.footer__element--hobbit {
-  height: 75%;
-}
-
 .footer__element--no-push {
   margin-right: 0;
 }
@@ -2010,7 +2039,7 @@ table {
 
 .footer__element--with-separator {
   padding-left: 1rem;
-  border-left: solid 0.125rem #ffffff;
+  border-left: solid 0.125rem #699728;
 }
 
 .stats-card {
@@ -2722,87 +2751,6 @@ a.btn:hover {
   float: left;
   display: inline-block;
   width: 125px;
-}
-
-.footer--old-footer {
-  height: 75px;
-  bottom: 0;
-  width: 100%;
-  line-height: 75px;
-  padding: 0, 20px;
-  margin: 0px auto;
-  font-family: MuseoSans-100;
-  background: #2b3146;
-  font-size: 0.938em;
-  /* FOOTER LOGOS */
-}
-
-.footer--old-footer p {
-  color: #bbbbbb;
-}
-
-.footer--old-footer a {
-  line-height: 75px;
-  display: block;
-  margin-right: 20px;
-}
-
-.footer--old-footer a, .footer--old-footer a:visited {
-  color: #bbbbbb;
-}
-
-.footer--old-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer--old-footer a:last-child {
-  margin-right: 0px;
-}
-
-.footer--old-footer .footer-logos {
-  margin: 0 20px;
-}
-
-.footer--old-footer .footer-copyright li, .footer--old-footer .footer-logos li, .footer--old-footer .footer-links li {
-  padding: 0 20px;
-  float: left;
-}
-
-.footer--old-footer .footer-copyright, .footer--old-footer .footer-logos {
-  float: left;
-}
-
-.footer--old-footer .footer-links {
-  float: right;
-}
-
-.footer--old-footer .wcmc-footer-logo {
-  width: 90px;
-  height: 75px;
-  background: url("images/wcmc-footer-logo@2x.png") no-repeat;
-  background-size: auto 50%;
-  background-position: 10px;
-}
-
-.footer--old-footer .iucn-footer-logo {
-  width: 60px;
-  height: 75px;
-  background: url("images/iucn-footer-logo@2x.png") no-repeat;
-  background-size: auto 50%;
-  background-position: 10px;
-}
-
-.footer--old-footer .uservoice {
-  background-color: #699728;
-  margin-left: 10px;
-}
-
-.footer--old-footer .uservoice:hover {
-  background-color: #71a32b;
-}
-
-.footer--old-footer .uservoice:hover a {
-  text-decoration: none;
 }
 
 .modal {
