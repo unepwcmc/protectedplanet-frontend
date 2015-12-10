@@ -2,7 +2,14 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var scssLint = require('gulp-scss-lint');
 var sourcemaps = require("gulp-sourcemaps");
+
+
+gulp.task('scss-lint', function() {
+  return gulp.src('./src/style/**/*.scss')
+    .pipe(scssLint({'config': 'lint.yml'}));
+});
 
 gulp.task("sass", function () {
   return gulp.src("./src/style/main.scss")
@@ -25,9 +32,9 @@ gulp.task("images", function() {
 });
 
 gulp.task("watch", function () {
-  gulp.watch("./src/style/**/*.scss", ["sass"]);
+  gulp.watch("./src/style/**/*.scss", ["sass", "scss-lint"]);
   gulp.watch("./src/style/fonts/*", ["fonts"]);
   gulp.watch("./src/style/images/*", ["images"]);
 });
 
-gulp.task("default", ["sass", "fonts", "images", "watch"]);
+gulp.task("default", ["scss-lint", "sass", "fonts", "images", "watch"]);
