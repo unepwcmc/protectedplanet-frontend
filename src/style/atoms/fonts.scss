@@ -151,6 +151,12 @@
   line-height: $line-height;
 }
 
+@mixin text--headline-alt-bolder($font-family: $font-family--headline-alt-bolder, $font-size: $font-size--headline-alt-bolder, $line-height: $line-height--headline-alt-bolder) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 @mixin text--body($color: $color--base, $font-family: $font-family--body, $font-size: $font-size--body, $line-height: $line-height--body) {
   color: $color;
   font-family: $font-family;
@@ -158,14 +164,19 @@
   line-height: $line-height;
 }
 
-@mixin text--body-alt($color: $color--base, $font-family: $font-family--body-alt, $font-size: $font-size--body-alt, $line-height: $line-height--body-alt) {
-  color: $color;
+@mixin text--body-alt($font-family: $font-family--body-alt, $font-size: $font-size--body-alt, $line-height: $line-height--body-alt) {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
 }
 
 @mixin text--body-bolder($font-family: $font-family--body-bolder, $font-size: $font-size--body-bolder, $line-height: $line-height--body-bolder) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin text--body-alt-bolder($font-family: $font-family--body-alt-bolder, $font-size: $font-size--body-alt-bolder, $line-height: $line-height--body-alt-bolder) {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
