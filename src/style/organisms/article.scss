@@ -5,6 +5,10 @@
   }
 
   @include e(title) {
+    margin-bottom: 2.5rem;
+    @include text--xxlarge-alt;
+    @include color($color--base);
+
     @include m(paragraph) {
       margin-bottom: 2rem;
 
