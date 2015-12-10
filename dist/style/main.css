@@ -1494,7 +1494,6 @@ table {
 
 .table__column {
   cursor: pointer;
-  color: #666666;
   font-family: "MuseoSlab-100";
   font-size: 1em;
   line-height: 1.333em;
@@ -1634,6 +1633,32 @@ table {
   background-color: #415519;
 }
 
+.alert {
+  padding: .625rem;
+  margin-bottom: 2.5rem;
+  background-color: #f2f2f2;
+  font-family: "MuseoSlab-700";
+  font-size: 1.2em;
+  line-height: 1.666em;
+}
+
+.alert:before {
+  font-family: FontAwesome;
+  content: '\f071';
+  padding: 0.5rem;
+  margin-right: 0.25rem;
+  border-radius: 100%;
+}
+
+.alert--warning {
+  color: #ef5833;
+}
+
+.alert--warning:before {
+  color: #f2f2f2;
+  background-color: #ef5833;
+}
+
 .value__number {
   color: #71a32b;
   font-family: "MuseoSlab-700";
@@ -1666,7 +1691,7 @@ table {
   cursor: pointer;
   font-family: "MuseoSans-700";
   font-size: 0.8125em;
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 .uservoice__icon {
@@ -1904,12 +1929,12 @@ table {
   line-height: 50px;
 }
 
-.navbar__element.active a {
-  background-color: #bbbbbb;
+.navbar__element.active, .navbar__element:hover {
+  background-color: #83af46;
 }
 
-.navbar__element a:hover {
-  background-color: #bbbbbb;
+.navbar__element:active {
+  background-color: #699728;
 }
 
 .fact {
@@ -2184,6 +2209,14 @@ table {
   padding-right: 1rem;
 }
 
+.article__title {
+  margin-bottom: 2.5rem;
+  font-family: "MuseoSans-100";
+  font-size: 3.2em;
+  line-height: 3.571rem;
+  color: #666666;
+}
+
 .article__title--paragraph {
   margin-bottom: 2rem;
   font-family: "MuseoSans-100";
@@ -2207,6 +2240,24 @@ table {
 
 .article__bold-text {
   font-family: 'MuseoSlab-700';
+}
+
+.vertical-nav__element {
+  display: block;
+  color: #666666;
+  font-family: "MuseoSans-300";
+  font-size: 1em;
+  line-height: 2.5rem;
+  padding-left: 2rem;
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.vertical-nav__element--heading {
+  color: #71a32b;
+  padding-left: 1rem;
+  border-top: solid 1px #dfe0e1;
+  border-bottom: solid 1px #dfe0e1;
+  border-left: solid 5px #dfe0e1;
 }
 
 /* Defaults */
@@ -2511,11 +2562,6 @@ select {
 nav li {
   line-height: 49px;
   float: left;
-  transition: all 0.5s ease;
-}
-
-nav li:hover {
-  transition: all 0.5s ease;
 }
 
 nav li h1, nav li h2 {
@@ -2722,13 +2768,11 @@ a.btn {
   border: none;
   font-size: 0.9em;
   box-sizing: border-box;
-  transition: background-color 0.3s;
   text-align: center;
   color: #ffffff;
 }
 
 a.btn:hover {
-  transition: background-color 0.3s;
   background-color: #699728;
   cursor: pointer;
 }
