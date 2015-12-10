@@ -5,12 +5,10 @@ a.btn {
   border: none;
   font-size: 0.9em;
   box-sizing: border-box;
-  transition: background-color 0.3s;
   text-align: center;
   color: $color--base-btn-text;
 
   &:hover {
-    transition: background-color 0.3s;
     background-color: $color--base-btn-hover-bg;
     cursor: pointer;
   }
