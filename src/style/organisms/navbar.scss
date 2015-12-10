@@ -21,11 +21,11 @@
 
     @include color($navbar-element__color);
 
-    &.active {
-      a {
-        background-color: $color--header-active-link;
-      }
+    &.active, &:hover {
+      background-color: $navbar-element-hover__bg-color;
     }
-    a:hover { background-color: $color--header-hover-link; }
+    &:active {
+      background-color: $navbar-element-active__bg-color;
+    }
   }
 }

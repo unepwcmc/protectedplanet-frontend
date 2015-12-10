@@ -1,0 +1,25 @@
+@mixin vertical-nav {
+  @include e(element) {
+    display: block;
+
+    @include text--body($line-height: 2.5rem);
+
+    padding-left: 2rem;
+    border-bottom: solid 1px $grey-5;
+
+    @include m(heading) {
+      @include color($green);
+
+      padding-left: 1rem;
+      border: {
+        top: solid 1px $grey-15;
+        bottom: solid 1px $grey-15;
+        left: solid 5px $grey-15;
+      }
+    }
+  }
+}
+
+@include b(vertical-nav) {
+  @include vertical-nav;
+}

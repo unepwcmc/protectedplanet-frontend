@@ -1,0 +1,29 @@
+@mixin alert {
+  &:before {
+    font-family: FontAwesome;
+    content: '\f071';
+
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+    border-radius: 100%;
+  }
+
+  padding: .625rem;
+  margin-bottom: 2.5rem;
+
+  background-color: $alert__bg-color;
+  @include text--headline-alt-bolder;
+
+  @include m(warning) {
+    &:before {
+      color: $alert__bg-color;
+      background-color: $alert-warning--color;
+    }
+
+    color: $alert-warning--color;
+  }
+}
+
+@include b(alert) {
+  @include alert;
+}

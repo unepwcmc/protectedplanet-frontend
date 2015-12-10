@@ -72,6 +72,10 @@ $blue: #317fce;
   $horizontal-bar__bg-color: $green !default;
   $horizontal-bar-inner__bg-color: $green--darker !default;
 
+// molecules/alert
+  $alert__bg-color: $grey-5 !default;
+  $alert-warning--color: $orange !default;
+
 // molecules/value
   $value-number__color: $green !default;
   $value-number-alt-color__color: $green--darker !default;
@@ -79,6 +83,13 @@ $blue: #317fce;
 // organisms/navbar
   $navbar__bg-color: $green !default;
   $navbar-element__color: $white !default;
+  $navbar-element-hover__bg-color: $green--light !default;
+  $navbar-element-active__bg-color: $green--dark !default;
+  $color--nav-bg: $green;
+  $color--nav-active-link: $green--dark;
+  $color--nav-link: $white;
+  $color--nav-hover-link: $green--dark;
+  $color--nav-border: $grey-33;
 
 // organisms/hero
   $hero-title__color: $green !default;
@@ -111,11 +122,6 @@ $color--leaflet-cluster-bg: $dark-blue;
 $color--leaflet-cluster-border: $white;
 $color--leaflet-cluster-text: $white;
 
-$color--nav-bg: $green;
-$color--nav-active-link: $green--dark;
-$color--nav-link: $white;
-$color--nav-hover-link: $green--dark;
-$color--nav-border: $grey-33;
 
 $color--header-active-link: $grey-33;
 $color--header-link: $grey-100;
