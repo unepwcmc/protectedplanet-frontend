@@ -2,73 +2,73 @@
   font-family: 'MuseoSans-700';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSans-700.eot') format('oet'),
-        url('fonts/MuseoSans-700.ttf') format('ttf'),
-        url('fonts/MuseoSans-700.woff') format('woff');
+  src: url('fonts/MuseoSans-700.eot') format('oet'),
+       url('fonts/MuseoSans-700.ttf') format('ttf'),
+       url('fonts/MuseoSans-700.woff') format('woff');
 }
 
 @font-face {
   font-family: 'MuseoSans-300';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSans-300.eot') format('oet'),
-        url('fonts/MuseoSans-300.ttf') format('ttf'),
-        url('fonts/MuseoSans-300.woff') format('woff');
+  src: url('fonts/MuseoSans-300.eot') format('oet'),
+       url('fonts/MuseoSans-300.ttf') format('ttf'),
+       url('fonts/MuseoSans-300.woff') format('woff');
 }
 
 @font-face {
   font-family: 'MuseoSans-500';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSans-500.eot') format('oet'),
-        url('fonts/MuseoSans-500.ttf') format('ttf'),
-        url('fonts/MuseoSans-500.woff') format('woff');
+  src: url('fonts/MuseoSans-500.eot') format('oet'),
+       url('fonts/MuseoSans-500.ttf') format('ttf'),
+       url('fonts/MuseoSans-500.woff') format('woff');
 }
 
 @font-face {
   font-family: 'MuseoSans-100';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSans-100.eot') format('oet'),
-        url('fonts/MuseoSans-100.ttf') format('ttf'),
-        url('fonts/MuseoSans-100.woff') format('woff');
+  src: url('fonts/MuseoSans-100.eot') format('oet'),
+       url('fonts/MuseoSans-100.ttf') format('ttf'),
+       url('fonts/MuseoSans-100.woff') format('woff');
 }
 
 @font-face {
   font-family: 'MuseoSlab-900';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSlab-900.otf') format('opentype');
+  src: url('fonts/MuseoSlab-900.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'MuseoSlab-700';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSlab-700.otf') format('opentype');
+  src: url('fonts/MuseoSlab-700.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'MuseoSlab-500';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSlab-500.eot') format('oet'),
-        url('fonts/MuseoSlab-500.ttf') format('ttf'),
-        url('fonts/MuseoSlab-500.woff') format('woff');
+  src: url('fonts/MuseoSlab-500.eot') format('oet'),
+       url('fonts/MuseoSlab-500.ttf') format('ttf'),
+       url('fonts/MuseoSlab-500.woff') format('woff');
 }
 
 @font-face {
   font-family: 'MuseoSlab-300';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSlab-300.otf') format('opentype');
+  src: url('fonts/MuseoSlab-300.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'MuseoSlab-100';
   font-weight: normal;
   font-style: normal;
-  src:  url('fonts/MuseoSlab-100.otf') format('opentype');
+  src: url('fonts/MuseoSlab-100.otf') format('opentype');
 }
 
 @mixin text--primary-color($color: $green) {

@@ -8,18 +8,18 @@
   .leaflet-control-zoom-in:hover,
   .leaflet-control-zoom-out:hover {
     display: block;
-    width: 25px;
     line-height: 20px;
     margin: 5px;
     opacity: 1;
+    width: 25px;
 
     &:first-child {
       border-bottom: solid 1px $leaflet-control__border;
     }
 
     &.leaflet-disabled {
-      color: $leaflet-control__disabled-color;
       background-color: $leaflet-control__bg-color;
+      color: $leaflet-control__disabled-color;
       cursor: not-allowed;
     }
   }
@@ -27,18 +27,18 @@
 
 @mixin leaflet-control-layers($color: $leaflet-control__color, $bg-color: $leaflet-control__bg-color, $font-size: $leaflet-control__font-size) {
   .leaflet-control-layers-list {
-    display:block;
     @include _leaflet-control($color: $color, $bg-color: $bg-color, $font-size: $font-size);
+    display: block;
   }
 
   .leaflet-control-layers {
     label {
-      display: inline-block;
       cursor: pointer;
-      padding: 0 15px;
-      margin: 5px 0;
-
+      display: inline-block;
       line-height: 20px;
+      margin: 5px 0;
+      padding: 0 15px;
+
 
       &:first-child {
         border-right: solid 1px $leaflet-control__border;
@@ -65,7 +65,7 @@
   font-size: $font-size;
   color: $color;
 
-  transition: background-color 0.1s;
+  transition: background-color .1s;
 }
 
 @mixin _leaflet-control__margins {
@@ -77,11 +77,10 @@
 
 @mixin _leaflet-control--hover($color, $bg-color) {
   @at-root .leaflet-control-layers-expanded {
-    padding: 0;
     background-color: $color;
     color: $bg-color;
-
     cursor: pointer;
-    transition: background-color 0.1s;
+    padding: 0;
+    transition: background-color .1s;
   }
 }

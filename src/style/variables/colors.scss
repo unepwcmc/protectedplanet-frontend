@@ -3,107 +3,107 @@ $grey-blue: #848184;
 $blue: #317fce;
 
 // green palette
-  $green: #71a32b;
-  $green--dark: #699728;
-  $green--darker: #415519;
-  $green--light: #83af46;
-  $brown: #702412;
-  $white: #ffffff;
+$green: #71a32b;
+$green--dark: #699728;
+$green--darker: #415519;
+$green--light: #83af46;
+$brown: #702412;
+$white: #ffffff;
 
 // blue palette
-  $blue: #1d62b1;
-  $blue--dark: #1a589f;
-  $blue--light: #3a76bb;
-  $blue--lighter: #d2e0ef;
+$blue: #1d62b1;
+$blue--dark: #1a589f;
+$blue--light: #3a76bb;
+$blue--lighter: #d2e0ef;
 
 // red palette
-  $red: #d80000;
-  $red--dark: #c20000;
-  $red--light: #de2626;
-  $red--lighter: #f7cccc;
+$red: #d80000;
+$red--dark: #c20000;
+$red--light: #de2626;
+$red--lighter: #f7cccc;
 
 // orange palette
-  $orange: #ef5833;
-  $orange--dark: #de522f;
-  $orange--lighter: #f16e4d;
-  $brown-bg: #fcded6;
-  $yellow: #ffe600;
+$orange: #ef5833;
+$orange--dark: #de522f;
+$orange--lighter: #f16e4d;
+$brown-bg: #fcded6;
+$yellow: #ffe600;
 
 // grey palette
-  $grey-100: #333333;
-  $grey-77: #666666;
-  $grey-55: #8f8f8f;
-  $grey-33: #bbbbbb;
-  $grey-15: #dfe0e1;
-  $grey-5: #f2f2f2;
-  $gre-4: #d8d8d8;
-  $grey-3: #f8f8f8;
+$grey-100: #333333;
+$grey-77: #666666;
+$grey-55: #8f8f8f;
+$grey-33: #bbbbbb;
+$grey-15: #dfe0e1;
+$grey-5: #f2f2f2;
+$gre-4: #d8d8d8;
+$grey-3: #f8f8f8;
 
 // palettes
-  $palettes:
-    $green $green--dark $green--light $brown $white,
-    $blue $blue--dark $blue--light $blue--lighter,
-    $red $red--dark $red--light $red--lighter,
-    $orange $orange--dark $orange--lighter $brown-bg $yellow,
-    $grey-100 $grey-77 $grey-55 $grey-33 $grey-15 $grey-5 $grey-3 !default;
+$palettes:
+$green $green--dark $green--light $brown $white,
+$blue $blue--dark $blue--light $blue--lighter,
+$red $red--dark $red--light $red--lighter,
+$orange $orange--dark $orange--lighter $brown-bg $yellow,
+$grey-100 $grey-77 $grey-55 $grey-33 $grey-15 $grey-5 $grey-3 !default;
 
 // atoms/leaflet-control
-  $leaflet-control__color: $grey-100 !default;
-  $leaflet-control__bg-color: $white !default;
-  $leaflet-control__disabled-color: $grey-5 !default;
-  $leaflet-control__border: $grey-15 !default;
+$leaflet-control__color: $grey-100 !default;
+$leaflet-control__bg-color: $white !default;
+$leaflet-control__disabled-color: $grey-5 !default;
+$leaflet-control__border: $grey-15 !default;
 
 // molecules/link-with-icon
-  $link-with-icon__color: $green !default;
-  $link-with-icon__bg-color: $white !default;
+$link-with-icon__color: $green !default;
+$link-with-icon__bg-color: $white !default;
 
 // molecules/table
-  $table-link__color: $green !default;
+$table-link__color: $green !default;
 
 // molecules/reference
-  $reference-link__color: $green !default;
-  $reference-link-icon__color: $green !default;
+$reference-link__color: $green !default;
+$reference-link-icon__color: $green !default;
 
 // molecules/big-button
-  $big_button__color: $white !default;
-  $big_button__bg-color: $green !default;
+$big_button__color: $white !default;
+$big_button__bg-color: $green !default;
 
 // molecules/horizontal-bar
-  $horizontal-bar__bg-color: $green !default;
-  $horizontal-bar-inner__bg-color: $green--darker !default;
+$horizontal-bar__bg-color: $green !default;
+$horizontal-bar-inner__bg-color: $green--darker !default;
 
 // molecules/alert
-  $alert__bg-color: $grey-5 !default;
-  $alert-warning--color: $orange !default;
+$alert__bg-color: $grey-5 !default;
+$alert-warning--color: $orange !default;
 
 // molecules/value
-  $value-number__color: $green !default;
-  $value-number-alt-color__color: $green--darker !default;
+$value-number__color: $green !default;
+$value-number-alt-color__color: $green--darker !default;
 
 // organisms/navbar
-  $navbar__bg-color: $green !default;
-  $navbar-element__color: $white !default;
-  $navbar-element-hover__bg-color: $green--light !default;
-  $navbar-element-active__bg-color: $green--dark !default;
-  $color--nav-bg: $green;
-  $color--nav-active-link: $green--dark;
-  $color--nav-link: $white;
-  $color--nav-hover-link: $green--dark;
-  $color--nav-border: $grey-33;
+$navbar__bg-color: $green !default;
+$navbar-element__color: $white !default;
+$navbar-element-hover__bg-color: $green--light !default;
+$navbar-element-active__bg-color: $green--dark !default;
+$color--nav-bg: $green;
+$color--nav-active-link: $green--dark;
+$color--nav-link: $white;
+$color--nav-hover-link: $green--dark;
+$color--nav-border: $grey-33;
 
 // organisms/hero
-  $hero-title__color: $green !default;
+$hero-title__color: $green !default;
 
 // organisms/fact
-  $fact-header__color: $grey-100 !default;
-  $fact-header__border-bottom-color: $grey-33 !default;
-  $fact-external-link__color: $green !default;
+$fact-header__color: $grey-100 !default;
+$fact-header__border-bottom-color: $grey-33 !default;
+$fact-external-link__color: $green !default;
 
 // organisms/info-box
-  $info-box__bg-color: $grey-5 !default;
-  $info-box-link__color: $green !default;
-  $info-box-link-icon__color: $green !default;
-  $info-box-row__border-bottom: $grey-33 !default;
+$info-box__bg-color: $grey-5 !default;
+$info-box-link__color: $green !default;
+$info-box-link-icon__color: $green !default;
+$info-box-row__border-bottom: $grey-33 !default;
 
 $color--base: $grey-77;
 $color--base-btn-bg: $green;
