@@ -18,6 +18,10 @@
         left: solid 5px $grey-15;
       }
     }
+
+    @include m(selected) {
+      @include color($green);
+    }
   }
 }
 
