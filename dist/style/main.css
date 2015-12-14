@@ -1246,6 +1246,69 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   transition: transform 0.3s ease-out, opacity 0.3s ease-in;
 }
 
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/MuseoSans-700.eot") format("oet"), url("fonts/MuseoSans-700.ttf") format("ttf"), url("fonts/MuseoSans-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/MuseoSans-300.eot") format("oet"), url("fonts/MuseoSans-300.ttf") format("ttf"), url("fonts/MuseoSans-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/MuseoSans-500.eot") format("oet"), url("fonts/MuseoSans-500.ttf") format("ttf"), url("fonts/MuseoSans-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 100;
+  font-style: normal;
+  src: url("fonts/MuseoSans-100.eot") format("oet"), url("fonts/MuseoSans-100.ttf") format("ttf"), url("fonts/MuseoSans-100.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 900;
+  font-style: normal;
+  src: url("fonts/MuseoSlab-900.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/MuseoSlab-700.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/MuseoSlab-500.eot") format("oet"), url("fonts/MuseoSlab-500.ttf") format("ttf"), url("fonts/MuseoSlab-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/MuseoSlab-300.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 100;
+  font-style: normal;
+  src: url("fonts/MuseoSlab-100.otf") format("opentype");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1377,69 +1440,6 @@ table {
   display: table;
 }
 
-@font-face {
-  font-family: 'MuseoSans-700';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSans-700.eot") format("oet"), url("fonts/MuseoSans-700.ttf") format("ttf"), url("fonts/MuseoSans-700.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'MuseoSans-300';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSans-300.eot") format("oet"), url("fonts/MuseoSans-300.ttf") format("ttf"), url("fonts/MuseoSans-300.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'MuseoSans-500';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSans-500.eot") format("oet"), url("fonts/MuseoSans-500.ttf") format("ttf"), url("fonts/MuseoSans-500.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'MuseoSans-100';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSans-100.eot") format("oet"), url("fonts/MuseoSans-100.ttf") format("ttf"), url("fonts/MuseoSans-100.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'MuseoSlab-900';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSlab-900.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'MuseoSlab-700';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSlab-700.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'MuseoSlab-500';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSlab-500.eot") format("oet"), url("fonts/MuseoSlab-500.ttf") format("ttf"), url("fonts/MuseoSlab-500.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'MuseoSlab-300';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSlab-300.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'MuseoSlab-100';
-  font-weight: normal;
-  font-style: normal;
-  src: url("fonts/MuseoSlab-100.otf") format("opentype");
-}
-
 .breadcrumbs, .fact__header, .info-box__header, .article__title--paragraph, .article__paragraph {
   color: #666666;
 }
@@ -1461,8 +1461,8 @@ table {
 }
 
 .link-with-icon {
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.333em;
   color: #71a32b;
@@ -1478,7 +1478,8 @@ table {
 }
 
 .link-with-icon--bold {
-  font-family: "MuseoSans-700";
+  font-family: 'MuseoSans';
+  font-weight: 700;
   font-size: 0.8125em;
   line-height: 1.333em;
 }
@@ -1494,7 +1495,8 @@ table {
 
 .table__column {
   cursor: pointer;
-  font-family: "MuseoSlab-100";
+  font-family: 'MuseoSlab';
+  font-weight: 100;
   font-size: 1em;
   line-height: 1.333em;
   text-align: right;
@@ -1541,9 +1543,10 @@ table {
 }
 
 .table__label {
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
+  line-height: 1.333em;
   line-height: 1.666em;
   padding-top: 0.65em;
   text-align: left;
@@ -1576,7 +1579,8 @@ table {
 }
 
 .reference__link {
-  font-family: "MuseoSans-700";
+  font-family: 'MuseoSans';
+  font-weight: 700;
   font-size: 1em;
   line-height: 1.333em;
   color: #71a32b;
@@ -1589,7 +1593,8 @@ table {
 
 .big-button {
   text-align: center;
-  font-family: "MuseoSans-700";
+  font-family: 'MuseoSans';
+  font-weight: 700;
   font-size: 1em;
   line-height: 1.333em;
   color: #ffffff;
@@ -1610,8 +1615,8 @@ table {
 }
 
 .breadcrumbs__link {
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.333em;
   color: #71a32b;
@@ -1637,7 +1642,8 @@ table {
   padding: .625rem;
   margin-bottom: 2.5rem;
   background-color: #f2f2f2;
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 1.2em;
   line-height: 1.666em;
 }
@@ -1661,19 +1667,22 @@ table {
 
 .value__number {
   color: #71a32b;
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 1.4em;
   line-height: 2em;
 }
 
 .value__number--xxlarge {
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 3.2em;
   line-height: 3.571rem;
 }
 
 .value__number--large {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.6em;
   line-height: 2rem;
 }
@@ -1683,14 +1692,16 @@ table {
 }
 
 .uservoice {
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.333em;
   color: #71a32b;
   cursor: pointer;
-  font-family: "MuseoSans-700";
+  font-family: 'MuseoSans';
+  font-weight: 700;
   font-size: 0.8125em;
+  line-height: 1.333em;
   line-height: 2rem;
 }
 
@@ -1703,7 +1714,8 @@ table {
 }
 
 .uservoice--bold {
-  font-family: "MuseoSans-700";
+  font-family: 'MuseoSans';
+  font-weight: 700;
   font-size: 0.8125em;
   line-height: 1.333em;
 }
@@ -1723,7 +1735,8 @@ table {
 }
 
 .hero__title {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.6em;
   line-height: 2rem;
   color: #71a32b;
@@ -1732,7 +1745,8 @@ table {
 .hero__title--article {
   padding-left: .5rem;
   padding-right: .5rem;
-  font-family: "MuseoSans-100";
+  font-family: 'MuseoSans';
+  font-weight: 100;
   font-size: 3.2em;
   line-height: 3.571rem;
   color: #666666;
@@ -1752,7 +1766,7 @@ table {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  font-size: 1em;
+  font-size: 1.333em;
   color: #333333;
   transition: background-color .1s;
 }
@@ -1813,7 +1827,7 @@ table {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  font-size: 1em;
+  font-size: 1.333em;
   color: #333333;
   transition: background-color .1s;
   display: block;
@@ -1896,14 +1910,16 @@ table {
 }
 
 .hero__cover-text {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 3.2em;
   line-height: 3.571rem;
   color: #ffffff;
 }
 
 .hero__cover-text--alt {
-  font-family: "MuseoSlab-900";
+  font-family: 'MuseoSlab';
+  font-weight: 900;
   font-size: 3.2em;
   line-height: 3.571rem;
 }
@@ -1916,16 +1932,19 @@ table {
 }
 
 .navbar__element {
-  color: #666666;
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1em;
+  line-height: 1.333em;
   line-height: 50px;
   color: #ffffff;
 }
 
 .navbar__element--bigger {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.2em;
+  line-height: 1.666em;
   line-height: 50px;
 }
 
@@ -1942,15 +1961,16 @@ table {
 }
 
 .fact__header {
-  font-family: "MuseoSans-100";
+  font-family: 'MuseoSans';
+  font-weight: 100;
   font-size: 1.2em;
   line-height: 1.666em;
   border-bottom: solid #bbbbbb 1px;
 }
 
 .fact__subheader {
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.333em;
   font-weight: bolder;
@@ -1972,10 +1992,11 @@ table {
 }
 
 .fact__single-figure {
-  color: #71a32b;
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 500;
   font-size: 4.8rem;
   line-height: 4.666rem;
+  color: #71a32b;
 }
 
 .fact__single-figure--push-down {
@@ -1994,7 +2015,8 @@ table {
 }
 
 .info-box__header {
-  font-family: "MuseoSans-100";
+  font-family: 'MuseoSans';
+  font-weight: 100;
   font-size: 1.2em;
   line-height: 1.666em;
   border-bottom: solid #bbbbbb 1px;
@@ -2018,7 +2040,8 @@ table {
 }
 
 .info-box__link {
-  font-family: "MuseoSans-700";
+  font-family: 'MuseoSans';
+  font-weight: 700;
   font-size: 1em;
   line-height: 1.333em;
   color: #71a32b;
@@ -2050,8 +2073,10 @@ table {
 .footer__element {
   margin-right: 1rem;
   color: #ffffff;
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.2em;
+  line-height: 1.666em;
 }
 
 .footer__element--no-push {
@@ -2076,8 +2101,8 @@ table {
 }
 
 .stats-card .header {
-  color: #666666;
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.4em;
   line-height: 2em;
   margin-bottom: 20px;
@@ -2132,19 +2157,22 @@ table {
 
 .stats-card__body .value__number {
   color: #71a32b;
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 1.4em;
   line-height: 2em;
 }
 
 .stats-card__body .value__number--xxlarge {
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 3.2em;
   line-height: 3.571rem;
 }
 
 .stats-card__body .value__number--large {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.6em;
   line-height: 2rem;
 }
@@ -2155,19 +2183,22 @@ table {
 
 .stats-card__body--color .value__number {
   color: #702412;
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 1.4em;
   line-height: 2em;
 }
 
 .stats-card__body--color .value__number--xxlarge {
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 3.2em;
   line-height: 3.571rem;
 }
 
 .stats-card__body--color .value__number--large {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.6em;
   line-height: 2rem;
 }
@@ -2178,19 +2209,22 @@ table {
 
 .stats-card__body--alt-color .value__number {
   color: #3a76bb;
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 1.4em;
   line-height: 2em;
 }
 
 .stats-card__body--alt-color .value__number--xxlarge {
-  font-family: "MuseoSlab-700";
+  font-family: 'MuseoSlab';
+  font-weight: 700;
   font-size: 3.2em;
   line-height: 3.571rem;
 }
 
 .stats-card__body--alt-color .value__number--large {
-  font-family: "MuseoSans-500";
+  font-family: 'MuseoSans';
+  font-weight: 500;
   font-size: 1.6em;
   line-height: 2rem;
 }
@@ -2211,7 +2245,8 @@ table {
 
 .article__title {
   margin-bottom: 2.5rem;
-  font-family: "MuseoSans-100";
+  font-family: 'MuseoSans';
+  font-weight: 100;
   font-size: 3.2em;
   line-height: 3.571rem;
   color: #666666;
@@ -2219,34 +2254,40 @@ table {
 
 .article__title--paragraph {
   margin-bottom: 2rem;
-  font-family: "MuseoSans-100";
+  font-family: 'MuseoSans';
+  font-weight: 100;
   font-size: 1.2em;
   line-height: 1.666em;
 }
 
 .article__paragraph {
   margin-bottom: 3rem;
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.333em;
 }
 
 .article__paragraph--bigger {
-  font-family: "MuseoSlab-100";
+  font-family: 'MuseoSlab';
+  font-weight: 300;
   font-size: 1.2em;
   line-height: 1.666em;
 }
 
 .article__bold-text {
-  font-family: 'MuseoSlab-700';
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.333em;
 }
 
 .vertical-nav__element {
   display: block;
-  color: #666666;
-  font-family: "MuseoSans-300";
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1em;
+  line-height: 1.333em;
   line-height: 2.5rem;
   padding-left: 2rem;
   border-bottom: solid 1px #f2f2f2;
@@ -2491,7 +2532,8 @@ div.col-twelve:last-child {
 
 * {
   margin: 0;
-  font-family: MuseoSans-100;
+  font-family: MuseoSans;
+  font-weight: 100;
 }
 
 html,
@@ -2521,8 +2563,8 @@ sup {
 }
 
 strong {
-  font-family: 'MuseoSans-500';
-  font-weight: normal;
+  font-family: 'MuseoSans';
+  font-weight: 500;
   color: #333333;
 }
 
@@ -2536,7 +2578,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   font-size: 14px;
-  font-family: MuseoSans-300;
+  font-family: 'MuseoSans';
+  font-weight: 300;
   border: 1px solid #bbbbbb;
   padding: 10px;
   color: #333333;
@@ -2975,7 +3018,8 @@ nav .download-type-dropdown {
 }
 
 .explore h1 {
-  font-family: 'MuseoSans-100';
+  font-family: 'MuseoSans';
+  font-weight: 100;
   font-size: 30px;
   color: #71a32b;
   padding: 10px 20px;
