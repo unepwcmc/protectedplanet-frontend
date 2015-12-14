@@ -26,9 +26,8 @@
     margin-right: 1rem;
 
     @include color($navbar-element__color);
-    @include text--headline(
-      $line-height: null,
-      $font-family: 'MuseoSans-500'
-    );
+
+    @include text(headline, normal);
+    @include line-height(null);
   }
 }

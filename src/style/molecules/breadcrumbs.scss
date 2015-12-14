@@ -12,7 +12,7 @@
   }
 
   @include e(link) {
-    @include text--body;
+    @include text(body, thin);
     color: $green;
   }
 }

@@ -9,7 +9,7 @@
   }
 
   @include e(title) {
-    @include text--large;
+    @include text(large);
     @include color($hero-title__color);
 
     @include m(article) {
@@ -18,7 +18,7 @@
         right: .5rem;
       }
 
-      @include text--xxlarge-alt;
+      @include text(xxlarge, x-thin);
       @include color($color--base);
     }
   }
@@ -57,11 +57,11 @@
   }
 
   @include e(cover-text) {
-    @include text--xxlarge-alt-bold;
+    @include text(xxlarge, normal);
     @include color($white);
 
     @include m(alt) {
-      @include text--xxlarge-bold;
+      @include text--alt(xxlarge, x-bold);
     }
   }
 }

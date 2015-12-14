@@ -6,13 +6,13 @@
 
   @include e(title) {
     margin-bottom: 2.5rem;
-    @include text--xxlarge-alt;
+    @include text(xxlarge, x-thin);
     @include color($color--base);
 
     @include m(paragraph) {
       margin-bottom: 2rem;
 
-      @include text--headline;
+      @include text(headline, x-thin);
       @extend %color-base;
     }
   }
@@ -20,15 +20,15 @@
   @include e(paragraph) {
     margin-bottom: 3rem;
 
-    @include text--body;
+    @include text(body, thin);
     @extend %color-base;
 
     @include m(bigger) {
-      @include text--headline-alt;
+      @include text--alt(headline, thin);
     }
   }
 
   @include e(bold-text) {
-    font-family: 'MuseoSlab-700';
+    @include text--alt(body, bold);
   }
 }

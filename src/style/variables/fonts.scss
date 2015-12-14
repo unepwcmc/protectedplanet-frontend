@@ -1,84 +1,90 @@
-$font-family--xxxxlarge: 'MuseoSlab-700' !default;
-$font-size--xxxxlarge: 4.8rem !default;
-$line-height--xxxxlarge: 4.666rem !default;
+$weights: (
+  x-thin: 100,
+  thin:   300,
+  normal: 500,
+  bold:   700,
+  x-bold: 900
+);
 
-$font-family--xxxxlarge-alt: 'MuseoSans-100' !default;
-$font-size--xxxxlarge-alt: 4.8rem !default;
-$line-height--xxxxlarge-alt: 4.666rem !default;
+$form-factors: (
+  xxxxlarge: (
+    font-size: 4.8rem, line-height: 4.666rem
+  ),
+  xxxxlarge-alt: (
+    font-size: 4.8rem, line-height: 4.666rem
+  ),
+  xxxlarge: (
+    font-size: 4rem, line-height: 4rem
+  ),
+  xxlarge: (
+    font-size: 3.2em, line-height: 3.571rem
+  ),
+  xxlarge-bold: (
+    font-size: 3.2em, line-height: 3.571rem
+  ),
+  xxlarge-alt: (
+    font-size: 3.2em, line-height: 3.571rem
+  ),
+  xxlarge-alt-bold: (
+    font-size: 3.2em, line-height: 3.571rem
+  ),
+  large: (
+    font-size: 1.6em, line-height: 2rem
+  ),
+  medium: (
+    font-size: 1.4em, line-height: 2em
+  ),
+  medium-alt: (
+    font-size: 1.4em, line-height: 2em
+  ),
+  headline: (
+    font-size: 1.2em, line-height: 1.666em
+  ),
+  headline-alt: (
+    font-size: 1.2em, line-height: 1.666em
+  ),
+  headline-alt-bolder: (
+    font-size: 1.2em, line-height: 1.666em
+  ),
+  body: (
+    font-size: 1em, line-height: 1.333em
+  ),
+  body-alt: (
+    font-size: 1em, line-height: 1.333em
+  ),
+  body-bolder: (
+    font-size: 1em, line-height: 1.333em
+  ),
+  body-alt-bolder: (
+    font-size: 1em, line-height: 1.333em
+  ),
+  small: (
+    font-size: .8125em, line-height: 1.333em
+  ),
+  small-bolder: (
+    font-size: .8125em, line-height: 1.333em
+  )
+);
 
-$font-family--xxxlarge: 'MuseoSans-100' !default;
-$font-size--xxxlarge: 4rem !default;
-$line-height--xxxlarge: 4rem !default;
+@function weight($name) {
+  @return map-get($weights, $name);
+}
 
-$font-family--xxlarge: 'MuseoSlab-700' !default;
-$font-size--xxlarge: 3.2em !default;
-$line-height--xxlarge: 3.571rem !default;
+@function form-factor($name, $property: null) {
+  $form-factor: map-get($form-factors, $name);
 
-$font-family--xxlarge-bold: 'MuseoSlab-900' !default;
-$font-size--xxlarge-bold: 3.2em !default;
-$line-height--xxlarge-bold: 3.571rem !default;
+  @if($property) {
+    @return map-get($form-factor, $property);
+  } @else {
+    @return $form-factor;
+  }
+}
 
-$font-family--xxlarge-alt: 'MuseoSans-100' !default;
-$font-size--xxlarge-alt: 3.2em !default;
-$line-height--xxlarge-alt: 3.571rem !default;
-
-$font-family--xxlarge-alt-bold: 'MuseoSans-500' !default;
-$font-size--xxlarge-alt-bold: 3.2em !default;
-$line-height--xxlarge-alt-bold: 3.571rem !default;
-
-$font-family--large: 'MuseoSans-500' !default;
-$font-size--large: 1.6em !default;
-$line-height--large: 2rem !default;
-
-$font-family--medium: 'MuseoSans-500' !default;
-$font-size--medium: 1.4em !default;
-$line-height--medium: 2em !default;
-
-$font-family--medium-alt: 'MuseoSlab-700' !default;
-$font-size--medium-alt: 1.4em !default;
-$line-height--medium-alt: 2em !default;
-
-$font-family--headline: 'MuseoSans-100' !default;
-$font-size--headline: 1.2em !default;
-$line-height--headline: 1.666em !default;
-
-$font-family--headline-alt: 'MuseoSlab-100' !default;
-$font-size--headline-alt: 1.2em !default;
-$line-height--headline-alt: 1.666em !default;
-
-$font-family--headline-alt-bolder: 'MuseoSlab-700' !default;
-$font-size--headline-alt-bolder: 1.2em !default;
-$line-height--headline-alt-bolder: 1.666em !default;
-
-$font-family--body: 'MuseoSans-300' !default;
-$font-size--body: 1em !default;
-$line-height--body: 1.333em !default;
-
-$font-family--body-alt: 'MuseoSlab-100' !default;
-$font-size--body-alt: 1em !default;
-$line-height--body-alt: 1.333em !default;
-
-$font-family--body-bolder: 'MuseoSans-700' !default;
-$font-size--body-bolder: 1em !default;
-$line-height--body-bolder: 1.333em !default;
-
-$font-family--body-alt-bolder: 'MuseoSlab-500' !default;
-$font-size--body-alt-bolder: 1em !default;
-$line-height--body-alt-bolder: 1.333em !default;
-
-$font-family--small: 'MuseoSans-500' !default;
-$font-size--small: .8125em !default;
-$line-height--small: 1.333em !default;
-
-$font-family--small-bolder: 'MuseoSans-700' !default;
-$font-size--small-bolder: .8125em !default;
-$line-height--small-bolder: 1.333em !default;
-
-
-// atoms/headers
-  $header__font-size: $font-size--headline !default;
+@mixin form-factor($name) {
+  @each $property, $value in form-factor($name) {
+    #{$property}: #{$value};
+  }
+}
 
 // atoms/leaflet-control
-  $leaflet-control__font-size: $font-size--body !default;
-
-//
+  $leaflet-control__font-size: form-factor(body, line-height) !default;

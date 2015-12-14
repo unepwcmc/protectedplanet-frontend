@@ -2,14 +2,14 @@
   @include b(value) { $block: &;
     @include e(number) {
       @include color($number__color);
-      @include text--medium-alt;
+      @include text--alt(medium, bold);
 
       @include m(xxlarge) {
-        @include text--xxlarge;
+        @include text--alt(xxlarge, bold);
       }
 
       @include m(large) {
-        @include text--large;
+        @include text(large);
       }
 
       @include m(alt-color) {

@@ -5,11 +5,11 @@
     @include header-with-delimiter($border-bottom: (
       color: $fact-header__border-bottom-color,
       size: $fact-header__border-bottom-size
-    ))
+    ));
   }
 
   @include e(subheader) {
-    @include text--body;
+    @include text(body, thin);
     font-weight: bolder;
     padding: 1em 0 0.25em;
   }
@@ -29,7 +29,8 @@
   }
 
   @include e(single-figure) {
-    @include text--xxxxlarge($color: $green);
+    @include text--alt(xxxxlarge, normal);
+    @include color($green);
 
     @include m(push-down) {
       margin-bottom: 0.4em;

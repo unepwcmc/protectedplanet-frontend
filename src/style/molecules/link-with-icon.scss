@@ -1,5 +1,5 @@
 @mixin link-with-icon($color: $link-with-icon__color, $bg-color: $link-with-icon__bg-color, $icon__margin-right: $link-with-icon-icon__margin-right) {
-  @include text--body;
+  @include text(body, thin);
   color: $color;
 
   cursor: pointer;
@@ -13,7 +13,7 @@
   }
 
   @include m(bold) {
-    @include text--small-bolder;
+    @include text(small, bold);
   }
 
   @content;

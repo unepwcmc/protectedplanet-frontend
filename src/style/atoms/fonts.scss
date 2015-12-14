@@ -1,195 +1,22 @@
-@font-face {
-  font-family: 'MuseoSans-700';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSans-700.eot') format('oet'),
-       url('fonts/MuseoSans-700.ttf') format('ttf'),
-       url('fonts/MuseoSans-700.woff') format('woff');
+
+@mixin text($form-factor, $weight: normal) {
+  font-family: 'MuseoSans';
+
+  @include font-weight($weight);
+  @include form-factor($form-factor);
 }
 
-@font-face {
-  font-family: 'MuseoSans-300';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSans-300.eot') format('oet'),
-       url('fonts/MuseoSans-300.ttf') format('ttf'),
-       url('fonts/MuseoSans-300.woff') format('woff');
+@mixin text--alt($form-factor, $weight: normal) {
+  font-family: 'MuseoSlab';
+  font-weight: weight($weight);
+
+  @include form-factor($form-factor);
 }
 
-@font-face {
-  font-family: 'MuseoSans-500';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSans-500.eot') format('oet'),
-       url('fonts/MuseoSans-500.ttf') format('ttf'),
-       url('fonts/MuseoSans-500.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'MuseoSans-100';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSans-100.eot') format('oet'),
-       url('fonts/MuseoSans-100.ttf') format('ttf'),
-       url('fonts/MuseoSans-100.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'MuseoSlab-900';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSlab-900.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MuseoSlab-700';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSlab-700.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MuseoSlab-500';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSlab-500.eot') format('oet'),
-       url('fonts/MuseoSlab-500.ttf') format('ttf'),
-       url('fonts/MuseoSlab-500.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'MuseoSlab-300';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSlab-300.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MuseoSlab-100';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/MuseoSlab-100.otf') format('opentype');
-}
-
-@mixin text--primary-color($color: $green) {
-  color: $color;
-}
-
-@mixin text--xxxxlarge($color: $color--base, $font-family: $font-family--xxxxlarge, $font-size: $font-size--xxxxlarge, $line-height: $line-height--xxxxlarge) {
-  color: $color;
-  font-family: $font-family;
-  font-size: $font-size;
+@mixin line-height($line-height) {
   line-height: $line-height;
 }
 
-@mixin text--xxxxlarge-alt($color: $color--base, $font-family: $font-family--xxxxlarge-alt, $font-size: $font-size--xxxxlarge-alt, $line-height: $line-height--xxxxlarge-alt) {
-  color: $color;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--xxxlarge($color: $color--base, $font-family: $font-family--xxxlarge, $font-size: $font-size--xxxlarge, $line-height: $line-height--xxxlarge) {
-  color: $color;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--xxlarge($font-family: $font-family--xxlarge, $font-size: $font-size--xxlarge, $line-height: $line-height--xxlarge) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--xxlarge-bold($font-family: $font-family--xxlarge-bold, $font-size: $font-size--xxlarge-bold, $line-height: $line-height--xxlarge-bold) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--xxlarge-alt($font-family: $font-family--xxlarge-alt, $font-size: $font-size--xxlarge-alt, $line-height: $line-height--xxlarge-alt) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--xxlarge-alt-bold($font-family: $font-family--xxlarge-alt-bold, $font-size: $font-size--xxlarge-alt-bold, $line-height: $line-height--xxlarge-alt-bold) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--large($font-family: $font-family--large, $font-size: $font-size--large, $line-height: $line-height--large) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--medium($color: $color--base, $font-family: $font-family--medium, $font-size: $font-size--medium, $line-height: $line-height--medium) {
-  color: $color;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--medium-alt($font-family: $font-family--medium-alt, $font-size: $font-size--medium-alt, $line-height: $line-height--medium-alt) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--headline($font-family: $font-family--headline, $font-size: $font-size--headline, $line-height: $line-height--headline) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--headline-alt($font-family: $font-family--headline-alt, $font-size: $font-size--headline-alt, $line-height: $line-height--headline-alt) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--headline-alt-bolder($font-family: $font-family--headline-alt-bolder, $font-size: $font-size--headline-alt-bolder, $line-height: $line-height--headline-alt-bolder) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--body($color: $color--base, $font-family: $font-family--body, $font-size: $font-size--body, $line-height: $line-height--body) {
-  color: $color;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--body-alt($font-family: $font-family--body-alt, $font-size: $font-size--body-alt, $line-height: $line-height--body-alt) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--body-bolder($font-family: $font-family--body-bolder, $font-size: $font-size--body-bolder, $line-height: $line-height--body-bolder) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--body-alt-bolder($font-family: $font-family--body-alt-bolder, $font-size: $font-size--body-alt-bolder, $line-height: $line-height--body-alt-bolder) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--small($font-family: $font-family--small, $font-size: $font-size--small, $line-height: $line-height--small) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin text--small-bolder($font-family: $font-family--small-bolder, $font-size: $font-size--small-bolder, $line-height: $line-height--small-bolder) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
+@mixin font-weight($weight) {
+  font-weight: weight($weight);
 }

@@ -2,7 +2,8 @@
   @include e(element) {
     display: block;
 
-    @include text--body($line-height: 2.5rem);
+    @include text(body, thin);
+    @include line-height(2.5rem);
 
     padding-left: 2rem;
     border-bottom: solid 1px $grey-5;

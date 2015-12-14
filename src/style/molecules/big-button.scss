@@ -1,6 +1,6 @@
 @include b(big-button) {
   text-align: center;
-  @include text--body-bolder;
+  @include text(body, bold);
 
   color: $big-button__color;
   background-color: $big-button__bg-color;

@@ -1,6 +1,6 @@
-@mixin header-with-delimiter($font-size: $header__font-size, $border-bottom: ($color, $size)) {
+@mixin header-with-delimiter($border-bottom: ($color, $size)) {
   @extend %color-base;
-  @include text--headline;
+  @include text(headline, x-thin);
 
   border-bottom: solid
     map-get($border-bottom, color)

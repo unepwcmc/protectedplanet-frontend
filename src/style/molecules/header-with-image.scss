@@ -1,6 +1,6 @@
 @mixin header-with-image {
   @include b(header) {
-    @include text--medium;
+    @include text(medium);
     margin-bottom: 20px;
 
     @include e(image) {

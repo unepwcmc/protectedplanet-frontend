@@ -9,7 +9,7 @@
     @include header-with-delimiter($border-bottom: (
       color: $fact-header__border-bottom-color,
       size: $fact-header__border-bottom-size
-    ))
+    ));
   }
 
   @include e(column, $this: $block) {
@@ -34,7 +34,7 @@
   }
 
   @include e(link, $this: $block) {
-    @include text--body-bolder;
+    @include text(body, bold);
     color: $info-box-link__color;
 
     padding-bottom: $info-box-link__padding-bottom;

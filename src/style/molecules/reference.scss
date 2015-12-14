@@ -15,7 +15,7 @@
   }
 
   @include e(link) {
-    @include text--body-bolder;
+    @include text(body, bold);
     color: $reference-link__color;
   }
 

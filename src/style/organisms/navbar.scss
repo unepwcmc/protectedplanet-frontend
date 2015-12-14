@@ -8,16 +8,12 @@
 
   @include e(element) {
     @include m(bigger) {
-      @include text--headline(
-        $line-height: $navbar__height,
-        $font-family: 'MuseoSans-500'
-      );
+      @include text(headline);
+      @include line-height($navbar__height);
     }
 
-    @include text--body(
-      $line-height: $navbar__height,
-      $font-family: 'MuseoSans-500'
-    );
+    @include text(body);
+    @include line-height($navbar__height);
 
     @include color($navbar-element__color);
 

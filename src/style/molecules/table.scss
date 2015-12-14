@@ -9,7 +9,7 @@
   @include e(column) {
     cursor: pointer;
 
-    @include text--body-alt;
+    @include text--alt(body, x-thin);
     text-align: right;
     &:first-child { text-align: left; }
 
@@ -51,7 +51,8 @@
   }
 
   @include e(label) {
-    @include text--body($line-height: 1.666em);
+    @include text(body, thin);
+    @include line-height(1.666em);
 
     @include m(link) {
       color: $table-link__color;
