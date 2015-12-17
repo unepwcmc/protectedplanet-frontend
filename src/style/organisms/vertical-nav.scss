@@ -21,6 +21,8 @@
 
     @include m(selected) {
       @include color($green);
+      border-left: solid 0.333rem $grey-15;
+      padding-left: 1.666rem;
     }
   }
 }
