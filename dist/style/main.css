@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.space-between, .hero__cover, .footer, .stats-card__body {
+.space-between, .alert, .hero__cover, .footer, .stats-card__body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1490,7 +1490,7 @@ table {
   display: table;
 }
 
-.breadcrumbs, .fact__header, .info-box__header, .article__title--paragraph, .article__paragraph {
+.breadcrumbs, .alert__body, .fact__header, .info-box__header, .article__title--paragraph, .article__paragraph {
   color: #666666;
 }
 
@@ -1513,8 +1513,8 @@ table {
 .link-with-icon {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   color: #71a32b;
   cursor: pointer;
 }
@@ -1530,8 +1530,8 @@ table {
 .link-with-icon--bold {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 0.8125em;
-  line-height: 1.333em;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
 }
 
 .table {
@@ -1547,8 +1547,8 @@ table {
   cursor: pointer;
   font-family: 'MuseoSlab';
   font-weight: 100;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   text-align: right;
   padding-bottom: 0.5em;
 }
@@ -1595,8 +1595,8 @@ table {
 .table__label {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   line-height: 1.666em;
   padding-top: 0.65em;
   text-align: left;
@@ -1631,8 +1631,8 @@ table {
 .reference__link {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   color: #71a32b;
 }
 
@@ -1645,8 +1645,8 @@ table {
   text-align: center;
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   color: #ffffff;
   background-color: #71a32b;
   border-radius: 0.625rem;
@@ -1667,8 +1667,8 @@ table {
 .breadcrumbs__link {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   color: #71a32b;
 }
 
@@ -1689,51 +1689,83 @@ table {
 }
 
 .alert {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+  background-color: #f2f2f2;
   padding: .625rem;
   margin-bottom: 2.5rem;
-  background-color: #f2f2f2;
+}
+
+.alert__icon {
+  font-family: 'FontAwesome';
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
+  border-radius: 100%;
+  margin-right: .5rem;
+  margin-top: -.125rem;
+  padding: .5rem;
+}
+
+.alert__icon--warning {
+  color: #f2f2f2;
+  background-color: #ef5833;
+}
+
+.alert__icon--success {
+  color: #f2f2f2;
+  background-color: #71a32b;
+}
+
+.alert__title {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
+  margin-bottom: .5rem;
 }
 
-.alert:before {
-  font-family: FontAwesome;
-  content: '\f071';
-  padding: 0.5rem;
-  margin-right: 0.25rem;
-  border-radius: 100%;
-}
-
-.alert--warning {
+.alert__title--warning {
   color: #ef5833;
 }
 
-.alert--warning:before {
-  color: #f2f2f2;
-  background-color: #ef5833;
+.alert__title--success {
+  color: #71a32b;
+}
+
+.alert__body {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.333rem;
 }
 
 .value__number {
   color: #71a32b;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
 }
 
 .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -1744,14 +1776,14 @@ table {
 .uservoice {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   color: #71a32b;
   cursor: pointer;
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 0.8125em;
-  line-height: 1.333em;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
   line-height: 2rem;
 }
 
@@ -1766,8 +1798,8 @@ table {
 .uservoice--bold {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 0.8125em;
-  line-height: 1.333em;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
 }
 
 .hero {
@@ -1787,7 +1819,7 @@ table {
 .hero__title {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 2rem;
   color: #71a32b;
 }
@@ -1797,7 +1829,7 @@ table {
   padding-right: .5rem;
   font-family: 'MuseoSans';
   font-weight: 100;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
   color: #666666;
 }
@@ -1816,7 +1848,7 @@ table {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  font-size: 1.333em;
+  font-size: 1.333rem;
   color: #333333;
   transition: background-color .1s;
 }
@@ -1877,7 +1909,7 @@ table {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  font-size: 1.333em;
+  font-size: 1.333rem;
   color: #333333;
   transition: background-color .1s;
   display: block;
@@ -1962,7 +1994,7 @@ table {
 .hero__cover-text {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
   color: #ffffff;
 }
@@ -1970,7 +2002,7 @@ table {
 .hero__cover-text--alt {
   font-family: 'MuseoSlab';
   font-weight: 900;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
 }
 
@@ -1984,8 +2016,8 @@ table {
 .navbar__element {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   line-height: 50px;
   color: #ffffff;
 }
@@ -1993,8 +2025,8 @@ table {
 .navbar__element--bigger {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
   line-height: 50px;
 }
 
@@ -2013,16 +2045,16 @@ table {
 .fact__header {
   font-family: 'MuseoSans';
   font-weight: 100;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
   border-bottom: solid #bbbbbb 1px;
 }
 
 .fact__subheader {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   font-weight: bolder;
   padding: 1em 0 0.25em;
 }
@@ -2067,8 +2099,8 @@ table {
 .info-box__header {
   font-family: 'MuseoSans';
   font-weight: 100;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
   border-bottom: solid #bbbbbb 1px;
 }
 
@@ -2092,8 +2124,8 @@ table {
 .info-box__link {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   color: #71a32b;
   padding-bottom: 1rem;
 }
@@ -2125,8 +2157,8 @@ table {
   color: #ffffff;
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
 }
 
 .footer__element--no-push {
@@ -2153,8 +2185,8 @@ table {
 .stats-card .header {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 1.4rem;
+  line-height: 2rem;
   margin-bottom: 20px;
 }
 
@@ -2209,21 +2241,21 @@ table {
   color: #71a32b;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .stats-card__body .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
 }
 
 .stats-card__body .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -2235,21 +2267,21 @@ table {
   color: #702412;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .stats-card__body--color .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
 }
 
 .stats-card__body--color .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -2261,21 +2293,21 @@ table {
   color: #3a76bb;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .stats-card__body--alt-color .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
 }
 
 .stats-card__body--alt-color .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 
@@ -2297,7 +2329,7 @@ table {
   margin-bottom: 2.5rem;
   font-family: 'MuseoSans';
   font-weight: 100;
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 3.571rem;
   color: #666666;
 }
@@ -2306,38 +2338,38 @@ table {
   margin-bottom: 2rem;
   font-family: 'MuseoSans';
   font-weight: 100;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
 }
 
 .article__paragraph {
   margin-bottom: 3rem;
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
 }
 
 .article__paragraph--bigger {
   font-family: 'MuseoSlab';
   font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.666em;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
 }
 
 .article__bold-text {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
 }
 
 .vertical-nav__element {
   display: block;
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.333em;
+  font-size: 1rem;
+  line-height: 1.333rem;
   line-height: 2.5rem;
   padding-left: 2rem;
   border-bottom: solid 1px #f2f2f2;
@@ -2353,6 +2385,8 @@ table {
 
 .vertical-nav__element--selected {
   color: #71a32b;
+  border-left: solid 0.333rem #dfe0e1;
+  padding-left: 1.666rem;
 }
 
 /* Defaults */
