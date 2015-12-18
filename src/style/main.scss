@@ -31,12 +31,13 @@
 // utilities
 
 // atoms
-@import 'atoms/fonts';
 @import 'atoms/colors';
+@import 'atoms/fonts';
 @import 'atoms/headers';
 @import 'atoms/leaflet-controls';
-@import 'atoms/sort-arrows';
 @import 'atoms/logos';
+@import 'atoms/sort-arrows';
+@import 'atoms/tag';
 // atoms
 
 // molecules
@@ -71,7 +72,6 @@
 @import 'old/leaflet_overrides';
 @import 'old/map';
 @import 'old/base';
-@import 'old/navigation';
 @import 'old/search_bar';
 @import 'old/buttons';
 @import 'old/modals';
@@ -82,6 +82,5 @@
 @import 'old/devise';
 @import 'old/countries';
 @import 'old/static_pages';
-@import 'old/select2_flat';
 // old pp assets
 

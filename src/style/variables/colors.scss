@@ -1,4 +1,4 @@
-$dark-blue: rgb(43,49,70);
+$dark-blue: rgb(43, 49, 70);
 $grey-blue: #848184;
 $blue: #317fce;
 
@@ -155,7 +155,7 @@ $color--home-filters-border: $grey-33;
 $color--home-filters-child-border: $grey-33;
 $color--home-filters-text: $grey-77;
 
-$color--map-disclaimer-bg: transparentize($dark-blue, 0.5);
+$color--map-disclaimer-bg: transparentize($dark-blue, .5);
 $color--map-disclaimer-text: $white;
 
 $color--search-download-bg: $white;
@@ -177,5 +177,5 @@ $color--search-filters-border: $grey-33;
 $color--search-result-small-text: $grey-33;
 
 $color--download-modal-text: $grey-77;
-$color--download-modal-overlay-bg: rgba(0,0,0,0.5);
+$color--download-modal-overlay-bg: rgba(0, 0, 0, .5);
 $color--download-modal-input-bg: $grey-33;

@@ -1,37 +1,37 @@
 $gutter: 40px !global;
 
 // molecules/reference
-  $reference__margin-bottom: 1.5rem !default;
-  $reference-link-icon__margin-right: .5rem !default;
-  $reference-title__margin-right: .2rem !default
-  $reference-body__margin-bottom: .25rem !default
+$reference__margin-bottom: 1.5rem !default;
+$reference-link-icon__margin-right: .5rem !default;
+$reference-title__margin-right: .2rem !default;
+$reference-body__margin-bottom: .25rem !default;
 
 // molecules/link-with-icon
-  $link-with-icon-icon__margin-right: 10px !default;
+$link-with-icon-icon__margin-sides: .625rem !default;
 
 // molecules/big-button
-  $big-button-icon__margin-right: .625rem !default;
-  $big-button__border-radius: .625rem !default;
-  $big-button__padding: (.75rem 1.875rem) !default;
+$big-button-icon__margin-right: .625rem !default;
+$big-button__border-radius: .625rem !default;
+$big-button__padding: (.75rem 1.875rem) !default;
 
 // molecules/horizontal-bar
-  $horizontal-bar__height: 1.875rem !default;
-  $horizontal-bar__margin-bottom: 1.25rem !default;
+$horizontal-bar__height: 1.875rem !default;
+$horizontal-bar__margin-bottom: 1.25rem !default;
 
 // organisms/hero
-  $hero-map__height: 380px !default;
-  $hero-map__width: 100% !default;
+$hero-map__height: 380px !default;
+$hero-map__width: 100% !default;
 
 // organisms/fact
-  $fact-header__border-bottom-size: 1px !default;
-  $fact-body__padding-top-bottom: 1rem;
+$fact-header__border-bottom-size: 1px !default;
+$fact-body__padding-top-bottom: 1rem;
 
 // organisms/navbar
-  $navbar__height: 50px !default;
+$navbar__height: 50px !default;
 
 // organisms/info-box
-  $info-box__padding: 1.25rem !default;
-  $info-box__margin-bottom: 2.5rem !default;
-  $info-box-body__padding: (1rem .2rem) !default;
-  $info-box-link-icon__margin-right: .5rem !default;
-  $info-box-link__padding-bottom: 1rem !default;
+$info-box__padding: 1.25rem !default;
+$info-box__margin-bottom: 2.5rem !default;
+$info-box-body__padding: (1rem .2rem) !default;
+$info-box-link-icon__margin-right: .5rem !default;
+$info-box-link__padding-bottom: 1rem !default;
