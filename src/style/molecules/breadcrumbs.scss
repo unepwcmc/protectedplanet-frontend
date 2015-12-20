@@ -1,18 +1,11 @@
 @include b(breadcrumbs) {
   @extend %color-base;
+  @include text(small);
 
-  padding: {
-    left: .666rem;
-    right: .666rem;
-  }
-
-  margin: {
-    top: 2em;
-    bottom: 2em;
-  }
+  margin: { top: 1.75rem; bottom: 2em; }
+  padding: { left: .666rem; right: .666rem; }
 
   @include e(link) {
-    @include text(body, thin);
-    color: $green;
+    @include color($green);
   }
 }

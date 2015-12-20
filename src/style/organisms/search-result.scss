@@ -1,0 +1,39 @@
+@include b(search-result) {
+  @extend %color-base;
+  @extend %clearfix;
+
+  border-bottom: solid 1px $grey-5;
+  padding: {
+    top: 1rem;
+    bottom: 1rem;
+    left: 0;
+    right: 3rem;
+  }
+
+  @include e(title) {
+    @include color($green);
+    @include text(headline);
+
+    margin-bottom: 1rem;
+  }
+
+  @include e(body) {
+    margin-bottom: 1.5rem;
+  }
+
+  @include e(details) {
+    list-style: none;
+  }
+
+  @include e(detail) {
+    @include text--alt(body, thin);
+    @include color($grey-55);
+
+    border-right: solid 1px $grey-5;
+    float: left;
+    padding: 0 1.25rem;
+
+    &:first-child { padding-left: 0; }
+    &:last-child { border-right: 0; }
+  }
+}

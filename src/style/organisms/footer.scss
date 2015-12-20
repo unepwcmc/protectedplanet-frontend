@@ -4,16 +4,12 @@
 
   width: 100%;
 
-  padding: {
-    left: 1.5rem;
-    right: 1.5rem;
-  }
+  padding-left: 1.5rem;
 
   font-size: 0.938em;
   background-color: $navbar__bg-color;
 
   @include e(element) {
-    @include m(no-push) { margin-right: 0; }
     @include m(right) {
       // this is insane
       &:nth-child(2) { margin-left: auto; }

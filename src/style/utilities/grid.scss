@@ -1,12 +1,19 @@
-.container--profile {
-  @extend %clearfix;
-  width: 80%;
-  margin: auto;
+@include b(container) {
+  @include m(profile) {
+    @extend %clearfix;
+    width: 80%;
+    margin: auto;
+  }
+
+  @include m(right-padded) {
+    padding-right: 5%;
+  }
+
+  @include m(push-bottom) {
+    margin-bottom: 12rem;
+  }
 }
 
-.container--right-padded {
-  padding-right: 5%;
-}
 
 @include b(one-thirds) {
   @include span-columns(4);
@@ -19,7 +26,6 @@
   @include media(max-width 769px) {
     @include span-columns(12);
   }
-
 }
 
 @include b(two-thirds) {
@@ -49,6 +55,10 @@
 @include b(space-between) {
   @extend %flexbox;
   @include justify-content(space-between);
+}
+
+@include b(right-padded) {
+  padding-right: 5%;
 }
 
 .row {

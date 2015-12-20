@@ -1,15 +1,21 @@
-@mixin link-with-icon($color: $link-with-icon__color, $bg-color: $link-with-icon__bg-color, $icon__margin-right: $link-with-icon-icon__margin-right) {
+@mixin link-with-icon($color: $link-with-icon__color, $bg-color: $link-with-icon__bg-color, $icon__margin-sides: $link-with-icon-icon__margin-sides) {
   @include text(body, thin);
   color: $color;
 
   cursor: pointer;
 
   @include e(icon) {
-    margin-right: $icon__margin-right;
+    margin-right: $icon__margin-sides;
+
+    @include m(after) {
+      margin-left: $icon__margin-sides;
+      margin-right: 0;
+    }
   }
 
   @include m(no-color) {
     color: inherit;
+    font-weight: inherit;
   }
 
   @include m(bold) {

@@ -1,15 +1,31 @@
 @include b(navbar) {
   @extend %clearfix;
+  @include flexbox;
 
-  font-size: 0.938em;
-  width: 100%;
-  list-style: none;
   background-color: $navbar__bg-color;
+  padding-left: 1.25rem;
 
   @include e(element) {
+    padding: 0 .625rem;
+
+    @include m(with-separator) {
+      @include align-self(center);
+      @include line-height($navbar__height/2);
+      padding: 0 1rem;
+      border-left: solid 0.125rem $green--dark;
+    }
+
+    @include m(right) {
+      &:nth-child(2) { margin-left: auto; }
+    }
+
     @include m(bigger) {
       @include text(headline);
       @include line-height($navbar__height);
+    }
+
+    @include m(bold) {
+      @include text(body, bold);
     }
 
     @include text(body);
@@ -17,11 +33,7 @@
 
     @include color($navbar-element__color);
 
-    &.active, &:hover {
-      background-color: $navbar-element-hover__bg-color;
-    }
-    &:active {
-      background-color: $navbar-element-active__bg-color;
-    }
+    &.active, &:hover { background-color: $navbar-element-hover__bg-color; }
+    &:active { background-color: $navbar-element-active__bg-color; }
   }
 }

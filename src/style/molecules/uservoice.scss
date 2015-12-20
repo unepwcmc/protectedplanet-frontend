@@ -1,5 +1,9 @@
 @mixin uservoice {
-  @include link-with-icon($icon__margin-right: .25rem) {
+  @include link-with-icon($icon__margin-sides: .25rem) {
+    @include e(icon) {
+      @include color($white);
+    }
+
     @include text(small, bold);
     @include line-height(2rem);
   }

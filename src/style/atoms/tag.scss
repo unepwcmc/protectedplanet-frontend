@@ -1,0 +1,14 @@
+@mixin tag($bg-color) {
+  @include text(small);
+  @extend %color-base;
+
+  font-style: italic;
+
+  background-color: $bg-color;
+  margin-right: 1.25rem;
+  padding: .333rem 1rem;
+}
+
+@include b(tag) {
+  @include tag($grey-5);
+}

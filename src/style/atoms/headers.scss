@@ -2,7 +2,20 @@
   @extend %color-base;
   @include text(headline, x-thin);
 
+  padding-bottom: .25rem;
+
   border-bottom: solid
     map-get($border-bottom, color)
     map-get($border-bottom, size);
+}
+
+@include b(header-with-delimiter) {
+  margin-bottom: .625rem;
+  @include header-with-delimiter(
+    $border-bottom: (color: $grey-15, size: 1px)
+  );
+
+  @include m(bold) {
+    @include text(body);
+  }
 }
