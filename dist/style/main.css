@@ -1309,7 +1309,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -1330,6 +1330,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
@@ -1498,14 +1499,14 @@ table {
   display: table;
 }
 
-.header-with-delimiter, .tag, .breadcrumbs, .alert__body, .fact__header, .info-box__header, .search-result, .article__title--paragraph, .article__paragraph {
+.header-with-delimiter, .tag, .table, .breadcrumbs, .alert__body, .value__label, .fact__header, .info-box, .search-result, .stats-card .header__text, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .article__paragraph {
   color: #666666;
 }
 
 .header-with-delimiter {
   margin-bottom: .625rem;
   font-family: 'MuseoSans';
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.666rem;
   padding-bottom: .25rem;
@@ -1513,8 +1514,12 @@ table {
 }
 
 .header-with-delimiter--bold {
-  font-family: 'MuseoSans';
   font-weight: 500;
+}
+
+.header-with-delimiter--smaller {
+  font-family: 'MuseoSans';
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.333rem;
 }
@@ -1570,10 +1575,7 @@ table {
 }
 
 .link-with-icon--bold {
-  font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 0.8125rem;
-  line-height: 1.333rem;
 }
 
 .table {
@@ -1621,6 +1623,10 @@ table {
 }
 
 .table__row {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
   border-bottom: solid 1px #dfe0e1;
   margin-bottom: 10px;
   padding: 5px 0;
@@ -1806,13 +1812,24 @@ table {
 
 .value__number--large {
   font-family: 'MuseoSans';
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.666rem;
 }
 
 .value__number--alt-color {
   color: #415519;
+}
+
+.value__label {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
+}
+
+.value__label--right {
+  float: right;
 }
 
 .uservoice {
@@ -1844,10 +1861,7 @@ table {
 }
 
 .uservoice--bold {
-  font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 0.8125rem;
-  line-height: 1.333rem;
 }
 
 .uservoice__icon {
@@ -1864,7 +1878,7 @@ table {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 0 .666rem;
+  padding: 0 1.25rem;
   margin-bottom: .666rem;
 }
 
@@ -1874,6 +1888,13 @@ table {
   font-size: 1.6rem;
   line-height: 2rem;
   color: #71a32b;
+}
+
+.hero__title--thin {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 .hero__title--article {
@@ -1893,6 +1914,14 @@ table {
 .hero .hero__map {
   height: 380px;
   width: 100%;
+}
+
+.hero .leaflet-control-layers-base {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
+  color: #71a32b;
 }
 
 .hero .leaflet-control-zoom {
@@ -1989,6 +2018,11 @@ table {
   cursor: pointer;
   padding: 0;
   transition: background-color .1s;
+}
+
+.hero .leaflet-control-layers {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
 }
 
 .hero .leaflet-control-layers label {
@@ -2116,12 +2150,12 @@ table {
 }
 
 .fact {
-  margin-bottom: 0.666em;
+  margin-bottom: .666em;
 }
 
 .fact__header {
   font-family: 'MuseoSans';
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.666rem;
   padding-bottom: .25rem;
@@ -2129,12 +2163,12 @@ table {
 }
 
 .fact__subheader {
+  color: #333333;
   font-family: 'MuseoSans';
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.333rem;
-  font-weight: bolder;
-  padding: 1em 0 0.25em;
+  margin-bottom: .5em;
 }
 
 .fact__body {
@@ -2153,18 +2187,18 @@ table {
 
 .fact__single-figure {
   font-family: 'MuseoSlab';
-  font-weight: 500;
+  font-weight: 700;
   font-size: 4.8rem;
   line-height: 4.666rem;
   color: #71a32b;
 }
 
 .fact__single-figure--push-down {
-  margin-bottom: 0.4em;
+  margin-bottom: .4em;
 }
 
 .fact__external-link {
-  margin-left: 0.25em;
+  margin-left: .25em;
   color: #71a32b;
 }
 
@@ -2175,15 +2209,14 @@ table {
 }
 
 .info-box__header {
-  font-family: 'MuseoSans';
-  font-weight: 100;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
-  padding-bottom: .25rem;
   border-bottom: solid #bbbbbb 1px;
 }
 
 .info-box__body {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
   padding: 1rem 0.2rem;
 }
 
@@ -2300,12 +2333,20 @@ table {
   border-bottom: dashed 1px #bbbbbb;
 }
 
-.stats-card .header {
+.stats-card .header__text {
   font-family: 'MuseoSans';
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.4rem;
   line-height: 2rem;
   margin-bottom: 20px;
+}
+
+.stats-card .header__sup {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
+  color: #71a32b;
 }
 
 .stats-card .header__image {
@@ -2372,13 +2413,24 @@ table {
 
 .stats-card__body .value__number--large {
   font-family: 'MuseoSans';
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.666rem;
 }
 
 .stats-card__body .value__number--alt-color {
   color: #415519;
+}
+
+.stats-card__body .value__label {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
+}
+
+.stats-card__body .value__label--right {
+  float: right;
 }
 
 .stats-card__body--color .value__number {
@@ -2398,13 +2450,24 @@ table {
 
 .stats-card__body--color .value__number--large {
   font-family: 'MuseoSans';
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.666rem;
 }
 
 .stats-card__body--color .value__number--alt-color {
   color: #415519;
+}
+
+.stats-card__body--color .value__label {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
+}
+
+.stats-card__body--color .value__label--right {
+  float: right;
 }
 
 .stats-card__body--alt-color .value__number {
@@ -2424,13 +2487,24 @@ table {
 
 .stats-card__body--alt-color .value__number--large {
   font-family: 'MuseoSans';
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.666rem;
 }
 
 .stats-card__body--alt-color .value__number--alt-color {
   color: #415519;
+}
+
+.stats-card__body--alt-color .value__label {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
+}
+
+.stats-card__body--alt-color .value__label--right {
+  float: right;
 }
 
 .stats-card__element {
@@ -2738,11 +2812,6 @@ div.col-twelve:last-child {
 
 * {
   margin: 0;
-  font-family: 'MuseoSans';
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.333rem;
-  color: inherit;
 }
 
 html,
