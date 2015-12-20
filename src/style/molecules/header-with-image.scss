@@ -1,7 +1,15 @@
 @mixin header-with-image {
   @include b(header) {
-    @include text(medium);
-    margin-bottom: 20px;
+    @include e(text) {
+      @extend %color-base;
+      @include text(medium, thin);
+      margin-bottom: 20px;
+    }
+
+    @include e(sup) {
+      @include text(small, bold);
+      @include color($green);
+    }
 
     @include e(image) {
       float: left;

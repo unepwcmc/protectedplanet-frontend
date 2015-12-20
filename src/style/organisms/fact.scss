@@ -1,5 +1,5 @@
 @include b(fact) { $block: &;
-  margin-bottom: 0.666em;
+  margin-bottom: .666em;
 
   @include e(header) {
     @include header-with-delimiter($border-bottom: (
@@ -9,9 +9,9 @@
   }
 
   @include e(subheader) {
-    @include text(body, thin);
-    font-weight: bolder;
-    padding: 1em 0 0.25em;
+    @include color($grey-100);
+    @include text(body);
+    margin-bottom: .5em;
   }
 
   @include e(body) {
@@ -29,16 +29,16 @@
   }
 
   @include e(single-figure) {
-    @include text--alt(xxxxlarge, normal);
+    @include text--alt(xxxxlarge, bold);
     @include color($green);
 
     @include m(push-down) {
-      margin-bottom: 0.4em;
+      margin-bottom: .4em;
     }
   }
 
   @include e(external-link) {
-    margin-left: 0.25em;
+    margin-left: .25em;
     color: $fact-external-link__color;
   }
 }

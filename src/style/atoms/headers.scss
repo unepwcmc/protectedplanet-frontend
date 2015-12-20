@@ -1,6 +1,6 @@
 @mixin header-with-delimiter($border-bottom: ($color, $size)) {
   @extend %color-base;
-  @include text(headline, x-thin);
+  @include text(headline, thin);
 
   padding-bottom: .25rem;
 
@@ -15,7 +15,6 @@
     $border-bottom: (color: $grey-15, size: 1px)
   );
 
-  @include m(bold) {
-    @include text(body);
-  }
+  @include m(bold) { @include font-weight(normal); }
+  @include m(smaller) { @include text(body, thin); }
 }

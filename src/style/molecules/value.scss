@@ -9,11 +9,20 @@
       }
 
       @include m(large) {
-        @include text(large);
+        @include text(xlarge, bold);
       }
 
       @include m(alt-color) {
         @include color($number-alt-color__color);
+      }
+    }
+
+    @include e(label) {
+      @extend %color-base;
+      @include text(body, thin);
+
+      @include m(right) {
+        float: right;
       }
     }
   }

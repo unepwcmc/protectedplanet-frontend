@@ -1,4 +1,9 @@
 @mixin leaflet-control-zoom($color: $leaflet-control__color, $bg-color: $leaflet-control__bg-color, $font-size: $leaflet-control__font-size) {
+  .leaflet-control-layers-base {
+    @include text(small, bold);
+    @include color($green);
+  }
+
   .leaflet-control-zoom {
     @include _leaflet-control($color: $color, $bg-color: $bg-color, $font-size: $font-size);
   }
@@ -32,6 +37,8 @@
   }
 
   .leaflet-control-layers {
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
     label {
       cursor: pointer;
       display: inline-block;

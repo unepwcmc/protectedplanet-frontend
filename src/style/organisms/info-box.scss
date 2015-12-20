@@ -1,30 +1,27 @@
-@include b(info-box) { $block: &;
+@include b(info-box) {
   @extend %clearfix;
+  @extend %color-base;
 
   background-color: $info-box__bg-color;
   padding: $info-box__padding;
   margin-bottom: $info-box__margin-bottom;
 
-  @include e(header, $this: $block) {
-    @include header-with-delimiter($border-bottom: (
-      color: $fact-header__border-bottom-color,
-      size: $fact-header__border-bottom-size
-    ));
+  @include e(header) {
+    border-bottom: solid $fact-header__border-bottom-color $fact-header__border-bottom-size;
   }
 
-  @include e(column, $this: $block) {
+  @include e(column) {
     @extend .one-thirds;
   }
 
-  @include e(body, $this: $block) {
-    padding: $info-box-body__padding;
+  @include e(body) {
+    @include m(no-padding) { padding: 0; }
+    @include text(body, thin);
 
-    @include m(no-padding) {
-      padding: 0;
-    }
+    padding: $info-box-body__padding;
   }
 
-  @include e(row, $this: $block) {
+  @include e(row) {
     width: 100%;
 
     padding-top: 1rem;
@@ -33,14 +30,14 @@
     }
   }
 
-  @include e(link, $this: $block) {
+  @include e(link) {
     @include text(body, bold);
     color: $info-box-link__color;
 
     padding-bottom: $info-box-link__padding-bottom;
   }
 
-  @include e(link-icon, $this: $block) {
+  @include e(link-icon) {
     color: $info-box-link__color;
     margin-right: $info-box-link-icon__margin-right;
   }

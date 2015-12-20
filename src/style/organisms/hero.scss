@@ -4,13 +4,17 @@
     align-items: baseline;
     justify-content: space-between;
 
-    padding: 0 .666rem;
+    padding: 0 1.25rem;
     margin-bottom: .666rem;
   }
 
   @include e(title) {
     @include text(large);
     @include color($hero-title__color);
+
+    @include m(thin) {
+      @include text(large, thin);
+    }
 
     @include m(article) {
       padding: {
@@ -36,7 +40,6 @@
   }
 
   @include _top;
-
 
   @include map(
     $height: $hero-map__height,
