@@ -18,6 +18,7 @@
   }
 
   @include e(body) {
+    @include text(body, thin);
     margin-bottom: 1.5rem;
   }
 

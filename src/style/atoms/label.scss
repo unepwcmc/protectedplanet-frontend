@@ -1,4 +1,4 @@
-@mixin tag($bg-color) {
+@mixin label($bg-color) {
   @include text(small);
   @extend %color-base;
 
@@ -9,6 +9,6 @@
   padding: .333rem 1rem;
 }
 
-@include b(tag) {
-  @include tag($grey-5);
+@include b(label) {
+  @include label($grey-5);
 }
