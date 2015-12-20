@@ -1499,7 +1499,7 @@ table {
   display: table;
 }
 
-.header-with-delimiter, .tag, .table, .breadcrumbs, .alert__body, .value__label, .fact__header, .info-box, .search-result, .stats-card .header__text, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .article__paragraph {
+.header-with-delimiter, .label, .table, .breadcrumbs, .alert__body, .value__label, .fact__header, .info-box, .search-result, .stats-card .header__text, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .article__paragraph {
   color: #666666;
 }
 
@@ -1524,6 +1524,17 @@ table {
   line-height: 1.333rem;
 }
 
+.label {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
+  font-style: italic;
+  background-color: #f2f2f2;
+  margin-right: 1.25rem;
+  padding: .333rem 1rem;
+}
+
 .unepwcmc-logo {
   width: 75px;
   height: 50px;
@@ -1538,17 +1549,6 @@ table {
   background: url("images/IUCN_logo@2x.png") no-repeat;
   background-size: 65%;
   background-position: center;
-}
-
-.tag {
-  font-family: 'MuseoSans';
-  font-weight: 500;
-  font-size: 0.8125rem;
-  line-height: 1.333rem;
-  font-style: italic;
-  background-color: #f2f2f2;
-  margin-right: 1.25rem;
-  padding: .333rem 1rem;
 }
 
 .link-with-icon {
@@ -2299,6 +2299,10 @@ table {
 }
 
 .search-result__body {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
   margin-bottom: 1.5rem;
 }
 
