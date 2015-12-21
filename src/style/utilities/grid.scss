@@ -23,7 +23,7 @@
     margin: 0;
   }
 
-  @include media(max-width 769px) {
+  @media (max-width: 769px) {
     @include span-columns(12);
   }
 }
@@ -31,7 +31,7 @@
 @include b(two-thirds) {
   @include span-columns(8);
 
-  @include media(max-width 769px) {
+  @media (max-width: 769px) {
     @include span-columns(12);
   }
 }
@@ -39,7 +39,7 @@
 @include b(one-fourths) {
   @include span-columns(3);
 
-  @include media(max-width 769px) {
+  @media (max-width: 769px) {
     @include span-columns(12);
   }
 }
@@ -47,7 +47,7 @@
 @include b(three-fourths) {
   @include span-columns(9);
 
-  @include media(max-width 769px) {
+  @media (max-width: 769px) {
     @include span-columns(12);
   }
 }
@@ -71,4 +71,8 @@
     content: "";
     display: table;
   }
+}
+
+.pdf-page-break {
+  page-break-before: always;
 }

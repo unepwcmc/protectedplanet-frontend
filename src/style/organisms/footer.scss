@@ -23,7 +23,7 @@
 
     @include color($navbar-element__color);
 
-    @include text(headline, normal);
+    @include text(body);
     @include line-height(null);
   }
 }

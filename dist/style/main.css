@@ -1392,7 +1392,7 @@ table {
   margin: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media (max-width: 769px) {
   .one-thirds, .info-box__column {
     float: left;
     display: block;
@@ -1415,7 +1415,7 @@ table {
   margin-right: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media (max-width: 769px) {
   .two-thirds {
     float: left;
     display: block;
@@ -1438,7 +1438,7 @@ table {
   margin-right: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media (max-width: 769px) {
   .one-fourths {
     float: left;
     display: block;
@@ -1461,7 +1461,7 @@ table {
   margin-right: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media (max-width: 769px) {
   .three-fourths {
     float: left;
     display: block;
@@ -1497,6 +1497,10 @@ table {
   clear: both;
   content: "";
   display: table;
+}
+
+.pdf-page-break {
+  page-break-before: always;
 }
 
 .header-with-delimiter, .label, .table, .breadcrumbs, .alert__body, .value__label, .fact__header, .info-box, .search-result, .stats-card .header__text, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .article__paragraph {
@@ -1875,11 +1879,43 @@ table {
 }
 
 .hero__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  box-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  -o-align-items: baseline;
   align-items: baseline;
+  -ms-flex-align: baseline;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
   justify-content: space-between;
+  -ms-flex-pack: justify;
   padding: 0 1.25rem;
   margin-bottom: .666rem;
+}
+
+.hero__top--centered {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
 }
 
 .hero__title {
@@ -1895,6 +1931,13 @@ table {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2rem;
+}
+
+.hero__title--bigger {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.571rem;
 }
 
 .hero__title--article {
@@ -2268,8 +2311,8 @@ table {
   color: #ffffff;
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1rem;
+  line-height: 1.333rem;
 }
 
 .footer__element--right:nth-child(2) {

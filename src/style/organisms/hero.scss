@@ -1,11 +1,15 @@
 @mixin _top {
   @include e(top) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include flexbox;
+    @include align-items(baseline);
+    @include justify-content(space-between);
 
     padding: 0 1.25rem;
     margin-bottom: .666rem;
+
+    @include m(centered) {
+      @include justify-content(center);
+    }
   }
 
   @include e(title) {
@@ -14,6 +18,10 @@
 
     @include m(thin) {
       @include text(large, thin);
+    }
+
+    @include m(bigger) {
+      @include text(xxlarge);
     }
 
     @include m(article) {
