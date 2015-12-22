@@ -1,0 +1,6 @@
+@include b(cover-story) {
+  height: 42rem;
+
+  @import 'cover-story/_cover';
+  @import 'cover-story/_story';
+}

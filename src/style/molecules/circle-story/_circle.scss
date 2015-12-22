@@ -1,0 +1,9 @@
+@include e(circle) {
+  $circle-diameter: 170px;
+  float: left;
+
+  margin-right: 1.25rem;
+  border-radius: 100%;
+  height: $circle-diameter;
+  width: $circle-diameter;
+}

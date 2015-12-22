@@ -9,11 +9,21 @@
     background-color: $info-box__bg-color;
   }
 
+  @include m(overflow) {
+    margin: { left: -1rem; right: -1rem; }
+  }
+
+  @include m(alt-color) {
+    background-color: $green;
+    color: $white;
+  }
+
   @include m(white) {
     background-color: $white;
   }
 
-  @include m(lateral-padding) {
+  @include m(hero) {
+    padding-bottom: $info-box__padding * 1.5;
     padding-left: $info-box__padding * 1.5;
     padding-right: $info-box__padding * 1.5;
   }

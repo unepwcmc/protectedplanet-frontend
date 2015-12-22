@@ -13,6 +13,10 @@
     }
   }
 
+  @include m(push) {
+    &:not(:last-child) { margin-bottom: .5rem; }
+  }
+
   @include m(no-color) {
     color: inherit;
     font-weight: inherit;

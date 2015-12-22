@@ -1,0 +1,6 @@
+@include b(circle-story) {
+  @import 'circle-story/_body';
+  @import 'circle-story/_circle';
+  @import 'circle-story/_content';
+  @import 'circle-story/_title';
+}

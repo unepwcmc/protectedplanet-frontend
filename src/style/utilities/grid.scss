@@ -1,26 +1,36 @@
-@include b(container) {
-  @include m(profile) {
-    @extend %clearfix;
-    width: 80%;
-    margin: auto;
+@include b(row) {
+  @extend %clearfix;
+
+  @include m(push) {
+    margin-bottom: 5rem;
   }
 
-  @include m(fullscreen) {
-    @extend %clearfix;
-    width: 100%;
-    padding: 1.25rem;
-    padding-bottom: 0;
-  }
+  margin-bottom: 1em;
+}
 
-  @include m(right-padded) {
-    padding-right: 5%;
-  }
-
-  @include m(push-bottom) {
-    margin-bottom: 12rem;
+%clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
   }
 }
 
+.pdf-page-break { page-break-before: always; }
+.u-relative { position: relative; }
+.u-block { display: block; }
+.u-width-100 { width: 100%; }
+.u-center { text-align: center; }
+.u-bold { @include font-weight(bold); }
+.u-x-bold { @include font-weight(x-bold); }
+
+@include b(half) {
+  @include span-columns(6);
+
+  @media (max-width: 769px) {
+    @include span-columns(12);
+  }
+}
 
 @include b(one-thirds) {
   @include span-columns(4);
@@ -68,20 +78,3 @@
   padding-right: 5%;
 }
 
-.row {
-  margin-bottom: 1em;
-}
-
-%clearfix {
-  &::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-}
-
-.pdf-page-break { page-break-before: always; }
-
-.u-relative { position: relative; }
-.u-width-100 { width: 100%; }
-.u-center { text-align: center; }

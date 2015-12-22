@@ -15,6 +15,8 @@
 @import '../../../leaflet.markercluster/dist/MarkerCluster';
 // bower components
 
+// bem mixins
+@import 'utilities/bem';
 
 // variables
 @import 'variables/colors';
@@ -24,11 +26,6 @@
 @import 'variables/z-index';
 // variables
 
-// utilities
-@import 'utilities/reset';
-@import 'utilities/bem';
-@import 'utilities/grid';
-// utilities
 
 // atoms
 @import 'atoms/fonts';
@@ -51,6 +48,7 @@
 @import 'molecules/breadcrumbs';
 @import 'molecules/horizontal-bar';
 @import 'molecules/alert';
+@import 'molecules/circle-story';
 @import 'molecules/header-with-image';
 @import 'molecules/cube';
 @import 'molecules/search-bar';
@@ -60,6 +58,7 @@
 
 // organisms
 @import 'organisms/hero';
+@import 'organisms/cover-story';
 @import 'organisms/section';
 @import 'organisms/navbar';
 @import 'organisms/fact';
@@ -69,6 +68,7 @@
 @import 'organisms/stats-card';
 @import 'organisms/article';
 @import 'organisms/vertical-nav';
+@import 'organisms/container';
 // organisms
 
 // old pp assets
@@ -89,3 +89,7 @@
 @import 'old/static_pages';
 // old pp assets
 
+// utilities
+@import 'utilities/reset';
+@import 'utilities/grid';
+// utilities

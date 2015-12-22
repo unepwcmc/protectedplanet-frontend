@@ -1,10 +1,15 @@
 @include b(alert) {
-  @extend %flexbox;
-  @include align-items(flex-start);
+  @include m(flex) {
+    @extend %flexbox;
+    @include align-items(flex-start);
+  }
+
+  @include m(with-margin) {
+    margin-bottom: 2.5rem;
+  }
 
   background-color: $alert__bg-color;
   padding: .625rem;
-  margin-bottom: 2.5rem;
 
   @import 'alert/_body';
   @import 'alert/_icon';
