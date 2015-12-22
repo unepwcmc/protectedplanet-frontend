@@ -23,6 +23,8 @@
 .u-center { text-align: center; }
 .u-bold { @include font-weight(bold); }
 .u-x-bold { @include font-weight(x-bold); }
+.u-click-through { pointer-events: none; }
+.u-no-click-through { pointer-events: all; }
 
 @include b(half) {
   @include span-columns(6);

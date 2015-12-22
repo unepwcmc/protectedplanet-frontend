@@ -4365,6 +4365,14 @@ table {
   font-weight: 900;
 }
 
+.u-click-through {
+  pointer-events: none;
+}
+
+.u-no-click-through {
+  pointer-events: all;
+}
+
 .half {
   float: left;
   display: block;
