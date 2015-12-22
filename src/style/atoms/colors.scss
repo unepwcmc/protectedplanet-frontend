@@ -3,3 +3,5 @@
 }
 
 %color-base { @include color($color--base); }
+
+.u-green { @include color($green); }

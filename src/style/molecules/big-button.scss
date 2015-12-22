@@ -1,14 +1,19 @@
 @include b(big-button) {
   text-align: center;
-  @include text(body, bold);
+  @include text--alt(body, bold);
 
   color: $big-button__color;
   background-color: $big-button__bg-color;
 
   border-radius: $big-button__border-radius;
   padding: $big-button__padding;
+  height: 40px;
 
   @include e(icon) {
     margin-right: $big-button-icon__margin-right;
+
+    @include m(closer) {
+      margin-right: $big-button-icon__margin-right - .25rem;
+    }
   }
 }

@@ -16,5 +16,8 @@
   );
 
   @include m(bold) { @include font-weight(normal); }
-  @include m(smaller) { @include text(body, thin); }
+  @include m(smaller) { @include text(body, null); }
+  @include m(bigger) { @include text(medium, null); }
+
+  @include m(no-margin-bottom) { margin-bottom: 0; }
 }

@@ -10,22 +10,10 @@ $form-factors: (
   xxxxlarge: (
     font-size: 4.8rem, line-height: 4.666rem
   ),
-  xxxxlarge-alt: (
-    font-size: 4.8rem, line-height: 4.666rem
-  ),
   xxxlarge: (
     font-size: 4rem, line-height: 4rem
   ),
   xxlarge: (
-    font-size: 3.2rem, line-height: 3.571rem
-  ),
-  xxlarge-bold: (
-    font-size: 3.2rem, line-height: 3.571rem
-  ),
-  xxlarge-alt: (
-    font-size: 3.2rem, line-height: 3.571rem
-  ),
-  xxlarge-alt-bold: (
     font-size: 3.2rem, line-height: 3.571rem
   ),
   xlarge: (
@@ -37,36 +25,15 @@ $form-factors: (
   medium: (
     font-size: 1.4rem, line-height: 2rem
   ),
-  medium-alt: (
-    font-size: 1.4rem, line-height: 2rem
-  ),
   headline: (
-    font-size: 1.2rem, line-height: 1.666rem
-  ),
-  headline-alt: (
-    font-size: 1.2rem, line-height: 1.666rem
-  ),
-  headline-alt-bolder: (
     font-size: 1.2rem, line-height: 1.666rem
   ),
   body: (
     font-size: 1rem, line-height: 1.333rem
   ),
-  body-alt: (
-    font-size: 1rem, line-height: 1.333rem
-  ),
-  body-bolder: (
-    font-size: 1rem, line-height: 1.333rem
-  ),
-  body-alt-bolder: (
-    font-size: 1rem, line-height: 1.333rem
-  ),
   small: (
     font-size: .8125rem, line-height: 1.333rem
   ),
-  small-bolder: (
-    font-size: .8125rem, line-height: 1.333rem
-  )
 );
 
 @function weight($name) {

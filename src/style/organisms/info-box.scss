@@ -2,43 +2,26 @@
   @extend %clearfix;
   @extend %color-base;
 
-  background-color: $info-box__bg-color;
   padding: $info-box__padding;
   margin-bottom: $info-box__margin-bottom;
 
-  @include e(header) {
-    border-bottom: solid $fact-header__border-bottom-color $fact-header__border-bottom-size;
+  @include m(fill-color) {
+    background-color: $info-box__bg-color;
   }
 
-  @include e(column) {
-    @extend .one-thirds;
+  @include m(white) {
+    background-color: $white;
   }
 
-  @include e(body) {
-    @include m(no-padding) { padding: 0; }
-    @include text(body, thin);
-
-    padding: $info-box-body__padding;
+  @include m(lateral-padding) {
+    padding-left: $info-box__padding * 1.5;
+    padding-right: $info-box__padding * 1.5;
   }
 
-  @include e(row) {
-    width: 100%;
-
-    padding-top: 1rem;
-    &:not(:last-child) {
-      border-bottom: solid 1px $info-box-row__border-bottom;
-    }
-  }
-
-  @include e(link) {
-    @include text(body, bold);
-    color: $info-box-link__color;
-
-    padding-bottom: $info-box-link__padding-bottom;
-  }
-
-  @include e(link-icon) {
-    color: $info-box-link__color;
-    margin-right: $info-box-link-icon__margin-right;
-  }
+  @import "info-box/_body";
+  @import "info-box/_column";
+  @import "info-box/_header";
+  @import "info-box/_link-icon";
+  @import "info-box/_link";
+  @import "info-box/_row";
 }

@@ -47,12 +47,12 @@
     bottom: 2em;
   }
 
-  @include _top;
+  @include m(push) {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
 
-  @include map(
-    $height: $hero-map__height,
-    $width: $hero-map__width
-  );
+  @include _top;
 
   @include e(cover) {
     @extend %flexbox;

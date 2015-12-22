@@ -1,4 +1,4 @@
-@mixin alert {
+@include b(alert) {
   @extend %flexbox;
   @include align-items(flex-start);
 
@@ -6,38 +6,7 @@
   padding: .625rem;
   margin-bottom: 2.5rem;
 
-  @include e(icon) {
-    @include text--icon(small, thin);
-
-    border-radius: 100%;
-    margin: { right: .5rem; top: -.125rem; };
-    padding: .5rem;
-
-    @include m(warning) {
-      color: $alert__bg-color;
-      background-color: $alert-warning--color;
-    }
-
-    @include m(success) {
-      color: $alert__bg-color;
-      background-color: $alert-success--color;
-    }
-  }
-
-  @include e(title) {
-    @include text--alt(headline, bold);
-    margin-bottom: .5rem;
-
-    @include m(warning) { color: $alert-warning--color; }
-    @include m(success) { color: $alert-success--color; }
-  }
-
-  @include e(body) {
-    @include text(body);
-    @extend %color-base;
-  }
-}
-
-@include b(alert) {
-  @include alert;
+  @import 'alert/_body';
+  @import 'alert/_icon';
+  @import 'alert/_title';
 }

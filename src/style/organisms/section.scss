@@ -1,0 +1,9 @@
+@include b(section) {
+  @include e(header) {
+    @extend %color-base;
+    @include text(xlarge, thin);
+
+    padding-bottom: 1.5rem;
+    border-bottom: solid 1px $grey-15;
+  }
+}

@@ -5,6 +5,13 @@
     margin: auto;
   }
 
+  @include m(fullscreen) {
+    @extend %clearfix;
+    width: 100%;
+    padding: 1.25rem;
+    padding-bottom: 0;
+  }
+
   @include m(right-padded) {
     padding-right: 5%;
   }
@@ -73,6 +80,8 @@
   }
 }
 
-.pdf-page-break {
-  page-break-before: always;
-}
+.pdf-page-break { page-break-before: always; }
+
+.u-relative { position: relative; }
+.u-width-100 { width: 100%; }
+.u-center { text-align: center; }
