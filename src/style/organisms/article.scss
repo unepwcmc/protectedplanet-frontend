@@ -6,13 +6,13 @@
 
   @include e(title) {
     margin-bottom: 2.5rem;
-    @include text(xxlarge, x-thin);
+    @include text(xxlarge, thin);
     @include color($color--base);
 
     @include m(paragraph) {
       margin-bottom: 2rem;
 
-      @include text(headline, x-thin);
+      @include text(medium);
       @extend %color-base;
     }
   }

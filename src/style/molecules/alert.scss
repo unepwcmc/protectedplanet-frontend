@@ -4,7 +4,7 @@
     @include align-items(flex-start);
   }
 
-  @include m(with-margin) {
+  @include m(push) {
     margin-bottom: 2.5rem;
   }
 
