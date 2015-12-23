@@ -1751,7 +1751,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   -ms-flex-align: start;
 }
 
-.alert--with-margin {
+.alert--push {
   margin-bottom: 2.5rem;
 }
 
@@ -2044,7 +2044,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding-left: .5rem;
   padding-right: .5rem;
   font-family: 'MuseoSans';
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3.2rem;
   line-height: 3.571rem;
   color: #666666;
@@ -2643,7 +2643,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .article__title {
   margin-bottom: 2.5rem;
   font-family: 'MuseoSans';
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3.2rem;
   line-height: 3.571rem;
   color: #666666;
@@ -2652,9 +2652,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .article__title--paragraph {
   margin-bottom: 2rem;
   font-family: 'MuseoSans';
-  font-weight: 100;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .article__paragraph {
