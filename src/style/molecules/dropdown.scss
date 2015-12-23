@@ -1,0 +1,31 @@
+@include b(dropdown) {
+  background-color: $green--dark;
+
+  left:0;
+  padding: 0 .625rem;
+  padding-bottom: 1.5rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+
+  @include e(trigger) {
+    display: inline-block;
+    position: relative;
+  }
+
+  @include e(inner) {
+    border-top: solid 2px $green;
+    padding-top: .5rem;
+  }
+
+  @include e(element) {
+    &:hover { background-color: $green; }
+
+    @include color(white);
+    @include text(body);
+
+    display: block;
+    padding: .625rem 1.25rem;
+    margin: 0 -.625rem;
+  }
+}

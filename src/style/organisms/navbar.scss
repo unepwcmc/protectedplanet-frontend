@@ -8,6 +8,11 @@
   @include e(element) {
     padding: 0 .625rem;
 
+    @include m(dark) {
+      background-color: $navbar-element-dark__bg-color;
+      &:hover { background-color: $navbar-element-dark__bg-color !important; }
+    }
+
     @include m(with-separator) {
       @include align-self(center);
       @include line-height($navbar__height/2);

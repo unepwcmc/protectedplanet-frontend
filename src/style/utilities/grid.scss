@@ -19,6 +19,7 @@
 .pdf-page-break { page-break-before: always; }
 .u-relative { position: relative; }
 .u-block { display: block; }
+.u-hide { display: none; }
 .u-width-100 { width: 100%; }
 .u-center { text-align: center; }
 .u-bold { @include font-weight(bold); }
