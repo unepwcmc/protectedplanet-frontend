@@ -1,0 +1,9 @@
+.s-article {
+  h2, h3, h4, h5 {
+    @extend .article__title;
+    @extend .article__title--paragraph;
+  }
+
+  p { @extend .article__paragraph; }
+  b { @extend .article__bold-text; }
+}
