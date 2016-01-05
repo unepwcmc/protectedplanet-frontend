@@ -16,4 +16,10 @@
       margin-right: $big-button-icon__margin-right - .25rem;
     }
   }
+
+  @include m(alt-colors) {
+    background-color: $big-button__color;
+    border: solid 1px $grey-15;
+    color: $big-button__bg-color;
+  }
 }

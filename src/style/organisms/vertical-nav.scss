@@ -1,4 +1,6 @@
 @mixin vertical-nav {
+  margin-bottom: 2.5rem;
+
   @include e(element) {
     display: block;
 
