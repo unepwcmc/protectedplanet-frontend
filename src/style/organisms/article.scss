@@ -22,7 +22,7 @@
   }
 
   @include e(paragraph) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     @include text(body, thin);
     @extend %color-base;
