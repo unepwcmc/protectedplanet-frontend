@@ -1,0 +1,16 @@
+@mixin fa($direction, $margin: null) {
+  $unicodes: (
+    arrow-up: "\f0de",
+    arrow-down: "\f0dd",
+    arrow-both: "\f0dc",
+    chevron-down: "\f078",
+    chevron-up: "\f077",
+  );
+
+  content: map-get($unicodes, $direction);
+  font-family: 'FontAwesome';
+
+  @if($margin != null) {
+    margin-#{map-get($margin, direction)}: map-get($margin, value);
+  }
+}
