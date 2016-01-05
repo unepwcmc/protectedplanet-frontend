@@ -15,6 +15,10 @@
       @include text(medium);
       @extend %color-base;
     }
+
+    @include m(smaller) {
+      @include text(xlarge, thin);
+    }
   }
 
   @include e(paragraph) {

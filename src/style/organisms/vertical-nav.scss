@@ -3,10 +3,15 @@
     display: block;
 
     @include text(body, thin);
-    @include line-height(2.5rem);
+    @include line-height(1.5rem);
 
-    padding-left: 2rem;
     border-bottom: solid 1px $grey-5;
+    padding: {
+      left: 2rem;
+      top: .5rem;
+      bottom: .5rem;
+      right: .5rem;
+    }
 
     @include m(heading) {
       @include color($green);
@@ -20,9 +25,32 @@
     }
 
     @include m(selected) {
+      @include font-weight(normal);
       @include color($green);
       border-left: solid .333rem $grey-15;
       padding-left: 1.666rem;
+    }
+
+
+    @include m(active) {
+      @include font-weight(normal);
+      @include color($green);
+    }
+
+    @include m(expandable) {
+      &:after { @include color($green); }
+
+      @include flexbox;
+      @include justify-content(space-between);
+      cursor: pointer;
+    }
+
+    @include m(opened) {
+      &:after { @include fa(chevron-up); }
+    }
+
+    @include m(closed) {
+      &:after { @include fa(chevron-down); }
     }
   }
 }
