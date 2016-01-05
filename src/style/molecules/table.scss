@@ -19,20 +19,20 @@
 
     &:after {
       @include color($green);
-      @include sort-arrow(both, $margin: (direction: left, value: 5px));
+      @include fa(arrow-both, $margin: (direction: left, value: 5px));
     }
 
     @include m(sort-asc) {
       &:after {
         @include color($green);
-        @include sort-arrow(up, $margin: (direction: left, value: 5px));
+        @include fa(arrow-up, $margin: (direction: left, value: 5px));
       }
     }
 
     @include m(sort-desc) {
       &:after {
         @include color($green);
-        @include sort-arrow(down, $margin: (direction: left, value: 5px));
+        @include fa(arrow-down, $margin: (direction: left, value: 5px));
       }
     }
   }
