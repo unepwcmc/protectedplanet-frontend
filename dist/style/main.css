@@ -1324,7 +1324,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 0 28%;
 }
 
-.header-with-delimiter, .label, .table, .breadcrumbs, .alert__body, .value__label, .section__header, .fact__header, .info-box, .search-result, .stats-card .header__text, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .s-article h2, .s-article h3, .s-article h4, .s-article h5, .article__paragraph, .s-article p {
+.header-with-delimiter, .label, .table, .expandable-section__header, .expandable-section__switch:after, .breadcrumbs, .alert__body, .value__label, .section__header, .fact__header, .info-box, .search-result, .stats-card .header__text, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .s-article h2, .s-article h3, .s-article h4, .s-article h5, .article__paragraph, .s-article p {
   color: #666666;
 }
 
@@ -1440,7 +1440,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 0 .625rem;
   padding-bottom: 1.5rem;
   position: absolute;
-  width: 100%;
+  min-width: 100%;
+  white-space: nowrap;
   z-index: 1000;
 }
 
@@ -1688,6 +1689,43 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .table--with-total .table__row:last-child td {
   padding-top: 1em;
+}
+
+.expandable-section {
+  margin-bottom: .625rem;
+}
+
+.expandable-section__header {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  padding: .5rem 1.25rem;
+}
+
+.expandable-section__header:hover {
+  background-color: #dfe0e1;
+}
+
+.expandable-section__switch {
+  float: right;
+}
+
+.expandable-section__switch.is-open:after {
+  content: "";
+  font-family: 'FontAwesome';
+}
+
+.expandable-section__switch.is-closed:after {
+  content: "";
+  font-family: 'FontAwesome';
+}
+
+.expandable-section__body {
+  border: solid 1px #f2f2f2;
+  padding: 1.25rem;
 }
 
 .reference:not(:last-child) {
@@ -3049,6 +3087,11 @@ html,
 body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
+}
+
+.body-container {
+  min-height: 100%;
+  margin-bottom: -2rem;
 }
 
 a, button {
