@@ -1,13 +1,15 @@
-@mixin fa($direction, $margin: null) {
+@mixin fa($icon, $margin: null) {
   $unicodes: (
     arrow-up: "\f0de",
     arrow-down: "\f0dd",
     arrow-both: "\f0dc",
     chevron-down: "\f078",
     chevron-up: "\f077",
+    plus-circle: "\f055",
+    minus-circle: "\f056",
   );
 
-  content: map-get($unicodes, $direction);
+  content: map-get($unicodes, $icon);
   font-family: 'FontAwesome';
 
   @if($margin != null) {

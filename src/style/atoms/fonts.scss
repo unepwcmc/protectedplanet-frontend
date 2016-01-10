@@ -1,4 +1,3 @@
-
 @mixin text($form-factor, $weight: normal) {
   font-family: 'MuseoSans';
   @if($weight != null) {
