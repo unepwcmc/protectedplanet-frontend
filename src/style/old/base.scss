@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+.body-container {
+  min-height: 100%;
+  margin-bottom: -2rem;
+}
 a, button {
   background-color: inherit;
   border: 0;
