@@ -35,4 +35,9 @@
   @include e(bold-text) {
     @include text--alt(body, bold);
   }
+
+  @include e(link) {
+    @include text(body, thin);
+    @include color($green);
+  }
 }
