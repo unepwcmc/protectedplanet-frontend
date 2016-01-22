@@ -9,10 +9,14 @@
 
     border-bottom: solid 1px $grey-5;
     padding: {
-      left: 2rem;
+      left: 1.25rem;
       top: .5rem;
       bottom: .5rem;
       right: .5rem;
+    }
+
+    @include m(child) {
+      padding-left: 2rem;
     }
 
     @include m(heading) {
@@ -30,9 +34,8 @@
       @include font-weight(normal);
       @include color($green);
       border-left: solid .333rem $grey-15;
-      padding-left: 1.666rem;
+      padding-left: 1rem;
     }
-
 
     @include m(active) {
       @include font-weight(normal);
