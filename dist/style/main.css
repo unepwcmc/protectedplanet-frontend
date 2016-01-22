@@ -2759,7 +2759,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 1.333rem;
 }
 
-.article__paragraph--bigger {
+.article__paragraph--bigger, .s-article p.bigger {
   font-family: 'MuseoSlab';
   font-weight: 300;
   font-size: 1.2rem;
