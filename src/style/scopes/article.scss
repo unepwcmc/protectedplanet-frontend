@@ -5,6 +5,8 @@
   }
 
   p { @extend .article__paragraph; }
+  p.bigger { @extend .article__paragraph--bigger; }
+
   b, strong { @extend .article__bold-text; }
 
   a { @extend .article__link; }
