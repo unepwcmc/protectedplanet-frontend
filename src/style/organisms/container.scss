@@ -1,6 +1,8 @@
 @include b(container) {
   @include m(profile) {
     @extend %clearfix;
+
+    max-width: $max-width--desktop;
     width: 80%;
     margin: auto;
   }
