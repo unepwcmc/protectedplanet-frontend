@@ -10,7 +10,7 @@
     @include color($color--base);
 
     @include m(paragraph) {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
 
       @include text(medium);
       @extend %color-base;
