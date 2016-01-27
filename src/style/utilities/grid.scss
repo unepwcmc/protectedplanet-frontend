@@ -26,6 +26,7 @@
 .u-x-bold { @include font-weight(x-bold); }
 .u-click-through { pointer-events: none; }
 .u-no-click-through { pointer-events: all; }
+.u-font-inherit { font: inherit; }
 
 @include b(half) {
   @include span-columns(6);
