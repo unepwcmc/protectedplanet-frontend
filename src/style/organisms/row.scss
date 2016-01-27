@@ -1,8 +1,16 @@
 @include b(row) {
   @extend %clearfix;
 
+  @include m(no-push) {
+    margin-bottom: 0;
+  }
+
   @include m(push) {
     margin-bottom: 5rem;
+  }
+
+  @include m(with-border-top) {
+    border-top: solid 1px $grey-5;
   }
 
   margin-bottom: 1em;
