@@ -1,0 +1,48 @@
+@include e(element) {
+  position: relative;
+  padding: 0 .625rem;
+
+  @include m(dark) {
+    background-color: $navbar-element-dark__bg-color;
+    &:hover { background-color: $navbar-element-dark__bg-color !important; }
+  }
+
+  @include m(with-separator) {
+    @include align-self(center);
+    @include line-height($navbar__height/2);
+    padding: 0 1rem;
+    border-left: solid 0.125rem $green--dark;
+  }
+
+  @include m(right) {
+    &:first-child  { margin-left: auto; }
+    &:nth-child(2) { margin-left: auto; }
+  }
+
+  @include m(bigger) {
+    @include text(headline);
+    @include line-height($navbar__height);
+  }
+
+  @include m(thinner) {
+    @include text(small);
+    @include line-height($navbar__height--thinner);
+  }
+
+  @include m(bold) {
+    @include text(body, bold);
+  }
+
+  @include m(push-right) {
+    margin-right: 1rem;
+  }
+
+  @include text(body);
+  @include line-height($navbar__height);
+
+  @include color($navbar-element__color);
+
+  &.active, &:hover { background-color: $navbar-element-hover__bg-color; }
+  &:active { background-color: $navbar-element-active__bg-color; }
+}
+
