@@ -6,24 +6,9 @@
   }
 }
 
-.pdf-page-break { page-break-before: always; }
-.u-relative { position: relative; }
-.u-block { display: block; }
-.u-hide { display: none; }
-.u-width-100 { width: 100%; }
-.u-center { text-align: center; }
-.u-bold { @include font-weight(bold); }
-.u-x-bold { @include font-weight(x-bold); }
-.u-click-through { pointer-events: none; }
-.u-no-click-through { pointer-events: all; }
-.u-font-inherit { font: inherit; }
-
 @include b(half) {
   @include span-columns(6);
-
-  @media (max-width: 769px) {
-    @include span-columns(12);
-  }
+  @media (max-width: 769px) { @include span-columns(12); }
 }
 
 @include b(one-thirds) {
@@ -34,33 +19,22 @@
     margin: 0;
   }
 
-  @media (max-width: 769px) {
-    @include span-columns(12);
-  }
+  @media (max-width: 769px) { @include span-columns(12); }
 }
 
 @include b(two-thirds) {
   @include span-columns(8);
-
-  @media (max-width: 769px) {
-    @include span-columns(12);
-  }
+  @media (max-width: 769px) { @include span-columns(12); }
 }
 
 @include b(one-fourths) {
   @include span-columns(3);
-
-  @media (max-width: 769px) {
-    @include span-columns(12);
-  }
+  @media (max-width: 769px) { @include span-columns(12); }
 }
 
 @include b(three-fourths) {
   @include span-columns(9);
-
-  @media (max-width: 769px) {
-    @include span-columns(12);
-  }
+  @media (max-width: 769px) { @include span-columns(12); }
 }
 
 @include b(space-between) {
@@ -71,4 +45,3 @@
 @include b(right-padded) {
   padding-right: 5%;
 }
-
