@@ -18,3 +18,11 @@
   background-position: center;
 }
 .iucn-logo { @include iucn-logo; }
+
+@mixin protectedplanet-logo {
+  padding-left: 2.5rem;
+  content: "";
+  display: block;
+  background: url("images/hand-solo.png") center left/2rem no-repeat;
+}
+.protectedplanet-logo { @include protectedplanet-logo; }
