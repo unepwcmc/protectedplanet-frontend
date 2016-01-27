@@ -7,7 +7,7 @@
 
   border-radius: $big-button__border-radius;
   padding: $big-button__padding;
-  height: 40px;
+  min-height: 40px;
 
   @include e(icon) {
     margin-right: $big-button-icon__margin-right;
