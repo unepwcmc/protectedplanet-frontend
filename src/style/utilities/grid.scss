@@ -1,13 +1,3 @@
-@include b(row) {
-  @extend %clearfix;
-
-  @include m(push) {
-    margin-bottom: 5rem;
-  }
-
-  margin-bottom: 1em;
-}
-
 %clearfix {
   &::after {
     clear: both;
