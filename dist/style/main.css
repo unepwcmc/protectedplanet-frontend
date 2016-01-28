@@ -2640,20 +2640,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   flex-wrap: wrap;
 }
 
-.stats-card__body .cube {
-  position: relative;
-  height: 6.25rem;
-  width: 6.25rem;
-  background-color: #dfe0e1;
-}
-
-.stats-card__body .cube__inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #702412;
-}
-
 .stats-card__body .value {
   position: relative;
   overflow: hidden;
@@ -2766,6 +2752,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: absolute;
 }
 
+.stats-card__body--color .cube {
+  position: relative;
+  height: 6.25rem;
+  width: 6.25rem;
+  background-color: #dfe0e1;
+}
+
+.stats-card__body--color .cube__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #702412;
+}
+
 .stats-card__body--alt-color .value {
   position: relative;
   overflow: hidden;
@@ -2820,6 +2820,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 50%;
   bottom: 0;
   position: absolute;
+}
+
+.stats-card__body--alt-color .cube {
+  position: relative;
+  height: 6.25rem;
+  width: 6.25rem;
+  background-color: #dfe0e1;
+}
+
+.stats-card__body--alt-color .cube__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3a76bb;
 }
 
 .stats-card__element {
