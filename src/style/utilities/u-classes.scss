@@ -1,13 +1,25 @@
-.u-pdf-page-break { page-break-before: always; }
-.u-relative { position: relative; }
-.u-block { display: block; }
-.u-inline-block { display: inline-block; }
-.u-hide { display: none; }
-.u-width-100 { width: 100%; }
-.u-center { text-align: center; }
-.u-bold { @include font-weight(bold); }
-.u-x-bold { @include font-weight(x-bold); }
-.u-click-through { pointer-events: none; }
-.u-no-click-through { pointer-events: all; }
-.u-font-inherit { font: inherit; }
+// position
+.u-relative         { position: relative;           }
 
+// display
+.u-block            { display: block;               }
+.u-inline-block     { display: inline-block;        }
+.u-hide             { display: none;                }
+
+// sizes
+.u-width-100        { width: 100%;                  }
+
+// text
+.u-font-inherit     { font: inherit;                }
+.u-center           { text-align: center;           }
+.u-bold             { @include font-weight(bold);   }
+.u-x-bold           { @include font-weight(x-bold); }
+
+// floats
+.u-left             { float: left;                  }
+.u-right            { float: right;                 }
+
+// misc
+.u-click-through    { pointer-events: none;         }
+.u-no-click-through { pointer-events: all;          }
+.u-pdf-page-break   { page-break-before: always;    }
