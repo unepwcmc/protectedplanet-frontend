@@ -37,6 +37,10 @@
   @media (max-width: 769px) { @include span-columns(12); }
 }
 
+@include b(flex-start) {
+  @extend %flexbox;
+}
+
 @include b(space-between) {
   @extend %flexbox;
   @include justify-content(space-between);
