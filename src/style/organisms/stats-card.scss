@@ -26,5 +26,9 @@
   @include e(element) {
     margin-right: 1rem;
     margin-bottom: 1rem;
+
+    @include m(push-right) {
+      margin-right: 2.5rem;
+    }
   }
 }
