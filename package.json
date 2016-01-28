@@ -1,6 +1,6 @@
 {
   "name": "protectedplanet-frontend",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "description": "A portable bower package containing all the ProtectedPlanet front-end",
   "main": "gulpfile.js",
   "scripts": {
