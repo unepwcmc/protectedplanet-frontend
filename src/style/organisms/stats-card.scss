@@ -1,11 +1,9 @@
 @include b(stats-card) {
-  &:first-child {
+  &:not(:last-child) {
     border-bottom: dashed 1px $grey-33;
   }
 
   padding: 30px 0;
-
-  @include header-with-image;
 
   @include e(body) {
     @extend %flexbox;
