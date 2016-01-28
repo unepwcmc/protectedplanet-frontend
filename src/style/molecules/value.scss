@@ -1,20 +1,17 @@
 @mixin value($number__color: $value-number__color, $number-alt-color__color: $value-number-alt-color__color) {
   @include b(value) { $block: &;
+    position: relative;
+    overflow: hidden;
+
     @include e(number) {
       @include color($number__color);
       @include text--alt(medium, bold);
 
-      @include m(xxlarge) {
-        @include text--alt(xxlarge, bold);
-      }
+      @include m(xxlarge)   { @include text--alt(xxlarge, bold); }
+      @include m(xxxxlarge) { @include text--alt(xxxxlarge, bold); }
+      @include m(large)     { @include text(xlarge, bold); }
 
-      @include m(large) {
-        @include text(xlarge, bold);
-      }
-
-      @include m(alt-color) {
-        @include color($number-alt-color__color);
-      }
+      @include m(alt-color) { @include color($number-alt-color__color); }
     }
 
     @include e(label) {
@@ -23,6 +20,14 @@
 
       @include m(right) {
         float: right;
+      }
+
+      @include m(side) {
+        margin: 0 1rem;
+
+        width: 50%;
+        bottom: 0;
+        position: absolute;
       }
     }
   }
