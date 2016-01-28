@@ -11,15 +11,16 @@
     @include align-items(flex-end);
     @include flex-wrap(wrap);
 
-    @include cube(6.25rem, $bg-color: $grey-15, $fill-color: $brown);
     @include value;
 
     @include m(color) {
       @include value($brown);
+      @include cube(6.25rem, $bg-color: $grey-15, $fill-color: $brown);
     }
 
     @include m(alt-color) {
       @include value($blue--light);
+      @include cube(6.25rem, $bg-color: $grey-15, $fill-color: $blue--light);
     }
   }
 
