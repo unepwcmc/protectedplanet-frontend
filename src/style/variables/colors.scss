@@ -7,6 +7,7 @@ $green: #71a32b;
 $green--dark: #699728;
 $green--darker: #415519;
 $green--light: #83af46;
+$green--lighter: #e3edd5;
 $brown: #702412;
 $white: #ffffff;
 
@@ -48,10 +49,16 @@ $orange $orange--dark $orange--lighter $brown-bg $yellow,
 $grey-100 $grey-77 $grey-55 $grey-33 $grey-15 $grey-5 $grey-3 !default;
 
 // atoms/leaflet-control
-$leaflet-control__color: $grey-100 !default;
+$leaflet-control__color: $green !default;
 $leaflet-control__bg-color: $white !default;
 $leaflet-control__disabled-color: $grey-5 !default;
 $leaflet-control__border: $grey-15 !default;
+
+// atoms/colors
+$link__color: $green !default;
+$link__color--hover: $green--light !default;
+$link__color--pressed: $green--dark !default;
+$link__color--visited: $green--light !default;
 
 // molecules/link-with-icon
 $link-with-icon__color: $green !default;
@@ -65,8 +72,12 @@ $reference-link__color: $green !default;
 $reference-link-icon__color: $green !default;
 
 // molecules/big-button
-$big_button__color: $white !default;
-$big_button__bg-color: $green !default;
+$big-button__color: $white !default;
+$big-button__bg-color: $green !default;
+$big-button__bg-color--hover: $green--light !default;
+$big-button__bg-color--pressed: $green--dark !default;
+$big-button__bg-color--visited: $green--light !default;
+$big-button__bg-color--disabled: $green--lighter !default;
 
 // molecules/horizontal-bar
 $horizontal-bar__bg-color: $green !default;

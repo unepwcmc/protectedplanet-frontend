@@ -6,6 +6,9 @@
 .u-inline-block     { display: inline-block;        }
 .u-hide             { display: none;                }
 
+// colors
+.u-green            { @include color($green);       }
+
 // sizes
 .u-width-100        { width: 100%;                  }
 

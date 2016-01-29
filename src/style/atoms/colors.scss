@@ -2,6 +2,24 @@
   color: $color;
 }
 
-%color-base { @include color($color--base); }
+@mixin color-with-state($base-color, $states: (), $property: color) {
+  #{$property}: $base-color;
 
-.u-green { @include color($green); }
+  @each $state, $color in $states {
+    &:#{$state} {
+      #{$property}: $color;
+    }
+  }
+}
+
+%color-base { @include color($color--base); }
+%acts-as-link {
+  &:hover, &:active { text-decoration: underline; }
+  @include color-with-state($green, (
+    hover: $link__color--hover,
+    active: $link__color--pressed,
+    'visited:active': $link__color--pressed,
+    visited: $link__color--visited,
+  ));
+}
+

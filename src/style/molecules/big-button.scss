@@ -3,7 +3,11 @@
   @include text--alt(body, bold);
 
   color: $big-button__color;
-  background-color: $big-button__bg-color;
+  @include color-with-state($big-button__bg-color, (
+    hover: $big-button__bg-color--hover,
+    active: $big-button__bg-color--pressed,
+    disabled: $big-button__bg-color--disabled
+  ), background-color);
 
   border-radius: $big-button__border-radius;
   padding: $big-button__padding;
