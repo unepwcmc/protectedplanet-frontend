@@ -24,9 +24,13 @@ a, button {
   display: inline-block;
   font: inherit;
   padding: 0;
-  text-decoration: none;
+
+  &:link {
+    text-decoration: none;
+  }
 
   &:focus { outline:none; }
+
 }
 
 sup {

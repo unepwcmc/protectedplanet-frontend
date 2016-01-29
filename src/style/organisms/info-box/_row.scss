@@ -2,9 +2,7 @@
   width: 100%;
 
   padding-top: 1rem;
-  &:not(:last-child) {
-    border-bottom: solid 1px $info-box-row__border-bottom;
-  }
+  border-bottom: solid 1px $info-box-row__border-bottom;
 
   @include m(around-padding) {
     padding: 2rem 0;
@@ -14,6 +12,10 @@
     &:not(:last-child) {
       border-bottom: solid 1px $grey-15;
     }
+  }
+
+  @include m(no-border) {
+    border: none;
   }
 }
 
