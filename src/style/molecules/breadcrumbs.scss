@@ -6,6 +6,6 @@
   padding: { left: .666rem; right: .666rem; }
 
   @include e(link) {
-    @include color($green);
+    @extend %acts-as-link;
   }
 }
