@@ -1328,27 +1328,27 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #666666;
 }
 
-.link-with-icon, .tooltip__element, .uservoice {
+.link-with-icon, .breadcrumbs__link, .tooltip__element, .uservoice {
   color: #71a32b;
 }
 
-.link-with-icon:hover, .tooltip__element:hover, .uservoice:hover, .link-with-icon:active, .tooltip__element:active, .uservoice:active {
+.link-with-icon:hover, .breadcrumbs__link:hover, .tooltip__element:hover, .uservoice:hover, .link-with-icon:active, .breadcrumbs__link:active, .tooltip__element:active, .uservoice:active {
   text-decoration: underline;
 }
 
-.link-with-icon:hover, .tooltip__element:hover, .uservoice:hover {
+.link-with-icon:hover, .breadcrumbs__link:hover, .tooltip__element:hover, .uservoice:hover {
   color: #83af46;
 }
 
-.link-with-icon:active, .tooltip__element:active, .uservoice:active {
+.link-with-icon:active, .breadcrumbs__link:active, .tooltip__element:active, .uservoice:active {
   color: #699728;
 }
 
-.link-with-icon:visited:active, .tooltip__element:visited:active, .uservoice:visited:active {
+.link-with-icon:visited:active, .breadcrumbs__link:visited:active, .tooltip__element:visited:active, .uservoice:visited:active {
   color: #699728;
 }
 
-.link-with-icon:visited, .tooltip__element:visited, .uservoice:visited {
+.link-with-icon:visited, .breadcrumbs__link:visited, .tooltip__element:visited, .uservoice:visited {
   color: #83af46;
 }
 
@@ -1824,6 +1824,18 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #71a32b;
 }
 
+.big-button--alt-colors:hover {
+  color: #ffffff;
+}
+
+.big-button--alt-colors:active {
+  color: #ffffff;
+}
+
+.big-button--alt-colors:disabled {
+  color: #ffffff;
+}
+
 .breadcrumbs {
   font-family: 'MuseoSans';
   font-weight: 500;
@@ -1833,10 +1845,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 2em;
   padding-left: .666rem;
   padding-right: .666rem;
-}
-
-.breadcrumbs__link {
-  color: #71a32b;
 }
 
 .horizontal-bar {
@@ -3028,11 +3036,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 1rem;
   line-height: 1.333rem;
   line-height: 1.5rem;
+  color: #666666;
   border-bottom: solid 1px #f2f2f2;
   padding-left: 1.25rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-right: .5rem;
+}
+
+.vertical-nav__element:hover {
+  color: #83af46;
+}
+
+.vertical-nav__element:active {
+  color: #699728;
 }
 
 .vertical-nav__element--child {
