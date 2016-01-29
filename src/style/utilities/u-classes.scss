@@ -22,6 +22,9 @@
 .u-left             { float: left;                  }
 .u-right            { float: right;                 }
 
+// box model
+.u-no-borders       { border: none !important;      }
+
 // misc
 .u-click-through    { pointer-events: none;         }
 .u-no-click-through { pointer-events: all;          }
