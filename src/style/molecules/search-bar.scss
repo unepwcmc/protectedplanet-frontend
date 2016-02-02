@@ -9,6 +9,8 @@
 
   @include e(input) {
     border: solid 1px $grey-15;
+    &:focus { outline: none; border-width: 2px; }
+
     flex-grow: 1;
     margin-right: .5rem;
     padding: 0 .5rem;
