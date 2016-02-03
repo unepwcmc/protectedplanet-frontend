@@ -1,31 +1,35 @@
 // position
-.u-relative         { position: relative;           }
+.u-relative         { position: relative;                   }
 
 // display
-.u-block            { display: block;               }
-.u-inline-block     { display: inline-block;        }
-.u-hide             { display: none;                }
+.u-block            { display: block;                       }
+.u-inline-block     { display: inline-block;                }
+.u-hide             { display: none;                        }
 
 // colors
-.u-green            { @include color($green);       }
+.u-green            { @include color($green);               }
+.u-base-color       { @extend %color--base;                 }
 
 // sizes
-.u-width-100        { width: 100%;                  }
+.u-width-100        { width: 100%;                          }
 
 // text
-.u-font-inherit     { font: inherit;                }
-.u-center           { text-align: center;           }
-.u-bold             { @include font-weight(bold);   }
-.u-x-bold           { @include font-weight(x-bold); }
+.u-font-inherit     { font: inherit;                        }
+.u-center           { text-align: center;                   }
+.u-bold             { @include font-weight(bold);           }
+.u-x-bold           { @include font-weight(x-bold);         }
+.u-medium           { @include text(medium);                }
+.u-alt-xlarge       { @include text--alt(xlarge, x-bold);   }
+.u-alt-xxlarge      { @include text--alt(xxlarge, x-bold);  }
 
 // floats
-.u-left             { float: left;                  }
-.u-right            { float: right;                 }
+.u-left             { float: left;                          }
+.u-right            { float: right;                         }
 
 // box model
-.u-no-borders       { border: none !important;      }
+.u-no-borders       { border: none !important;              }
 
 // misc
-.u-click-through    { pointer-events: none;         }
-.u-no-click-through { pointer-events: all;          }
-.u-pdf-page-break   { page-break-before: always;    }
+.u-click-through    { pointer-events: none;                 }
+.u-no-click-through { pointer-events: all;                  }
+.u-pdf-page-break   { page-break-before: always;            }
