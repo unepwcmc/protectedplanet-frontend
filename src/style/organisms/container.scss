@@ -21,4 +21,8 @@
   @include m(push-bottom) {
     margin-bottom: 12rem;
   }
+
+  @include m(push-top) {
+    margin-top: 12rem;
+  }
 }

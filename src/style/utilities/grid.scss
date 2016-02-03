@@ -7,8 +7,31 @@
 }
 
 @include b(half) {
+  @extend %with-right-border;
   @include span-columns(6);
   @media (max-width: 769px) { @include span-columns(12); }
+
+  @include m(no-margin) {
+    width: 50%;
+    margin: 0;
+  }
+
+  @include m(with-separator) {
+    position: relative;
+    border-right: solid 0.125rem $grey-15;
+
+    &:before { top: 0;    }
+    &:after  { bottom: 0; }
+    &:before, &:after {
+      background-color: $grey-5;
+
+      content: "";
+      width: .25rem;
+      height: .5rem;
+      position: absolute;
+      right: -.25rem;
+    }
+  }
 }
 
 @include b(one-thirds) {
