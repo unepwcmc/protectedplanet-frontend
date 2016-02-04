@@ -175,6 +175,8 @@ $width--search-sidebar: 270px;
   @include omega(4n);
 
   margin-bottom: 1rem;
+  border-right: 2px solid $grey-15;
+  border-right: 2px solid transparentize($grey-15, 0.2);
 }
 
 .inner-result {
