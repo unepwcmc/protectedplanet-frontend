@@ -1,10 +1,12 @@
 // position
 .u-relative         { position: relative;                   }
+.u-fixed            { position: fixed;                      }
 
 // display
 .u-block            { display: block;                       }
 .u-inline-block     { display: inline-block;                }
 .u-hide             { display: none;                        }
+.u-clearfix         { @extend %clearfix;                    }
 
 // colors
 .u-green            { @include color($green);               }
