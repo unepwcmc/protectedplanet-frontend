@@ -39,8 +39,6 @@ $width--search-sidebar: 270px;
 }
 
 .map-filters.search-map-filters {
-  overflow: hidden;
-  width: $width--search-sidebar;
   background: $color--search-filters-bg;
 
   transition: margin $search-sidebar-transition-time ease;
@@ -52,8 +50,6 @@ $width--search-sidebar: 270px;
   }
 
   header {
-    position: fixed;
-    width: $width--search-sidebar;
     height: 40px;
     background-color: $color--search-filters-header;
 
@@ -132,12 +128,6 @@ $width--search-sidebar: 270px;
   }
 }
 
-.search-parent #map,
-.search-parent .search-grid,
-.search-parent {
-  top: 120px;
-}
-
 .search-parent #map, .search-parent .search-grid {
   left: $width--search-sidebar;
 
@@ -173,29 +163,21 @@ $width--search-sidebar: 270px;
 }
 
 .search-grid {
-  overflow: scroll;
+  background-color: $grey-5;
+  padding: 0 1rem;
+}
+
+.result {
   background-color: $white;
-}
-
-.search-grid ul {
-  width: 100%;
-  float: left;
-  border-top: 20px solid $grey-33;
-  border-left: 20px solid $grey-33;
-}
-
-li.result {
   @include span-columns(3);
-  @include omega();
-  @include fill-parent;
-  margin-right: 0px;
-  width: 25%;
-  border: solid 20px $grey-33;
-  border-top: 0;
-  border-left: 0;
+  @include omega(4n);
+
+  margin-bottom: 1rem;
 }
 
 .inner-result {
+  @extend %color-base;
+  @include text(body);
   padding: 8px;
   position: relative;
   height: 128px;
@@ -232,18 +214,21 @@ li.result {
   }
 
   p {
+    @include text--alt(small, thin);
+    @include color($white);
     position: absolute;
     left: 8px;
     right: 8px;
     bottom: 8px;
-    color: $grey-77;
     padding: 3px 5px;
     font-size: 12px;
-    background: $grey-33;
+    background: $green;
   }
 }
 
 .pagination {
+  @include text(body, thin);
+  @extend %color-base;
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -252,11 +237,10 @@ li.result {
 
   a {
     margin: 5px;
-
   }
 
   .current {
-    font-style: normal;
-    font-family: MuseoSans-500;
+    @include text(body, bold);
+    @include color($green);
   }
 }

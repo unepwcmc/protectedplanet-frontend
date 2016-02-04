@@ -1,12 +1,6 @@
 @import 'transitions';
 
 .search-grid {
-  position: fixed;
-  top: 60px;
-  bottom: 75px;
-  left: 200px;
-  right: 0;
-
   transition: top $search-bar-transition-time ease;
 
   &.opened {
@@ -20,13 +14,7 @@
 }
 
 .map-filters {
-  float: left;
   height: 100%;
-  width: 200px;
   min-height: 100%;
-
-  &.sub-nav-open {
-    margin-top: 60px;
-  }
 }
 

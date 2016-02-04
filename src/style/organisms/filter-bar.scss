@@ -1,0 +1,39 @@
+@include b(filter-bar) {
+  @include text(body);
+  @extend %color-base;
+
+  @include e(header) {
+    @include line-height(2.5rem);
+    @include color($white);
+
+    background-color: $green--darker;
+
+    padding-left: 1rem;
+  }
+
+  @include e(header-icon) {
+    width: 2.5rem;
+    height: 2.5rem;
+    float: right;
+    border-left: solid 1px $white;
+  }
+
+  @include e(group) {
+    line-height: form-factor(headline, line-height);
+
+    padding: 1.5rem 1rem;
+    border-bottom: solid 2px $grey-5;
+  }
+
+  @include e(group-title) {
+    @include text(headline);
+    text-transform: uppercase;
+
+    margin-bottom: .5rem;
+  }
+
+  @include e(value) {
+    @include color($green);
+    @include font-weight(bold);
+  }
+}
