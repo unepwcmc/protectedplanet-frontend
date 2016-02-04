@@ -1,0 +1,10 @@
+@include e(value) {
+  @include color-with-state(inherit, (
+    hover: $filter-bar-value-hover__bg-color,
+    active: $filter-bar-value-active__bg-color,
+  ), background-color);
+
+  display: block;
+  width: 100%;
+  min-height: 2.5rem;
+}

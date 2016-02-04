@@ -14,37 +14,11 @@
     padding: 1.25rem;
   }
 
-  @include e(header) {
-    @include text(headline);
-  }
-
-  @include e(reset) {
-    color: $white;
-    @include text--alt(small, bold);
-
-    background-color: $green;
-    padding: 0 .25rem;
-
-    float: right;
-  }
-
-  @include e(body) {
-    padding: 1rem 0;
-  }
-
-  @include e(group) {
-    line-height: form-factor(headline, line-height);
-    margin-bottom: 1.5rem;
-  }
-
-  @include e(group-title) {
-    @include text(body);
-    margin-bottom: .5rem;
-    border-bottom: solid 1px $grey-4;
-  }
-
-  @include e(value) {
-    @include color($green);
-    @include font-weight(bold);
-  }
+  @import "filter-bar/_body";
+  @import "filter-bar/_clear";
+  @import "filter-bar/_count";
+  @import "filter-bar/_group";
+  @import "filter-bar/_group_title";
+  @import "filter-bar/_header";
+  @import "filter-bar/_value";
 }
