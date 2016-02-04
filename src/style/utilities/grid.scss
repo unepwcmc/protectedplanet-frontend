@@ -1,5 +1,7 @@
 %clearfix {
-  &::after {
+  overflow: hidden;
+
+  &:after {
     clear: both;
     content: "";
     display: table;
