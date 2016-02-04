@@ -1,6 +1,9 @@
 @include b(filter-bar) {
   position: fixed;
-  height: 100%;
+  overflow: scroll;
+  height: 80%;
+
+  @include span-columns(2.5);
 
   @include e(inner) {
     background-color: $grey-3;

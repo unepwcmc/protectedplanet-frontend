@@ -20,6 +20,10 @@
       @include text(large, thin);
     }
 
+    @include m(base) {
+      @include color($color--base);
+    }
+
     @include m(bigger) {
       @include text(xxlarge);
     }

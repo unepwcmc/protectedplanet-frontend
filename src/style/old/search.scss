@@ -163,9 +163,10 @@ $width--search-sidebar: 270px;
 }
 
 .search-grid {
-  @include shift(3);
+  @include span-columns(9.5);
+  @include shift(2.5);
   background-color: $grey-5;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .result {
