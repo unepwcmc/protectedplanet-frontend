@@ -4487,6 +4487,8 @@ nav .download-type-dropdown {
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-bottom: 1rem;
+  border-right: 2px solid #dfe0e1;
+  border-right: 2px solid rgba(223, 224, 225, 0.8);
 }
 
 .result:last-child {
