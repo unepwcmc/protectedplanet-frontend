@@ -1324,7 +1324,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 0 28%;
 }
 
-.header-with-delimiter, .label, .table, .s-article table, .expandable-section__header, .expandable-section__switch:after, .breadcrumbs, .alert__body, .header__text, .value__label, .section__header, .filter-bar, .fact__header, .form, .s-form, .form__input, .s-form input, .s-form textarea, .info-box, .search-result, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .s-article h1, .s-article h2, .s-article h3, .s-article h4, .s-article h5, .article__paragraph, .s-article p, .s-article ul li, .s-article ol li, .inner-result, .pagination {
+.header-with-delimiter, .label, .table, .s-article table, .expandable-section__header, .expandable-section__switch:after, .breadcrumbs, .alert__body, .header__text, .value__label, .section__header, .filter-bar__inner, .fact__header, .form, .s-form, .form__input, .s-form input, .s-form textarea, .info-box, .search-result, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__title--paragraph, .s-article h1, .s-article h2, .s-article h3, .s-article h4, .s-article h5, .article__paragraph, .s-article p, .s-article ul li, .s-article ol li, .inner-result, .pagination {
   color: #666666;
 }
 
@@ -1359,7 +1359,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 1.2rem;
   line-height: 1.666rem;
   padding-bottom: .25rem;
-  border-bottom: solid #dfe0e1 1px;
+  border-bottom: solid #bbbbbb 1px;
 }
 
 .header-with-delimiter--bold {
@@ -2535,39 +2535,53 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .filter-bar {
+  position: fixed;
+  height: 100%;
+}
+
+.filter-bar__inner {
+  background-color: #f8f8f8;
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.333rem;
+  padding: 1.25rem;
 }
 
 .filter-bar__header {
-  line-height: 2.5rem;
-  color: #ffffff;
-  background-color: #415519;
-  padding-left: 1rem;
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.666rem;
 }
 
-.filter-bar__header-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+.filter-bar__reset {
+  color: #ffffff;
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
+  background-color: #71a32b;
+  padding: 0 .25rem;
   float: right;
-  border-left: solid 1px #ffffff;
+}
+
+.filter-bar__body {
+  padding: 1rem 0;
 }
 
 .filter-bar__group {
   line-height: 1.666rem;
-  padding: 1.5rem 1rem;
-  border-bottom: solid 2px #f2f2f2;
+  margin-bottom: 1.5rem;
 }
 
 .filter-bar__group-title {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
-  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.333rem;
   margin-bottom: .5rem;
+  border-bottom: solid 1px #d8d8d8;
 }
 
 .filter-bar__value {
@@ -4398,6 +4412,7 @@ nav .download-type-dropdown {
 }
 
 .search-grid {
+  margin-left: 25.58941%;
   background-color: #f2f2f2;
   padding: 0 1rem;
 }
@@ -4887,6 +4902,10 @@ table {
   position: relative;
 }
 
+.u-fixed {
+  position: fixed;
+}
+
 .u-block {
   display: block;
 }
@@ -4968,7 +4987,11 @@ table {
   page-break-before: always;
 }
 
-.navbar::after, .info-box::after, .search-result::after, .row::after, .container--profile::after, .container--fullscreen::after {
+.navbar, .info-box, .search-result, .row, .container--profile, .container--fullscreen, .u-clearfix {
+  overflow: hidden;
+}
+
+.navbar:after, .info-box:after, .search-result:after, .row:after, .container--profile:after, .container--fullscreen:after, .u-clearfix:after {
   clear: both;
   content: "";
   display: table;
