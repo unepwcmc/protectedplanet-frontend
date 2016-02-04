@@ -12,7 +12,7 @@
 @include b(header-with-delimiter) {
   margin-bottom: .625rem;
   @include header-with-delimiter(
-    $border-bottom: (color: $grey-15, size: 1px)
+    $border-bottom: (color: $grey-33, size: 1px)
   );
 
   @include m(bold) { @include font-weight(normal); }

@@ -1,35 +1,43 @@
 @include b(filter-bar) {
-  @include text(body);
-  @extend %color-base;
+  position: fixed;
+  height: 100%;
 
-  @include e(header) {
-    @include line-height(2.5rem);
-    @include color($white);
+  @include e(inner) {
+    background-color: $grey-3;
 
-    background-color: $green--darker;
+    @include text(body);
+    @extend %color-base;
 
-    padding-left: 1rem;
+    padding: 1.25rem;
   }
 
-  @include e(header-icon) {
-    width: 2.5rem;
-    height: 2.5rem;
+  @include e(header) {
+    @include text(headline);
+  }
+
+  @include e(reset) {
+    color: $white;
+    @include text--alt(small, bold);
+
+    background-color: $green;
+    padding: 0 .25rem;
+
     float: right;
-    border-left: solid 1px $white;
+  }
+
+  @include e(body) {
+    padding: 1rem 0;
   }
 
   @include e(group) {
     line-height: form-factor(headline, line-height);
-
-    padding: 1.5rem 1rem;
-    border-bottom: solid 2px $grey-5;
+    margin-bottom: 1.5rem;
   }
 
   @include e(group-title) {
-    @include text(headline);
-    text-transform: uppercase;
-
+    @include text(body);
     margin-bottom: .5rem;
+    border-bottom: solid 1px $grey-4;
   }
 
   @include e(value) {

@@ -163,6 +163,7 @@ $width--search-sidebar: 270px;
 }
 
 .search-grid {
+  @include shift(3);
   background-color: $grey-5;
   padding: 0 1rem;
 }
