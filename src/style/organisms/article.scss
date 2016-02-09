@@ -9,15 +9,18 @@
     @include text(xxlarge, thin);
     @include color($color--base);
 
-    @include m(paragraph) {
-      margin-bottom: 1rem;
-
-      @include text(medium);
-      @extend %color-base;
-    }
-
     @include m(smaller) {
       @include text(xlarge, thin);
+    }
+
+    @include m(paragraph) {
+      @include text(medium);
+      margin-bottom: 1rem;
+    }
+
+    @include m(subparagraph) {
+      @include text(headline);
+      margin-bottom: 1rem;
     }
   }
 
@@ -38,6 +41,6 @@
 
   @include e(link) {
     @include text(body, thin);
-    @include color($green);
+    @extend %acts-as-link;
   }
 }

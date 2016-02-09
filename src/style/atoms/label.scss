@@ -7,6 +7,16 @@
   background-color: $bg-color;
   margin-right: 1.25rem;
   padding: .333rem 1rem;
+
+  @include m(code) {
+    font-size: inherit;
+    font-family: monospace;
+    font-style: normal;
+
+    padding: .333rem .5rem;
+    border-radius: .25rem;
+    margin-right: 0;
+  }
 }
 
 @include b(label) {

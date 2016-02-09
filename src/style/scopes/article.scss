@@ -1,7 +1,12 @@
 .s-article {
-  h1, h2, h3, h4, h5 {
+  h1 {
     @extend .article__title;
     @extend .article__title--paragraph;
+  }
+
+  h2, h3, h4, h5 {
+    @extend .article__title;
+    @extend .article__title--subparagraph;
   }
 
   p { @extend .article__paragraph; }
@@ -28,7 +33,12 @@
       position: absolute;
       left: -1.5rem;
     }
+  }
 
+  hr {
+    border: solid 1px $grey-5;
+    margin: 2rem auto;
+    width: 80%;
   }
 
   ol {
@@ -56,5 +66,9 @@
     tr:not(:first-child) {
       @extend .table__row;
     }
+  }
+
+  pre, code {
+    @extend .label, .label--code;
   }
 }
