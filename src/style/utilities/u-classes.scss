@@ -27,6 +27,7 @@
 .u-medium           { @include text(medium);                }
 .u-alt-xlarge       { @include text--alt(xlarge, x-bold);   }
 .u-alt-xxlarge      { @include text--alt(xxlarge, x-bold);  }
+.u-mono             { font-family: monospace;               }
 
 // floats
 .u-left             { float: left;                          }
