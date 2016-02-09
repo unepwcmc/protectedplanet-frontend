@@ -4164,8 +4164,7 @@ nav .download-type-dropdown {
 }
 
 #map.protected-area-map {
-  position: fixed;
-  height: 80%;
+  left: 400px;
 }
 
 .related-source {
