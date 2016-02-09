@@ -5,6 +5,15 @@
 
   @include span-columns(2.5);
 
+  @include m(larger) {
+    @include span-columns(3);
+  }
+
+  @include m(non-fixed) {
+    position: relative;
+    overflow: hidden;
+  }
+
   @include e(inner) {
     background-color: $grey-3;
 

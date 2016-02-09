@@ -4,7 +4,17 @@
     active: $filter-bar-value-active__bg-color,
   ), background-color);
 
+  @include color-with-state($color--base, (
+    hover: $link__color--hover,
+    active: $link__color--pressed,
+  ));
+
   display: block;
   width: 100%;
-  min-height: 2.5rem;
+  padding: .5rem;
+  cursor: pointer;
+
+  @include m(smaller) {
+    @include text(small);
+  }
 }

@@ -10,6 +10,7 @@
   padding: .5rem 0;
   border-bottom: solid 1px $grey-4;
   margin-bottom: .5rem;
+  width: 100%;
 
   &.is-open {
     &:after { float: right; @include fa(chevron-up); }
