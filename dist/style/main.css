@@ -1397,9 +1397,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: inherit;
   font-family: monospace;
   font-style: normal;
-  padding: .333rem .5rem;
+  padding: .1rem .5rem;
   border-radius: .25rem;
   margin-right: 0;
+  margin-bottom: 2rem;
 }
 
 .unepwcmc-logo {
@@ -5098,6 +5099,10 @@ table {
   font-weight: 900;
   font-size: 3.2rem;
   line-height: 3.571rem;
+}
+
+.u-mono {
+  font-family: monospace;
 }
 
 .u-left {
