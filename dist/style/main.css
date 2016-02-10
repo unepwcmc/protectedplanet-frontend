@@ -1324,7 +1324,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 0 28%;
 }
 
-.header-with-delimiter, .label, .s-article pre, .s-article code, .table, .s-article table, .expandable-section__header, .expandable-section__switch:after, .breadcrumbs, .alert__body, .header__text, .value__label, .section__header, .filter-bar__inner, .fact__header, .form, .s-form, .form__input, .s-form input, .s-form textarea, .info-box, .search-result, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .s-article p, .s-article ul li, .s-article ol li, .inner-result, .pagination {
+.header-with-delimiter, .label, .s-article pre, .s-article code, .table, .s-article table, .expandable-section__header, .expandable-section__switch:after, .breadcrumbs, .alert__body, .header__text, .value__label, .section__header, .filter-bar__inner, .fact__header, .form, .s-form, .form__input, .s-form input, .s-form textarea, .info-box, .search-result, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination {
   color: #666666;
 }
 
@@ -1397,6 +1397,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: inherit;
   font-family: monospace;
   font-style: normal;
+  word-wrap: break-word;
   padding: .1rem .5rem;
   border-radius: .25rem;
   margin-right: 0;
@@ -3254,7 +3255,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 1rem;
 }
 
-.article__paragraph, .s-article p, .s-article ul li, .s-article ol li {
+.article__paragraph, .s-article ul li, .s-article ol li, .s-article p {
   margin-bottom: 2rem;
   font-family: 'MuseoSans';
   font-weight: 300;
@@ -4940,6 +4941,23 @@ div.text-holder {
   font-size: 28px;
 }
 
+.s-article pre > code {
+  display: block;
+}
+
+.s-article p + pre {
+  margin-top: -1rem;
+}
+
+.s-article ol {
+  counter-reset: item;
+}
+
+.s-article ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+}
+
 .s-article ul li, .s-article ol li {
   margin-bottom: 1.5rem;
   position: relative;
@@ -4959,15 +4977,6 @@ div.text-holder {
   border: solid 1px #f2f2f2;
   margin: 2rem auto;
   width: 80%;
-}
-
-.s-article ol {
-  counter-reset: item;
-}
-
-.s-article ol li:before {
-  content: counter(item) ". ";
-  counter-increment: item;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
