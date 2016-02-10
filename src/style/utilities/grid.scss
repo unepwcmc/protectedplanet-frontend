@@ -1,6 +1,4 @@
 %clearfix {
-  overflow: hidden;
-
   &:after {
     clear: both;
     content: "";
