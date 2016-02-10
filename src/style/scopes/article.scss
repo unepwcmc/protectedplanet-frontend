@@ -1,74 +1,7 @@
 .s-article {
-  h1 {
-    @extend .article__title;
-    @extend .article__title--paragraph;
-  }
-
-  h2, h3, h4, h5 {
-    @extend .article__title;
-    @extend .article__title--subparagraph;
-  }
-
-  p { @extend .article__paragraph; }
-  p.bigger { @extend .article__paragraph--bigger; }
-
-  b, strong { @extend .article__bold-text; }
-
-  a { @extend .article__link; }
-
-  ul li, ol li {
-    @extend .article__paragraph;
-
-    margin-bottom: 1.5rem;
-    position: relative;
-
-    &:before {
-      content: '\2022'; // circle bullet
-      color: $green;
-
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.6rem;
-
-      position: absolute;
-      left: -1.5rem;
-    }
-  }
-
-  hr {
-    border: solid 1px $grey-5;
-    margin: 2rem auto;
-    width: 80%;
-  }
-
-  ol {
-    counter-reset: item;
-
-    li {
-      &:before {
-        content: counter(item) ". ";
-        counter-increment: item;
-      }
-    }
-  }
-
-  table {
-    @extend .table;
-
-    tr:first-child {
-      @extend .table__header;
-      td {
-        @extend .table__column;
-        @extend .table__column--align-left;
-      }
-    }
-
-    tr:not(:first-child) {
-      @extend .table__row;
-    }
-  }
-
-  pre, code {
-    @extend .label, .label--code;
-  }
+  @import "article/_code.scss";
+  @import "article/_lists.scss";
+  @import "article/_misc.scss";
+  @import "article/_tables.scss";
+  @import "article/_text.scss";
 }
