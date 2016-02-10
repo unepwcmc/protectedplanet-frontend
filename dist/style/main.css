@@ -5129,10 +5129,6 @@ table {
   page-break-before: always;
 }
 
-.navbar, .info-box, .search-result, .row, .container--profile, .container--fullscreen, .u-clearfix {
-  overflow: hidden;
-}
-
 .navbar:after, .info-box:after, .search-result:after, .row:after, .container--profile:after, .container--fullscreen:after, .u-clearfix:after {
   clear: both;
   content: "";
