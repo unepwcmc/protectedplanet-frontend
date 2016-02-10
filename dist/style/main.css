@@ -2637,6 +2637,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #699728;
 }
 
+.filter-bar__group-title--no-border {
+  border: 0;
+}
+
 .filter-bar__group-title.is-open:after {
   float: right;
   content: "";
