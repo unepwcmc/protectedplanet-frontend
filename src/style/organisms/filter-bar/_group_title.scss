@@ -12,6 +12,10 @@
   margin-bottom: .5rem;
   width: 100%;
 
+  @include m(no-border) {
+    border: 0;
+  }
+
   &.is-open {
     &:after { float: right; @include fa(chevron-up); }
   }
