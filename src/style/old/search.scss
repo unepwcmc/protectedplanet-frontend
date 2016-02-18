@@ -177,6 +177,8 @@ $width--search-sidebar: 270px;
   margin-bottom: 1rem;
   border-right: 2px solid $grey-15;
   border-right: 2px solid transparentize($grey-15, 0.2);
+
+  a { width: 100%; }
 }
 
 .inner-result {

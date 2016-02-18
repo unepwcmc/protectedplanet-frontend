@@ -4559,6 +4559,10 @@ nav .download-type-dropdown {
   clear: left;
 }
 
+.result a {
+  width: 100%;
+}
+
 .inner-result {
   font-family: 'MuseoSans';
   font-weight: 500;
