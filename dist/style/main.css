@@ -4169,10 +4169,6 @@ nav .download-type-dropdown {
   box-sizing: border-box;
 }
 
-#map.protected-area-map {
-  left: 400px;
-}
-
 .related-source {
   margin: 30px 20px;
   padding: 5px;
@@ -4763,93 +4759,6 @@ div div.shared-links a:hover {
 
 div div.shared-links a:last-child {
   margin-right: 0px;
-}
-
-table.centered td {
-  text-align: center;
-}
-
-td.right-aligned {
-  text-align: right;
-}
-
-.country-parent article table {
-  margin-top: 10px;
-}
-
-hr {
-  height: 1px;
-  color: #bbbbbb;
-  margin: 0px;
-  margin-bottom: 20px;
-}
-
-div.inset-statistic {
-  margin-bottom: 12px;
-  width: 225px;
-}
-
-div.inset-statistic-large {
-  width: 450px;
-}
-
-div.text-holder {
-  margin-top: 10px;
-  color: #2b3146;
-}
-
-.large {
-  display: block;
-  font-size: 42px;
-  float: left;
-  color: #2b3146;
-}
-
-.extra-large {
-  display: block;
-  font-size: 48px;
-  color: #2b3146;
-}
-
-.extra-large small {
-  font-size: 0.4em;
-}
-
-.conservation-statistics .text-holder,
-.conservation-statistics .extra-large {
-  float: left;
-}
-
-.conservation-statistics .inset-statistic {
-  display: inline-block;
-}
-
-.countries-compare-left {
-  border-right: 1px solid #8f8f8f;
-}
-
-.countries-compare-left, .countries-compare-right {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-
-.countries-compare-left:last-child, .countries-compare-right:last-child {
-  margin-right: 0;
-}
-
-.countries-compare-left .factsheet, .countries-compare-left .countries-selection, .countries-compare-right .factsheet, .countries-compare-right .countries-selection {
-  width: 100%;
-}
-
-.countries-compare-left .countries-selection, .countries-compare-right .countries-selection {
-  text-align: center;
-  margin-top: 120px;
-}
-
-.countries-compare-left .countries-selection h3, .countries-compare-right .countries-selection h3 {
-  margin-bottom: 20px;
 }
 
 .static_pages-parent .header {
