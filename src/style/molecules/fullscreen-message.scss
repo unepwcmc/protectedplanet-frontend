@@ -11,7 +11,7 @@
   }
 
   @include e(body) {
-    @extend %color--base;
+    @extend %color-base;
 
     @include text(headline, thin);
     line-height: form-factor(headline, line-height);
