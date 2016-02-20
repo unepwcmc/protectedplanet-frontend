@@ -7,9 +7,10 @@
       @include color($number__color);
       @include text--alt(medium, bold);
 
-      @include m(xxlarge)   { @include text--alt(xxlarge, bold); }
-      @include m(xxxxlarge) { @include text--alt(xxxxlarge, bold); }
-      @include m(large)     { @include text(xlarge, bold); }
+      @include m(inherit)   { font: inherit;                            }
+      @include m(xxlarge)   { @include text--alt(xxlarge, bold);        }
+      @include m(xxxxlarge) { @include text--alt(xxxxlarge, bold);      }
+      @include m(large)     { @include text(xlarge, bold);              }
 
       @include m(alt-color) { @include color($number-alt-color__color); }
     }

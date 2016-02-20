@@ -9,6 +9,10 @@
     height: $map--main__height;
   }
 
+  @include m(double) {
+    height: $map--main__height*2;
+  }
+
   @include leaflet-control-zoom;
   @include leaflet-control-layers;
 }
