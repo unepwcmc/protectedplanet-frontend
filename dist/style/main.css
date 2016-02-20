@@ -1309,47 +1309,53 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-.o-overlay {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.o-overlay--narrow {
-  padding: 0 28%;
-}
-
 .header-with-delimiter, .label, .s-article pre, .s-article code, .table, .s-article table, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .breadcrumbs, .alert__body, .header__text, .value__label, .section__header, .fact__header, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .info-box, .search-result, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination {
   color: #666666;
 }
 
-.link-with-icon, .breadcrumbs__link, .tooltip__element, .uservoice, .hero__link, .article__link, .s-article a {
+.external-link, .link-with-icon, .breadcrumbs__link, .tooltip__element, .uservoice, .hero__link, .article__link, .s-article a {
   color: #71a32b;
 }
 
-.link-with-icon:hover, .breadcrumbs__link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover, .link-with-icon:active, .breadcrumbs__link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
+.external-link:hover, .link-with-icon:hover, .breadcrumbs__link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover, .external-link:active, .link-with-icon:active, .breadcrumbs__link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
   text-decoration: underline;
 }
 
-.link-with-icon:hover, .breadcrumbs__link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover {
+.external-link:hover, .link-with-icon:hover, .breadcrumbs__link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover {
   color: #83af46;
 }
 
-.link-with-icon:active, .breadcrumbs__link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
+.external-link:active, .link-with-icon:active, .breadcrumbs__link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
   color: #699728;
 }
 
-.link-with-icon:visited:active, .breadcrumbs__link:visited:active, .tooltip__element:visited:active, .uservoice:visited:active, .hero__link:visited:active, .article__link:visited:active, .s-article a:visited:active {
+.external-link:visited:active, .link-with-icon:visited:active, .breadcrumbs__link:visited:active, .tooltip__element:visited:active, .uservoice:visited:active, .hero__link:visited:active, .article__link:visited:active, .s-article a:visited:active {
   color: #699728;
 }
 
-.link-with-icon:visited, .breadcrumbs__link:visited, .tooltip__element:visited, .uservoice:visited, .hero__link:visited, .article__link:visited, .s-article a:visited {
+.external-link:visited, .link-with-icon:visited, .breadcrumbs__link:visited, .tooltip__element:visited, .uservoice:visited, .hero__link:visited, .article__link:visited, .s-article a:visited {
   color: #83af46;
+}
+
+.disclaimer {
+  color: #ffffff;
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.333rem;
+  background: rgba(43, 49, 70, 0.5);
+  display: block;
+  padding: 0.333rem;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+.external-link:after {
+  content: "";
+  font-family: 'FontAwesome';
+  margin-left: .25rem;
+  font-size: .666em;
 }
 
 .header-with-delimiter {
@@ -1427,18 +1433,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   background: url("images/hand-solo.png") center left/2rem no-repeat;
 }
 
-.disclaimer {
-  color: #ffffff;
-  font-family: 'MuseoSans';
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.333rem;
-  background: rgba(43, 49, 70, 0.5);
-  display: block;
-  padding: 0.333rem;
-  text-align: center;
+.o-overlay {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
-  z-index: 1000;
+}
+
+.o-overlay--narrow {
+  padding: 0 28%;
 }
 
 .link-with-icon {
