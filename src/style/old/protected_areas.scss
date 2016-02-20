@@ -1,3 +1,37 @@
+.old-factsheet {
+  position: fixed;
+  top: 120px;
+  bottom: 75px;
+  overflow-y: auto;
+  width: 450px;
+}
+
+.old-map {
+  position: fixed;
+  left: 470px;
+  top: 120px;
+  bottom: 75px;
+
+  .leaflet-bottom { bottom: 3.25rem; }
+}
+
+.map-disclaimer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(43,49,70,0.5);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+}
+
 .factsheet {
   overflow-y: auto;
   width: 400px;
@@ -22,8 +56,6 @@
 }
 
 .key-records {
-  margin: 10px 0;
-
   li {
     margin: 15px 0;
     height: 15px;
@@ -108,15 +140,14 @@
   text-align: left;
   width: 100%;
 
-  > li {
+  > div {
     padding-left: 20px;
-    display:block;
     color: $color--pa-infographic-text;
     font-size: 12px;
     border-bottom: solid 1px $color--pa-infographic-border;
   }
 
-  > li:last-child {
+  > div:last-child {
     border-bottom: none;
   }
 }
@@ -135,25 +166,29 @@
   div:not(:last-child) { margin-bottom: 5px; }
 
   h3 {
-    font-weight: 300;
-    font-family: MuseoSans-300;
-    color: $color--pa-infographic-text;
+    @include text(body, bold);
+    @include color(white)
   }
 
-  ul {
+  & ul {
     margin: 8px 0px;
     column-count: 2;
 
     li {
+      @include text(small, thin);
       padding: 2px;
       display: block;
     }
   }
 }
 
-.open-details-container {
-  padding: 5px 20px;
+.data-completion__trigger {
+  width: 100%;
   text-align: center;
+  @include text(body);
+  @include color($white);
+  &.is-closed:after { @include fa(chevron-down); }
+  &.is-open:after { @include fa(chevron-up);   }
 }
 
 .open-details-anchor {
@@ -185,8 +220,8 @@
 
 .nearest-protected-areas {
   li {
-    border-top: 1px solid $grey-55;
-    border-bottom: 1px solid $grey-55;
+    border-top: 1px solid $grey-15;
+    border-bottom: 1px solid $grey-15;
     clear: left;
     height: 101px;
     margin: 10px 0;
@@ -204,7 +239,7 @@
   h4 {
     width: auto;
     height: 99px;
-    background: $grey-33;
+    background: $grey-3;
     margin: 0 0 0 1px;
     float: none;
 
