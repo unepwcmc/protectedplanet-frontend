@@ -40,6 +40,7 @@
   }
 
   @include e(link) {
+    @extend %acts-as-link;
     @include color($hero-title__color);
   }
 }
