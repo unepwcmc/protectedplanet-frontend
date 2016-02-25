@@ -8,12 +8,12 @@
   }
 
   @include m(with-separator) {
-    border-left: solid 0.125rem $green--dark;
+    border-left: solid 0.125rem $navbar-element-dark__bg-color;
 
     &:before { top: 0;    }
     &:after  { bottom: 0; }
     &:before, &:after {
-      background-color: $green;
+      background-color: $navbar__bg-color;
 
       content: "";
       width: .25rem;
@@ -40,6 +40,10 @@
 
   @include m(push-right) {
     margin-right: 1rem;
+  }
+
+  @include m(larger) {
+    padding: 0 1.25rem;
   }
 
   @include text(body);

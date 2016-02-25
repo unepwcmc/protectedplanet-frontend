@@ -2,13 +2,11 @@
   align-items: center;
   display: flex;
   height: 100%;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
 
-  @include m(narrow) {
-    padding: 0 28%;
-  }
+  justify-content: center;
+
+  position: absolute;
+  left: 0;
+  top: 0;
 }

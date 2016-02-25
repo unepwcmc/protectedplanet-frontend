@@ -20,4 +20,9 @@
   @include m(bigger) { @include text(medium, null); }
 
   @include m(no-margin-bottom) { margin-bottom: 0; }
+
+  @include m(same-padding-margin) {
+    margin-bottom: .75rem;
+    padding-bottom: .75rem;
+  }
 }

@@ -22,6 +22,10 @@
     font: inherit;
   }
 
+  @include m(no-push) {
+    margin-bottom: 0;
+  }
+
   @include m(push) {
     &:not(:last-child) { margin-bottom: .5rem; }
   }

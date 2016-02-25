@@ -1,3 +1,8 @@
+@include b(logos) {
+  @include e(logo) {
+    margin: 0 .625rem;
+  }
+}
 @mixin unepwcmc-logo {
   width: 75px;
   height: 50px;

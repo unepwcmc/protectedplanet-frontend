@@ -15,7 +15,7 @@
 %color-base { @include color($color--base); }
 %acts-as-link {
   &:hover, &:active { text-decoration: underline; }
-  @include color-with-state($green, (
+  @include color-with-state($link__color, (
     hover: $link__color--hover,
     active: $link__color--pressed,
     'visited:active': $link__color--pressed,

@@ -1,6 +1,7 @@
 @include e(story) {
-  float: left;
-  height: 100%;
+  @include flexbox;
+  @include flex-direction(column);
+
   width: 35%;
 }
 
@@ -10,18 +11,6 @@
   width: 100%;
 }
 
-@include e(story-body) {
-  padding: {
-    left: 2.5rem;
-    top: 2rem;
-  }
-
-  background-color: white;
-  margin-left: -6rem;
-
-  height: 100%;
-}
-
 @include e(story-title) {
   @include text(medium, bold);
   @include color($green);
@@ -29,6 +18,7 @@
 }
 
 @include e(story-content) {
+  @extend %color-base;
   @include text(body, thin);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }

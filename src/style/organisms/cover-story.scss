@@ -1,6 +1,7 @@
 @include b(cover-story) {
-  height: 42rem;
+  @include flexbox;
 
   @import 'cover-story/_cover';
   @import 'cover-story/_story';
+  @import 'cover-story/_story-body';
 }
