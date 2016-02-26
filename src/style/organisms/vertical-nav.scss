@@ -25,7 +25,7 @@
     }
 
     @include m(heading) {
-      @include color($green);
+      @include color($vertical-nav-element-selected__color);
 
       padding-left: 1rem;
       border: {
@@ -37,18 +37,18 @@
 
     @include m(selected) {
       @include font-weight(normal);
-      @include color($green);
+      @include color($vertical-nav-element-selected__color);
       border-left: solid .333rem $grey-15;
       padding-left: 1rem;
     }
 
     @include m(active) {
       @include font-weight(normal);
-      @include color($green);
+      @include color($vertical-nav-element-selected__color);
     }
 
     @include m(expandable) {
-      &:after { @include color($green); }
+      &:after { @include color($vertical-nav-element-selected__color); }
 
       @include flexbox;
       @include justify-content(space-between);

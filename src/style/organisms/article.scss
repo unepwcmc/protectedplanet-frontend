@@ -25,7 +25,7 @@
   }
 
   @include e(paragraph) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 
     @include text(body, thin);
     @extend %color-base;
@@ -39,8 +39,12 @@
     @include text--alt(body, bold);
   }
 
+  @include e(cursive-text) {
+    font-style: italic;
+  }
+
   @include e(link) {
-    @include text(body, thin);
+    @include text(body, bold);
     @extend %acts-as-link;
   }
 }

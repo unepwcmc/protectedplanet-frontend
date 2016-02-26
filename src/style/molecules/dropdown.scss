@@ -1,5 +1,5 @@
 @include b(dropdown) {
-  background-color: $green--dark;
+  background-color: $dropdown__bg-color;
 
   left:0;
   padding: 0 .625rem;
@@ -15,14 +15,14 @@
   }
 
   @include e(inner) {
-    border-top: solid 2px $green;
+    border-top: solid 2px $dropdown-inner__border-top-color;
     padding-top: .5rem;
   }
 
   @include e(element) {
-    &:hover { background-color: $green; }
+    &:hover { background-color: $dropdown-element-hover__bg-color; }
 
-    @include color(white);
+    @include color($white);
     @include text(body);
 
     display: block;

@@ -83,6 +83,11 @@ $big-button__bg-color--disabled: $green--lighter !default;
 $horizontal-bar__bg-color: $green !default;
 $horizontal-bar-inner__bg-color: $green--darker !default;
 
+// molecules/dropdown
+$dropdown__bg-color: $green--dark !default;
+$dropdown-inner__border-top-color: $green !default;
+$dropdown-element-hover__bg-color: $green !default;
+
 // molecules/alert
 $alert__bg-color: $grey-5 !default;
 $alert-warning--color: $orange !default;
@@ -126,6 +131,12 @@ $info-box-row__border-bottom: $grey-33 !default;
 
 // organisms/footer
 $footer-element-with-separator__border-left-color: $green--dark !default;
+
+// organisms/vertical-nav
+$vertical-nav-element-selected__color: $green !default;
+
+// scopes/article
+$article-list-index__color: $green !default;
 
 $color--base: $grey-77;
 $color--base-btn-bg: $green;
