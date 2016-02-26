@@ -47,4 +47,9 @@
     @include text(body, bold);
     @extend %acts-as-link;
   }
+
+  @include e(image) {
+    display: block;
+    margin: auto;
+  }
 }
