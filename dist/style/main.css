@@ -1526,7 +1526,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .dropdown__element {
-  color: white;
+  color: #ffffff;
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
@@ -1920,10 +1920,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1.333rem;
-  margin-top: 1.75rem;
-  margin-bottom: 2em;
+  margin: 1.5rem 0;
   padding-left: .666rem;
   padding-right: .666rem;
+}
+
+.breadcrumbs__link {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.333rem;
 }
 
 .horizontal-bar {
@@ -2428,6 +2434,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 3.2rem;
   line-height: 3.571rem;
   color: #666666;
+}
+
+.hero__title--push {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero__link {
@@ -3409,7 +3420,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .article__paragraph, .s-article ul li, .s-article ol li, .s-article p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
@@ -3430,9 +3441,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 1.333rem;
 }
 
+.article__cursive-text, .s-article i {
+  font-style: italic;
+}
+
 .article__link, .s-article a {
   font-family: 'MuseoSans';
-  font-weight: 300;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 1.333rem;
 }
@@ -5067,6 +5082,10 @@ div div.shared-links a:last-child {
   margin-top: -1rem;
 }
 
+.s-article ul, .s-article ol {
+  margin-left: 2.5rem;
+}
+
 .s-article ol {
   counter-reset: item;
 }
@@ -5077,7 +5096,6 @@ div div.shared-links a:last-child {
 }
 
 .s-article ul li, .s-article ol li {
-  margin-bottom: 1.5rem;
   position: relative;
 }
 
@@ -5086,9 +5104,8 @@ div div.shared-links a:last-child {
   color: #71a32b;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.6rem;
   position: absolute;
-  left: -1.5rem;
+  left: -1rem;
 }
 
 .s-article hr {
