@@ -28,6 +28,10 @@
     padding-right: $info-box__padding * 1.5;
   }
 
+  @include m(padding-top-bottom) {
+    padding: $info-box-padding-top-bottom__padding;
+  }
+
   @import "info-box/_body";
   @import "info-box/_column";
   @import "info-box/_header";
