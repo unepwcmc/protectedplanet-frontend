@@ -1,5 +1,5 @@
 ul, ol {
-  margin-left: 2.5rem;
+  @extend .article__list;
 }
 
 ol {
@@ -14,18 +14,5 @@ ol {
 }
 
 ul li, ol li {
-  @extend .article__paragraph;
-
-  position: relative;
-
-  &:before {
-    content: '\2022'; // circle bullet
-    color: $article-list-index__color;
-
-    font-size: 1rem;
-    font-weight: 700;
-
-    position: absolute;
-    left: -1rem;
-  }
+  @extend .article__list-item;
 }

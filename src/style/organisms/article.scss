@@ -52,4 +52,29 @@
     display: block;
     margin: auto;
   }
+
+  @include e(list) {
+    margin-left: 2.5rem;
+
+    @include m(less-margin) {
+      margin-left: 1rem;
+    }
+  }
+
+  @include e(list-item) {
+    @extend .article__paragraph;
+
+    position: relative;
+
+    &:before {
+      content: '\2022'; // circle bullet
+      color: $article-list-index__color;
+
+      font-size: 1rem;
+      font-weight: 700;
+
+      position: absolute;
+      left: -1rem;
+    }
+  }
 }
