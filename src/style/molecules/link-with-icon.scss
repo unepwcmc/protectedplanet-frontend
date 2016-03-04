@@ -16,6 +16,11 @@
       display: block !important;
       margin-bottom: $icon__margin-sides;
     }
+
+    @include m(absolute) {
+      position: absolute;
+      left: 0; top: 0;
+    }
   }
 
   @include m(inherit) {
@@ -36,6 +41,11 @@
   }
 
   @include m(bold) { @include font-weight(bold); }
+
+  @include m(pull-right) {
+    position: relative;
+    padding-left: 1.5rem;
+  }
 
   @content;
 }
