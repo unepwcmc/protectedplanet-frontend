@@ -13,6 +13,10 @@
     height: $map--main__height*2;
   }
 
+  @include m(margin-top-bottom) {
+    margin: 1.875rem 0;
+  }
+
   @include leaflet-control-zoom;
   @include leaflet-control-layers;
 }
