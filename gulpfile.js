@@ -1,12 +1,14 @@
 "use strict";
 
 var gulp = require("gulp");
+var replace = require("gulp-replace");
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
 
 gulp.task("sass", function () {
   return gulp.src("./src/style/main.scss")
     .pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
+    .pipe(replace('asset-url', 'url'))
     .pipe(gulp.dest("./dist/style"));
 });
 
