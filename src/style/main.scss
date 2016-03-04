@@ -47,7 +47,8 @@
 @import 'molecules/dropdown';
 @import 'molecules/map';
 @import 'molecules/table';
-@import 'molecules/expandable-section';
+@import 'molecules/expandable-section'; // DEPRECATED, use accordion
+@import 'molecules/accordion';
 @import 'molecules/reference';
 @import 'molecules/fullscreen-message';
 @import 'molecules/big-button';
