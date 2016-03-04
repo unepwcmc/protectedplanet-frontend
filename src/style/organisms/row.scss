@@ -9,6 +9,10 @@
     margin-bottom: 5rem;
   }
 
+  @include m(push2x) {
+    margin-bottom: 2em;
+  }
+
   @include m(with-border-top) {
     border-top: solid 1px $grey-5;
   }
