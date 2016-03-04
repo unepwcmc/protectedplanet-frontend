@@ -36,6 +36,12 @@ $fact-body__padding-top-bottom: 1rem;
 $navbar__height: 50px !default;
 $navbar__height--thinner: 30px !default;
 
+// organisms/gallery
+$gallery-body__height: 400px !default;
+$gallery-control__padding: (0 .625rem) !default;
+$gallery-current-index__padding: .5em .75em !default;
+$gallery-current-index__border-radius: 3rem !default;
+
 // organisms/info-box
 $info-box__padding: 1.25rem !default;
 $info-box__margin-bottom: 2.5rem !default;
