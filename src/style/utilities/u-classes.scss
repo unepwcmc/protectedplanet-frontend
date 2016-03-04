@@ -24,6 +24,7 @@
 .u-italic           { font-style: italic;                  }
 .u-font-inherit     { font: inherit;                       }
 .u-center           { text-align: center;                  }
+.u-normal           { @include font-weight(normal);        }
 .u-bold             { @include font-weight(bold);          }
 .u-x-bold           { @include font-weight(x-bold);        }
 .u-medium           { @include text(medium);               }
