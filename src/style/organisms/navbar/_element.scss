@@ -23,6 +23,24 @@
     }
   }
 
+
+  &.is-active {
+    background-color: $navbar-element-dark__bg-color;
+
+    &:hover { background-color: $navbar-element-dark__bg-color; }
+    &:active { background-color: $navbar-element-dark__bg-color; }
+  }
+
+  @include m(for-search-dropdown) {
+    &.is-active {
+      color: $navbar-element-for-search-dropdown-is-active__color;
+      background-color: $white;
+
+      &:hover { background-color: $white; }
+      &:active { background-color: $white; }
+    }
+  }
+
   @include m(right) {
     &:first-child  { margin-left: auto; }
     &:nth-child(2) { margin-left: auto; }

@@ -86,6 +86,7 @@ $horizontal-bar-inner__bg-color: $green--darker !default;
 // molecules/dropdown
 $dropdown__bg-color: $green--dark !default;
 $dropdown-inner__border-top-color: $green !default;
+$dropdown-trigger-is-selected__bg-color: $green--dark !default;
 $dropdown-element-hover__bg-color: $green !default;
 
 // molecules/alert
@@ -105,6 +106,7 @@ $navbar-element-dark__bg-color: $green--dark !default;
 $navbar-element__color: $white !default;
 $navbar-element-hover__bg-color: $green--light !default;
 $navbar-element-active__bg-color: $green--dark !default;
+$navbar-element-for-search-dropdown-is-active__color: $green !default;
 $color--nav-bg: $green;
 $color--nav-active-link: $green--dark;
 $color--nav-link: $white;

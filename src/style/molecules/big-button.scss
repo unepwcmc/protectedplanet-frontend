@@ -12,6 +12,7 @@
   border-radius: $big-button__border-radius;
   padding: $big-button__padding;
   min-height: 40px;
+  min-width:  40px;
 
   @include e(icon) {
     margin-right: $big-button-icon__margin-right;
@@ -30,5 +31,9 @@
       active: $big-button__color,
       disabled: $big-button__color
     ));
+  }
+
+  @include m(compact) {
+    padding: $big-button-compact__padding;
   }
 }
