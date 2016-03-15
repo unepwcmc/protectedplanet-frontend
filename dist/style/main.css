@@ -5474,6 +5474,10 @@ table {
   margin-top: auto;
 }
 
+.u-margin-auto {
+  margin: auto;
+}
+
 .u-click-through {
   pointer-events: none;
 }
