@@ -1,6 +1,8 @@
 @include b(section) {
+  max-width: $max-width--desktop;
   padding: 0 7rem;
   margin-bottom: 7rem;
+  margin: {left: auto; right: auto;}
 
   @include e(header) {
     @extend %color-base;
