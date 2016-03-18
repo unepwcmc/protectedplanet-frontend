@@ -113,6 +113,9 @@ $color--nav-link: $white;
 $color--nav-hover-link: $green--dark;
 $color--nav-border: $grey-33;
 
+// organisms/search-result
+$search-result-title__color: $green !default;
+
 // organisms/filter-bar
 $filter-bar-value-hover__bg-color: $grey-5 !default;
 $filter-bar-value-active__bg-color: $grey-15 !default;
