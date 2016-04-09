@@ -78,6 +78,12 @@ $big-button__bg-color--hover: $green--light !default;
 $big-button__bg-color--pressed: $green--dark !default;
 $big-button__bg-color--visited: $green--light !default;
 $big-button__bg-color--disabled: $green--lighter !default;
+$big-button-danger__color: $white !default;
+$big-button-danger__bg-color: $red !default;
+$big-button-danger__bg-color--hover: $red--light !default;
+$big-button-danger__bg-color--pressed: $red--dark !default;
+$big-button-danger__bg-color--visited: $red--light !default;
+$big-button-danger__bg-color--disabled: $red--lighter !default;
 
 // molecules/horizontal-bar
 $horizontal-bar__bg-color: $green !default;

@@ -33,6 +33,16 @@
     ));
   }
 
+  @include m(danger) {
+    border: solid 1px $grey-15;
+
+    @include color-with-state($big-button-danger__bg-color, (
+      hover: $big-button-danger__bg-color--hover,
+      active: $big-button-danger__bg-color--pressed,
+      disabled: $big-button-danger__bg-color--disabled
+    ), background-color);
+  }
+
   @include m(compact) {
     padding: $big-button-compact__padding;
   }
