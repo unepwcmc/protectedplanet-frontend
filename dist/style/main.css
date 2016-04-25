@@ -2339,7 +2339,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .value {
   position: relative;
-  overflow: hidden;
 }
 
 .value__number {
@@ -3354,7 +3353,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .stats-card__body .value {
   position: relative;
-  overflow: hidden;
 }
 
 .stats-card__body .value__number {
@@ -3414,7 +3412,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .stats-card__body--color .value {
   position: relative;
-  overflow: hidden;
 }
 
 .stats-card__body--color .value__number {
@@ -3488,7 +3485,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .stats-card__body--alt-color .value {
   position: relative;
-  overflow: hidden;
 }
 
 .stats-card__body--alt-color .value__number {

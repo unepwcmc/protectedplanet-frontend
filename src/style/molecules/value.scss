@@ -1,7 +1,6 @@
 @mixin value($number__color: $value-number__color, $number-alt-color__color: $value-number-alt-color__color) {
   @include b(value) { $block: &;
     position: relative;
-    overflow: hidden;
 
     @include e(number) {
       @include color($number__color);
