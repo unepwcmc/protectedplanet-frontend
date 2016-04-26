@@ -3591,13 +3591,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .article__title, .s-article h1, .s-article h2, .s-article h3, .s-article h4, .s-article h5 {
-  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 3.2rem;
   line-height: 3.571rem;
   color: #666666;
+}
+
+.article__title:not(:first-child), .s-article h1:not(:first-child), .s-article h2:not(:first-child), .s-article h3:not(:first-child), .s-article h4:not(:first-child), .s-article h5:not(:first-child) {
+  margin-top: 2.5rem;
 }
 
 .article__title--smaller {

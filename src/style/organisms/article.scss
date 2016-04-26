@@ -5,8 +5,9 @@
   }
 
   @include e(title) {
-    margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    &:not(:first-child) { margin-top: 2.5rem; }
+
     @include text(xxlarge, thin);
     @include color($color--base);
 
