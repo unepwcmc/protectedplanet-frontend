@@ -3591,6 +3591,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .article__title, .s-article h1, .s-article h2, .s-article h3, .s-article h4, .s-article h5 {
+  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   font-family: 'MuseoSans';
   font-weight: 300;
