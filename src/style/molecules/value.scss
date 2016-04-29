@@ -8,7 +8,10 @@
 
       @include m(inherit)   { font: inherit;                            }
       @include m(xxlarge)   { @include text--alt(xxlarge, bold);        }
-      @include m(xxxxlarge) { @include text--alt(xxxxlarge, bold);      }
+      @include m(xxxxlarge) {
+        @include text--alt(xxxxlarge, bold);
+        @media print { @include text--alt(large, bold); }
+      }
       @include m(large)     { @include text(xlarge, bold);              }
 
       @include m(alt-color) { @include color($number-alt-color__color); }
@@ -23,11 +26,9 @@
       }
 
       @include m(side) {
+        float: left;
         margin: 0 1rem;
-
         width: 50%;
-        bottom: 0;
-        position: absolute;
       }
     }
   }

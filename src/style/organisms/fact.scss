@@ -32,6 +32,10 @@
     @include text--alt(xxxxlarge, bold);
     @include color($green);
 
+    @media print {
+      @include text--alt(large, bold);
+    }
+
     @include m(push-down) {
       margin-bottom: .4em;
     }
