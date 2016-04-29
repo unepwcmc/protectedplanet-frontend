@@ -2367,6 +2367,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 4.666rem;
 }
 
+@media print {
+  .value__number--xxxxlarge {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
 .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
@@ -2390,10 +2399,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .value__label--side {
+  float: left;
   margin: 0 1rem;
   width: 50%;
-  bottom: 0;
-  position: absolute;
 }
 
 .uservoice {
@@ -2873,6 +2881,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 4.8rem;
   line-height: 4.666rem;
   color: #71a32b;
+}
+
+@media print {
+  .fact__single-figure {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
 .fact__single-figure--push-down {
@@ -3381,6 +3398,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 4.666rem;
 }
 
+@media print {
+  .stats-card__body .value__number--xxxxlarge {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
 .stats-card__body .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
@@ -3404,10 +3430,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .stats-card__body .value__label--side {
+  float: left;
   margin: 0 1rem;
   width: 50%;
-  bottom: 0;
-  position: absolute;
 }
 
 .stats-card__body--color .value {
@@ -3440,6 +3465,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 4.666rem;
 }
 
+@media print {
+  .stats-card__body--color .value__number--xxxxlarge {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
 .stats-card__body--color .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
@@ -3463,10 +3497,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .stats-card__body--color .value__label--side {
+  float: left;
   margin: 0 1rem;
   width: 50%;
-  bottom: 0;
-  position: absolute;
 }
 
 .stats-card__body--color .cube {
@@ -3513,6 +3546,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 4.666rem;
 }
 
+@media print {
+  .stats-card__body--alt-color .value__number--xxxxlarge {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
 .stats-card__body--alt-color .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
@@ -3536,10 +3578,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .stats-card__body--alt-color .value__label--side {
+  float: left;
   margin: 0 1rem;
   width: 50%;
-  bottom: 0;
-  position: absolute;
 }
 
 .stats-card__body--alt-color .cube {
