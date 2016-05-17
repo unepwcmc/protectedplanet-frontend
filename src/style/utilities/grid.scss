@@ -9,7 +9,7 @@
 @include b(half) {
   @extend %with-right-border;
   @include span-columns(6);
-  @media (max-width: 769px) { @include span-columns(12); }
+  @media (max-width: 769px and not print) { @include span-columns(12); }
 
   @include m(no-margin) {
     width: 50%;
