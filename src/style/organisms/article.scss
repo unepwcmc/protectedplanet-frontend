@@ -48,6 +48,12 @@
   @include e(link) {
     @include text(body, bold);
     @extend %acts-as-link;
+
+    &.is-external {
+      &:after {
+        @include fa(external-link-square, (direction: left, value: 3px))
+      }
+    }
   }
 
   @include e(image) {
