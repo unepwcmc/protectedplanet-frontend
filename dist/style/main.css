@@ -3700,6 +3700,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   line-height: 1.333rem;
 }
 
+.article__link.is-external:after, .s-article a.is-external:after {
+  content: "";
+  font-family: 'FontAwesome';
+  margin-left: 3px;
+}
+
 .article__image, .s-article img {
   display: block;
   margin: auto;
