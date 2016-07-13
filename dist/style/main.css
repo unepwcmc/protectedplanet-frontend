@@ -1442,6 +1442,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   background: url("images/hand-solo.png") center left/2rem no-repeat;
 }
 
+.protectedplanet-logo__registered {
+  position: relative;
+  font-size: .5rem;
+  top: -.5rem;
+}
+
 .o-overlay {
   align-items: center;
   display: flex;
@@ -2138,6 +2144,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #1a589f;
 }
 
+.circle-story {
+  height: 15rem;
+}
+
 .circle-story--flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2179,16 +2189,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.333rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding-left: .5rem;
 }
 
 .circle-story__circle {
-  float: left;
-  margin-right: 1.25rem;
-  border-radius: 100%;
-  height: 170px;
-  width: 170px;
+  height: 100%;
 }
 
 .circle-story__circle--above {
@@ -2202,8 +2207,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 10rem;
 }
 
+.circle-story__circle-inner {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
 .circle-story__content {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .circle-story__title {
