@@ -30,4 +30,12 @@
   display: block;
   background: asset-url("images/hand-solo.png") center left/2rem no-repeat;
 }
-.protectedplanet-logo { @include protectedplanet-logo; }
+.protectedplanet-logo {
+  @include protectedplanet-logo;
+
+  @include e(registered) {
+    position: relative;
+    font-size: .5rem;
+    top: -.5rem;
+  }
+}
