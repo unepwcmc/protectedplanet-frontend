@@ -1,4 +1,6 @@
 @include b(circle-story) {
+  height: 15rem;
+
   @include m(flex) {
     @include flexbox;
     @include justify-content(flex-start);
@@ -8,6 +10,7 @@
 
   @import 'circle-story/_body';
   @import 'circle-story/_circle';
+  @import 'circle-story/_circle-inner';
   @import 'circle-story/_content';
   @import 'circle-story/_title';
 }
