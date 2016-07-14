@@ -23,9 +23,11 @@
   }
 
   @include m(hero) {
-    padding-bottom: $info-box__padding * 1.5;
-    padding-left: $info-box__padding * 1.5;
-    padding-right: $info-box__padding * 1.5;
+    padding: 1.275rem;
+  }
+
+  @include m(shadow) {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   @include m(padding-top-bottom) {
