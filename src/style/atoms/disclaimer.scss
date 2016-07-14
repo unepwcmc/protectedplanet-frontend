@@ -1,11 +1,52 @@
 @include b(disclaimer) {
+  cursor: pointer;
+
   @include color($color--map-disclaimer-text);
-  @include text(body, thin);
+  @include text--alt(small, thin);
 
   background: $color--map-disclaimer-bg;
   display: block;
-  padding: 0.333rem;
+  padding: .333rem 6rem 1rem 6rem;
   text-align: center;
   width: 100%;
   z-index: $z-index-10;
+
+  @include e(arrow) {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f2f2f2;
+    top: 100%;
+    position: absolute;
+    left: 50%;
+  }
+
+  @include e(arrow-inner) {
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #333;
+      bottom: 10px;
+      position: absolute;
+      left: -10px;
+    }
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #f2f2f2;
+      bottom: 11px;
+      position: absolute;
+      left: -10px;
+    }
+  }
 }
