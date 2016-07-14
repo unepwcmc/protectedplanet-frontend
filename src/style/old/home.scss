@@ -1,11 +1,20 @@
-.btn.btn-map-download {
-  transition: top $search-bar-transition-time ease;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
+.btn-map-download {
+  text-align: center;
+  @include text--alt(body, bold);
+  font-size: .9rem;
 
-  &.opened {
-    transition: top $search-bar-transition-time ease;
-    top: 171px;
-  }
+  @include color-with-state($big-button__bg-color, (
+    hover: $big-button__bg-color--hover,
+    active: $big-button__bg-color--pressed,
+    disabled: $big-button__bg-color--disabled
+  ), background-color);
+
+  height: 100%;
+  min-width: 180px;
+  box-sizing: border-box;
+
+  border-radius: $big-button__border-radius;
+  color: $big-button__color;
 }
 
 .btn.btn-marine-toggle {
