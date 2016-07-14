@@ -4,18 +4,44 @@
   @include align-items(stretch);
 
   padding: 0 .1rem;
-  height: 2.5rem;
+  height: $search-bar__height;
   width: 100%;
 
+  @include e(form) {
+    @include flexbox;
+    @include flex(1);
+    &:not(:last-child) {
+      border-right: solid 1px $grey-15;
+      margin-right: .875rem;
+      padding-right: .875rem;
+    }
+  }
+
   @include e(input) {
+    box-sizing: border-box;
+    height: 100%;
     border: solid 1px $grey-15;
     &:focus { outline: none; border-width: 2px; }
 
     flex-grow: 1;
-    margin-right: .5rem;
+    margin-right: .625rem;
     padding: 0 .5rem;
 
-    font-style: italic;
     @include text(body, thin);
+  }
+
+  @include e(submit) {
+    @include color-with-state($big-button__bg-color, (
+      hover: $big-button__bg-color--hover,
+      active: $big-button__bg-color--pressed,
+      disabled: $big-button__bg-color--disabled
+    ), background-color);
+
+    height: 100%;
+    width: $search-bar__height;
+    box-sizing: border-box;
+
+    border-radius: $big-button__border-radius;
+    color: $big-button__color;
   }
 }
