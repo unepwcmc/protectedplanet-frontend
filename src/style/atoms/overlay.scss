@@ -1,12 +1,14 @@
 @include b(o-overlay) {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  width: 100%;
-
-  justify-content: center;
+  @include flexbox;
+  @include justify-content(flex-start);
+  @include align-items(flex-start);
 
   position: absolute;
   left: 0;
   top: 0;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 1.25rem;
 }
