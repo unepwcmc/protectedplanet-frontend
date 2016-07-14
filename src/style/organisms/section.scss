@@ -4,6 +4,10 @@
   margin-bottom: 1rem;
   margin: {left: auto; right: auto;}
 
+  @include m(padding-top) {
+    padding-top: 2rem;
+  }
+
   @include e(header) {
     @extend %color-base;
     @include text(xlarge, thin);
