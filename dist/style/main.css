@@ -1338,17 +1338,58 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .disclaimer {
-  color: #ffffff;
-  font-family: 'MuseoSans';
+  cursor: pointer;
+  color: #666666;
+  font-family: 'MuseoSlab';
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   line-height: 1.333rem;
-  background: rgba(43, 49, 70, 0.5);
+  background: #f2f2f2;
   display: block;
-  padding: 0.333rem;
+  padding: .333rem 6rem 1rem 6rem;
   text-align: center;
   width: 100%;
   z-index: 1000;
+}
+
+.disclaimer__arrow {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f2f2f2;
+  top: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+.disclaimer__arrow-inner {
+  position: relative;
+}
+
+.disclaimer__arrow-inner:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333;
+  bottom: 10px;
+  position: absolute;
+  left: -10px;
+}
+
+.disclaimer__arrow-inner:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f2f2f2;
+  bottom: 11px;
+  position: absolute;
+  left: -10px;
 }
 
 .external-link:after {
@@ -1449,14 +1490,35 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .o-overlay {
-  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
   position: absolute;
   left: 0;
   top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1.25rem;
 }
 
 .small-text {
@@ -2327,16 +2389,38 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   align-items: stretch;
   -ms-flex-align: stretch;
   padding: 0 .1rem;
-  height: 2.5rem;
+  height: 1.875rem;
   width: 100%;
 }
 
+.search-bar__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.search-bar__form:not(:last-child) {
+  border-right: solid 1px #dfe0e1;
+  margin-right: .875rem;
+  padding-right: .875rem;
+}
+
 .search-bar__input {
+  box-sizing: border-box;
+  height: 100%;
   border: solid 1px #dfe0e1;
   flex-grow: 1;
-  margin-right: .5rem;
+  margin-right: .625rem;
   padding: 0 .5rem;
-  font-style: italic;
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
@@ -2346,6 +2430,27 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .search-bar__input:focus {
   outline: none;
   border-width: 2px;
+}
+
+.search-bar__submit {
+  background-color: #71a32b;
+  height: 100%;
+  width: 1.875rem;
+  box-sizing: border-box;
+  border-radius: 0.325rem;
+  color: #ffffff;
+}
+
+.search-bar__submit:hover {
+  background-color: #83af46;
+}
+
+.search-bar__submit:active {
+  background-color: #699728;
+}
+
+.search-bar__submit:disabled {
+  background-color: #e3edd5;
 }
 
 .value {
@@ -2484,9 +2589,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 2em;
 }
 
-.hero--push {
+.hero--no-margin-top {
   margin-top: 0;
-  margin-bottom: 4rem;
 }
 
 .hero__top {
@@ -2714,6 +2818,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section--padding-top {
+  padding-top: 2rem;
 }
 
 .section__header {
@@ -3153,9 +3261,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .info-box--hero {
-  padding-bottom: 1.875rem;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
+  padding: 1.275rem;
+}
+
+.info-box--shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .info-box--padding-top-bottom {
@@ -4340,14 +4450,31 @@ a.btn:hover {
   display: block;
 }
 
-.btn.btn-map-download {
-  transition: top 0.8s ease;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+.btn-map-download {
+  text-align: center;
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.333rem;
+  font-size: .9rem;
+  background-color: #71a32b;
+  height: 100%;
+  min-width: 180px;
+  box-sizing: border-box;
+  border-radius: 0.325rem;
+  color: #ffffff;
 }
 
-.btn.btn-map-download.opened {
-  transition: top 0.8s ease;
-  top: 171px;
+.btn-map-download:hover {
+  background-color: #83af46;
+}
+
+.btn-map-download:active {
+  background-color: #699728;
+}
+
+.btn-map-download:disabled {
+  background-color: #e3edd5;
 }
 
 .btn.btn-marine-toggle {
