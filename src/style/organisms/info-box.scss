@@ -23,6 +23,7 @@
   }
 
   @include m(hero) {
+    min-width: 500px;
     padding: 1.275rem;
   }
 
