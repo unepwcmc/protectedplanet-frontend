@@ -43,26 +43,27 @@
 // atoms
 
 // molecules
-@import 'molecules/link-with-icon';
-@import 'molecules/dropdown';
-@import 'molecules/map';
-@import 'molecules/table';
-@import 'molecules/expandable-section'; // DEPRECATED, use accordion
 @import 'molecules/accordion';
-@import 'molecules/reference';
-@import 'molecules/fullscreen-message';
-@import 'molecules/big-button';
-@import 'molecules/modal';
-@import 'molecules/breadcrumbs';
-@import 'molecules/horizontal-bar';
 @import 'molecules/alert';
+@import 'molecules/big-button';
+@import 'molecules/breadcrumbs';
 @import 'molecules/circle-story';
-@import 'molecules/header-with-image';
+@import 'molecules/close-button';
 @import 'molecules/cube';
-@import 'molecules/tooltip';
+@import 'molecules/dropdown';
+@import 'molecules/expandable-section'; // DEPRECATED, use accordion
+@import 'molecules/fullscreen-message';
+@import 'molecules/header-with-image';
+@import 'molecules/horizontal-bar';
+@import 'molecules/link-with-icon';
+@import 'molecules/map';
+@import 'molecules/modal';
+@import 'molecules/reference';
 @import 'molecules/search-bar';
-@import 'molecules/value';
+@import 'molecules/table';
+@import 'molecules/tooltip';
 @import 'molecules/uservoice';
+@import 'molecules/value';
 // molecules
 
 // organisms
