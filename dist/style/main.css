@@ -1309,7 +1309,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination {
+.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination {
   color: #666666;
 }
 
@@ -3382,7 +3382,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: .25rem;
 }
 
-.form__input, .s-form input, .s-form textarea {
+.form__input, .s-form input, .s-form textarea, .s-form select {
   font: inherit;
   min-height: 1.875rem;
   min-width: 50%;
@@ -3390,12 +3390,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border: solid 1px #dfe0e1;
 }
 
-.form__input:focus, .s-form input:focus, .s-form textarea:focus {
+.form__input:focus, .s-form input:focus, .s-form textarea:focus, .s-form select:focus {
   outline: none;
   border-width: 2px;
 }
 
-.form__input--big, .s-form input.big, .s-form textarea {
+.form__input--big, .s-form input.big, .s-form textarea, .s-form select.big {
   min-height: 2.5rem;
   min-width: 75%;
 }
@@ -3407,6 +3407,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .form__fieldset, .s-form fieldset {
   margin-bottom: 1rem;
+}
+
+.form__select-container {
+  position: relative;
+}
+
+.form__select-container:after {
+  font-family: FontAwesome;
+  content: "\f078";
+  color: #71a32b;
+  position: absolute;
+  right: 5%;
+  line-height: 2.25rem;
+  cursor: pointer;
+  pointer-events: none;
 }
 
 .info-box {
@@ -4399,6 +4414,8 @@ select {
   border: 1px solid #bbbbbb;
   padding: 10px;
   color: #333333;
+  background-color: #ffffff;
+  border-radius: 0;
   text-indent: 0.01px;
   text-overflow: "";
 }
