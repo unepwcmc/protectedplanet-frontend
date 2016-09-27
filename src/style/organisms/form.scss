@@ -34,4 +34,20 @@
   @include e(fieldset) {
     margin-bottom: 1rem;
   }
+
+  @include e(select-container) {
+    position: relative;
+
+    &:after {
+      font-family: FontAwesome;
+      content: "\f078";
+      color: $green;
+
+      position: absolute;
+      right: 5%;
+      line-height: 2.25rem;
+      cursor: pointer;
+      pointer-events: none;
+    }
+  }
 }
