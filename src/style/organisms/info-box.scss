@@ -11,6 +11,11 @@
 
   @include m(overflow) {
     margin: { left: -1rem; right: -1rem; }
+
+    @include only-mobile {
+      margin: 0;
+    }
+
   }
 
   @include m(alt-color) {

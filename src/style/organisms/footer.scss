@@ -6,6 +6,11 @@
 
   padding-left: 1.5rem;
 
+  @include only-mobile {
+    padding: 1rem 1.25rem;
+  }
+
+
   font-size: 0.938em;
   background-color: $navbar__bg-color;
 
@@ -19,7 +24,13 @@
       border-left: solid 0.125rem $footer-element-with-separator__border-left-color;
     }
 
-    margin-right: 1rem;
+    @include only-desktop {
+      margin-right: 1rem;
+    }
+
+    @include m(logos) {
+      min-width: 80px;
+    }
 
     @include color($navbar-element__color);
 

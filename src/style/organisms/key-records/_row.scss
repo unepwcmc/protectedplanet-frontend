@@ -1,3 +1,5 @@
 @include e(row) {
+  @include clearfix;
+
   margin-bottom: .5rem;
 }

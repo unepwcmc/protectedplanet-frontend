@@ -11,6 +11,10 @@
   width: 100%;
   z-index: $z-index-10;
 
+  @include only-mobile {
+    padding: .5rem 1rem;
+  }
+
   @include e(arrow) {
     content: "";
     width: 0;

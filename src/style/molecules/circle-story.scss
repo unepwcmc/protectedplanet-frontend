@@ -1,6 +1,11 @@
 @include b(circle-story) {
   height: 15rem;
 
+  @include only-mobile {
+    height: initial;
+    margin-bottom: 2rem;
+  }
+
   @include m(flex) {
     @include flexbox;
     @include justify-content(flex-start);

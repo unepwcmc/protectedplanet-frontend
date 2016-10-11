@@ -5,6 +5,11 @@
     max-width: $max-width--desktop;
     width: 80%;
     margin: auto;
+
+    @include only-mobile {
+      width: 100%;
+      padding: 0 2.25rem;
+    }
   }
 
   @include m(fullscreen) {
@@ -12,6 +17,10 @@
     width: 100%;
     padding: 1.25rem;
     padding-bottom: 0;
+
+    @include only-mobile {
+      padding: 0;
+    }
   }
 
   @include m(right-padded) {
@@ -20,6 +29,10 @@
 
   @include m(push-bottom) {
     margin-bottom: 12rem;
+
+    @include only-mobile {
+      margin-bottom: 6rem;
+    }
   }
 
   @include m(push-top) {

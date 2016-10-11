@@ -4,6 +4,13 @@
   bottom: 75px;
   overflow-y: auto;
   width: 450px;
+
+  @include only-mobile {
+    position: initial;
+    top: initial;
+    bottom: initial;
+    width: initial;
+  }
 }
 
 .old-map {
@@ -30,6 +37,10 @@
 .fixed-footer {
   position: fixed;
   bottom: 0;
+
+  @include only-mobile {
+    position: initial;
+  }
 }
 
 .factsheet {

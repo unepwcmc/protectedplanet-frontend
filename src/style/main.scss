@@ -17,6 +17,7 @@
 
 // development mixins
 @import 'utilities/bem';
+@import 'utilities/responsive';
 
 // variables
 @import 'variables/colors';
@@ -57,6 +58,7 @@
 @import 'molecules/horizontal-bar';
 @import 'molecules/link-with-icon';
 @import 'molecules/map';
+@import 'molecules/mobile-menu';
 @import 'molecules/modal';
 @import 'molecules/reference';
 @import 'molecules/search-bar';

@@ -57,9 +57,26 @@
     bottom: 2em;
   }
 
+  @include only-mobile {
+    margin-top: .666rem;
+  }
+
+  @include only-mobile {
+    @include m(overflow) {
+
+      margin-left: -2.25rem;
+      margin-right: -2.25rem;
+    }
+  }
+
   @include m(no-margin-top) {
     margin-top: 0;
   }
+
+  @include m(no-margin-bottom) {
+    margin-bottom: 0;
+  }
+
 
   @include _top;
 

@@ -44,6 +44,11 @@
   @include m(right) {
     &:first-child  { margin-left: auto; }
     &:nth-child(2) { margin-left: auto; }
+    &:nth-child(8) { margin-left: auto; }
+  }
+
+  @include m(push-right) {
+    margin-left: auto;
   }
 
   @include m(bigger) {

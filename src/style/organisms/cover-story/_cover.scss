@@ -6,4 +6,9 @@
 
   height: 100%;
   width: 65%;
+
+  @include only-mobile {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
 }

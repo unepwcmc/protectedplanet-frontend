@@ -131,6 +131,10 @@ $width--search-sidebar: 270px;
 .search-parent #map, .search-parent .search-grid {
   left: $width--search-sidebar;
 
+  @include only-mobile {
+    left: initial;
+  }
+
   transition: left $search-sidebar-transition-time ease;
 
   &.opened {
@@ -163,16 +167,29 @@ $width--search-sidebar: 270px;
 }
 
 .search-grid {
-  @include span-columns(9.5);
-  @include shift(2.5);
+  @include clearfix;
+
   background-color: $grey-5;
   padding: 1rem;
+
+  @include only-desktop {
+    @include span-columns(9.5);
+    @include shift(2.5);
+  }
 }
 
 .result {
   background-color: $white;
-  @include span-columns(3);
-  @include omega(4n);
+
+  @include only-desktop {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+
+  @include only-mobile {
+    @include span-columns(6);
+    @include omega(2n);
+  }
 
   margin-bottom: 1rem;
   border-right: 2px solid $grey-15;

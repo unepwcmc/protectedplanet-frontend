@@ -4,6 +4,10 @@
   margin-bottom: 1rem;
   margin: {left: auto; right: auto;}
 
+  @include only-mobile {
+    padding: 0 1rem;
+  }
+
   @include m(padding-top) {
     padding-top: 2rem;
   }

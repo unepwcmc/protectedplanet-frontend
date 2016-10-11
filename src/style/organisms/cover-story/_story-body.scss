@@ -1,5 +1,5 @@
 @include e(story-body) {
-  background-color: white;
+  background-color: $white;
   z-index: 100;
 
   @include flex(1);
@@ -7,14 +7,28 @@
 
   padding-top: 2.5rem;
 
+  @include only-mobile {
+    padding-top: 0;
+  }
+
   @include m(left) {
     margin-right: -6rem;
     padding-right: 2.5rem;
+
+    @include only-mobile {
+      margin-right: 0;
+      padding-left: 0;
+    }
   }
 
   @include m(right) {
     margin-left: -6rem;
     padding-left: 2.5rem;
+
+    @include only-mobile {
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
 }
 

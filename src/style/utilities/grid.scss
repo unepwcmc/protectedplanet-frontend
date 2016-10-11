@@ -9,7 +9,10 @@
 @include b(half) {
   @extend %with-right-border;
   @include span-columns(6);
-  @media (max-width: 769px and not print) { @include span-columns(12); }
+
+  @include only-mobile {
+    @include span-columns(12);
+  }
 
   @include m(no-margin) {
     width: 50%;
@@ -62,6 +65,10 @@
 
 @include b(flex-start) {
   @extend %flexbox;
+
+  @include only-mobile {
+    flex-direction: column;
+  }
 }
 
 @include b(space-between) {

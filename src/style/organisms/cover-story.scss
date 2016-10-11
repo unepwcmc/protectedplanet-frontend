@@ -1,6 +1,11 @@
 @include b(cover-story) {
   @include flexbox;
 
+  @include only-mobile {
+    @include flex-direction(column);
+  }
+
+
   @import 'cover-story/_cover';
   @import 'cover-story/_story';
   @import 'cover-story/_story-body';

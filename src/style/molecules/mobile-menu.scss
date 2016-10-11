@@ -1,0 +1,44 @@
+@include b(mobile-menu) {
+  @include e(hamburger) {
+    &.is-open {
+      background-color: $navbar__bg-color--darker;
+    }
+  }
+
+  @include e(hamburger-icon) {
+    padding: .25rem .33rem;
+    border-radius: .325rem;
+    border: solid 1px $white;
+  }
+
+  @include e(element) {
+    @include text(body);
+    @include line-height($navbar__height);
+    @include color($navbar-element__color);
+
+    padding: 0 .625rem;
+    background-color: $navbar__bg-color--darker;
+  }
+
+  @include e(switch) {
+    &.is-open {
+      &:after { @include fa(chevron-up); }
+    }
+
+    &.is-closed {
+      &:after { @include fa(chevron-down); }
+    }
+  }
+
+  @include e(element-button) {
+    width: 100%;
+    text-align: left;
+  }
+
+  @include e(subelement) {
+    background-color: $navbar__bg-color;
+    margin-left: -.625rem;
+    margin-right: -.625rem;
+    padding: 0 .625rem;
+  }
+}

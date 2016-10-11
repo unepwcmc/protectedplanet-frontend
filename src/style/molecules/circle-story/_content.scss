@@ -1,3 +1,7 @@
 @include e(content) {
   margin-bottom: 1rem;
+
+  @include only-mobile {
+    display: inline;
+  }
 }

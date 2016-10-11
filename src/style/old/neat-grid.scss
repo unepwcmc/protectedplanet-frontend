@@ -4,6 +4,7 @@ $max-width: 100%;
 
 section {
   @include outer-container;
+  max-width: initial;
 }
 
 .col-one { @include span-columns(1); }
