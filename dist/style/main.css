@@ -1355,6 +1355,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 @media only screen and (max-width: 768px) {
   .disclaimer {
     padding: .5rem 1rem;
+    font-size: .5rem;
+    line-height: 1.5;
   }
 }
 
@@ -1369,6 +1371,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: absolute;
   left: 50%;
   margin-left: -35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .disclaimer__arrow {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 20px solid #f2f2f2;
+    margin-left: -25px;
+  }
 }
 
 .disclaimer__arrow-inner {
@@ -2427,43 +2438,73 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 100%;
 }
 
-.search-bar__form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  box-flex: 1;
-  -webkit-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+@media only screen and (min-width: 768px) {
+  .search-bar__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .search-bar__form:not(:last-child) {
+    border-right: solid 1px #dfe0e1;
+    margin-right: .875rem;
+    padding-right: .875rem;
+  }
 }
 
-.search-bar__form:not(:last-child) {
-  border-right: solid 1px #dfe0e1;
-  margin-right: .875rem;
-  padding-right: .875rem;
+@media only screen and (max-width: 768px) {
+  .search-bar__form {
+    width: 100%;
+    height: 40px;
+  }
+  .search-bar__form:after {
+    content: "";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+    right: 0;
+    margin-right: 5%;
+    color: #dfe0e1;
+    pointer-events: none;
+  }
 }
 
 .search-bar__input {
-  box-sizing: border-box;
-  height: 100%;
-  border: solid 1px #dfe0e1;
-  flex-grow: 1;
-  margin-right: .625rem;
-  padding: 0 .5rem;
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.333rem;
+  box-sizing: border-box;
+  height: 100%;
+  border: solid 1px #dfe0e1;
 }
 
-.search-bar__input:focus {
-  outline: none;
-  border-width: 2px;
+@media only screen and (min-width: 768px) {
+  .search-bar__input {
+    padding: 0 .5rem;
+    flex-grow: 1;
+    margin-right: .625rem;
+  }
+  .search-bar__input:focus {
+    outline: none;
+    border-width: 2px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar__input {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 .search-bar__submit {
@@ -3806,6 +3847,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding-right: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .search-result {
+    padding-right: 0;
+  }
+}
+
 .search-result__title {
   color: #71a32b;
   font-family: 'MuseoSans';
@@ -4195,6 +4242,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding-right: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .article {
+    padding: 0;
+  }
+}
+
 .article__title, .s-article h1, .s-article h2, .s-article h3, .s-article h4, .s-article h5 {
   margin-bottom: 2.5rem;
   font-family: 'MuseoSans';
@@ -4206,6 +4259,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .article__title:not(:first-child), .s-article h1:not(:first-child), .s-article h2:not(:first-child), .s-article h3:not(:first-child), .s-article h4:not(:first-child), .s-article h5:not(:first-child) {
   margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .article__title, .s-article h1, .s-article h2, .s-article h3, .s-article h4, .s-article h5 {
+    margin-bottom: 1.5rem;
+    font-family: 'MuseoSans';
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
 .article__title--smaller {
@@ -4321,6 +4384,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .vertical-nav__element:active {
   color: #699728;
+}
+
+@media only screen and (max-width: 768px) {
+  .vertical-nav__element {
+    padding-left: 0;
+  }
 }
 
 .vertical-nav__element--child {
