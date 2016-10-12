@@ -20,6 +20,10 @@
       right: .5rem;
     }
 
+    @include only-mobile {
+      padding-left: 0;
+    }
+
     @include m(child) {
       padding-left: 2rem;
     }

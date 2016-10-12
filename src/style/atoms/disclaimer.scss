@@ -13,6 +13,8 @@
 
   @include only-mobile {
     padding: .5rem 1rem;
+    font-size: .5rem;
+    line-height: 1.5;
   }
 
   @include e(arrow) {
@@ -26,6 +28,13 @@
     position: absolute;
     left: 50%;
     margin-left: -35px;
+
+    @include only-mobile {
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 20px solid #f2f2f2;
+      margin-left: -25px;
+    }
   }
 
   @include e(arrow-inner) {

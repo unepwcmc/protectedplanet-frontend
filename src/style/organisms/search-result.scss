@@ -9,6 +9,9 @@
     left: 0;
     right: 3rem;
   }
+  @include only-mobile {
+      padding-right: 0;
+  }
 
   @include e(title) {
     @include color($search-result-title__color);
