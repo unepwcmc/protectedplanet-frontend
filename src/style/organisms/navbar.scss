@@ -6,7 +6,7 @@
   padding-left: 1.25rem;
 
   @include only-mobile {
-    padding: 0 1.25rem;
+    padding: 0 .5rem;
   }
 
   @include m(darker) {
