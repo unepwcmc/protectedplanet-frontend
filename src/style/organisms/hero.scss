@@ -36,6 +36,11 @@
 
       @include text(xxlarge, thin);
       @include color($color--base);
+
+      @include only-mobile {
+        @include text(xlarge, thin);
+        line-height: 1.5;
+      }
     }
 
     @include m(push) {
@@ -63,7 +68,6 @@
 
   @include only-mobile {
     @include m(overflow) {
-
       margin-left: -2.25rem;
       margin-right: -2.25rem;
     }
@@ -91,14 +95,27 @@
     background: asset-url('images/background.jpg') no-repeat;
     background-position: center center;
     background-size: 100%;
+
+    @include only-mobile {
+      text-align: center;
+      padding: 0 2rem;
+    }
   }
 
   @include e(cover-text) {
     @include text(xxlarge, normal);
     @include color($white);
 
+    @include only-mobile {
+      @include text(xlarge, normal);
+    }
+
     @include m(alt) {
       @include text--alt(xxlarge, x-bold);
+
+      @include only-mobile {
+        @include text--alt(xlarge, x-bold);
+      }
     }
   }
 }
