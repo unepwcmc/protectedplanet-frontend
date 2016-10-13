@@ -2973,8 +2973,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   -ms-flex-direction: column;
   height: 300px;
   background: url("images/background.jpg") no-repeat;
-  background-position: center center;
-  background-size: 100%;
+  background-position: 50% 100%;
+  background-size: 100% 110%;
 }
 
 @media only screen and (max-width: 768px) {
