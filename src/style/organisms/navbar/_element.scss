@@ -61,10 +61,6 @@
     @include line-height($navbar__height--thinner);
   }
 
-  @include m(push-right) {
-    margin-right: 1rem;
-  }
-
   @include m(larger) {
     padding: 0 1.25rem;
   }
