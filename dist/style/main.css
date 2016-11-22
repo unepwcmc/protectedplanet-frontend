@@ -2942,6 +2942,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #71a32b;
 }
 
+.hero__country-link:not(:last-child) {
+  border-right: solid 1px #ddd;
+  padding-right: 9px;
+  padding-left: 5px;
+}
+
 .hero__cover {
   -webkit-box-pack: center;
   -moz-box-pack: center;

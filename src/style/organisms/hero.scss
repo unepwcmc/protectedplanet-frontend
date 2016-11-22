@@ -53,6 +53,14 @@
     @extend %acts-as-link;
     @include color($hero-title__color);
   }
+
+  @include e(country-link) {
+    &:not(:last-child) {
+      border-right: solid 1px #ddd;
+      padding-right: 9px;
+      padding-left: 5px;
+    }
+  }
 }
 
 @include b(hero) {
