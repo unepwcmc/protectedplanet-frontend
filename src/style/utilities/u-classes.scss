@@ -24,7 +24,7 @@
 
 // colors
 .u-link-color       { @include color($link__color);        }
-.u-base-color       { @extend %color--base;                }
+.u-base-color       { @extend %color-base;                 }
 
 // sizes
 .u-width-20         { width: 20%;                          }

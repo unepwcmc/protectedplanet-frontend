@@ -7,7 +7,6 @@
 }
 
 @include b(half) {
-  @extend %with-right-border;
   @include span-columns(6);
 
   @include only-mobile {
