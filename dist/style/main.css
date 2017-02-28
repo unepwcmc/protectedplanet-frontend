@@ -1309,7 +1309,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination {
+.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color {
   color: #666666;
 }
 
@@ -2438,6 +2438,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 100%;
 }
 
+.search-bar--bigger {
+  height: 2.375rem;
+}
+
+.search-bar--push {
+  margin-bottom: 1.25rem;
+}
+
 @media only screen and (min-width: 768px) {
   .search-bar__form {
     display: -webkit-box;
@@ -2496,7 +2504,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
   .search-bar__input:focus {
     outline: none;
-    border-width: 2px;
   }
 }
 
@@ -2557,21 +2564,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #71a32b;
   content: "";
   font-family: 'FontAwesome';
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .table__column.is-sorted-asc:after, .s-article table tr:first-child td.is-sorted-asc:after {
   color: #71a32b;
   content: "";
   font-family: 'FontAwesome';
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .table__column.is-sorted-desc:after, .s-article table tr:first-child td.is-sorted-desc:after {
   color: #71a32b;
   content: "";
   font-family: 'FontAwesome';
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .table__column--no-arrows:before, .table__column--no-arrows:after {
@@ -2589,12 +2596,18 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 1rem;
   line-height: 1.333rem;
   line-height: 1.666em;
-  padding-top: 0.65em;
+  padding-top: .65rem;
+  padding-right: .65em;
+  vertical-align: middle;
   text-align: left;
 }
 
 .table__label--link {
   color: #71a32b;
+}
+
+.table__label--align-top {
+  vertical-align: top;
 }
 
 .table__row, .s-article table tr:not(:first-child) {
@@ -2613,6 +2626,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .table__row--last td {
   padding-top: 1em;
+}
+
+.table__row--first td {
+  padding-top: 1.5rem;
 }
 
 .table__value {
@@ -2936,6 +2953,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .hero__title--push {
   padding-bottom: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+.hero__title--with-border {
+  border-bottom: solid 1px #dfe0e1;
 }
 
 .hero__link {
@@ -3698,6 +3719,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   content: "\f078";
   color: #71a32b;
   position: absolute;
+  top: 0;
   right: 5%;
   line-height: 2.25rem;
   cursor: pointer;
@@ -4334,6 +4356,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 1rem;
 }
 
+.article__title--no-push {
+  margin-bottom: 0;
+}
+
 .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p {
   margin-bottom: 1.25rem;
   font-family: 'MuseoSans';
@@ -4786,7 +4812,7 @@ sup {
 strong {
   font-family: 'MuseoSans';
   font-weight: 500;
-  color: #333333;
+  color: #666666;
 }
 
 img {
@@ -4824,8 +4850,7 @@ select {
   margin-bottom: 30px;
 }
 
-.protected_areas-parent #map
-.protected_areas-parent {
+.protected_areas-parent #map .protected_areas-parent {
   top: 120px;
 }
 
@@ -6403,6 +6428,14 @@ table {
 
 .u-alt-font {
   font-family: 'MuseoSlab';
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
 }
 
 .u-left {
