@@ -7,6 +7,14 @@
   height: $search-bar__height;
   width: 100%;
 
+  @include m(bigger) {
+    height: $search-bar--bigger__height;
+  }
+
+  @include m(push) {
+    margin-bottom: 1.25rem;
+  }
+
   @include e(form) {
     @include only-desktop {
       @include flexbox;
@@ -41,7 +49,7 @@
     border: solid 1px $grey-15;
 
     @include only-desktop {
-      &:focus { outline: none; border-width: 2px; }
+      &:focus { outline: none; }
       padding: 0 .5rem;
       flex-grow: 1;
       margin-right: .625rem;

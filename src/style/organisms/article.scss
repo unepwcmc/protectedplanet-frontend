@@ -32,6 +32,10 @@
       @include text(headline);
       margin-bottom: 1rem;
     }
+
+    @include m(no-push) {
+      margin-bottom: 0;
+    }
   }
 
   @include e(paragraph) {

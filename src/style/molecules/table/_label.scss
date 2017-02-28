@@ -6,6 +6,12 @@
     color: $table-link__color;
   }
 
-  padding-top: 0.65em;
+  @include m(align-top) {
+    vertical-align: top;
+  }
+
+  padding-top: .65rem;
+  padding-right: .65em;
+  vertical-align: middle;
   text-align: left;
 };

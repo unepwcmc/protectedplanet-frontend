@@ -45,6 +45,8 @@
 .u-alt-xxlarge      { @include text--alt(xxlarge, x-bold); }
 .u-mono             { font-family: monospace;              }
 .u-alt-font         { font-family: 'MuseoSlab';            }
+.u-text-left        { text-align: left;                    }
+.u-text-right       { text-align: right;                   }
 
 // floats
 .u-left             { float: left;                         }

@@ -3,7 +3,7 @@
     @extend %clearfix;
 
     max-width: $max-width--desktop;
-    width: 80%;
+    width: $container-profile--width;
     margin: auto;
 
     @include only-mobile {

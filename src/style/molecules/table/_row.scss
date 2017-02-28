@@ -8,4 +8,8 @@
     td { padding-top: 1em; }
     font-weight: bolder;
   }
+
+  @include m(first) {
+    td { padding-top: 1.5rem; }
+  }
 };

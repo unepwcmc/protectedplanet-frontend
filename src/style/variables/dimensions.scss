@@ -31,10 +31,14 @@ $map--main__height: 570px !default;
 
 // molecules/search-bar
 $search-bar__height: 1.875rem;
+$search-bar--bigger__height: 2.375rem;
 
 // organisms/fact
 $fact-header__border-bottom-size: 1px !default;
 $fact-body__padding-top-bottom: 1rem;
+
+// organisms/container
+$container-profile--width: 80% !default;
 
 // organisms/navbar
 $navbar__height: 50px !default;

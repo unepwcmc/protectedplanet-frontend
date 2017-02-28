@@ -14,21 +14,21 @@
   @include m(with-sorting) {
     &:after {
       @include color($green);
-      @include fa(arrow-both, $margin: (direction: left, value: 5px));
+      @include fa(arrow-both, $margin: (direction: left, value: 7px));
     }
   }
 
   &.is-sorted-asc {
     &:after {
       @include color($green);
-      @include fa(arrow-up, $margin: (direction: left, value: 5px));
+      @include fa(arrow-up, $margin: (direction: left, value: 7px));
     }
   }
 
   &.is-sorted-desc {
     &:after {
       @include color($green);
-      @include fa(arrow-down, $margin: (direction: left, value: 5px));
+      @include fa(arrow-down, $margin: (direction: left, value: 7px));
     }
   }
 
