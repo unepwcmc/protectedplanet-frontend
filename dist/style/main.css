@@ -2353,12 +2353,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   display: block;
 }
 
-.modal input {
-  padding: 5px;
-  border: 0;
-  background: #bbbbbb;
-}
-
 .btn-close {
   cursor: pointer;
   position: absolute;
@@ -2961,12 +2955,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .hero__link {
   color: #71a32b;
-}
-
-.hero__country-link:not(:last-child) {
-  border-right: solid 1px #ddd;
-  padding-right: 9px;
-  padding-left: 5px;
 }
 
 .hero__cover {
