@@ -1,6 +1,10 @@
 @include e(value) {
   text-align: right;
 
+  @include line-height(1.666em);
+  vertical-align: middle;
+  padding-top: .65rem;
+
   @include m(link) {
     color: $table-link__color;
   }
