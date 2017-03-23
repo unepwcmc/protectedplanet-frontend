@@ -4,10 +4,11 @@
   }
 }
 @mixin unepwcmc-logo {
-  width: 75px;
-  height: 50px;
+  width: 121px;
+  height: 52px;
 
-  background: asset-url('images/UNEP-WCMC_logo@2x.png') no-repeat;
+  background: url("https://s3.amazonaws.com/wcmc.logo/UN-Environment-WCMC+logo+2017+white.svg") no-repeat;
+
   background-size: 80%;
   background-position: center;
 }
