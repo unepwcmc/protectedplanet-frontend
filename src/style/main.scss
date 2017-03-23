@@ -1,11 +1,11 @@
 // bower components
-// flexbox
-@import '../../../sass-flex-mixin/flexbox';
-
 // grids
 @import '../../../bourbon/app/assets/stylesheets/bourbon';
 @import '../../../neat/app/assets/stylesheets/neat';
 @import '../../../neat/app/assets/stylesheets/neat-helpers';
+
+// flexbox
+@import '../../../sass-flex-mixin/flexbox';
 
 // forms
 @import '../../../select2/select2';
