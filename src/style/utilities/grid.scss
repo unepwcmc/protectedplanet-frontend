@@ -7,7 +7,6 @@
 }
 
 @include b(half) {
-  @extend %with-right-border;
   @include span-columns(6);
   @media (max-width: 769px and not print) { @include span-columns(12); }
 
