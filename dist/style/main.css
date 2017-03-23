@@ -1,18 +1,18 @@
 @charset "UTF-8";
-.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 html {
   box-sizing: border-box;
 }
 
 *, *::after, *::before {
   box-sizing: inherit;
+}
+
+.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*
@@ -1374,9 +1374,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .unepwcmc-logo {
-  width: 75px;
-  height: 50px;
-  background: url("images/UNEP-WCMC_logo@2x.png") no-repeat;
+  width: 121px;
+  height: 52px;
+  background: url("https://s3.amazonaws.com/wcmc.logo/UN-Environment-WCMC+logo+2017+white.svg") no-repeat;
   background-size: 80%;
   background-position: center;
 }
@@ -1827,14 +1827,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .alert--flex {
   -webkit-box-align: start;
-  -moz-box-align: start;
-  box-align: start;
+  -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
-  -ms-align-items: flex-start;
-  -o-align-items: flex-start;
   align-items: flex-start;
-  -ms-flex-align: start;
 }
 
 .alert--push {
@@ -1964,23 +1960,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
   justify-content: center;
-  -ms-flex-pack: center;
   -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  box-align: stretch;
+  -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
-  -ms-align-items: stretch;
-  -o-align-items: stretch;
   align-items: stretch;
-  -ms-flex-align: stretch;
   padding: 0 .1rem;
   height: 2.5rem;
   width: 100%;
@@ -2112,37 +2100,25 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-  -moz-box-align: baseline;
-  box-align: baseline;
+  -ms-flex-align: baseline;
   -webkit-align-items: baseline;
   -moz-align-items: baseline;
-  -ms-align-items: baseline;
-  -o-align-items: baseline;
   align-items: baseline;
-  -ms-flex-align: baseline;
   -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
+  -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
   padding: 0 1.25rem;
   margin-bottom: .666rem;
 }
 
 .hero__top--centered {
   -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
   justify-content: center;
-  -ms-flex-pack: center;
 }
 
 .hero__title {
@@ -2183,33 +2159,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .hero__cover {
   -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
   justify-content: center;
-  -ms-flex-pack: center;
   -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
+  -ms-flex-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
   -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
+  -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
-  flex-direction: column;
   -ms-flex-direction: column;
+  flex-direction: column;
   height: 300px;
   background: url("images/background.jpg") no-repeat;
   background-position: center center;
@@ -2334,8 +2298,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .navbar__element--with-separator {
   -webkit-align-self: center;
   -moz-align-self: center;
-  align-self: center;
   -ms-flex-item-align: center;
+  align-self: center;
   line-height: 25px;
   padding: 0 1rem;
   border-left: solid 0.125rem #699728;
@@ -2524,14 +2488,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .footer {
   -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
+  -ms-flex-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center;
   width: 100%;
   padding-left: 1.5rem;
   font-size: 0.938em;
@@ -2614,26 +2574,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .stats-card__body {
   -webkit-box-pack: start;
-  -moz-box-pack: start;
-  box-pack: start;
+  -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
   justify-content: flex-start;
-  -ms-flex-pack: start;
   -webkit-box-align: end;
-  -moz-box-align: end;
-  box-align: end;
+  -ms-flex-align: end;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
-  -ms-align-items: flex-end;
-  -o-align-items: flex-end;
   align-items: flex-end;
-  -ms-flex-align: end;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  box-lines: multiple;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -2955,14 +2904,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
+  -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
   cursor: pointer;
 }
 
@@ -3292,8 +3237,7 @@ select {
   margin-bottom: 30px;
 }
 
-.protected_areas-parent #map
-.protected_areas-parent {
+.protected_areas-parent #map .protected_areas-parent {
   top: 120px;
 }
 
@@ -4813,14 +4757,10 @@ table {
 
 .space-between {
   -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
+  -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
 }
 
 .right-padded {
