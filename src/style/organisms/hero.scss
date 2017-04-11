@@ -10,6 +10,10 @@
     @include m(centered) {
       @include justify-content(center);
     }
+
+    @include m(flex-start) {
+      @include justify-content(flex-start);
+    }
   }
 
   @include e(title) {
@@ -51,11 +55,27 @@
     @include m(with-border) {
       border-bottom: solid 1px $grey-15;
     }
+
+    @include m(nowrap) {
+      @include flex(1);
+
+      @include only-desktop {
+        white-space: nowrap;
+        margin-right: .3125rem;
+      }
+    }
   }
 
   @include e(link) {
     @extend %acts-as-link;
     @include color($hero-title__color);
+    @include flex(2);
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &:not(:last-child) { margin-right: 1.25rem; }
   }
 }
 

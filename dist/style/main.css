@@ -2856,6 +2856,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   justify-content: center;
 }
 
+.hero__top--flex-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
 .hero__title {
   font-family: 'MuseoSans';
   font-weight: 500;
@@ -2911,8 +2919,37 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-bottom: solid 1px #dfe0e1;
 }
 
+.hero__title--nowrap {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__title--nowrap {
+    white-space: nowrap;
+    margin-right: .3125rem;
+  }
+}
+
 .hero__link {
   color: #71a32b;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -moz-box-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.hero__link:not(:last-child) {
+  margin-right: 1.25rem;
 }
 
 .hero__cover {
