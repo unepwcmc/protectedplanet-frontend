@@ -13,6 +13,12 @@
   background-position: center;
 }
 .unepwcmc-logo { @include unepwcmc-logo; }
+.unepwcmc-logo--color {
+  @include unepwcmc-logo;
+  background-image: url("https://s3.amazonaws.com/wcmc.logo/UN-Environment-WCMC+logo+2017.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 @mixin iucn-logo {
   width: 50px;
