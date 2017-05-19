@@ -71,9 +71,11 @@
     @include color($hero-title__color);
     @include flex(2);
 
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    @include only-desktop {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
 
     &:not(:last-child) { margin-right: 1.25rem; }
   }

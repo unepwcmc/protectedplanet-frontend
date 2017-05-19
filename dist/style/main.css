@@ -2943,9 +2943,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   -moz-flex: 2;
   -ms-flex: 2;
   flex: 2;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__link {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 
 .hero__link:not(:last-child) {
