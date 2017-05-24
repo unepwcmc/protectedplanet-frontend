@@ -1,0 +1,44 @@
+@include b(pa-card) {
+  border-bottom: solid 1px $pa-card-border-bottom__color;
+
+  @include e(name) {
+    @extend %acts-as-link;
+    @include text(body, bold);
+
+    margin-bottom: .75rem;
+  }
+
+  @include e(subtitle) {
+    @include text(body);
+    margin-bottom: 1rem;
+  }
+
+  @include e(map) {
+    margin-bottom: 1rem;
+  }
+
+  @include e(details) {
+    padding-bottom: .25rem;
+  }
+
+  @include e(detail) {
+    @include text(body);
+    margin-bottom: .75rem;
+
+    @include m(inline) {
+      float: left;
+      &:not(:last-child) {
+        padding-right: 1rem;
+        border-right: solid 1px $pa-card-detail-border-right__color;
+      }
+      &:not(:first-child) {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  @include e(detail-link) {
+    @extend %acts-as-link;
+  }
+}
+

@@ -1313,27 +1313,27 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #666666;
 }
 
-.external-link, .breadcrumbs__link, .close-button, .link-with-icon, .tooltip__element, .uservoice, .hero__link, .article__link, .s-article a {
+.external-link, .breadcrumbs__link, .close-button, .link-with-icon, .pa-card__name, .pa-card__detail-link, .tooltip__element, .uservoice, .hero__link, .article__link, .s-article a {
   color: #71a32b;
 }
 
-.external-link:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover, .external-link:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
+.external-link:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .pa-card__name:hover, .pa-card__detail-link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover, .external-link:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .pa-card__name:active, .pa-card__detail-link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
   text-decoration: underline;
 }
 
-.external-link:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover {
+.external-link:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .pa-card__name:hover, .pa-card__detail-link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover {
   color: #83af46;
 }
 
-.external-link:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
+.external-link:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .pa-card__name:active, .pa-card__detail-link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
   color: #699728;
 }
 
-.external-link:visited:active, .breadcrumbs__link:visited:active, .close-button:visited:active, .link-with-icon:visited:active, .tooltip__element:visited:active, .uservoice:visited:active, .hero__link:visited:active, .article__link:visited:active, .s-article a:visited:active {
+.external-link:visited:active, .breadcrumbs__link:visited:active, .close-button:visited:active, .link-with-icon:visited:active, .pa-card__name:visited:active, .pa-card__detail-link:visited:active, .tooltip__element:visited:active, .uservoice:visited:active, .hero__link:visited:active, .article__link:visited:active, .s-article a:visited:active {
   color: #699728;
 }
 
-.external-link:visited, .breadcrumbs__link:visited, .close-button:visited, .link-with-icon:visited, .tooltip__element:visited, .uservoice:visited, .hero__link:visited, .article__link:visited, .s-article a:visited {
+.external-link:visited, .breadcrumbs__link:visited, .close-button:visited, .link-with-icon:visited, .pa-card__name:visited, .pa-card__detail-link:visited, .tooltip__element:visited, .uservoice:visited, .hero__link:visited, .article__link:visited, .s-article a:visited {
   color: #83af46;
 }
 
@@ -2350,6 +2350,55 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .total-overlay.visible {
   display: block;
+}
+
+.pa-card {
+  border-bottom: solid 1px #d8d8d8;
+}
+
+.pa-card__name {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.333rem;
+  margin-bottom: .75rem;
+}
+
+.pa-card__subtitle {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.333rem;
+  margin-bottom: 1rem;
+}
+
+.pa-card__map {
+  margin-bottom: 1rem;
+}
+
+.pa-card__details {
+  padding-bottom: .25rem;
+}
+
+.pa-card__detail {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.333rem;
+  margin-bottom: .75rem;
+}
+
+.pa-card__detail--inline {
+  float: left;
+}
+
+.pa-card__detail--inline:not(:last-child) {
+  padding-right: 1rem;
+  border-right: solid 1px #d8d8d8;
+}
+
+.pa-card__detail--inline:not(:first-child) {
+  padding-left: 1rem;
 }
 
 .reference:not(:last-child) {
