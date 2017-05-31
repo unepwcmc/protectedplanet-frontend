@@ -34,10 +34,11 @@
 
 @import 'atoms/colors';
 @import 'atoms/disclaimer';
-@import 'atoms/external-link';
 @import 'atoms/headers';
+@import 'atoms/icons';
 @import 'atoms/label';
 @import 'atoms/leaflet-controls';
+@import 'atoms/links';
 @import 'atoms/logos';
 @import 'atoms/overlay';
 @import 'atoms/small-text';
@@ -88,6 +89,7 @@
 @import 'organisms/article';
 @import 'organisms/vertical-nav';
 @import 'organisms/container';
+@import 'organisms/tabs';
 // organisms
 
 // old pp assets

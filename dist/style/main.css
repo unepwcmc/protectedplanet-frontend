@@ -1309,31 +1309,31 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color {
+.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .header--section, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color {
   color: #666666;
 }
 
-.external-link, .breadcrumbs__link, .close-button, .link-with-icon, .pa-card__name, .pa-card__detail-link, .tooltip__element, .uservoice, .hero__link, .article__link, .s-article a {
+.link--external, .breadcrumbs__link, .close-button, .link-with-icon, .pa-card__name, .pa-card__detail-link, .tooltip__element, .uservoice, .hero__link, .article__link, .s-article a {
   color: #71a32b;
 }
 
-.external-link:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .pa-card__name:hover, .pa-card__detail-link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover, .external-link:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .pa-card__name:active, .pa-card__detail-link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
+.link--external:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .pa-card__name:hover, .pa-card__detail-link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover, .link--external:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .pa-card__name:active, .pa-card__detail-link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
   text-decoration: underline;
 }
 
-.external-link:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .pa-card__name:hover, .pa-card__detail-link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover {
+.link--external:hover, .breadcrumbs__link:hover, .close-button:hover, .link-with-icon:hover, .pa-card__name:hover, .pa-card__detail-link:hover, .tooltip__element:hover, .uservoice:hover, .hero__link:hover, .article__link:hover, .s-article a:hover {
   color: #83af46;
 }
 
-.external-link:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .pa-card__name:active, .pa-card__detail-link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
+.link--external:active, .breadcrumbs__link:active, .close-button:active, .link-with-icon:active, .pa-card__name:active, .pa-card__detail-link:active, .tooltip__element:active, .uservoice:active, .hero__link:active, .article__link:active, .s-article a:active {
   color: #699728;
 }
 
-.external-link:visited:active, .breadcrumbs__link:visited:active, .close-button:visited:active, .link-with-icon:visited:active, .pa-card__name:visited:active, .pa-card__detail-link:visited:active, .tooltip__element:visited:active, .uservoice:visited:active, .hero__link:visited:active, .article__link:visited:active, .s-article a:visited:active {
+.link--external:visited:active, .breadcrumbs__link:visited:active, .close-button:visited:active, .link-with-icon:visited:active, .pa-card__name:visited:active, .pa-card__detail-link:visited:active, .tooltip__element:visited:active, .uservoice:visited:active, .hero__link:visited:active, .article__link:visited:active, .s-article a:visited:active {
   color: #699728;
 }
 
-.external-link:visited, .breadcrumbs__link:visited, .close-button:visited, .link-with-icon:visited, .pa-card__name:visited, .pa-card__detail-link:visited, .tooltip__element:visited, .uservoice:visited, .hero__link:visited, .article__link:visited, .s-article a:visited {
+.link--external:visited, .breadcrumbs__link:visited, .close-button:visited, .link-with-icon:visited, .pa-card__name:visited, .pa-card__detail-link:visited, .tooltip__element:visited, .uservoice:visited, .hero__link:visited, .article__link:visited, .s-article a:visited {
   color: #83af46;
 }
 
@@ -1410,13 +1410,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   left: -6px;
 }
 
-.external-link:after {
-  content: "";
-  font-family: 'FontAwesome';
-  margin-left: .25rem;
-  font-size: .666em;
-}
-
 .header-with-delimiter {
   margin-bottom: .625rem;
   font-family: 'MuseoSans';
@@ -1452,6 +1445,43 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding-bottom: .75rem;
 }
 
+.header--h1-small {
+  color: #666666;
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+.header--h1-small a {
+  color: #71a32b;
+}
+
+.header--section {
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+
+.icon--info {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.icon--info:before {
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.333rem;
+  color: #1d62b1;
+  content: '\f05a';
+  display: inline-block;
+  position: absolute;
+  top: -.125rem;
+  left: 0;
+}
+
 .label, .s-article pre, .s-article code {
   font-family: 'MuseoSans';
   font-weight: 500;
@@ -1472,6 +1502,33 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-radius: .25rem;
   margin-right: 0;
   margin-bottom: 2rem;
+}
+
+.link {
+  color: #71a32b;
+  font-family: 'MuseoSans';
+  font-size: .9375rem;
+  font-weight: 500;
+}
+
+.link--hero-download {
+  margin-right: 1.25rem;
+}
+
+.link--hero-download i {
+  margin-right: .5rem;
+}
+
+.link--external:after {
+  content: "";
+  font-family: 'FontAwesome';
+  margin-left: .25rem;
+  font-size: .666em;
+}
+
+.link--page-anchor {
+  color: #71a32b;
+  font-weight: 500;
 }
 
 .logos__logo {
@@ -2353,7 +2410,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .pa-card {
-  border-bottom: solid 1px #d8d8d8;
+  color: #333333;
+  font-size: .9375rem;
+  margin-bottom: 2rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
 }
 
 .pa-card__name {
@@ -2369,6 +2429,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.333rem;
+  color: #4a4a4a;
   margin-bottom: 1rem;
 }
 
@@ -2377,6 +2438,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .pa-card__details {
+  border-bottom: solid 1px #d8d8d8;
   padding-bottom: .25rem;
 }
 
@@ -2385,6 +2447,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.333rem;
+  font-size: inherit;
   margin-bottom: .75rem;
 }
 
@@ -2399,6 +2462,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .pa-card__detail--inline:not(:first-child) {
   padding-left: 1rem;
+}
+
+.pa-card__detail-link {
+  font-weight: 300;
+  font-family: 'MuseoSlab';
 }
 
 .reference:not(:last-child) {
@@ -3358,7 +3426,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: .666em;
 }
 
-.fact__header {
+.fact__header, .header--section {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1.2rem;
@@ -3768,6 +3836,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 2rem 1.25rem;
 }
 
+.info-box--small {
+  font-weight: 300;
+  color: #333333;
+  font-family: 'MuseoSans';
+  font-size: .9375rem;
+  margin-right: 1rem;
+  margin-bottom: .25rem;
+  padding: .625rem;
+  display: inline-block;
+}
+
 .info-box__body {
   font-family: 'MuseoSans';
   font-weight: 300;
@@ -3816,6 +3895,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 1rem;
   line-height: 1.333rem;
   color: #71a32b;
+  cursor: pointer;
   padding-bottom: 1rem;
 }
 
@@ -4540,6 +4620,38 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .container--push-top {
   margin-top: 12rem;
+}
+
+.tab-container {
+  margin-bottom: 3rem;
+}
+
+.tab__titles {
+  border-bottom: solid 0.0625rem #d8d8d8;
+  margin-bottom: 1.5rem;
+}
+
+.tab__title {
+  font-weight: 900;
+  color: #333333;
+  cursor: pointer;
+  font-family: 'MuseoSans';
+  margin: 0 .9375rem;
+  padding: .9375rem 0;
+  display: inline-block;
+}
+
+.tab__title:first-child {
+  margin-left: 0;
+}
+
+.tab__title:last-child {
+  margin-right: 0;
+}
+
+.tab__title--active {
+  border-bottom: solid 0.3125rem #d8d8d8;
+  cursor: initial;
 }
 
 /* Defaults */
@@ -6123,7 +6235,7 @@ table {
   border-spacing: 0;
 }
 
-.section__body:after, .navbar:after, .info-box:after, .info-box__body:after, .search-result:after, .row:after, .container--profile:after, .container--fullscreen:after, .u-clearfix:after {
+.section__body:after, .navbar:after, .info-box:after, .info-box__body:after, .search-result:after, .row:after, .container--profile:after, .container--fullscreen:after, .tab__content:after, .u-clearfix:after {
   clear: both;
   content: "";
   display: table;
@@ -6356,6 +6468,11 @@ table {
 
 .u-width-100 {
   width: 100%;
+}
+
+.u-margin--page {
+  margin-left: 1.25rem;
+  margin-left: 1.25rem;
 }
 
 .u-italic {

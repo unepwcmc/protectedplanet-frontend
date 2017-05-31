@@ -1,6 +1,7 @@
 @include e(link) {
   @include text(body, bold);
   color: $info-box-link__color;
+  cursor: pointer;
 
   padding-bottom: $info-box-link__padding-bottom;
 }

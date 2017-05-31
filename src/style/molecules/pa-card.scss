@@ -1,5 +1,8 @@
 @include b(pa-card) {
-  border-bottom: solid 1px $pa-card-border-bottom__color;
+  color: $pa-card-text__color;
+  font-size: .9375rem;
+  margin-bottom: 2rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
 
   @include e(name) {
     @extend %acts-as-link;
@@ -10,6 +13,7 @@
 
   @include e(subtitle) {
     @include text(body);
+    color: $pa-card-subtitle__color;
     margin-bottom: 1rem;
   }
 
@@ -18,11 +22,13 @@
   }
 
   @include e(details) {
+    border-bottom: solid 1px $pa-card-border-bottom__color;
     padding-bottom: .25rem;
   }
 
   @include e(detail) {
     @include text(body);
+    font-size: inherit;
     margin-bottom: .75rem;
 
     @include m(inline) {
@@ -39,6 +45,9 @@
 
   @include e(detail-link) {
     @extend %acts-as-link;
+    @include font-weight(thin);
+
+    font-family: 'MuseoSlab';
   }
 }
 

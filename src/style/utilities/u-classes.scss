@@ -33,6 +33,9 @@
 .u-width-80         { width: 80%;                          }
 .u-width-100        { width: 100%;                         }
 
+// margin & padding
+.u-margin--page     { margin-left: 1.25rem; margin-left: 1.25rem; }
+
 // text
 .u-italic           { font-style: italic;                  }
 .u-font-inherit     { font: inherit;                       }
@@ -61,4 +64,3 @@
 .u-click-through    { pointer-events: none;                }
 .u-no-click-through { pointer-events: all;                 }
 .u-pdf-page-break   { page-break-before: always;           }
-

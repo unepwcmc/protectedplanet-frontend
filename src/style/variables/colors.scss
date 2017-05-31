@@ -34,6 +34,7 @@ $yellow: #ffe600;
 $grey-100: #333333;
 $grey-77: #666666;
 $grey-55: #8f8f8f;
+$grey-44: #4a4a4a;
 $grey-33: #bbbbbb;
 $grey-15: #dfe0e1;
 $grey-5: #f2f2f2;
@@ -144,9 +145,14 @@ $info-box__bg-color: $grey-5 !default;
 $info-box-link__color: $green !default;
 $info-box-link-icon__color: $green !default;
 $info-box-row__border-bottom: $grey-33 !default;
+$info-box__icon-color: $blue !default;
 
 // organisms/footer
 $footer-element-with-separator__border-left-color: $green--dark !default;
+
+//organisms/tabs
+$color--tabs__title: $grey-100;
+$color--tabs__title-border: $grey-4;
 
 // organisms/vertical-nav
 $vertical-nav-element-selected__color: $green !default;
@@ -157,6 +163,8 @@ $article-list-index__color: $green !default;
 // molecules/pa-card
 $pa-card-border-bottom__color: $grey-4 !default;
 $pa-card-detail-border-right__color: $grey-4 !default;
+$pa-card-subtitle__color: $grey-44;
+$pa-card-text__color: $grey-100;
 
 $color--base: $grey-77;
 $color--base-btn-bg: $green;

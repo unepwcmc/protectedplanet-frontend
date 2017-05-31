@@ -1,0 +1,34 @@
+.tab {
+  &-container {
+    margin-bottom: 3rem;
+  }
+
+    &__titles {
+      border-bottom: solid 0.0625rem $color--tabs__title-border;
+      margin-bottom: 1.5rem;
+    }
+
+      &__title {
+        @include font-weight(x-bold);
+        
+        color: $color--tabs__title;
+        cursor: pointer;
+        font-family: 'MuseoSans';
+        margin: 0 .9375rem; 
+        padding: .9375rem 0;
+
+        display: inline-block;
+
+        &:first-child { margin-left: 0; }
+        &:last-child { margin-right: 0; }
+
+        &--active {
+          border-bottom: solid 0.3125rem $color--tabs__title-border;
+          cursor: initial;
+        }
+      }
+
+    &__content {
+      @extend %clearfix;
+    }
+}

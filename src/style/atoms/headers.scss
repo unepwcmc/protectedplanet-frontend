@@ -26,3 +26,19 @@
     padding-bottom: .75rem;
   }
 }
+
+.header--h1-small {
+  @include color($color--base);
+  @include text(large);
+
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+
+  a { color: $link--color; }
+} 
+
+.header--section {
+  @extend .fact__header;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
