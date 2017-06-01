@@ -6464,6 +6464,14 @@ table {
   }
 }
 
+.two-fiths {
+  flex: 0 0 40%;
+}
+
+.three-fiths {
+  flex: 0 0 60%;
+}
+
 @media only screen and (max-width: 768px) {
   .flex-start {
     flex-direction: column;

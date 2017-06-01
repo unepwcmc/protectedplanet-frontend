@@ -62,6 +62,9 @@
   @media (max-width: 769px) { @include span-columns(12); }
 }
 
+@include b(two-fiths) { flex: 0 0 40%; }
+@include b(three-fiths) { flex: 0 0 60%; }
+
 @include b(flex-start) {
   @extend %flexbox;
 
