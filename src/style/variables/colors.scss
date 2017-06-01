@@ -34,6 +34,7 @@ $yellow: #ffe600;
 $grey-100: #333333;
 $grey-77: #666666;
 $grey-55: #8f8f8f;
+$grey-44: #4a4a4a;
 $grey-33: #bbbbbb;
 $grey-15: #dfe0e1;
 $grey-5: #f2f2f2;
@@ -53,6 +54,10 @@ $leaflet-control__color: $green !default;
 $leaflet-control__bg-color: $white !default;
 $leaflet-control__disabled-color: $grey-5 !default;
 $leaflet-control__border: $grey-15 !default;
+
+// atoms/buttons
+$button--hide-color: $green !default;
+$button--hide-border-color: $grey-4;
 
 // atoms/colors
 $link__color: $green !default;
@@ -101,6 +106,17 @@ $alert-warning--color: $orange !default;
 $alert-success--color: $green !default;
 $alert-info--color: $blue--dark !default;
 
+// molecules/key
+$key__title-color: $green !default;
+$key__title-hover-color: $grey-100 !default;
+$key-color-1: #71a32b;
+$key-color-2: #c6e3cb;
+$key-color-3: #80cbd1;
+$key-color-4: #40aed2;
+$key-color-5: #3383b9;
+$key-color-6: #27589e;
+$key-color-7: #1b2c85;
+
 // molecules/value
 $value-number__color: $green !default;
 $value-number-alt-color__color: $green--darker !default;
@@ -144,9 +160,14 @@ $info-box__bg-color: $grey-5 !default;
 $info-box-link__color: $green !default;
 $info-box-link-icon__color: $green !default;
 $info-box-row__border-bottom: $grey-33 !default;
+$info-box__icon-color: $blue !default;
 
 // organisms/footer
 $footer-element-with-separator__border-left-color: $green--dark !default;
+
+//organisms/tabs
+$tabs__title-color: $grey-100;
+$tabs__title-border-color: $grey-4;
 
 // organisms/vertical-nav
 $vertical-nav-element-selected__color: $green !default;
@@ -157,6 +178,8 @@ $article-list-index__color: $green !default;
 // molecules/pa-card
 $pa-card-border-bottom__color: $grey-4 !default;
 $pa-card-detail-border-right__color: $grey-4 !default;
+$pa-card-subtitle__color: $grey-44;
+$pa-card-text__color: $grey-100;
 
 $color--base: $grey-77;
 $color--base-btn-bg: $green;

@@ -1,0 +1,28 @@
+.link {
+  color: $info-box-link__color;
+  font-family: 'MuseoSans';
+  font-size: .9375rem;
+  @include font-weight(normal);
+
+  &--hero-download {
+    margin-right: 1.25rem;
+
+    & i { margin-right: .5rem; }
+  }
+
+  &--external {
+    @extend %acts-as-link;
+
+    &:after {
+      @include fa(external-link);
+
+      margin-left: .25rem;
+      font-size: .666em;
+    }
+  }
+
+  &--page-anchor {
+    @include color($link--color);
+    @include font-weight(normal);
+  }
+}

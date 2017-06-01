@@ -1,0 +1,30 @@
+%show-hide-styles {
+  @include font-weight(bold);
+
+  border: solid .125rem $button--hide-border-color;
+  border-radius: .25rem;
+  font-family: 'MuseoSlab';
+  font-size: .9375rem;
+  color: $button--hide-color;
+  padding: 0 1.125rem;  
+
+  &:before {
+    @include text--icon(body);
+
+    margin-right: .5rem;
+  }
+}
+
+.button {
+  &--hide {
+    @extend %show-hide-styles;
+
+    &:before { content: '\f070'; }
+  }
+
+  &--show {
+    @extend %show-hide-styles;
+
+    &:before { content: '\f06e'; }
+  }
+}

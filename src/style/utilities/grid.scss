@@ -78,3 +78,17 @@
 @include b(right-padded) {
   padding-right: 5%;
 }
+
+.flex-row {
+  @extend %flexbox;
+  @include flex-flow(row no-wrap);
+}
+
+.flex-row-wrap {
+  @extend %flexbox;
+  @include flex-flow(row wrap);
+}
+
+.flex-column-3 {
+  flex: 0 0 33.3%;
+}

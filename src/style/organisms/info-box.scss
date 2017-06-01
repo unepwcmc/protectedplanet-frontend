@@ -1,15 +1,15 @@
-@include b(info-box) {
+.info-box {
   @extend %clearfix;
   @extend %color-base;
 
   padding: $info-box__padding;
   margin-bottom: $info-box__margin-bottom;
 
-  @include m(fill-color) {
+  &--fill-color {
     background-color: $info-box__bg-color;
   }
 
-  @include m(overflow) {
+  &--overflow {
     margin: { left: -1rem; right: -1rem; }
 
     @include only-mobile {
@@ -18,26 +18,39 @@
 
   }
 
-  @include m(alt-color) {
+  &--alt-color {
     background-color: $green;
     color: $white;
   }
 
-  @include m(fff) {
+  &--fff {
     background-color: $white;
   }
 
-  @include m(hero) {
+  &--hero {
     min-width: 500px;
     padding: 1.275rem;
   }
 
-  @include m(shadow) {
+  &--shadow {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
-  @include m(padding-top-bottom) {
+  &--padding-top-bottom {
     padding: $info-box-padding-top-bottom__padding;
+  }
+
+  &--small {
+    @include font-weight(thin);
+    
+    color: $grey-100;
+    font-family: 'MuseoSans';
+    font-size: .9375rem;
+    margin-right: 1rem;
+    margin-bottom: .25rem;
+    padding: .625rem;
+
+    display: inline-block;
   }
 
   @import "info-box/_body";
