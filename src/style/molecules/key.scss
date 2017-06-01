@@ -8,10 +8,6 @@
 
     position: relative;
     top: -.1875rem;
-
-    &--green {
-      background-color: $green;
-    }
   }
 
   &__title {
@@ -26,5 +22,26 @@
     margin-bottom: 1.125rem;
 
     &:hover { color: $key__title-hover-color; }
+  }
+}
+
+//--------------------------------------------------------------------------------
+// key icon colours
+//-------------------------------------------------------------------------------- 
+$key-colors-count: 7;
+
+$key-colors:(
+  1: $key-color-1,
+  2: $key-color-2,
+  3: $key-color-3,
+  4: $key-color-4,
+  5: $key-color-5,
+  6: $key-color-6,
+  7: $key-color-7,
+);
+
+@for $i from 1 to $key-colors-count + 1 {
+  .key__title:nth-child(#{$i}) .key__icon {
+    background-color: map-get($key-colors, $i);
   }
 }

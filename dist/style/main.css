@@ -2126,10 +2126,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   top: -.1875rem;
 }
 
-.key__icon--green {
-  background-color: #71a32b;
-}
-
 .key__title {
   color: #71a32b;
   cursor: default;
@@ -2141,6 +2137,34 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .key__title:hover {
   color: #333333;
+}
+
+.key__title:nth-child(1) .key__icon {
+  background-color: #71a32b;
+}
+
+.key__title:nth-child(2) .key__icon {
+  background-color: #c6e3cb;
+}
+
+.key__title:nth-child(3) .key__icon {
+  background-color: #80cbd1;
+}
+
+.key__title:nth-child(4) .key__icon {
+  background-color: #40aed2;
+}
+
+.key__title:nth-child(5) .key__icon {
+  background-color: #3383b9;
+}
+
+.key__title:nth-child(6) .key__icon {
+  background-color: #27589e;
+}
+
+.key__title:nth-child(7) .key__icon {
+  background-color: #1b2c85;
 }
 
 .link-with-icon {

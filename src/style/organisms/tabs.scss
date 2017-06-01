@@ -4,14 +4,14 @@
   }
 
     &__titles {
-      border-bottom: solid 0.0625rem $color--tabs__title-border;
+      border-bottom: solid 0.0625rem $tabs__title-border-color;
       margin-bottom: 1.5rem;
     }
 
       &__title {
         @include font-weight(x-bold);
         
-        color: $color--tabs__title;
+        color: $tabs__title-color;
         cursor: pointer;
         font-family: 'MuseoSans';
         margin: 0 .9375rem; 
@@ -23,7 +23,7 @@
         &:last-child { margin-right: 0; }
 
         &--active {
-          border-bottom: solid 0.3125rem $color--tabs__title-border;
+          border-bottom: solid 0.3125rem $tabs__title-border-color;
           cursor: initial;
         }
       }
