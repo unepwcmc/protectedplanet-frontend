@@ -1,0 +1,30 @@
+.key {
+  @extend %clearfix;
+  @extend .flex-row-wrap;
+
+  &__icon {
+    margin-right: .5rem;
+    width: 1.875rem; height: 1.25rem;
+
+    position: relative;
+    top: -.1875rem;
+
+    &--green {
+      background-color: $green;
+    }
+  }
+
+  &__title {
+    @extend .flex-row;
+    @extend .flex-column-3;
+
+    color: $key__title-color;
+    cursor: default;
+    font-family: 'MuseoSans';
+    font-size: .9375rem;
+    line-height: 1.2;
+    margin-bottom: 1.125rem;
+
+    &:hover { color: $key__title-hover-color; }
+  }
+}
