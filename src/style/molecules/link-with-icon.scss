@@ -32,7 +32,7 @@
   }
 
   @include m(push) {
-    &:not(:last-child) { margin-bottom: .5rem; }
+    &:not(:last-child) { margin-bottom: rem-calc(8); }
   }
 
   @include m(no-color) {
@@ -44,7 +44,7 @@
 
   @include m(pull-right) {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: rem-calc(24);
   }
 
   @content;

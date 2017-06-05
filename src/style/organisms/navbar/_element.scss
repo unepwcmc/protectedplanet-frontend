@@ -1,6 +1,6 @@
 @include e(element) {
   position: relative;
-  padding: 0 .625rem;
+  padding: rem-calc(0 10);
 
   @include m(dark) {
     background-color: $navbar-element-dark__bg-color;
@@ -8,7 +8,7 @@
   }
 
   @include m(with-separator) {
-    border-left: solid 0.125rem $navbar-element-dark__bg-color;
+    border-left: solid rem-calc(2) $navbar-element-dark__bg-color;
 
     &:before { top: 0;    }
     &:after  { bottom: 0; }
@@ -16,8 +16,8 @@
       background-color: $navbar__bg-color;
 
       content: "";
-      width: .25rem;
-      height: .5rem;
+      width: rem-calc(4);
+      height: rem-calc(8);
       position: absolute;
       left: -.25rem;
     }
@@ -62,7 +62,7 @@
   }
 
   @include m(larger) {
-    padding: 0 1.25rem;
+    padding: rem-calc(0 20);
   }
 
   @include text(body);

@@ -6,14 +6,14 @@
 
   background: $color--map-disclaimer-bg;
   display: block;
-  padding: .333rem 6rem 1rem 6rem;
+  padding: rem-calc(5 96 16 96);
   text-align: center;
   width: 100%;
   z-index: $z-index-10;
 
   @include only-mobile {
-    padding: .5rem 1rem;
-    font-size: .5rem;
+    padding: rem-calc(8 16);
+    font-size: rem-calc(8);
     line-height: 1.5;
   }
 
@@ -21,19 +21,19 @@
     content: "";
     width: 0;
     height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 25px solid #f2f2f2;
+    border-left: rem-calc(35) solid transparent;
+    border-right: rem-calc(35) solid transparent;
+    border-top: rem-calc(25) solid #f2f2f2;
     top: 100%;
     position: absolute;
     left: 50%;
-    margin-left: -35px;
+    margin-left: rem-calc(-35);
 
     @include only-mobile {
-      border-left: 25px solid transparent;
-      border-right: 25px solid transparent;
-      border-top: 20px solid #f2f2f2;
-      margin-left: -25px;
+      border-left: rem-calc(25) solid transparent;
+      border-right: rem-calc(25) solid transparent;
+      border-top: rem-calc(20) solid #f2f2f2;
+      margin-left: rem-calc(-25);
     }
   }
 
@@ -44,23 +44,23 @@
       content: "";
       width: 0;
       height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 6px solid #333;
-      bottom: 13px;
+      border-left: rem-calc(5) solid transparent;
+      border-right: rem-calc(5) solid transparent;
+      border-top: rem-calc(6) solid #333;
+      bottom: rem-calc(13);
       position: absolute;
-      left: -5px;
+      left: rem-calc(-5);
     }
     &:after {
       content: "";
       width: 0;
       height: 0;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-top: 6px solid #f2f2f2;
-      bottom: 15px;
+      border-left: rem-calc(6) solid transparent;
+      border-right: rem-calc(6) solid transparent;
+      border-top: rem-calc(6) solid #f2f2f2;
+      bottom: rem-calc(15);
       position: absolute;
-      left: -6px;
+      left: rem-calc(-6);
     }
   }
 }

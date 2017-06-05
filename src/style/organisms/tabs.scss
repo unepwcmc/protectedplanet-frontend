@@ -1,11 +1,11 @@
 .tab {
   &-container {
-    margin-bottom: 3rem;
+    margin-bottom: rem-calc(48);
   }
 
     &__titles {
-      border-bottom: solid 0.0625rem $tabs__title-border-color;
-      margin-bottom: 1.5rem;
+      border-bottom: solid rem-calc(1) $tabs__title-border-color;
+      margin-bottom: rem-calc(24);
     }
 
       &__title {
@@ -14,8 +14,8 @@
         color: $tabs__title-color;
         cursor: pointer;
         font-family: 'MuseoSans';
-        margin: 0 .9375rem; 
-        padding: .9375rem 0;
+        margin: rem-calc(0 15); 
+        padding: rem-calc(15 0);
 
         display: inline-block;
 
@@ -23,7 +23,7 @@
         &:last-child { margin-right: 0; }
 
         &--active {
-          border-bottom: solid 0.3125rem $tabs__title-border-color;
+          border-bottom: solid rem-calc(5) $tabs__title-border-color;
           cursor: default;
         }
       }

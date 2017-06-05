@@ -1,16 +1,16 @@
 @include e(row) {
   width: 100%;
 
-  padding-top: 1rem;
-  border-bottom: solid 1px $info-box-row__border-bottom;
+  padding-top: rem-calc(16);
+  border-bottom: solid rem-calc(1) $info-box-row__border-bottom;
 
   @include m(around-padding) {
-    padding: 2rem 0;
+    padding: rem-calc(32 0);
   }
 
   @include m(light-border) {
     &:not(:last-child) {
-      border-bottom: solid 1px $grey-15;
+      border-bottom: solid rem-calc(1) $grey-15;
     }
   }
 

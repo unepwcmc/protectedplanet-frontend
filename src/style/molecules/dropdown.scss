@@ -2,8 +2,8 @@
   background-color: $dropdown__bg-color;
 
   left:0;
-  padding: 0 .625rem;
-  padding-bottom: 1.5rem;
+  padding: rem-calc(0 10);
+  padding-bottom: rem-calc(24);
   position: absolute;
   min-width: 100%;
   white-space: nowrap;
@@ -16,9 +16,9 @@
     left: initial;
     right: 0;
 
-    min-width: 30rem;
+    min-width: rem-calc(480);
     padding-bottom: initial;
-    padding: .625rem;
+    padding: rem-calc(10);
   }
 
   @include e(trigger) {
@@ -31,8 +31,8 @@
   }
 
   @include e(inner) {
-    border-top: solid 2px $dropdown-inner__border-top-color;
-    padding-top: .5rem;
+    border-top: solid rem-calc(2) $dropdown-inner__border-top-color;
+    padding-top: rem-calc(8);
 
     @include e(simple) {
       border-top: 0;
@@ -40,7 +40,7 @@
     }
 
     @include e(stretch) {
-      min-width: 25rem;
+      min-width: rem-calc(400);
     }
   }
 
@@ -51,7 +51,7 @@
     @include text(body);
 
     display: block;
-    padding: .625rem 1.25rem;
-    margin: 0 -.625rem;
+    padding: rem-calc(10 20);
+    margin: rem-calc(0 -10);
   }
 }

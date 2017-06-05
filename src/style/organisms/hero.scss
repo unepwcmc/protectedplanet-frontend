@@ -4,7 +4,7 @@
     @include align-items(baseline);
     @include justify-content(space-between);
 
-    padding: 0 1.25rem;
+    padding: rem-calc(0 20);
     margin-bottom: .666rem;
 
     @include m(centered) {
@@ -34,8 +34,8 @@
 
     @include m(article) {
       padding: {
-        left: .5rem;
-        right: .5rem;
+        left: rem-calc(8);
+        right: rem-calc(8);
       }
 
       @include text(xxlarge, thin);
@@ -48,12 +48,12 @@
     }
 
     @include m(push) {
-      padding-bottom: 1.5rem;
-      margin-bottom: 2.5rem;
+      padding-bottom: rem-calc(24);
+      margin-bottom: rem-calc(40);
     }
 
     @include m(with-border) {
-      border-bottom: solid 1px $grey-15;
+      border-bottom: solid rem-calc(1) $grey-15;
     }
 
     @include m(nowrap) {
@@ -77,12 +77,12 @@
       overflow: hidden;
     }
 
-    &:not(:last-child) { margin-right: 1.25rem; }
+    &:not(:last-child) { margin-right: rem-calc(20); }
   }
 }
 
 @include b(hero) {
-  font-size: 1rem;
+  font-size: rem-calc(16);
   margin: {
     top: 2em;
     bottom: 2em;
@@ -94,8 +94,8 @@
 
   @include only-mobile {
     @include m(overflow) {
-      margin-left: -2.25rem;
-      margin-right: -2.25rem;
+      margin-left: rem-calc(-36);
+      margin-right: rem-calc(-36);
     }
   }
 
@@ -124,7 +124,7 @@
 
     @include only-mobile {
       text-align: center;
-      padding: 0 2rem;
+      padding: rem-calc(0 32);
     }
   }
 

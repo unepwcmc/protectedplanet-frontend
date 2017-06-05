@@ -4,10 +4,10 @@
 
   width: 100%;
 
-  padding-left: 1.5rem;
+  padding-left: rem-calc(24);
 
   @include only-mobile {
-    padding: 1rem 1.25rem;
+    padding: rem-calc(16 20);
   }
 
 
@@ -20,16 +20,16 @@
       &:nth-child(2) { margin-left: auto; }
     }
     @include m(with-separator) {
-      padding-left: 1rem;
-      border-left: solid 0.125rem $footer-element-with-separator__border-left-color;
+      padding-left: rem-calc(16);
+      border-left: solid rem-calc(2) $footer-element-with-separator__border-left-color;
     }
 
     @include only-desktop {
-      margin-right: 1rem;
+      margin-right: rem-calc(16);
     }
 
     @include m(logos) {
-      min-width: 80px;
+      min-width: rem-calc(80);
     }
 
     @include color($navbar-element__color);

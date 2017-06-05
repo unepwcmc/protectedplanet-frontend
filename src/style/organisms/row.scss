@@ -6,7 +6,7 @@
   }
 
   @include m(push) {
-    margin-bottom: 5rem;
+    margin-bottom: rem-calc(80);
   }
 
   @include m(push2x) {
@@ -14,7 +14,7 @@
   }
 
   @include m(with-border-top) {
-    border-top: solid 1px $grey-5;
+    border-top: solid rem-calc(1) $grey-5;
   }
 
   margin-bottom: 1em;

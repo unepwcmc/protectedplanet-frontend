@@ -1,17 +1,17 @@
 %show-hide-styles {
   @include font-weight(bold);
 
-  border: solid .125rem $button--hide-border-color;
-  border-radius: .25rem;
+  border: solid rem-calc(2) $button--hide-border-color;
+  border-radius: rem-calc(4);
   font-family: 'MuseoSlab';
-  font-size: .9375rem;
+  font-size: rem-calc(15);
   color: $button--hide-color;
-  padding: 0 1.125rem;  
+  padding: rem-calc(0 18);
 
   &:before {
     @include text--icon(body);
 
-    margin-right: .5rem;
+    margin-right: rem-calc(8);
   }
 }
 

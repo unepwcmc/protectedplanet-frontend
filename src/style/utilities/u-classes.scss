@@ -56,8 +56,8 @@
 .u-no-borders         { border: none !important;                      }
 .u-push-top           { margin-top: auto;                             }
 .u-margin-auto        { margin: auto;                                 }
-.u-margin--page       { margin-right: 1.25rem; margin-left: 1.25rem;  }
-.u-margin--page-right { margin-right: 1.25rem;                        }
+.u-margin--page       { margin-right: rem-calc(20); margin-left: rem-calc(20);  }
+.u-margin--page-right { margin-right: rem-calc(20);                        }
 
 // misc
 .u-click-through    { pointer-events: none;                }

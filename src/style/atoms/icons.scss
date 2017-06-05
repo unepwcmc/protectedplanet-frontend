@@ -1,5 +1,5 @@
 .icon--info {
-  padding-left: 1.5rem;
+  padding-left: rem-calc(24);
   position: relative;
 
   &:before {
@@ -10,7 +10,7 @@
     display: inline-block;
 
     position: absolute;
-    top: -.125rem;
+    top: rem-calc(-2);
     left: 0;
   }
 }

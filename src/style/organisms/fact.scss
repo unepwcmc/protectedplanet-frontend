@@ -23,8 +23,8 @@
     }
 
     @include m(lateral-padding) {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: rem-calc(16);
+      padding-right: rem-calc(16);
     }
   }
 

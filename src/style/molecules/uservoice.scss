@@ -1,5 +1,5 @@
 @mixin uservoice {
-  @include link-with-icon($icon__margin-sides: .25rem) {
+  @include link-with-icon($icon__margin-sides: rem-calc(4)) {
     @include e(icon) {
       @include color($white);
     }

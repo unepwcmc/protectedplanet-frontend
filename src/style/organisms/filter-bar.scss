@@ -20,7 +20,7 @@
     @include text(body);
     @extend %color-base;
 
-    padding: 1.25rem;
+    padding: rem-calc(20);
   }
 
   @import "filter-bar/_body";

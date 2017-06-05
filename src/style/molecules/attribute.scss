@@ -1,15 +1,15 @@
 %attribute--large-text {
   line-height: 1;
-  margin-bottom: 1.25rem; 
+  margin-bottom: rem-calc(20); 
 }
 
 .attribute {
   @extend .flex-row;
   @extend .align-items-end;
 
-  border-bottom: solid .0625rem $attribute-border-color;
-  margin-top: 1.125rem;
-  padding-bottom: .125rem;
+  border-bottom: solid rem-calc(1) $attribute-border-color;
+  margin-top: rem-calc(18);
+  padding-bottom: rem-calc(2);
 
   &--bold {
     @include font-weight(bold);
@@ -17,12 +17,12 @@
 
   &--large { 
     @extend %attribute--large-text;
-    font-size: 1.5rem; 
+    font-size: rem-calc(24); 
   }
 
   &--xlarge { 
     @extend %attribute--large-text;
-    font-size: 3rem;
+    font-size: rem-calc(48);
   }
 
   &__title {

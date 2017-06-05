@@ -1,13 +1,13 @@
 .link {
   color: $info-box-link__color;
   font-family: 'MuseoSans';
-  font-size: .9375rem;
+  font-size: rem-calc(15);
   @include font-weight(normal);
 
   &--hero-download {
-    margin-right: 1.25rem;
+    margin-right: rem-calc(20);
 
-    & i { margin-right: .5rem; }
+    & i { margin-right: rem-calc(8); }
   }
 
   &--external {
@@ -16,8 +16,8 @@
     &:after {
       @include fa(external-link);
 
-      margin-left: .25rem;
-      font-size: .666em;
+      margin-left: rem-calc(4);
+      font-size: rem-calc(11);
     }
   }
 

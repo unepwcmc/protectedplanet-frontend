@@ -4,7 +4,7 @@
   height: 100%;
   width: auto;
 
-  margin-right: .375rem;
+  margin-right: rem-calc(6);
 
   &.is-blurred {
     opacity: .4;

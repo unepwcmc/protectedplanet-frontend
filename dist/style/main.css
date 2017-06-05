@@ -1340,9 +1340,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .button--hide, .button--show {
   font-weight: 700;
   border: solid 0.125rem #d8d8d8;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   font-family: 'MuseoSlab';
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   color: #71a32b;
   padding: 0 1.125rem;
 }
@@ -1351,8 +1351,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'FontAwesome';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
-  margin-right: .5rem;
+  line-height: 1.3125rem;
+  margin-right: 0.5rem;
 }
 
 .button--hide:before {
@@ -1369,10 +1369,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
   font-weight: 300;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   background: #f2f2f2;
   display: block;
-  padding: .333rem 6rem 1rem 6rem;
+  padding: 0.3125rem 6rem 1rem 6rem;
   text-align: center;
   width: 100%;
   z-index: 1000;
@@ -1380,8 +1380,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (max-width: 768px) {
   .disclaimer {
-    padding: .5rem 1rem;
-    font-size: .5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.5rem;
     line-height: 1.5;
   }
 }
@@ -1390,21 +1390,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   content: "";
   width: 0;
   height: 0;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-top: 25px solid #f2f2f2;
+  border-left: 2.1875rem solid transparent;
+  border-right: 2.1875rem solid transparent;
+  border-top: 1.5625rem solid #f2f2f2;
   top: 100%;
   position: absolute;
   left: 50%;
-  margin-left: -35px;
+  margin-left: -2.1875rem;
 }
 
 @media only screen and (max-width: 768px) {
   .disclaimer__arrow {
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 20px solid #f2f2f2;
-    margin-left: -25px;
+    border-left: 1.5625rem solid transparent;
+    border-right: 1.5625rem solid transparent;
+    border-top: 1.25rem solid #f2f2f2;
+    margin-left: -1.5625rem;
   }
 }
 
@@ -1416,33 +1416,33 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   content: "";
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid #333;
-  bottom: 13px;
+  border-left: 0.3125rem solid transparent;
+  border-right: 0.3125rem solid transparent;
+  border-top: 0.375rem solid #333;
+  bottom: 0.8125rem;
   position: absolute;
-  left: -5px;
+  left: -0.3125rem;
 }
 
 .disclaimer__arrow-inner:after {
   content: "";
   width: 0;
   height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #f2f2f2;
-  bottom: 15px;
+  border-left: 0.375rem solid transparent;
+  border-right: 0.375rem solid transparent;
+  border-top: 0.375rem solid #f2f2f2;
+  bottom: 0.9375rem;
   position: absolute;
-  left: -6px;
+  left: -0.375rem;
 }
 
 .header-with-delimiter {
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
-  padding-bottom: .25rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  padding-bottom: 0.25rem;
   border-bottom: solid #bbbbbb 1px;
 }
 
@@ -1453,12 +1453,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .header-with-delimiter--smaller {
   font-family: 'MuseoSans';
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .header-with-delimiter--bigger {
   font-family: 'MuseoSans';
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
 }
 
@@ -1467,15 +1467,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .header-with-delimiter--same-padding-margin {
-  margin-bottom: .75rem;
-  padding-bottom: .75rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .header--h1-small {
   color: #666666;
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.625rem;
   line-height: 2rem;
   margin-top: 2rem;
   margin-bottom: 0.625rem;
@@ -1499,12 +1499,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'FontAwesome';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #1d62b1;
   content: '\f05a';
   display: inline-block;
   position: absolute;
-  top: -.125rem;
+  top: -0.125rem;
   left: 0;
 }
 
@@ -1512,11 +1512,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   font-style: italic;
   background-color: #f2f2f2;
   margin-right: 1.25rem;
-  padding: .333rem 1rem;
+  padding: 0.3125rem 1rem;
 }
 
 .label--code, .s-article pre, .s-article code {
@@ -1524,8 +1524,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: monospace;
   font-style: normal;
   word-wrap: break-word;
-  padding: .1rem .5rem;
-  border-radius: .25rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
   margin-right: 0;
   margin-bottom: 2rem;
 }
@@ -1533,7 +1533,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .link {
   color: #71a32b;
   font-family: 'MuseoSans';
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   font-weight: 500;
 }
 
@@ -1542,14 +1542,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .link--hero-download i {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .link--external:after {
   content: "";
   font-family: 'FontAwesome';
-  margin-left: .25rem;
-  font-size: .666em;
+  margin-left: 0.25rem;
+  font-size: 0.6875rem;
 }
 
 .link--page-anchor {
@@ -1558,7 +1558,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .logos__logo {
-  margin: 0 .625rem;
+  margin: 0 0.625rem;
 }
 
 .unepwcmc-logo {
@@ -1600,7 +1600,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .protectedplanet-logo__registered {
   position: relative;
-  font-size: .5rem;
+  font-size: 0.5rem;
   top: -.5rem;
 }
 
@@ -1632,22 +1632,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
   font-weight: 300;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   font-style: italic;
 }
 
 .accordion {
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .accordion__header {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   background-color: #f2f2f2;
   cursor: pointer;
-  padding: .5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
 }
 
 .accordion__header:hover {
@@ -1673,13 +1673,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .accordion__body {
-  border: solid 1px #f2f2f2;
+  border: solid 0.0625rem #f2f2f2;
   padding: 1.25rem;
 }
 
 .alert {
   background-color: #f2f2f2;
-  padding: .625rem;
+  padding: 0.625rem;
 }
 
 .alert--flex {
@@ -1698,7 +1698,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .alert__icon {
@@ -1707,7 +1707,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'FontAwesome';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .alert__icon--warning {
@@ -1727,7 +1727,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'FontAwesome';
   font-weight: 300;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .alert__icon-inner--warning {
@@ -1745,10 +1745,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .alert__title {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   line-height: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .alert__title--warning {
@@ -1771,7 +1771,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .attribute {
   border-bottom: solid 0.0625rem #d8d8d8;
   margin-top: 1.125rem;
-  padding-bottom: .125rem;
+  padding-bottom: 0.125rem;
 }
 
 .attribute--bold {
@@ -1802,13 +1802,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #ffffff;
   background-color: #71a32b;
-  border-radius: 0.325rem;
+  border-radius: 0.3125rem;
   padding: 0.5rem 1.875rem;
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
 }
 
 .big-button:hover {
@@ -1833,7 +1833,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .big-button--alt-colors {
   background-color: #ffffff;
-  border: solid 1px #dfe0e1;
+  border: solid 0.0625rem #dfe0e1;
   color: #71a32b;
 }
 
@@ -1850,7 +1850,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .big-button--danger {
-  border: solid 1px #dfe0e1;
+  border: solid 0.0625rem #dfe0e1;
   background-color: #d80000;
 }
 
@@ -1874,17 +1874,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   margin: 1.5rem 0;
-  padding-left: .666rem;
-  padding-right: .666rem;
+  padding-left: 0.6875rem;
+  padding-right: 0.6875rem;
 }
 
 .breadcrumbs__link {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .circle-story {
@@ -1926,8 +1926,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
-  padding-left: .5rem;
+  line-height: 1.3125rem;
+  padding-left: 0.5rem;
 }
 
 .circle-story__circle {
@@ -1956,8 +1956,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     width: 100%;
     border-radius: 0;
     object-fit: cover;
-    height: 150px;
-    margin-bottom: .5rem;
+    height: 9.375rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -1974,16 +1974,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .circle-story__title {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
   color: #71a32b;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .close-button {
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: 0.75rem;
+  right: 1.25rem;
   cursor: pointer;
 }
 
@@ -1994,7 +1994,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .dropdown {
   background-color: #699728;
   left: 0;
-  padding: 0 .625rem;
+  padding: 0 0.625rem;
   padding-bottom: 1.5rem;
   position: absolute;
   min-width: 100%;
@@ -2009,7 +2009,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   right: 0;
   min-width: 30rem;
   padding-bottom: initial;
-  padding: .625rem;
+  padding: 0.625rem;
 }
 
 .dropdown__trigger {
@@ -2022,8 +2022,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .dropdown__inner {
-  border-top: solid 2px #71a32b;
-  padding-top: .5rem;
+  border-top: solid 0.125rem #71a32b;
+  padding-top: 0.5rem;
 }
 
 .dropdown__inner__simple {
@@ -2040,10 +2040,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   display: block;
-  padding: .625rem 1.25rem;
-  margin: 0 -.625rem;
+  padding: 0.625rem 1.25rem;
+  margin: 0 -0.625rem;
 }
 
 .dropdown__element:hover {
@@ -2051,17 +2051,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .expandable-section {
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .expandable-section__header {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   background-color: #f2f2f2;
   cursor: pointer;
-  padding: .5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
 }
 
 .expandable-section__header:hover {
@@ -2087,7 +2087,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .expandable-section__body {
-  border: solid 1px #f2f2f2;
+  border: solid 0.0625rem #f2f2f2;
   padding: 1.25rem;
 }
 
@@ -2101,25 +2101,25 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fullscreen-message__header {
   font-family: 'MuseoSlab';
   font-weight: 900;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
   margin-bottom: 1rem;
 }
 
 .fullscreen-message__body {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  line-height: 1.6875rem;
 }
 
 .header__text {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .header__sup {
@@ -2127,13 +2127,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #71a32b;
 }
 
 .header__image {
   float: left;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .horizontal-bar {
@@ -2153,18 +2153,18 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .key__icon {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   width: 1.875rem;
   height: 1.25rem;
   position: relative;
-  top: -.1875rem;
+  top: -0.1875rem;
 }
 
 .key__title {
   color: #71a32b;
   cursor: default;
   font-family: 'MuseoSans';
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   line-height: 1.2;
   margin-bottom: 1.125rem;
 }
@@ -2205,7 +2205,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   cursor: pointer;
 }
 
@@ -2238,7 +2238,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .link-with-icon--push:not(:last-child) {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .link-with-icon--no-color {
@@ -2279,7 +2279,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #666666;
 }
 
@@ -2287,7 +2287,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #71a32b;
 }
 
@@ -2296,25 +2296,25 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  font-size: 1.333rem;
+  font-size: 1.3125rem;
   color: #71a32b;
   transition: background-color .1s;
 }
 
 .map .leaflet-control-zoom .leaflet-top .leaflet-control {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .map .leaflet-control-zoom .leaflet-left .leaflet-control {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .map .leaflet-control-zoom .leaflet-right .leaflet-control {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .map .leaflet-control-zoom .leaflet-bottom .leaflet-control {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .leaflet-control-layers-expanded {
@@ -2331,17 +2331,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .map .leaflet-control-zoom-out:hover {
   color: #71a32b;
   display: block;
-  line-height: 20px;
-  margin: 5px;
+  line-height: 1.25rem;
+  margin: 0.3125rem;
   opacity: 1;
-  width: 25px;
+  width: 1.5625rem;
 }
 
 .map .leaflet-control-zoom-in:first-child,
 .map .leaflet-control-zoom-out:first-child,
 .map .leaflet-control-zoom-in:hover:first-child,
 .map .leaflet-control-zoom-out:hover:first-child {
-  border-bottom: solid 1px #dfe0e1;
+  border-bottom: solid 0.0625rem #dfe0e1;
 }
 
 .map .leaflet-control-zoom-in.leaflet-disabled,
@@ -2358,26 +2358,26 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  font-size: 1.333rem;
+  font-size: 1.3125rem;
   color: #71a32b;
   transition: background-color .1s;
   display: block;
 }
 
 .map .leaflet-control-layers-list .leaflet-top .leaflet-control {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .map .leaflet-control-layers-list .leaflet-left .leaflet-control {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .map .leaflet-control-layers-list .leaflet-right .leaflet-control {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .map .leaflet-control-layers-list .leaflet-bottom .leaflet-control {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .leaflet-control-layers-expanded {
@@ -2395,13 +2395,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .map .leaflet-control-layers label {
   cursor: pointer;
   display: inline-block;
-  line-height: 20px;
-  margin: 5px 0;
-  padding: 0 15px;
+  line-height: 1.25rem;
+  margin: 0.3125rem 0;
+  padding: 0 0.9375rem;
 }
 
 .map .leaflet-control-layers label:first-child {
-  border-right: solid 1px #dfe0e1;
+  border-right: solid 0.0625rem #dfe0e1;
 }
 
 .map .leaflet-control-layers input,
@@ -2414,19 +2414,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .mobile-menu__hamburger-icon {
-  padding: .25rem .33rem;
-  border-radius: .325rem;
-  border: solid 1px #ffffff;
+  padding: 0.25rem 0.3125rem;
+  border-radius: 0.3125rem;
+  border: solid 0.0625rem #ffffff;
 }
 
 .mobile-menu__element {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   line-height: 50px;
   color: #ffffff;
-  padding: 0 .625rem;
+  padding: 0 0.625rem;
   background-color: #699728;
 }
 
@@ -2447,9 +2447,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .mobile-menu__subelement {
   background-color: #71a32b;
-  margin-left: -.625rem;
-  margin-right: -.625rem;
-  padding: 0 .625rem;
+  margin-left: -0.625rem;
+  margin-right: -0.625rem;
+  padding: 0 0.625rem;
 }
 
 .modal {
@@ -2459,22 +2459,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   top: 25%;
   left: 30%;
   width: 40%;
-  padding: 30px;
+  padding: 1.875rem;
   background: #ffffff;
   box-sizing: border-box;
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .modal h2 {
-  font-size: 1.4em;
+  font-size: 1.375rem;
   margin: 0;
 }
 
 .modal p {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .modal.is-opened {
@@ -2483,11 +2483,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .modal a.btn {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 0.625rem 2.5rem;
 }
 
 .modal .fa-external-link {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .modal input {
@@ -2498,9 +2498,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .btn-close {
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px;
+  top: 0.625rem;
+  right: 0.625rem;
+  padding: 0.3125rem;
 }
 
 .total-overlay {
@@ -2520,7 +2520,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .pa-card {
   color: #333333;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   margin-bottom: 2rem;
   padding: 0 1.25rem 1.25rem 1.25rem;
 }
@@ -2529,15 +2529,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
-  margin-bottom: .75rem;
+  line-height: 1.3125rem;
+  margin-bottom: 0.75rem;
 }
 
 .pa-card__subtitle {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #4a4a4a;
   margin-bottom: 1rem;
 }
@@ -2547,17 +2547,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .pa-card__details {
-  border-bottom: solid 1px #d8d8d8;
-  padding-bottom: .25rem;
+  border-bottom: solid 0.0625rem #d8d8d8;
+  padding-bottom: 0.25rem;
 }
 
 .pa-card__detail {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   font-size: inherit;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .pa-card__detail--inline {
@@ -2566,7 +2566,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .pa-card__detail--inline:not(:last-child) {
   padding-right: 1rem;
-  border-right: solid 1px #d8d8d8;
+  border-right: solid 0.0625rem #d8d8d8;
 }
 
 .pa-card__detail--inline:not(:first-child) {
@@ -2596,7 +2596,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #71a32b;
 }
 
@@ -2621,7 +2621,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
   align-items: stretch;
-  padding: 0 .1rem;
+  padding: 0 0.125rem;
   height: 1.875rem;
   width: 100%;
 }
@@ -2649,23 +2649,23 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     flex: 1;
   }
   .search-bar__form:not(:last-child) {
-    border-right: solid 1px #dfe0e1;
-    margin-right: .875rem;
-    padding-right: .875rem;
+    border-right: solid 0.0625rem #dfe0e1;
+    margin-right: 0.875rem;
+    padding-right: 0.875rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .search-bar__form {
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
   }
   .search-bar__form:after {
     content: "";
     font-family: 'FontAwesome';
     position: absolute;
     top: 0;
-    line-height: 40px;
+    line-height: 2.5rem;
     right: 0;
     margin-right: 5%;
     color: #dfe0e1;
@@ -2677,17 +2677,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   box-sizing: border-box;
   height: 100%;
-  border: solid 1px #dfe0e1;
+  border: solid 0.0625rem #dfe0e1;
 }
 
 @media only screen and (min-width: 768px) {
   .search-bar__input {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     flex-grow: 1;
-    margin-right: .625rem;
+    margin-right: 0.625rem;
   }
   .search-bar__input:focus {
     outline: none;
@@ -2709,7 +2709,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 1.875rem;
   line-height: 1.875rem;
   box-sizing: border-box;
-  border-radius: 0.325rem;
+  border-radius: 0.3125rem;
   color: #ffffff;
 }
 
@@ -2734,7 +2734,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
   font-weight: 100;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   text-align: right;
   padding-bottom: 0.5em;
 }
@@ -2774,16 +2774,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .table__header, .s-article table tr:first-child {
   line-height: 2rem;
-  border-bottom: solid 1px #bbbbbb;
+  border-bottom: solid 0.0625rem #bbbbbb;
 }
 
 .table__label {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   line-height: 1.666em;
-  padding-top: .65rem;
+  padding-top: 0.625rem;
   padding-right: .65em;
   vertical-align: middle;
   text-align: left;
@@ -2801,10 +2801,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
-  border-bottom: solid 1px #dfe0e1;
-  margin-bottom: 10px;
-  padding: 5px 0;
+  line-height: 1.3125rem;
+  border-bottom: solid 0.0625rem #dfe0e1;
+  margin-bottom: 0.625rem;
+  padding: 0.3125rem 0;
 }
 
 .table__row--last {
@@ -2823,7 +2823,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   text-align: right;
   line-height: 1.666em;
   vertical-align: middle;
-  padding-top: .65rem;
+  padding-top: 0.625rem;
 }
 
 .table__value--link {
@@ -2839,8 +2839,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   min-width: 100%;
   padding: 1.25rem;
   padding-top: 1.5rem;
-  border: solid 1px #f2f2f2;
-  border-radius: .5rem;
+  border: solid 0.0625rem #f2f2f2;
+  border-radius: 0.5rem;
   margin-top: 1rem;
 }
 
@@ -2858,15 +2858,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .tooltip:after {
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: #ffffff;
-  border-width: 10px;
-  margin-left: -10px;
+  border-width: 0.625rem;
+  margin-left: -0.625rem;
 }
 
 .tooltip:before {
   border-color: rgba(242, 242, 242, 0);
   border-bottom-color: #f2f2f2;
-  border-width: 11px;
-  margin-left: -11px;
+  border-width: 0.6875rem;
+  margin-left: -0.6875rem;
 }
 
 .tooltip__trigger {
@@ -2877,10 +2877,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .tooltip__element {
   display: block;
   width: 100;
-  padding: .625rem .25rem;
-  padding-bottom: .25rem;
-  margin-bottom: .25rem;
-  border-bottom: solid 1px #dfe0e1;
+  padding: 0.625rem 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-bottom: solid 0.0625rem #dfe0e1;
   text-align: left;
 }
 
@@ -2888,12 +2888,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   cursor: pointer;
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   line-height: 2rem;
 }
 
@@ -2926,7 +2926,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .uservoice--push:not(:last-child) {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .uservoice--no-color {
@@ -2955,7 +2955,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #71a32b;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
 }
 
@@ -2966,22 +2966,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 .value__number--xxxxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 4.666rem;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
 }
 
 @media print {
   .value__number--xxxxlarge {
     font-family: 'MuseoSlab';
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     line-height: 2rem;
   }
 }
@@ -2989,8 +2989,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
 }
 
 .value__number--alt-color {
@@ -2999,7 +2999,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (max-width: 768px) {
   .value__number {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -3007,7 +3007,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .value__label--right {
@@ -3093,7 +3093,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .hero__title {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.625rem;
   line-height: 2rem;
   color: #71a32b;
 }
@@ -3101,7 +3101,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .hero__title--thin {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.625rem;
   line-height: 2rem;
 }
 
@@ -3112,17 +3112,17 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .hero__title--bigger {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 .hero__title--article {
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
   color: #666666;
 }
 
@@ -3130,8 +3130,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   .hero__title--article {
     font-family: 'MuseoSans';
     font-weight: 300;
-    font-size: 2.4rem;
-    line-height: 2.666rem;
+    font-size: 2.375rem;
+    line-height: 2.6875rem;
     line-height: 1.5;
   }
 }
@@ -3142,7 +3142,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .hero__title--with-border {
-  border-bottom: solid 1px #dfe0e1;
+  border-bottom: solid 0.0625rem #dfe0e1;
 }
 
 .hero__title--nowrap {
@@ -3216,8 +3216,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .hero__cover-text {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
   color: #ffffff;
 }
 
@@ -3225,24 +3225,24 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   .hero__cover-text {
     font-family: 'MuseoSans';
     font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 2.666rem;
+    font-size: 2.375rem;
+    line-height: 2.6875rem;
   }
 }
 
 .hero__cover-text--alt {
   font-family: 'MuseoSlab';
   font-weight: 900;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 @media only screen and (max-width: 768px) {
   .hero__cover-text--alt {
     font-family: 'MuseoSlab';
     font-weight: 900;
-    font-size: 2.4rem;
-    line-height: 2.666rem;
+    font-size: 2.375rem;
+    line-height: 2.6875rem;
   }
 }
 
@@ -3278,7 +3278,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 @media only screen and (max-width: 768px) {
   .cover-story__cover {
     width: 100%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -3312,7 +3312,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .cover-story__story-title {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
   color: #71a32b;
   margin-bottom: 1rem;
@@ -3322,7 +3322,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   margin-bottom: 2rem;
 }
 
@@ -3370,7 +3370,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .section {
-  max-width: 1280px;
+  max-width: 80rem;
   padding: 0 7rem;
   margin-bottom: 1rem;
   margin-left: auto;
@@ -3390,12 +3390,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .section__header {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
   margin-bottom: 2.5rem;
   padding-left: 1.25rem;
   padding-bottom: 1.5rem;
-  border-bottom: solid 1px #dfe0e1;
+  border-bottom: solid 0.0625rem #dfe0e1;
 }
 
 .section__body {
@@ -3414,7 +3414,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -3424,11 +3424,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .navbar__element {
   position: relative;
-  padding: 0 .625rem;
+  padding: 0 0.625rem;
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   line-height: 50px;
   color: #ffffff;
 }
@@ -3456,8 +3456,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .navbar__element--with-separator:before, .navbar__element--with-separator:after {
   background-color: #71a32b;
   content: "";
-  width: .25rem;
-  height: .5rem;
+  width: 0.25rem;
+  height: 0.5rem;
   position: absolute;
   left: -.25rem;
 }
@@ -3506,8 +3506,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .navbar__element--bigger {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   line-height: 50px;
 }
 
@@ -3515,7 +3515,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   line-height: 30px;
 }
 
@@ -3538,9 +3538,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fact__header, .header--section {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
-  padding-bottom: .25rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  padding-bottom: 0.25rem;
   border-bottom: solid #bbbbbb 1px;
 }
 
@@ -3549,7 +3549,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   margin-bottom: .5em;
 }
 
@@ -3570,8 +3570,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fact__single-figure {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 4.666rem;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
   color: #71a32b;
 }
 
@@ -3579,7 +3579,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   .fact__single-figure {
     font-family: 'MuseoSlab';
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     line-height: 2rem;
   }
 }
@@ -3598,7 +3598,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 100%;
   max-height: 15em;
   overflow: auto;
-  padding: 15px 0px;
+  padding: 0.9375rem 0;
   z-index: 300;
 }
 
@@ -3613,7 +3613,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   display: block;
   height: 6.25rem;
   padding: 1.25rem 0;
@@ -3652,10 +3652,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   font-style: italic;
-  padding: 0 .75rem;
-  margin-top: .25rem;
+  padding: 0 0.75rem;
+  margin-top: 0.25rem;
   background-color: #f2f2f2;
 }
 
@@ -3694,7 +3694,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   padding: 1.25rem;
 }
 
@@ -3707,9 +3707,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   background-color: #71a32b;
-  padding: 0 .25rem;
+  padding: 0 0.25rem;
   float: right;
 }
 
@@ -3719,20 +3719,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .filter-bar__group {
-  line-height: 1.666rem;
-  margin-bottom: .5rem;
+  line-height: 1.6875rem;
+  margin-bottom: 0.5rem;
 }
 
 .filter-bar__group-title {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #666666;
   cursor: pointer;
-  padding: .5rem 0;
-  border-bottom: solid 1px #d8d8d8;
-  margin-bottom: .5rem;
+  padding: 0.5rem 0;
+  border-bottom: solid 0.0625rem #d8d8d8;
+  margin-bottom: 0.5rem;
   width: 100%;
 }
 
@@ -3763,8 +3763,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .filter-bar__header {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
 }
 
 .filter-bar__value {
@@ -3772,7 +3772,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #666666;
   display: block;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   cursor: pointer;
 }
 
@@ -3796,7 +3796,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .footer {
@@ -3822,7 +3822,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .footer__element--right:nth-child(2) {
@@ -3841,36 +3841,36 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .footer__element--logos {
-  min-width: 80px;
+  min-width: 5rem;
 }
 
 .form, .s-form {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .form__label, .s-form label {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   display: block;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .form__input, .s-form input, .s-form textarea, .s-form select {
   font: inherit;
   min-height: 1.875rem;
   min-width: 50%;
-  padding: .5rem;
-  border: solid 1px #dfe0e1;
+  padding: 0.5rem;
+  border: solid 0.0625rem #dfe0e1;
 }
 
 .form__input:focus, .s-form input:focus, .s-form textarea:focus, .s-form select:focus {
   outline: none;
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 
 .form__input--big, .s-form input.big, .s-form textarea, .s-form select.big {
@@ -3933,12 +3933,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .info-box--hero {
-  min-width: 500px;
-  padding: 1.275rem;
+  min-width: 31.25rem;
+  padding: 1.25rem;
 }
 
 .info-box--shadow {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
 }
 
 .info-box--padding-top-bottom {
@@ -3951,8 +3951,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-size: .9375rem;
   margin-right: 1rem;
-  margin-bottom: .25rem;
-  padding: .625rem;
+  margin-bottom: 0.25rem;
+  padding: 0.625rem;
   display: inline-block;
 }
 
@@ -3966,14 +3966,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 700;
   color: #1d62b1;
   margin-bottom: 1.125rem;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
 }
 
 .info-box__body {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   padding: 1rem 0.2rem;
 }
 
@@ -4003,7 +4003,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .info-box__header--with-padding {
-  padding-bottom: .75rem;
+  padding-bottom: 0.75rem;
 }
 
 .info-box__link-icon {
@@ -4015,7 +4015,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #71a32b;
   cursor: pointer;
   padding-bottom: 1rem;
@@ -4025,7 +4025,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .info-box__row {
   width: 100%;
   padding-top: 1rem;
-  border-bottom: solid 1px #bbbbbb;
+  border-bottom: solid 0.0625rem #bbbbbb;
 }
 
 .info-box__row--around-padding {
@@ -4033,7 +4033,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .info-box__row--light-border:not(:last-child) {
-  border-bottom: solid 1px #dfe0e1;
+  border-bottom: solid 0.0625rem #dfe0e1;
 }
 
 .info-box__row--no-border {
@@ -4045,7 +4045,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   height: 400px;
   overflow: hidden;
   white-space: nowrap;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .gallery__body-inner {
@@ -4059,7 +4059,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   display: inline-block;
   height: 100%;
   width: auto;
-  margin-right: .375rem;
+  margin-right: 0.375rem;
 }
 
 .gallery__photo.is-blurred {
@@ -4079,7 +4079,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .gallery__current-index {
@@ -4090,7 +4090,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .key-records__row {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .key-records__row::after {
@@ -4105,7 +4105,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .search-result {
-  border-bottom: solid 1px #f2f2f2;
+  border-bottom: solid 0.0625rem #f2f2f2;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 0;
@@ -4122,8 +4122,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #71a32b;
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   margin-bottom: 1rem;
 }
 
@@ -4131,7 +4131,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   margin-bottom: 1.5rem;
 }
 
@@ -4143,9 +4143,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #8f8f8f;
-  border-right: solid 1px #f2f2f2;
+  border-right: solid 0.0625rem #f2f2f2;
   float: left;
   padding: 0 1.25rem;
 }
@@ -4162,19 +4162,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   font-style: italic;
   background-color: #f2f2f2;
   margin-right: 1.25rem;
-  padding: .333rem 1rem;
+  padding: 0.3125rem 1rem;
 }
 
 .stats-card {
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 .stats-card:not(:last-child) {
-  border-bottom: dashed 1px #bbbbbb;
+  border-bottom: dashed 0.0625rem #bbbbbb;
 }
 
 .stats-card__body {
@@ -4202,7 +4202,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #71a32b;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
 }
 
@@ -4213,22 +4213,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .stats-card__body .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 .stats-card__body .value__number--xxxxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 4.666rem;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
 }
 
 @media print {
   .stats-card__body .value__number--xxxxlarge {
     font-family: 'MuseoSlab';
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     line-height: 2rem;
   }
 }
@@ -4236,8 +4236,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .stats-card__body .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
 }
 
 .stats-card__body .value__number--alt-color {
@@ -4246,7 +4246,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (max-width: 768px) {
   .stats-card__body .value__number {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -4254,7 +4254,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .stats-card__body .value__label--right {
@@ -4282,7 +4282,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #702412;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
 }
 
@@ -4293,22 +4293,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .stats-card__body--color .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 .stats-card__body--color .value__number--xxxxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 4.666rem;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
 }
 
 @media print {
   .stats-card__body--color .value__number--xxxxlarge {
     font-family: 'MuseoSlab';
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     line-height: 2rem;
   }
 }
@@ -4316,8 +4316,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .stats-card__body--color .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
 }
 
 .stats-card__body--color .value__number--alt-color {
@@ -4326,7 +4326,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (max-width: 768px) {
   .stats-card__body--color .value__number {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -4334,7 +4334,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .stats-card__body--color .value__label--right {
@@ -4376,7 +4376,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #3a76bb;
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
 }
 
@@ -4387,22 +4387,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .stats-card__body--alt-color .value__number--xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 .stats-card__body--alt-color .value__number--xxxxlarge {
   font-family: 'MuseoSlab';
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 4.666rem;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
 }
 
 @media print {
   .stats-card__body--alt-color .value__number--xxxxlarge {
     font-family: 'MuseoSlab';
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     line-height: 2rem;
   }
 }
@@ -4410,8 +4410,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .stats-card__body--alt-color .value__number--large {
   font-family: 'MuseoSans';
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
 }
 
 .stats-card__body--alt-color .value__number--alt-color {
@@ -4420,7 +4420,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (max-width: 768px) {
   .stats-card__body--alt-color .value__number {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -4428,7 +4428,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .stats-card__body--alt-color .value__label--right {
@@ -4488,7 +4488,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .row--with-border-top {
-  border-top: solid 1px #f2f2f2;
+  border-top: solid 0.0625rem #f2f2f2;
 }
 
 .article {
@@ -4506,8 +4506,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 2.5rem;
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
   color: #666666;
 }
 
@@ -4520,7 +4520,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     margin-bottom: 1.5rem;
     font-family: 'MuseoSans';
     font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     line-height: 2rem;
   }
 }
@@ -4528,14 +4528,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .article__title--smaller {
   font-family: 'MuseoSans';
   font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
 }
 
 .article__title--paragraph, .s-article h1 {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
   margin-bottom: 1rem;
 }
@@ -4543,8 +4543,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .article__title--subparagraph, .s-article h2, .s-article h3, .s-article h4, .s-article h5 {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
   margin-bottom: 1rem;
 }
 
@@ -4557,21 +4557,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .article__paragraph--bigger, .s-article p.bigger {
   font-family: 'MuseoSlab';
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.666rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
 }
 
 .article__bold-text, .s-article b, .s-article strong {
   font-family: 'MuseoSlab';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .article__cursive-text, .s-article i {
@@ -4582,7 +4582,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
 }
 
 .article__link.is-external:after, .s-article a.is-external:after {
@@ -4626,14 +4626,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   line-height: 1.5rem;
   color: #666666;
-  border-bottom: solid 1px #f2f2f2;
+  border-bottom: solid 0.0625rem #f2f2f2;
   padding-left: 1.25rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  padding-right: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .vertical-nav__element:hover {
@@ -4657,15 +4657,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .vertical-nav__element--heading {
   color: #71a32b;
   padding-left: 1rem;
-  border-top: solid 1px #dfe0e1;
-  border-bottom: solid 1px #dfe0e1;
-  border-left: solid 5px #dfe0e1;
+  border-top: solid 0.0625rem #dfe0e1;
+  border-bottom: solid 0.0625rem #dfe0e1;
+  border-left: solid 0.3125rem #dfe0e1;
 }
 
 .vertical-nav__element--selected {
   font-weight: 500;
   color: #71a32b;
-  border-left: solid 0.333rem #dfe0e1;
+  border-left: solid 0.3125rem #dfe0e1;
   padding-left: 1rem;
 }
 
@@ -4703,7 +4703,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .container--profile {
-  max-width: 1280px;
+  max-width: 80rem;
   width: 80%;
   margin: auto;
 }
@@ -4759,8 +4759,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #333333;
   cursor: pointer;
   font-family: 'MuseoSans';
-  margin: 0 .9375rem;
-  padding: .9375rem 0;
+  margin: 0 0.9375rem;
+  padding: 0.9375rem 0;
   display: inline-block;
 }
 
@@ -5160,13 +5160,13 @@ a.btn:hover {
   font-family: 'MuseoSlab';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   font-size: .9rem;
   background-color: #71a32b;
   height: 100%;
   min-width: 180px;
   box-sizing: border-box;
-  border-radius: 0.325rem;
+  border-radius: 0.3125rem;
   color: #ffffff;
 }
 
@@ -5482,7 +5482,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: white;
 }
 
@@ -5495,7 +5495,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   padding: 2px;
   display: block;
 }
@@ -5506,7 +5506,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #ffffff;
 }
 
@@ -5958,7 +5958,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSans';
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   padding: 8px;
   position: relative;
   height: 128px;
@@ -5997,7 +5997,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSlab';
   font-weight: 300;
   font-size: 0.8125rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #ffffff;
   position: absolute;
   left: 8px;
@@ -6012,7 +6012,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -6028,7 +6028,7 @@ nav .download-type-dropdown {
   font-family: 'MuseoSans';
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.333rem;
+  line-height: 1.3125rem;
   color: #71a32b;
 }
 
@@ -6267,17 +6267,17 @@ div div.shared-links a:last-child {
 }
 
 .s-article hr {
-  border: solid 1px #f2f2f2;
+  border: solid 0.0625rem #f2f2f2;
   margin: 2rem auto;
   width: 80%;
 }
 
 .s-article table tr:not(:first-child) {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .s-article table tr:not(:first-child) td {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -6408,8 +6408,8 @@ table {
 .half--with-separator:before, .half--with-separator:after {
   background-color: #f2f2f2;
   content: "";
-  width: .25rem;
-  height: .5rem;
+  width: 0.25rem;
+  height: 0.5rem;
   position: absolute;
   right: -.25rem;
 }
@@ -6661,22 +6661,22 @@ table {
 .u-medium {
   font-family: 'MuseoSans';
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.375rem;
   line-height: 2rem;
 }
 
 .u-alt-xlarge {
   font-family: 'MuseoSlab';
   font-weight: 900;
-  font-size: 2.4rem;
-  line-height: 2.666rem;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
 }
 
 .u-alt-xxlarge {
   font-family: 'MuseoSlab';
   font-weight: 900;
-  font-size: 3.2rem;
-  line-height: 3.571rem;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
 }
 
 .u-mono {
@@ -6738,12 +6738,12 @@ table {
 
 .template--site .header--site-connections {
   padding-right: 1rem;
-  border-right: solid 0.0125rem #d8d8d8;
+  border-right: solid 0.0625rem #d8d8d8;
 }
 
 .template--site .button--hide,
 .template--site .button--show {
   margin-left: 1rem;
   position: relative;
-  top: -.125rem;
+  top: -0.0625rem;
 }

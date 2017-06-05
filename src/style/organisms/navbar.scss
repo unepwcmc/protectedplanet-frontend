@@ -3,10 +3,10 @@
   @include flexbox;
 
   background-color: $navbar__bg-color;
-  padding-left: 1.25rem;
+  padding-left: rem-calc(20);
 
   @include only-mobile {
-    padding: 0 .5rem;
+    padding: rem-calc(0 8);
   }
 
   @include m(darker) {

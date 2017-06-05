@@ -17,6 +17,7 @@
 
 // development mixins
 @import 'utilities/bem';
+@import 'utilities/rem-calc';
 @import 'utilities/responsive';
 
 // variables
@@ -26,7 +27,6 @@
 @import 'variables/fonts';
 @import 'variables/z-index';
 // variables
-
 
 // atoms
 @import 'atoms/fonts';

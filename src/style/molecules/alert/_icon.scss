@@ -1,7 +1,7 @@
 @include e(icon) {
   float: left;
 
-  min-width: 2.5rem !important;
+  min-width: rem-calc(40) !important;
   @include text--icon(body, thin);
 
   @include m(warning) { color: $alert-warning--color; }
