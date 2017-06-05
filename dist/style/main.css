@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .key__title, .flex-row-wrap, .key {
+.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .key__title, .flex-row-wrap, .key {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1761,6 +1761,40 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .alert__title--info {
   color: #1a589f;
+}
+
+.attribute--large, .attribute--xlarge {
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.attribute {
+  border-bottom: solid 0.0625rem #d8d8d8;
+  margin-top: 1.125rem;
+  padding-bottom: .125rem;
+}
+
+.attribute--bold {
+  font-weight: 700;
+}
+
+.attribute--large {
+  font-size: 1.5rem;
+}
+
+.attribute--xlarge {
+  font-size: 3rem;
+}
+
+.attribute__title {
+  color: #333333;
+  flex: 0 0 60%;
+}
+
+.attribute__value {
+  color: #71a32b;
+  font-family: 'MuseoSlab';
+  flex: 0 0 40%;
 }
 
 .big-button {
@@ -3920,6 +3954,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: .25rem;
   padding: .625rem;
   display: inline-block;
+}
+
+.info-box--factsheet {
+  font-weight: 500;
+  color: #333333;
+  font-size: 1.125rem;
+}
+
+.info-box--factsheet h3 {
+  font-weight: 700;
+  color: #1d62b1;
+  margin-bottom: 1.125rem;
+  padding-bottom: .25rem;
 }
 
 .info-box__body {
@@ -6486,11 +6533,26 @@ table {
   justify-content: space-between;
 }
 
+.space-around {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+}
+
 .right-padded {
   padding-right: 5%;
 }
 
-.flex-row, .key__title {
+.align-items-end, .attribute {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.flex-row, .attribute, .key__title {
   -webkit-flex-flow: row no-wrap;
   -moz-flex-flow: row no-wrap;
   -ms-flex-flow: row no-wrap;
@@ -6572,11 +6634,6 @@ table {
   width: 100%;
 }
 
-.u-margin--page {
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
-}
-
 .u-italic {
   font-style: italic;
 }
@@ -6656,6 +6713,15 @@ table {
 
 .u-margin-auto {
   margin: auto;
+}
+
+.u-margin--page {
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.u-margin--page-right {
+  margin-right: 1.25rem;
 }
 
 .u-click-through {

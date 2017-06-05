@@ -1,0 +1,38 @@
+%attribute--large-text {
+  line-height: 1;
+  margin-bottom: 1.25rem; 
+}
+
+.attribute {
+  @extend .flex-row;
+  @extend .align-items-end;
+
+  border-bottom: solid .0625rem $attribute-border-color;
+  margin-top: 1.125rem;
+  padding-bottom: .125rem;
+
+  &--bold {
+    @include font-weight(bold);
+  }
+
+  &--large { 
+    @extend %attribute--large-text;
+    font-size: 1.5rem; 
+  }
+
+  &--xlarge { 
+    @extend %attribute--large-text;
+    font-size: 3rem;
+  }
+
+  &__title {
+    color: $attribute__title-color;
+    flex: 0 0 60%;
+  }
+
+  &__value {
+    color: $attribute__value-color;
+    font-family: 'MuseoSlab';
+    flex: 0 0 40%;
+  }
+}

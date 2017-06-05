@@ -65,6 +65,11 @@ $link__color--hover: $green--light !default;
 $link__color--pressed: $green--dark !default;
 $link__color--visited: $green--light !default;
 
+// molecules/attribute
+$attribute-border-color: $grey-4;
+$attribute__title-color: $grey-100;
+$attribute__value-color: $green;
+
 // molecules/link-with-icon
 $link-with-icon__color: $green !default;
 $link-with-icon__bg-color: $white !default;

@@ -53,6 +53,21 @@
     display: inline-block;
   }
 
+  &--factsheet {
+    h3 {
+      @include font-weight(bold);
+      
+      color: $info-box__icon-color;
+      margin-bottom: 1.125rem;
+      padding-bottom: .25rem;
+    }
+    
+    @include font-weight(normal);
+
+    color: $grey-100;
+    font-size: 1.125rem;
+  }
+
   @import "info-box/_body";
   @import "info-box/_column";
   @import "info-box/_header";

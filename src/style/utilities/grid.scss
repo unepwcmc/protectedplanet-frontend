@@ -78,8 +78,16 @@
   @include justify-content(space-between);
 }
 
+.space-around {
+  @include justify-content(space-around); 
+}
+
 @include b(right-padded) {
   padding-right: 5%;
+}
+
+.align-items-end {
+  @include align-items(flex-end);
 }
 
 .flex-row {
