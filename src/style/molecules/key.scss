@@ -3,11 +3,11 @@
   @extend .flex-row-wrap;
 
   &__icon {
-    margin-right: .5rem;
-    width: 1.875rem; height: 1.25rem;
+    margin-right: rem-calc(8);
+    width: rem-calc(30); height: rem-calc(20);
 
     position: relative;
-    top: -.1875rem;
+    top: rem-calc(-3);
   }
 
   &__title {
@@ -17,9 +17,9 @@
     color: $key__title-color;
     cursor: default;
     font-family: 'MuseoSans';
-    font-size: .9375rem;
+    font-size: rem-calc(15);
     line-height: 1.2;
-    margin-bottom: 1.125rem;
+    margin-bottom: rem-calc(18);
 
     &:hover { color: $key__title-hover-color; }
   }

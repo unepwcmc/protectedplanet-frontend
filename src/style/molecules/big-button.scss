@@ -11,20 +11,20 @@
 
   border-radius: $big-button__border-radius;
   padding: $big-button__padding;
-  min-height: 40px;
-  min-width:  40px;
+  min-height: rem-calc(40);
+  min-width:  rem-calc(40);
 
   @include e(icon) {
     margin-right: $big-button-icon__margin-right;
 
     @include m(closer) {
-      margin-right: $big-button-icon__margin-right - .25rem;
+      margin-right: $big-button-icon__margin-right - rem-calc(4);
     }
   }
 
   @include m(alt-colors) {
     background-color: $big-button__color;
-    border: solid 1px $grey-15;
+    border: solid rem-calc(1) $grey-15;
 
     @include color-with-state($big-button__bg-color, (
       hover: $big-button__color,
@@ -34,7 +34,7 @@
   }
 
   @include m(danger) {
-    border: solid 1px $grey-15;
+    border: solid rem-calc(1) $grey-15;
 
     @include color-with-state($big-button-danger__bg-color, (
       hover: $big-button-danger__bg-color--hover,

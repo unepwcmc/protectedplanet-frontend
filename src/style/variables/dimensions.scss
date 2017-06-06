@@ -1,28 +1,28 @@
-$max-width--desktop: 1280px !default;
+$max-width--desktop: rem-calc(1280) !default;
 
-$gutter: 40px !global;
+$gutter: rem-calc(40) !global;
 
 // atoms/overlay
 $overlay--narrow__width: 45;
 
 // molecules/reference
-$reference__margin-bottom: 1.5rem !default;
-$reference-link-icon__margin-right: .5rem !default;
+$reference__margin-bottom: rem-calc(24) !default;
+$reference-link-icon__margin-right: rem-calc(8) !default;
 $reference-title__margin-right: .2rem !default;
-$reference-body__margin-bottom: .25rem !default;
+$reference-body__margin-bottom: rem-calc(4) !default;
 
 // molecules/link-with-icon
-$link-with-icon-icon__margin-sides: .625rem !default;
+$link-with-icon-icon__margin-sides: rem-calc(10) !default;
 
 // molecules/big-button
-$big-button-icon__margin-right: .625rem !default;
-$big-button__border-radius: .325rem !default;
+$big-button-icon__margin-right: rem-calc(10) !default;
+$big-button__border-radius: rem-calc(5) !default;
 $big-button__padding: (.5rem 1.875rem) !default;
 $big-button-compact__padding: (.5rem .75rem) !default;
 
 // molecules/horizontal-bar
 $horizontal-bar__height: 1.875rem !default;
-$horizontal-bar__margin-bottom: 1.25rem !default;
+$horizontal-bar__margin-bottom: rem-calc(20) !default;
 
 // molecules/map
 $map__width: 100% !default;
@@ -51,9 +51,9 @@ $gallery-current-index__padding: .5em .75em !default;
 $gallery-current-index__border-radius: 3rem !default;
 
 // organisms/info-box
-$info-box__padding: 1.25rem !default;
+$info-box__padding: rem-calc(20) !default;
 $info-box__margin-bottom: 2.5rem !default;
 $info-box-padding-top-bottom__padding: (2rem 1.25rem) !default;
 $info-box-body__padding: (1rem .2rem) !default;
-$info-box-link-icon__margin-right: .5rem !default;
+$info-box-link-icon__margin-right: rem-calc(8) !default;
 $info-box-link__padding-bottom: 1rem !default;

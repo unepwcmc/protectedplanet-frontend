@@ -14,7 +14,7 @@
   }
 
   @include m(margin-top-bottom) {
-    margin: 1.875rem 0;
+    margin: rem-calc(30 0);
   }
 
   @include leaflet-control-zoom;

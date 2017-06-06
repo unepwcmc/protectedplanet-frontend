@@ -1,6 +1,6 @@
 hr {
-  border: solid 1px $grey-5;
-  margin: 2rem auto;
+  border: solid rem-calc(1) $grey-5;
+  margin: rem-calc(32) auto;
   width: 80%;
 }
 

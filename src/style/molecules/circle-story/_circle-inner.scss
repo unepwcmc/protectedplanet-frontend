@@ -7,7 +7,7 @@
     width: 100%;
     border-radius: 0;
     object-fit: cover;
-    height: 150px;
-    margin-bottom: .5rem;
+    height: rem-calc(150);
+    margin-bottom: rem-calc(8);
   }
 }

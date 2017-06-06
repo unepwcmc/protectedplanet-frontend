@@ -1,5 +1,5 @@
 @mixin vertical-nav {
-  margin-bottom: 2.5rem;
+  margin-bottom: rem-calc(40);
 
   @include e(element) {
     display: block;
@@ -12,12 +12,12 @@
       active: $link__color--pressed,
     ));
 
-    border-bottom: solid 1px $grey-5;
+    border-bottom: solid rem-calc(1) $grey-5;
     padding: {
-      left: 1.25rem;
-      top: .5rem;
-      bottom: .5rem;
-      right: .5rem;
+      left: rem-calc(20);
+      top: rem-calc(8);
+      bottom: rem-calc(8);
+      right: rem-calc(8);
     }
 
     @include only-mobile {
@@ -25,25 +25,25 @@
     }
 
     @include m(child) {
-      padding-left: 2rem;
+      padding-left: rem-calc(32);
     }
 
     @include m(heading) {
       @include color($vertical-nav-element-selected__color);
 
-      padding-left: 1rem;
+      padding-left: rem-calc(16);
       border: {
-        top: solid 1px $grey-15;
-        bottom: solid 1px $grey-15;
-        left: solid 5px $grey-15;
+        top: solid rem-calc(1) $grey-15;
+        bottom: solid rem-calc(1) $grey-15;
+        left: solid rem-calc(5) $grey-15;
       }
     }
 
     @include m(selected) {
       @include font-weight(normal);
       @include color($vertical-nav-element-selected__color);
-      border-left: solid .333rem $grey-15;
-      padding-left: 1rem;
+      border-left: solid rem-calc(5) $grey-15;
+      padding-left: rem-calc(16);
     }
 
     @include m(active) {

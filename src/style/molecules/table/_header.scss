@@ -1,4 +1,4 @@
 @include e(header) {
-  line-height: 2rem;
-  border-bottom: solid 1px $grey-33;
+  line-height: rem-calc(32);
+  border-bottom: solid rem-calc(1) $grey-33;
 };

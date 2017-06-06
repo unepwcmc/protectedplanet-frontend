@@ -5,7 +5,7 @@
   overflow: hidden;
   white-space: nowrap;
 
-  margin-bottom: .625rem;
+  margin-bottom: rem-calc(10);
 }
 
 @include e(body-inner) {

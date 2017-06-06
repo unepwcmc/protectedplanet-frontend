@@ -1,9 +1,9 @@
 @include b(circle-story) {
-  height: 15rem;
+  height: rem-calc(240);
 
   @include only-mobile {
     height: initial;
-    margin-bottom: 2rem;
+    margin-bottom: rem-calc(32);
   }
 
   @include m(flex) {

@@ -6,7 +6,7 @@
   @extend %acts-as-link;
 
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: rem-calc(12);
+  right: rem-calc(20);
   cursor: pointer;
 }

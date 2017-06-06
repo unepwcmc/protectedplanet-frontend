@@ -11,9 +11,9 @@ table {
 
   tr:not(:first-child) {
     @extend .table__row;
-    padding: .5rem;
+    padding: rem-calc(8);
     td {
-      padding: .5rem;
+      padding: rem-calc(8);
     }
   }
 }

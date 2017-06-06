@@ -6,7 +6,7 @@
   top: 25%;
   left: 30%;
   width: 40%;
-  padding: 30px;
+  padding: rem-calc(30);
   background: $white;
   box-sizing: border-box;
 
@@ -14,12 +14,12 @@
   @include text(body, thin);
 
   h2 {
-    font-size: 1.4em;
+    font-size: rem-calc(22);
     margin: 0;
   }
 
   p {
-    margin-top: 20px;
+    margin-top: rem-calc(20);
   }
 
   &.is-opened {
@@ -28,11 +28,11 @@
 
   a.btn {
     display: inline-block;
-    padding: 10px 40px;
+    padding: rem-calc(10 40);
   }
 
   .fa-external-link{
-    margin-left: 10px;
+    margin-left: rem-calc(10);
   }
 
   input {
@@ -44,9 +44,9 @@
 .btn-close {
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px;
+  top: rem-calc(10);
+  right: rem-calc(10);
+  padding: rem-calc(5);
 }
 
 .total-overlay {

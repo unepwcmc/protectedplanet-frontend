@@ -10,7 +10,7 @@
   }
 
   &--overflow {
-    margin: { left: -1rem; right: -1rem; }
+    margin: { left: rem-calc(-16); right: rem-calc(-16); }
 
     @include only-mobile {
       margin: 0;
@@ -28,12 +28,12 @@
   }
 
   &--hero {
-    min-width: 500px;
-    padding: 1.275rem;
+    min-width: rem-calc(500);
+    padding: rem-calc(20);
   }
 
   &--shadow {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: rem-calc(2 2 4) rgba(0, 0, 0, 0.3);
   }
 
   &--padding-top-bottom {
@@ -46,11 +46,26 @@
     color: $grey-100;
     font-family: 'MuseoSans';
     font-size: .9375rem;
-    margin-right: 1rem;
-    margin-bottom: .25rem;
-    padding: .625rem;
+    margin-right: rem-calc(16);
+    margin-bottom: rem-calc(4);
+    padding: rem-calc(10);
 
     display: inline-block;
+  }
+
+  &--factsheet {
+    h3 {
+      @include font-weight(bold);
+      
+      color: $info-box__icon-color;
+      margin-bottom: rem-calc(18);
+      padding-bottom: rem-calc(4);
+    }
+    
+    @include font-weight(normal);
+
+    color: $grey-100;
+    font-size: rem-calc(18);
   }
 
   @import "info-box/_body";

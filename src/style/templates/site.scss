@@ -1,15 +1,15 @@
 .template--site {
 
   .header--site-connections {
-    padding-right: 1rem;
-    border-right: solid .0125rem $grey-4;
+    padding-right: rem-calc(16);
+    border-right: solid rem-calc(1) $grey-4;
   }
 
   .button--hide,
   .button--show {
-    margin-left: 1rem;
+    margin-left: rem-calc(16);
 
     position: relative;
-    top: -.125rem;
+    top: rem-calc(-1);
   }
 }

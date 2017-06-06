@@ -5,4 +5,4 @@ pre, code {
 pre > code { display: block; }
 
 // bring code section closer to previous paragraph
-p + pre { margin-top: -1rem; }
+p + pre { margin-top: rem-calc(-16); }

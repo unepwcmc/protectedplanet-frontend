@@ -5,11 +5,11 @@
   }
 
   @include m(push) {
-    margin-bottom: 2.5rem;
+    margin-bottom: rem-calc(40);
   }
 
   background-color: $alert__bg-color;
-  padding: .625rem;
+  padding: rem-calc(10);
 
   @import 'alert/_body';
   @import 'alert/_icon';
