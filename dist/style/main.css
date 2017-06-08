@@ -2152,6 +2152,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   background-color: #415519;
 }
 
+.key {
+  padding-right: 0.75rem;
+}
+
 .key__icon {
   margin-right: 0.5rem;
   width: 1.875rem;
@@ -6568,6 +6572,12 @@ table {
 
 .flex-column-3, .key__title {
   flex: 0 0 33.3%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-column-3, .key__title {
+    flex: 0 0 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
