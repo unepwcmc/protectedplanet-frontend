@@ -101,5 +101,7 @@
 }
 
 .flex-column-3 {
+  @include only-mobile { flex: 0 0 100% };
+
   flex: 0 0 33.3%;
 }

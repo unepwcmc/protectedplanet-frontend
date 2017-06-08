@@ -2,6 +2,8 @@
   @extend %clearfix;
   @extend .flex-row-wrap;
 
+  padding-right: rem-calc(12);
+
   &__icon {
     margin-right: rem-calc(8);
     width: rem-calc(30); height: rem-calc(20);
