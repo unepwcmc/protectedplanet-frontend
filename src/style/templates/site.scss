@@ -5,6 +5,10 @@
     border-right: solid rem-calc(1) $grey-4;
   }
 
+  .header__links {
+    margin-bottom: rem-calc(25);
+  }
+
   .button--hide,
   .button--show {
     margin-left: rem-calc(16);

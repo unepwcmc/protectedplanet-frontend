@@ -6777,6 +6777,10 @@ table {
   border-right: solid 0.0625rem #d8d8d8;
 }
 
+.template--site .header__links {
+  margin-bottom: 1.5625rem;
+}
+
 .template--site .button--hide,
 .template--site .button--show {
   margin-left: 1rem;
