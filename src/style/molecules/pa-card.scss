@@ -2,7 +2,10 @@
   color: $pa-card-text__color;
   font-size: rem-calc(15);
   margin-bottom: rem-calc(32);
-  padding: rem-calc(0 20 20 20);
+
+  @include only-desktop {
+    padding: rem-calc(0 20 20 20);
+  }
 
   @include e(name) {
     @extend %acts-as-link;

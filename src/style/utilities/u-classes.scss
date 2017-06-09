@@ -53,11 +53,23 @@
 .u-right            { float: right;                        }
 
 // box model
-.u-no-borders         { border: none !important;                      }
-.u-push-top           { margin-top: auto;                             }
-.u-margin-auto        { margin: auto;                                 }
-.u-margin--page       { margin-right: rem-calc(20); margin-left: rem-calc(20);  }
-.u-margin--page-right { margin-right: rem-calc(20);                        }
+.u-no-borders         { border: none !important;           }
+.u-push-top           { margin-top: auto;                  }
+.u-margin-auto        { margin: auto;                      }
+
+.u-margin--page { 
+  @include only-desktop {
+    margin-right: rem-calc(20); margin-left: rem-calc(20);  
+  }
+}
+
+.u-padding--page { 
+  @include only-desktop {
+    padding-right: rem-calc(20); padding-left: rem-calc(20);  
+  }
+}
+
+.u-margin--page-right { margin-right: rem-calc(20);        }
 
 // misc
 .u-click-through    { pointer-events: none;                }
