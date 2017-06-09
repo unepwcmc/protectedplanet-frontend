@@ -1,6 +1,6 @@
 %attribute--large-text {
   line-height: 1;
-  margin-bottom: rem-calc(20); 
+  margin-bottom: rem-calc(20);
 }
 
 .attribute {
@@ -15,12 +15,12 @@
     @include font-weight(bold);
   }
 
-  &--large { 
+  &--large {
     @extend %attribute--large-text;
-    font-size: rem-calc(24); 
+    font-size: rem-calc(24);
   }
 
-  &--xlarge { 
+  &--xlarge {
     @extend %attribute--large-text;
     font-size: rem-calc(48);
   }
@@ -32,6 +32,7 @@
 
   &__value {
     color: $attribute__value-color;
+    word-break: break-word;
     font-family: 'MuseoSlab';
     flex: 0 0 40%;
   }
