@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .key__title, .flex-row-wrap, .key, .template--site .section--factsheet {
+.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .key__item, .flex-row-wrap, .key, .template--site .section--factsheet {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -6757,7 +6757,7 @@ table {
   align-items: flex-end;
 }
 
-.flex-row, .attribute, .key__title {
+.flex-row, .attribute, .key__item {
   -webkit-flex-flow: row nowrap;
   -moz-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
