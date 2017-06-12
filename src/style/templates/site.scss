@@ -16,4 +16,18 @@
     position: relative;
     top: rem-calc(-1);
   }
+
+  .section--factsheet {
+    @extend .flex-row-wrap;
+
+    @include only-desktop {
+      @include flex-flow(row nowrap);
+    }
+  }
+
+    .info-box--factsheet {
+      @include only-mobile {
+        margin-right: 0;
+      }
+    }
 }

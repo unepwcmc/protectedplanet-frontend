@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .key__item, .flex-row-wrap, .key {
+.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .key__title, .flex-row-wrap, .key, .template--site .section--factsheet {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1793,6 +1793,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .attribute__value {
   color: #71a32b;
+  word-break: break-word;
   font-family: 'MuseoSlab';
   flex: 0 0 40%;
 }
@@ -2535,7 +2536,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #333333;
   font-size: 0.9375rem;
   margin-bottom: 2rem;
-  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .pa-card {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
 }
 
 .pa-card__name {
@@ -6528,8 +6534,20 @@ table {
   flex: 0 0 40%;
 }
 
+@media only screen and (max-width: 768px) {
+  .two-fiths {
+    flex: 0 0 100%;
+  }
+}
+
 .three-fiths {
   flex: 0 0 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .three-fiths {
+    flex: 0 0 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -6565,14 +6583,14 @@ table {
   align-items: flex-end;
 }
 
-.flex-row, .attribute, .key__item {
-  -webkit-flex-flow: row no-wrap;
-  -moz-flex-flow: row no-wrap;
-  -ms-flex-flow: row no-wrap;
-  flex-flow: row no-wrap;
+.flex-row, .attribute, .key__title {
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
-.flex-row-wrap, .key {
+.flex-row-wrap, .key, .template--site .section--factsheet {
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
@@ -6734,9 +6752,18 @@ table {
   margin: auto;
 }
 
-.u-margin--page {
-  margin-right: 1.25rem;
-  margin-left: 1.25rem;
+@media only screen and (min-width: 768px) {
+  .u-margin--page {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .u-padding--page {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
 }
 
 .u-margin--page-right {
@@ -6769,4 +6796,19 @@ table {
   margin-left: 1rem;
   position: relative;
   top: -0.0625rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .template--site .section--factsheet {
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .template--site .info-box--factsheet {
+    margin-right: 0;
+  }
 }
