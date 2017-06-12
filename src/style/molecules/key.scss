@@ -1,33 +1,38 @@
 .key {
   @extend %clearfix;
   @extend .flex-row-wrap;
-
+  
+  margin-bottom: rem-calc(6);
   padding-right: rem-calc(12);
 
-  &__icon {
-    margin-right: rem-calc(8);
-    width: rem-calc(30); height: rem-calc(20);
-
-    position: relative;
-    top: rem-calc(-3);
-  }
-
-  &__title {
+  &__item {
     @extend .flex-row;
     @extend .flex-column-3;
 
     color: $key__title-color;
-    cursor: default;
-    font-family: 'MuseoSans';
-    font-size: rem-calc(15);
-    line-height: 1.2;
-    margin-bottom: rem-calc(18);
 
-    &:hover { color: $key__title-hover-color; }
-
-    &:first-child { color: initial; }
+    &:first-child { @include font-weight(bold); }
   }
-}
+
+    &__icon {
+      margin-right: rem-calc(8);
+      width: rem-calc(30); height: rem-calc(20);
+      
+      display: inline-block;
+      position: relative;
+      top: rem-calc(3);
+    }
+
+    &__title {
+      cursor: default;
+      font-family: 'MuseoSans';
+      font-size: rem-calc(15);
+      line-height: 1.2;
+      margin-bottom: rem-calc(18);
+
+      &:hover { color: $key__title-hover-color; }
+    }
+  }
 
 //--------------------------------------------------------------------------------
 // key icon colours
@@ -45,7 +50,7 @@ $key-colors:(
 );
 
 @for $i from 1 to $key-colors-count + 1 {
-  .key__title:nth-child(#{$i}) .key__icon {
+  .key__item:nth-child(#{$i}) .key__icon {
     background-color: map-get($key-colors, $i);
   }
 }
