@@ -5,6 +5,10 @@
   margin-bottom: rem-calc(6);
   padding-right: rem-calc(12);
 
+  &--hidden {
+    visibility: hidden;
+  }
+
   &__item {
     @extend .flex-row;
     @extend .flex-column-3;

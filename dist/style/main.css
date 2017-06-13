@@ -2332,6 +2332,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding-right: 0.75rem;
 }
 
+.key--hidden {
+  visibility: hidden;
+}
+
 .key__item {
   color: #71a32b;
 }
@@ -6957,6 +6961,7 @@ table {
 }
 
 .template--site .header--site-connections {
+  line-height: 1.9375rem;
   padding-right: 1rem;
   border-right: solid 0.0625rem #d8d8d8;
 }
