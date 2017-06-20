@@ -112,15 +112,9 @@ $alert-success--color: $green !default;
 $alert-info--color: $blue--dark !default;
 
 // molecules/key
-$key__title-color: $green !default;
-$key__title-hover-color: $grey-100 !default;
-$key-color-1: #71a32b;
-$key-color-2: #c6e3cb;
-$key-color-3: #80cbd1;
-$key-color-4: #40aed2;
-$key-color-5: #3383b9;
-$key-color-6: #27589e;
-$key-color-7: #1b2c85;
+$key__title-color: $grey-100 !default;
+$key__title-hover-color: $green !default;
+$key__tick-color: $green;
 
 // molecules/value
 $value-number__color: $green !default;

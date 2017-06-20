@@ -1,6 +1,5 @@
 .key {
   @extend %clearfix;
-  @extend .flex-row-wrap;
   
   margin-bottom: rem-calc(6);
   padding-right: rem-calc(12);
@@ -10,51 +9,51 @@
   }
 
   &__item {
-    @extend .flex-row;
-    @extend .flex-column-3;
-
+    @include flexbox;
+    
     color: $key__title-color;
+    font-family: 'MuseoSans';
+    margin-bottom: rem-calc(18);
 
-    &:first-child { @include font-weight(bold); }
+    &:first-child { color: $key__title-hover-color; }
   }
+    
+    &__checkbox {
+      cursor: pointer;
+      padding-left: rem-calc(32);
 
-    &__icon {
-      margin-right: rem-calc(8);
-      width: rem-calc(30); height: rem-calc(20);
-      
-      display: inline-block;
       position: relative;
-      top: rem-calc(3);
+
+      &:before {
+        border: solid rem-calc(1) $grey-33;
+        color: $key__tick-color;
+        content: "";
+        font-size: rem-calc(18);
+        font-family: fontAwesome;
+        width: rem-calc(20);  height: rem-calc(20);
+
+        display: block;
+        position: absolute;
+        left: 0;
+      }
+
+      &--active:before { content: "\f00c"; }
     }
 
-    &__title {
-      cursor: default;
-      font-family: 'MuseoSans';
-      font-size: rem-calc(15);
-      line-height: 1.2;
-      margin-bottom: rem-calc(18);
+      &__name {
+        color: inherit;
+        cursor: pointer;
+        font-size: rem-calc(15);
+        line-height: 1.2;
 
-      &:hover { color: $key__title-hover-color; }
-    }
-  }
+        display: block;
+        
+        &:hover { color: $key__title-hover-color; }
+      }
 
-//--------------------------------------------------------------------------------
-// key icon colours
-//--------------------------------------------------------------------------------
-$key-colors-count: 7;
-
-$key-colors:(
-  1: $key-color-1,
-  2: $key-color-2,
-  3: $key-color-3,
-  4: $key-color-4,
-  5: $key-color-5,
-  6: $key-color-6,
-  7: $key-color-7,
-);
-
-@for $i from 1 to $key-colors-count + 1 {
-  .key__item:nth-child(#{$i}) .key__icon {
-    background-color: map-get($key-colors, $i);
-  }
+      &__designation {
+        color: $grey-77;
+        font-size: rem-calc(13);
+        font-weight: 300;
+      }
 }
