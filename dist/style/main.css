@@ -2173,10 +2173,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 1.125rem;
 }
 
-.key__item:first-child {
-  color: #71a32b;
-}
-
 .key__checkbox {
   cursor: pointer;
   padding-left: 2rem;
@@ -2209,6 +2205,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .key__name:hover {
+  color: #71a32b;
+}
+
+.key__name--green {
   color: #71a32b;
 }
 

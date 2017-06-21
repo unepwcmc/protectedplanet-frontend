@@ -14,8 +14,6 @@
     color: $key__title-color;
     font-family: 'MuseoSans';
     margin-bottom: rem-calc(18);
-
-    &:first-child { color: $key__title-hover-color; }
   }
     
     &__checkbox {
@@ -49,6 +47,8 @@
         display: block;
         
         &:hover { color: $key__title-hover-color; }
+
+        &--green { color: $key__title-hover-color; }
       }
 
       &__designation {
