@@ -16,6 +16,17 @@
 }
 
 .button {
+  &--grey {
+    @include font-weight(bold);
+
+    border: solid rem-calc(2) $button--grey-border-color;
+    border-radius: rem-calc(4);
+    color: $button--grey-text-color;
+    font-family: 'MuseoSlab';
+    font-size: rem-calc(15);
+    padding: rem-calc(6 16);
+  }
+
   &--hide {
     @extend %show-hide-styles;
 

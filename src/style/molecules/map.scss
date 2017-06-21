@@ -9,6 +9,12 @@
     height: $map--main__height;
   }
 
+  @include m(networks) {
+    height: rem-calc(360);
+
+    @include only-desktop { height: $map--networks__height; }
+  }
+
   @include m(double) {
     height: $map--main__height*2;
   }

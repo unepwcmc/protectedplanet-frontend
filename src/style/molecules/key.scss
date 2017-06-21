@@ -1,59 +1,85 @@
+.key-container {
+  border: solid rem-calc(1) $grey-15;
+  box-shadow: 0px 0px 2px 1px $grey-5;
+  padding: rem-calc(25 20 20 20);
+
+  @include only-desktop {
+    align-self: stretch;
+    border-right: none;
+  }
+}
+
 .key {
   @extend %clearfix;
-  
-  margin-bottom: rem-calc(6);
-  padding-right: rem-calc(12);
 
   &--hidden {
     visibility: hidden;
   }
 
-  &__item {
-    @include flexbox;
-    
-    color: $key__title-color;
+  &__title {
     font-family: 'MuseoSans';
-    margin-bottom: rem-calc(18);
+    font-size: rem-calc(15);
   }
-    
-    &__checkbox {
-      cursor: pointer;
-      padding-left: rem-calc(32);
 
-      position: relative;
+  &__list {
+    border-top: solid rem-calc(1) $grey-15;
+    border-bottom: solid rem-calc(1) $grey-15;
+    overflow-y: scroll;
+    margin: rem-calc(16 0);
+    padding: rem-calc(24 0);
+    width: auto; height: rem-calc(130);
 
-      &:before {
-        border: solid rem-calc(1) $grey-33;
-        color: $key__tick-color;
-        content: "";
-        font-size: rem-calc(18);
-        font-family: fontAwesome;
-        width: rem-calc(20);  height: rem-calc(20);
+    @include only-desktop { height: rem-calc(438); }
+  }
 
-        display: block;
-        position: absolute;
-        left: 0;
-      }
+    &__item {
+      @include flexbox;
+      
+      color: $key__title-color;
+      font-family: 'MuseoSans';
+      margin-bottom: rem-calc(18);
 
-      &--active:before { content: "\f00c"; }
+      &:last-child { margin-bottom: 0; }
     }
-
-      &__name {
-        color: inherit;
+      
+      &__checkbox {
         cursor: pointer;
-        font-size: rem-calc(15);
-        line-height: 1.2;
+        padding-left: rem-calc(32);
 
-        display: block;
-        
-        &:hover { color: $key__title-hover-color; }
+        position: relative;
 
-        &--green { color: $key__title-hover-color; }
+        &:before {
+          border: solid rem-calc(1) $grey-33;
+          color: $key__tick-color;
+          content: "";
+          font-size: rem-calc(18);
+          font-family: fontAwesome;
+          width: rem-calc(20);  height: rem-calc(20);
+
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+
+        &--active:before { content: "\f00c"; }
       }
 
-      &__designation {
-        color: $grey-77;
-        font-size: rem-calc(13);
-        font-weight: 300;
-      }
+        &__name {
+          color: inherit;
+          cursor: pointer;
+          font-size: rem-calc(15);
+          line-height: 1.2;
+
+          display: block;
+          
+          &:hover { color: $key__title-hover-color; }
+
+          &--green { color: $key__title-hover-color; }
+        }
+
+        &__designation {
+          color: $grey-77;
+          font-size: rem-calc(13);
+          font-weight: 300;
+        }
 }

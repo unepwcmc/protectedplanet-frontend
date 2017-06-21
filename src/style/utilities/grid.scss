@@ -54,6 +54,7 @@
 
 @include b(one-fourths) {
   @include span-columns(3);
+  
   @media (max-width: 769px) { @include span-columns(12); }
 }
 
@@ -113,4 +114,16 @@
   @include only-mobile { flex: 0 0 100% };
 
   flex: 0 0 33.3%;
+}
+
+.flex-1-quarter {
+  @include only-mobile { flex: 0 0 100% };
+
+  flex: 0 0 25%;
+}
+
+.flex-3-quarters {
+  @include only-mobile { flex: 0 0 100% };
+
+  flex: 0 0 75%;
 }
