@@ -19,10 +19,8 @@
   .leaflet-control-zoom-out:hover {
     color: $green;
     display: block;
-    line-height: rem-calc(20);
     margin: rem-calc(5);
     opacity: 1;
-    width: rem-calc(25);
 
     &:first-child {
       border-bottom: solid rem-calc(1) $leaflet-control__border;
