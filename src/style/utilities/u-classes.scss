@@ -75,3 +75,4 @@
 .u-click-through    { pointer-events: none;                }
 .u-no-click-through { pointer-events: all;                 }
 .u-pdf-page-break   { page-break-before: always;           }
+.u-pdf-no-break     { page-break-inside: avoid;            }
