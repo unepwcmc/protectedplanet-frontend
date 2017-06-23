@@ -30,6 +30,7 @@
   &--hero {
     min-width: rem-calc(500);
     padding: rem-calc(20);
+    z-index: 400;
   }
 
   &--shadow {
