@@ -7100,6 +7100,10 @@ table {
   margin: auto;
 }
 
+.u-no-margin {
+  margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .u-margin--page {
     margin-right: 1.25rem;
@@ -7132,6 +7136,12 @@ table {
 
 .u-pdf-no-break {
   page-break-inside: avoid;
+}
+
+sup {
+  font-size: 0.625rem;
+  vertical-align: super;
+  font-family: inherit;
 }
 
 .template--site .header__links {
