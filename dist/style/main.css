@@ -2972,6 +2972,53 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   background-color: #e3edd5;
 }
 
+.stats {
+  background-color: #f8f8f8;
+  color: #666666;
+  font-family: 'MuseoSlab';
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.875rem;
+  padding: 0.75rem 1.125rem;
+}
+
+.stats__country-list {
+  border-top: solid 0.0625rem #dfe0e1;
+  color: #71a32b;
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  margin-top: 1rem;
+  padding-top: 0.875rem;
+  position: relative;
+}
+
+.stats__country-list:before {
+  border-style: solid;
+  border-color: transparent transparent #dfe0e1 transparent;
+  border-width: 0 0.6875rem 0.75rem 0.6875rem;
+  content: '';
+  position: absolute;
+  top: -0.75rem;
+  left: 2.3125rem;
+}
+
+.stats__country-list:after {
+  border-style: solid;
+  border-color: transparent transparent #f8f8f8 transparent;
+  border-width: 0 0.625rem 0.6875rem 0.625rem;
+  content: '';
+  position: absolute;
+  top: -0.625rem;
+  left: 2.375rem;
+}
+
+.stats__number {
+  color: #71a32b;
+  font-size: 3rem;
+  margin-right: 0.4375rem;
+}
+
 .table, .s-article table {
   width: 100%;
 }
@@ -6812,6 +6859,14 @@ table {
   align-items: flex-end;
 }
 
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
 .flex-row, .attribute {
   -webkit-flex-flow: row nowrap;
   -moz-flex-flow: row nowrap;
@@ -6824,6 +6879,10 @@ table {
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.flex-column-2 {
+  flex: 0 0 50%;
 }
 
 .flex-column-3 {

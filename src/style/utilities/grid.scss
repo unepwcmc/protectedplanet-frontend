@@ -96,9 +96,8 @@
   padding-right: 5%;
 }
 
-.align-items-end {
-  @include align-items(flex-end);
-}
+.align-items-end { @include align-items(flex-end); }
+.align-items-center { @include align-items(center); }
 
 .flex-row {
   @extend %flexbox;
@@ -108,6 +107,10 @@
 .flex-row-wrap {
   @extend %flexbox;
   @include flex-flow(row wrap);
+}
+
+.flex-column-2 {
+  flex: 0 0 50%;
 }
 
 .flex-column-3 {
