@@ -54,12 +54,15 @@ $leaflet-control__color: $green !default;
 $leaflet-control__bg-color: $white !default;
 $leaflet-control__disabled-color: $grey-5 !default;
 $leaflet-control__border: $grey-15 !default;
+$leaflet-control__hover-color: $grey-5 !default;
 
 // atoms/buttons
 $button--hide-color: $green !default;
 $button--hide-border-color: $grey-4;
 $button--grey-border-color: $grey-4 !default;
 $button--grey-text-color: $green !default;
+$button--fullscreen-text-color: $green !default;
+$button--fullscreen-hover-color: $grey-5 !default;
 
 // atoms/colors
 $link__color: $green !default;
