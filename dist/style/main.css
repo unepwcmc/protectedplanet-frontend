@@ -2825,6 +2825,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-family: 'MuseoSlab';
 }
 
+.pa-card__detail-value {
+  font-weight: 300;
+  font-family: 'MuseoSlab';
+}
+
 .reference:not(:last-child) {
   margin-bottom: 1.5rem;
 }
