@@ -56,6 +56,7 @@
 .u-no-borders         { border: none !important;           }
 .u-push-top           { margin-top: auto;                  }
 .u-margin-auto        { margin: auto;                      }
+.u-no-margin          { margin: 0;                         }
 
 .u-margin--page { 
   @include only-desktop {

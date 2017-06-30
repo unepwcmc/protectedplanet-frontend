@@ -52,5 +52,11 @@
 
     font-family: 'MuseoSlab';
   }
+
+  @include e(detail-value){
+    @include font-weight(thin);
+
+    font-family: 'MuseoSlab';
+  }
 }
 
