@@ -13,14 +13,15 @@
     @include _leaflet-control($color: $color, $bg-color: $bg-color, $font-size: $font-size);
   }
 
-  .leaflet-control-zoom-in,
-  .leaflet-control-zoom-out,
-  .leaflet-control-zoom-in:hover,
-  .leaflet-control-zoom-out:hover {
+  a.leaflet-control-zoom-in,
+  a.leaflet-control-zoom-out {
     color: $green;
     display: block;
-    margin: rem-calc(5);
     opacity: 1;
+    line-height: rem-calc(16);
+    padding: rem-calc(12);
+    text-align: center;
+    width: rem-calc(40); height: rem-calc(40);
 
     &:first-child {
       border-bottom: solid rem-calc(1) $leaflet-control__border;
@@ -31,6 +32,11 @@
       color: $leaflet-control__disabled-color;
       cursor: not-allowed;
     }
+  }
+
+  .leaflet-control-zoom-in:hover,
+  .leaflet-control-zoom-out:hover {
+    background-color: $leaflet-control__hover-color;
   }
 }
 

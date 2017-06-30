@@ -38,4 +38,19 @@
 
     &:before { content: '\f06e'; }
   }
+
+  &--fullscreen {
+    background-color: $white;
+    color: $button--grey-text-color;
+    font-size: rem-calc(18);
+    line-height: rem-calc(18);
+    text-align: center;
+    width: rem-calc(40); height: rem-calc(40);
+
+    position: absolute;
+
+    &:hover {
+      background-color: $button--fullscreen-hover-color;
+    }
+  }
 }
