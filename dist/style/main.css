@@ -1997,6 +1997,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   flex: 0 0 40%;
 }
 
+.attribute__link-margin {
+  margin: 0 0.5rem 0 1rem;
+}
+
+.attribute__icon {
+  font-size: 0.8125rem;
+  transform: translateY(1px);
+}
+
 .big-button {
   text-align: center;
   font-family: 'MuseoSlab';
@@ -4278,6 +4287,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .info-box--padding-top-bottom {
   padding: 2rem 1.25rem;
+}
+
+.info-box--margin-top {
+  margin-top: 1.75rem;
 }
 
 .info-box--small {
