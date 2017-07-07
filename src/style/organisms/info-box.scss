@@ -41,6 +41,10 @@
     padding: $info-box-padding-top-bottom__padding;
   }
 
+  &--margin-top {
+    margin-top: rem-calc(28);
+  }
+
   &--small {
     @include font-weight(thin);
     

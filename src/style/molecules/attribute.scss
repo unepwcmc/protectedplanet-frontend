@@ -36,4 +36,11 @@
     font-family: 'MuseoSlab';
     flex: 0 0 40%;
   }
+
+  &__link-margin { margin: rem-calc(0 8 0 16); }
+
+  &__icon {
+    font-size: rem-calc(13);
+    transform: translateY(1px);
+  }
 }
