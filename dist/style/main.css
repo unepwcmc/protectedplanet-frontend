@@ -1876,6 +1876,33 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   padding: 1.25rem;
 }
 
+@keyframes animate {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.loader__dot {
+  background-color: #71a32b;
+  border-radius: 6.25rem;
+  margin: 0 0.0625rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  animation: animate 0.5s alternate infinite cubic-bezier(0.68, 0.12, 0.36, 0.92);
+}
+
+.loader__dot:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.loader__dot:nth-child(3) {
+  animation-delay: .2s;
+}
+
 .alert {
   background-color: #f2f2f2;
   padding: 0.625rem;
