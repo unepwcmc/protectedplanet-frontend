@@ -8,14 +8,14 @@
 
     @include only-mobile {
       width: 100%;
-      padding: 0 2.25rem;
+      padding: rem-calc(0 36);
     }
   }
 
   @include m(fullscreen) {
     @extend %clearfix;
     width: 100%;
-    padding: 1.25rem;
+    padding: rem-calc(20);
     padding-bottom: 0;
 
     @include only-mobile {
@@ -28,14 +28,14 @@
   }
 
   @include m(push-bottom) {
-    margin-bottom: 12rem;
+    margin-bottom: rem-calc(192);
 
     @include only-mobile {
-      margin-bottom: 6rem;
+      margin-bottom: rem-calc(96);
     }
   }
 
   @include m(push-top) {
-    margin-top: 12rem;
+    margin-top: rem-calc(192);
   }
 }

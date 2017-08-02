@@ -1,21 +1,21 @@
 @include b(article) {
   padding: {
-    left: 1rem;
-    right: 1rem;
+    left: rem-calc(16);
+    right: rem-calc(16);
   }
   @include only-mobile {
     padding: 0;
   }
 
   @include e(title) {
-    margin-bottom: 2.5rem;
-    &:not(:first-child) { margin-top: 2.5rem; }
+    margin-bottom: rem-calc(40);
+    &:not(:first-child) { margin-top: rem-calc(40); }
 
     @include text(xxlarge, thin);
     @include color($color--base);
 
     @include only-mobile {
-      margin-bottom: 1.5rem;
+      margin-bottom: rem-calc(24);
       @include text(large, thin);
     }
 
@@ -25,12 +25,12 @@
 
     @include m(paragraph) {
       @include text(medium);
-      margin-bottom: 1rem;
+      margin-bottom: rem-calc(16);
     }
 
     @include m(subparagraph) {
       @include text(headline);
-      margin-bottom: 1rem;
+      margin-bottom: rem-calc(16);
     }
 
     @include m(no-push) {
@@ -39,7 +39,7 @@
   }
 
   @include e(paragraph) {
-    margin-bottom: 1.25rem;
+    margin-bottom: rem-calc(20);
 
     @include text(body, thin);
     @extend %color-base;
@@ -74,10 +74,10 @@
   }
 
   @include e(list) {
-    margin-left: 2.5rem;
+    margin-left: rem-calc(40);
 
     @include m(less-margin) {
-      margin-left: 1rem;
+      margin-left: rem-calc(16);
     }
   }
 
@@ -90,11 +90,11 @@
       content: '\2022'; // circle bullet
       color: $article-list-index__color;
 
-      font-size: 1rem;
+      font-size: rem-calc(16);
       font-weight: 700;
 
       position: absolute;
-      left: -1rem;
+      left: rem-calc(-16);
     }
   }
 }

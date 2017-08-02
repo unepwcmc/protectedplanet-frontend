@@ -6,9 +6,9 @@
   }
 
   @include e(hamburger-icon) {
-    padding: .25rem .33rem;
-    border-radius: .325rem;
-    border: solid 1px $white;
+    padding: rem-calc(4 5);
+    border-radius: rem-calc(5);
+    border: solid rem-calc(1) $white;
   }
 
   @include e(element) {
@@ -16,7 +16,7 @@
     @include line-height($navbar__height);
     @include color($navbar-element__color);
 
-    padding: 0 .625rem;
+    padding: rem-calc(0 10);
     background-color: $navbar__bg-color--darker;
   }
 
@@ -37,8 +37,8 @@
 
   @include e(subelement) {
     background-color: $navbar__bg-color;
-    margin-left: -.625rem;
-    margin-right: -.625rem;
-    padding: 0 .625rem;
+    margin-left: rem-calc(-10);
+    margin-right: rem-calc(-10);
+    padding: rem-calc(0 10);
   }
 }

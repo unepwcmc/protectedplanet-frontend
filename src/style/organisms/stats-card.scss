@@ -1,9 +1,9 @@
 @include b(stats-card) {
   &:not(:last-child) {
-    border-bottom: dashed 1px $grey-33;
+    border-bottom: dashed rem-calc(1) $grey-33;
   }
 
-  padding: 30px 0;
+  padding: rem-calc(30 0);
 
   @include e(body) {
     @extend %flexbox;
@@ -25,11 +25,11 @@
   }
 
   @include e(element) {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-right: rem-calc(16);
+    margin-bottom: rem-calc(16);
 
     @include m(push-right) {
-      margin-right: 2.5rem;
+      margin-right: rem-calc(40);
     }
   }
 }

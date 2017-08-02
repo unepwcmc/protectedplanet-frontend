@@ -2,7 +2,7 @@
   @extend .u-center;
 
   background-color: $gallery-controls__bg-color;
-  line-height: 3.125rem;
+  line-height: rem-calc(50);
 }
 
 @include e(control) {

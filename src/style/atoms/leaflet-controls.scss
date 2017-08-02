@@ -13,19 +13,18 @@
     @include _leaflet-control($color: $color, $bg-color: $bg-color, $font-size: $font-size);
   }
 
-  .leaflet-control-zoom-in,
-  .leaflet-control-zoom-out,
-  .leaflet-control-zoom-in:hover,
-  .leaflet-control-zoom-out:hover {
+  a.leaflet-control-zoom-in,
+  a.leaflet-control-zoom-out {
     color: $green;
     display: block;
-    line-height: 20px;
-    margin: 5px;
     opacity: 1;
-    width: 25px;
+    line-height: rem-calc(16);
+    padding: rem-calc(12);
+    text-align: center;
+    width: rem-calc(40); height: rem-calc(40);
 
     &:first-child {
-      border-bottom: solid 1px $leaflet-control__border;
+      border-bottom: solid rem-calc(1) $leaflet-control__border;
     }
 
     &.leaflet-disabled {
@@ -33,6 +32,11 @@
       color: $leaflet-control__disabled-color;
       cursor: not-allowed;
     }
+  }
+
+  .leaflet-control-zoom-in:hover,
+  .leaflet-control-zoom-out:hover {
+    background-color: $leaflet-control__hover-color;
   }
 }
 
@@ -43,17 +47,17 @@
   }
 
   .leaflet-control-layers {
-    margin: 1.25rem;
+    margin: rem-calc(20);
     label {
       cursor: pointer;
       display: inline-block;
-      line-height: 20px;
-      margin: 5px 0;
-      padding: 0 15px;
+      line-height: rem-calc(20);
+      margin: rem-calc(5 0);
+      padding: rem-calc(0 15);
 
 
       &:first-child {
-        border-right: solid 1px $leaflet-control__border;
+        border-right: solid rem-calc(1) $leaflet-control__border;
       }
     }
 
@@ -81,10 +85,10 @@
 }
 
 @mixin _leaflet-control__margins {
-  .leaflet-top .leaflet-control { margin-top: 20px; }
-  .leaflet-left .leaflet-control { margin-left: 20px; }
-  .leaflet-right .leaflet-control { margin-right: 20px; }
-  .leaflet-bottom .leaflet-control { margin-bottom: 20px; }
+  .leaflet-top .leaflet-control { margin-top: rem-calc(20); }
+  .leaflet-left .leaflet-control { margin-left: rem-calc(20); }
+  .leaflet-right .leaflet-control { margin-right: rem-calc(20); }
+  .leaflet-bottom .leaflet-control { margin-bottom: rem-calc(20); }
 }
 
 @mixin _leaflet-control--hover($color, $bg-color) {

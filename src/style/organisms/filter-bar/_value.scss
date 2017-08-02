@@ -11,7 +11,7 @@
 
   display: block;
   width: 100%;
-  padding: .5rem;
+  padding: rem-calc(8);
   cursor: pointer;
 
   @include m(smaller) {

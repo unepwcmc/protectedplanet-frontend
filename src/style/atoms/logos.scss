@@ -1,6 +1,6 @@
 @include b(logos) {
   @include e(logo) {
-    margin: 0 .625rem;
+    margin: rem-calc(0 10);
   }
 }
 @mixin unepwcmc-logo {
@@ -44,7 +44,7 @@
 
   @include e(registered) {
     position: relative;
-    font-size: .5rem;
+    font-size: rem-calc(8);
     top: -.5rem;
   }
 }

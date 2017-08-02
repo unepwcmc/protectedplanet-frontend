@@ -2,8 +2,8 @@
   @extend %color-base;
   @include text(small);
 
-  margin: 1.5rem 0;
-  padding: { left: .666rem; right: .666rem; }
+  margin: rem-calc(24 0);
+  padding: { left: rem-calc(11); right: rem-calc(11); }
 
   @include e(link) {
     @extend %acts-as-link;

@@ -3,7 +3,7 @@
   @include text--alt(small, bold);
 
   background-color: $green;
-  padding: 0 .25rem;
+  padding: rem-calc(0 4);
 
   float: right;
 }

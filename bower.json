@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "leaflet": "0.7.7",
+    "leaflet": "1.0.3",
     "leaflet.markercluster": "~0.4.0",
     "mapbox.js": "~2.2.3",
     "neat": "~1.7.2",

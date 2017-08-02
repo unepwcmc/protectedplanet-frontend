@@ -11,6 +11,9 @@
   }
 }
 
+// background
+.u-bg--white        { background-color: $white;            }
+
 // position
 .u-relative         { position: relative;                  }
 .u-fixed            { position: fixed;                     }
@@ -53,12 +56,27 @@
 .u-right            { float: right;                        }
 
 // box model
-.u-no-borders       { border: none !important;             }
-.u-push-top         { margin-top: auto;                    }
-.u-margin-auto      { margin: auto;                        }
+.u-no-borders         { border: none !important;           }
+.u-push-top           { margin-top: auto;                  }
+.u-margin-auto        { margin: auto;                      }
+.u-no-margin          { margin: 0;                         }
+
+.u-margin--page { 
+  @include only-desktop {
+    margin-right: rem-calc(20); margin-left: rem-calc(20);  
+  }
+}
+
+.u-padding--page { 
+  @include only-desktop {
+    padding-right: rem-calc(20); padding-left: rem-calc(20);  
+  }
+}
+
+.u-margin--page-right { margin-right: rem-calc(20);        }
 
 // misc
 .u-click-through    { pointer-events: none;                }
 .u-no-click-through { pointer-events: all;                 }
 .u-pdf-page-break   { page-break-before: always;           }
-
+.u-pdf-no-break     { page-break-inside: avoid;            }

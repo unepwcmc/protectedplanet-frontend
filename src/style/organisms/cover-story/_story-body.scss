@@ -5,15 +5,15 @@
   @include flex(1);
   height: 100%;
 
-  padding-top: 2.5rem;
+  padding-top: rem-calc(40);
 
   @include only-mobile {
     padding-top: 0;
   }
 
   @include m(left) {
-    margin-right: -6rem;
-    padding-right: 2.5rem;
+    margin-right: rem-calc(-96);
+    padding-right: rem-calc(40);
 
     @include only-mobile {
       margin-right: 0;
@@ -22,8 +22,8 @@
   }
 
   @include m(right) {
-    margin-left: -6rem;
-    padding-left: 2.5rem;
+    margin-left: rem-calc(-96);
+    padding-left: rem-calc(40);
 
     @include only-mobile {
       margin-left: 0;

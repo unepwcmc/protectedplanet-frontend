@@ -2,7 +2,7 @@
   @include text--alt(headline, bold);
   @include line-height(2rem);
 
-  margin-bottom: .5rem;
+  margin-bottom: rem-calc(8);
 
   @include m(warning) { color: $alert-warning--color; }
   @include m(success) { color: $alert-success--color; }

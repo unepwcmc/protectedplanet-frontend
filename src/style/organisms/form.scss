@@ -6,33 +6,33 @@
     @include text(body, bold);
 
     display: block;
-    margin-bottom: .25rem;
+    margin-bottom: rem-calc(4);
   }
 
   @include e(input) {
-    &:focus { outline: none; border-width: 2px; }
+    &:focus { outline: none; border-width: rem-calc(2); }
 
     @extend %color-base;
     font: inherit;
 
-    min-height: 1.875rem;
+    min-height: rem-calc(30);
     min-width: 50%;
-    padding: .5rem;
-    border: solid 1px $grey-15;
+    padding: rem-calc(8);
+    border: solid rem-calc(1) $grey-15;
 
     @include m(big) {
-      min-height: 2.5rem;
+      min-height: rem-calc(40);
       min-width: 75%;
     }
 
     @include m(textarea) {
-      min-height: 7rem;
+      min-height: rem-calc(112);
       min-width: 100%;
     }
   }
 
   @include e(fieldset) {
-    margin-bottom: 1rem;
+    margin-bottom: rem-calc(16);
   }
 
   @include e(select-container) {
@@ -46,7 +46,7 @@
       position: absolute;
       top: 0;
       right: 5%;
-      line-height: 2.25rem;
+      line-height: rem-calc(36);
       cursor: pointer;
       pointer-events: none;
     }

@@ -1,16 +1,16 @@
-@include b(info-box) {
+.info-box {
   @extend %clearfix;
   @extend %color-base;
 
   padding: $info-box__padding;
   margin-bottom: $info-box__margin-bottom;
 
-  @include m(fill-color) {
+  &--fill-color {
     background-color: $info-box__bg-color;
   }
 
-  @include m(overflow) {
-    margin: { left: -1rem; right: -1rem; }
+  &--overflow {
+    margin: { left: rem-calc(-16); right: rem-calc(-16); }
 
     @include only-mobile {
       margin: 0;
@@ -18,26 +18,59 @@
 
   }
 
-  @include m(alt-color) {
+  &--alt-color {
     background-color: $green;
     color: $white;
   }
 
-  @include m(fff) {
+  &--fff {
     background-color: $white;
   }
 
-  @include m(hero) {
-    min-width: 500px;
-    padding: 1.275rem;
+  &--hero {
+    min-width: rem-calc(500);
+    padding: rem-calc(20);
+    z-index: 400;
   }
 
-  @include m(shadow) {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  &--shadow {
+    box-shadow: rem-calc(2 2 4) rgba(0, 0, 0, 0.3);
   }
 
-  @include m(padding-top-bottom) {
+  &--padding-top-bottom {
     padding: $info-box-padding-top-bottom__padding;
+  }
+
+  &--margin-top {
+    margin-top: rem-calc(28);
+  }
+
+  &--small {
+    @include font-weight(thin);
+    
+    color: $grey-100;
+    font-family: 'MuseoSans';
+    font-size: .9375rem;
+    margin-right: rem-calc(16);
+    margin-bottom: rem-calc(4);
+    padding: rem-calc(10);
+
+    display: inline-block;
+  }
+
+  &--factsheet {
+    h3 {
+      @include font-weight(bold);
+      
+      color: $info-box__icon-color;
+      margin-bottom: rem-calc(18);
+      padding-bottom: rem-calc(4);
+    }
+    
+    @include font-weight(normal);
+
+    color: $grey-100;
+    font-size: rem-calc(18);
   }
 
   @import "info-box/_body";
