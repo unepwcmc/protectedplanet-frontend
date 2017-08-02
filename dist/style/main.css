@@ -1689,6 +1689,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 1.5625rem;
 }
 
+.header--small {
+  border-bottom: solid #bbbbbb 0.0625rem;
+  font-family: 'MuseoSans';
+  font-size: 1rem;
+}
+
 .icon--info {
   padding-left: 1.5rem;
   position: relative;
@@ -1833,6 +1839,30 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 0.8125rem;
   line-height: 1.3125rem;
   font-style: italic;
+}
+
+.text--48 {
+  font-size: 3rem;
+}
+
+.text--48 sup {
+  font-size: 1.875rem;
+}
+
+.text--100 {
+  font-size: 6.25rem;
+}
+
+.text--144 {
+  font-size: 9rem;
+}
+
+.text--standard {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  margin-bottom: 1.25rem;
 }
 
 .accordion {
@@ -2403,6 +2433,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   left: 0;
   height: 100%;
   background-color: #415519;
+}
+
+.v-incrementor {
+  font-family: 'MuseoSans';
+  display: inline-block;
+}
+
+.v-incrementor p {
+  font-family: inherit;
 }
 
 .key-container {
@@ -6931,6 +6970,14 @@ table {
   padding-right: 5%;
 }
 
+.justify-content-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
 .align-items-end, .attribute {
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -7228,6 +7275,10 @@ sup {
   font-family: inherit;
 }
 
+.template--marine {
+  color: #444955;
+}
+
 .template--site .header__links {
   margin-bottom: 1.5625rem;
   display: inline-block;
@@ -7294,4 +7345,31 @@ sup {
   .template--site .info-box--factsheet {
     margin-right: 0;
   }
+}
+
+.sunburst {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+
+.sunburst__info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sunburst__info--active {
+  display: block;
+}
+
+.sunburst__percentage {
+  font-size: 30px;
+}
+
+.sunburst__type {
+  font-size: 30px;
+  text-transform: capitalize;
 }

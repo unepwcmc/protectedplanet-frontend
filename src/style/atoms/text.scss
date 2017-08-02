@@ -1,0 +1,21 @@
+.text {
+
+  &--48 {
+    font-size: rem-calc(48);
+
+    sup { font-size: rem-calc(30); }
+  }
+
+  &--100 {
+    font-size: rem-calc(100);
+  }
+
+  &--144 {
+    font-size: rem-calc(144);
+  }
+
+  &--standard {
+    @include text(body, thin);
+    margin-bottom: rem-calc(20);
+  }
+}

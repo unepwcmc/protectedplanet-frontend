@@ -43,6 +43,7 @@
 @import 'atoms/logos';
 @import 'atoms/overlay';
 @import 'atoms/small-text';
+@import 'atoms/text';
 // atoms
 
 // molecules
@@ -61,6 +62,7 @@
 @import 'molecules/fullscreen-message';
 @import 'molecules/header-with-image';
 @import 'molecules/horizontal-bar';
+@import 'molecules/incrementor';
 @import 'molecules/key';
 @import 'molecules/link-with-icon';
 @import 'molecules/map';
@@ -127,5 +129,10 @@
 // utilities
 
 //templates
-@import 'templates/site'
+@import 'templates/marine';
+@import 'templates/site';
 //templates
+
+//charts 
+@import 'charts/sunburst';
+//charts

@@ -1,3 +1,9 @@
 .v-incrementor {
-  font-size: rem-calc(30);
+  font-family: 'MuseoSans';
+
+  display: inline-block;
+
+  p {
+    font-family: inherit;
+  }
 }

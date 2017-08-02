@@ -96,6 +96,8 @@
   padding-right: 5%;
 }
 
+.justify-content-end { @include justify-content(flex-end); }
+
 .align-items-end { @include align-items(flex-end); }
 .align-items-center { @include align-items(center); }
 

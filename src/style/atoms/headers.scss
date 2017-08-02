@@ -27,18 +27,26 @@
   }
 }
 
-.header--h1-small {
-  @include color($color--base);
-  @include text(large);
+.header {
+  &--h1-small {
+    @include color($color--base);
+    @include text(large);
 
-  margin-top: rem-calc(32);
-  margin-bottom: rem-calc(10);
+    margin-top: rem-calc(32);
+    margin-bottom: rem-calc(10);
 
-  a { color: $link--color; }
-} 
+    a { color: $link--color; }
+  } 
 
-.header--section {
-  @extend .fact__header;
-  margin-top: rem-calc(25);
-  margin-bottom: rem-calc(25);
+  &--section {
+    @extend .fact__header;
+    margin-top: rem-calc(25);
+    margin-bottom: rem-calc(25);
+  }
+
+  &--small {
+    border-bottom: solid $grey-33 rem-calc(1);
+    font-family: 'MuseoSans';
+    font-size: rem-calc(16);   
+  }
 }
