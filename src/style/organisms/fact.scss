@@ -46,3 +46,31 @@
     color: $fact-external-link__color;
   }
 }
+
+.fact {
+  &--circle {
+    border-radius: 100%;
+    font-family: 'MuseoSans';
+    font-size: rem-calc(36);
+    padding-top: rem-calc(390);
+    text-align: center;
+    width: rem-calc(390);
+
+    position: relative;
+  }
+
+  &--marine {
+    background-color: lighten($blue--marine-light, 8%);
+    border: solid rem-calc(4) $white;
+  }
+
+  &__content {
+    padding: rem-calc(20);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

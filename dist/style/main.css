@@ -1853,6 +1853,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 6.25rem;
 }
 
+.text--120 {
+  font-size: 7.5rem;
+}
+
 .text--144 {
   font-size: 9rem;
 }
@@ -4000,6 +4004,30 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fact__external-link {
   margin-left: .25em;
   color: #71a32b;
+}
+
+.fact--circle {
+  border-radius: 100%;
+  font-family: 'MuseoSans';
+  font-size: 2.25rem;
+  padding-top: 24.375rem;
+  text-align: center;
+  width: 24.375rem;
+  position: relative;
+}
+
+.fact--marine {
+  background-color: #bfe5e9;
+  border: solid 0.25rem #ffffff;
+}
+
+.fact__content {
+  padding: 1.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .autocompletion {
@@ -7110,6 +7138,10 @@ table {
   position: fixed;
 }
 
+.u-up-halfway {
+  transform: translateY(-50%);
+}
+
 .u-block {
   display: block;
 }
@@ -7152,6 +7184,10 @@ table {
 
 .u-width-100 {
   width: 100%;
+}
+
+.u-height-0 {
+  height: 0;
 }
 
 .u-italic {
@@ -7285,6 +7321,11 @@ sup {
 
 .template--marine__section {
   padding: 5rem 0 2.5rem 0;
+  position: relative;
+}
+
+.template--marine__section--size {
+  padding-bottom: 18.75rem;
 }
 
 .template--site .header__links {

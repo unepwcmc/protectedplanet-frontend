@@ -18,6 +18,7 @@
 // position
 .u-relative         { position: relative;                  }
 .u-fixed            { position: fixed;                     }
+.u-up-halfway       { transform: translateY(-50%);         }
 
 // display
 .u-block            { display: block;                      }
@@ -36,6 +37,7 @@
 .u-width-60         { width: 60%;                          }
 .u-width-80         { width: 80%;                          }
 .u-width-100        { width: 100%;                         }
+.u-height-0         { height: 0;                           }
 
 // text
 .u-italic           { font-style: italic;                  }

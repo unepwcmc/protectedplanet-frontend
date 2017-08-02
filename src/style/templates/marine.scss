@@ -3,8 +3,13 @@
 
   &__section {
     padding: rem-calc(80 0 40 0); 
+    position: relative;
   }
-  
+
+  &__section--size {
+    padding-bottom: rem-calc(300);
+  }
+
   .section--block-color {
     @extend .u-bg--marine-light;
   }
