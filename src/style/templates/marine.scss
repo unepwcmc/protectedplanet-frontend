@@ -1,3 +1,11 @@
 .template--marine {
   color: $blue--marine;
+
+  &__section {
+    padding: rem-calc(80 0 40 0); 
+  }
+  
+  .section--block-color {
+    @extend .u-bg--marine-light;
+  }
 }

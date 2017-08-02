@@ -7098,6 +7098,10 @@ table {
   background-color: #ffffff;
 }
 
+.u-bg--marine-light, .template--marine .section--block-color {
+  background-color: #A1D8DE;
+}
+
 .u-relative {
   position: relative;
 }
@@ -7277,6 +7281,10 @@ sup {
 
 .template--marine {
   color: #444955;
+}
+
+.template--marine__section {
+  padding: 5rem 0 2.5rem 0;
 }
 
 .template--site .header__links {
