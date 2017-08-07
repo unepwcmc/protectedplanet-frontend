@@ -51,12 +51,18 @@
   &--circle {
     border-radius: 100%;
     font-family: 'MuseoSans';
-    font-size: rem-calc(36);
-    padding-top: rem-calc(390);
+    font-size: rem-calc(24);
+    padding-top: rem-calc(250);
     text-align: center;
-    width: rem-calc(390);
+    width: rem-calc(250);
 
     position: relative;
+
+    @include breakpoint($large){
+      font-size: rem-calc(36);
+      padding-top: rem-calc(390);
+      width: rem-calc(390);
+    }
   }
 
   &--marine {

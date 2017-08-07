@@ -1,0 +1,10 @@
+.v-interactive-treemap {
+  &__treemap {
+    padding-right: 10%;
+  }
+
+  &__instruction {
+    font-size: rem-calc(15);
+    margin-top: rem-calc(10);
+  }
+}

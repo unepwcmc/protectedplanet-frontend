@@ -1,16 +1,65 @@
+//----------------------------------------
+// marine page template
+//----------------------------------------
 .template--marine {
   color: $blue--marine;
 
-  &__section {
-    padding: rem-calc(80 0 40 0); 
-    position: relative;
-  }
-
-  &__section--size {
-    padding-bottom: rem-calc(300);
+  p {
+    font-family: 'MuseoSans';
   }
 
   .section--block-color {
     @extend .u-bg--marine-light;
   }
+}
+
+//----------------------------------------
+// sections within the marine page 
+// template
+//----------------------------------------
+.t--marine {
+  &__header {
+    background: asset-url('images/hero/hero-marine-min.jpg') center no-repeat;
+    background-size: cover;
+    height: rem-calc(600);
+  }
+
+    &__introduction {
+      color: $white;
+      font-size: rem-calc(18);
+      line-height: 1.4;
+      padding: rem-calc(12 18);
+
+      @include breakpoint(medium){ font-size: rem-calc(24); }
+    }
+
+  &__section {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(30);
+    position: relative;
+
+    @include only-desktop {
+      padding-top: rem-calc(80);
+      padding-bottom: rem-calc(80);  
+    }
+  }
+
+  &__section--fact-bottom {
+    padding-bottom: rem-calc(180);
+
+    @include breakpoint($large){ padding-bottom: rem-calc(300); }
+  }
+
+  &__section--fact-top {
+    padding-top: rem-calc(180);
+
+    @include breakpoint($large){ padding-top: rem-calc(160); }
+  }
+
+    &__section__introduction {
+      @extend .text--standard;
+      margin-bottom: 2.25em;
+
+      @include breakpoint($medium){ margin-bottom: 3.25em; }
+    }
 }

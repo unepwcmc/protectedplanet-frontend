@@ -55,6 +55,7 @@
 @import 'molecules/breadcrumbs';
 @import 'molecules/circle-story';
 @import 'molecules/close-button';
+@import 'molecules/counter';
 @import 'molecules/cube';
 @import 'molecules/dropdown';
 @import 'molecules/expandable-section'; // DEPRECATED, use accordion
@@ -62,7 +63,6 @@
 @import 'molecules/fullscreen-message';
 @import 'molecules/header-with-image';
 @import 'molecules/horizontal-bar';
-@import 'molecules/incrementor';
 @import 'molecules/key';
 @import 'molecules/link-with-icon';
 @import 'molecules/map';
@@ -135,4 +135,5 @@
 
 //charts 
 @import 'charts/sunburst';
+@import 'charts/interactive-treemap';
 //charts

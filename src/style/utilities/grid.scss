@@ -75,6 +75,10 @@
   flex: 0 0 60%; 
 }
 
+//----------------------------------------
+// flex positioning
+//----------------------------------------
+
 @include b(flex-start) {
   @extend %flexbox;
 
@@ -96,10 +100,20 @@
   padding-right: 5%;
 }
 
-.justify-content-end { @include justify-content(flex-end); }
+.justify-content-center { @include justify-content(center); }
+
+.justify-content-end { 
+  @extend .justify-content-center;
+  @include breakpoint($large){ @include justify-content(flex-end); }
+}
+
 
 .align-items-end { @include align-items(flex-end); }
 .align-items-center { @include align-items(center); }
+
+//----------------------------------------
+// rows
+//----------------------------------------
 
 .flex-row {
   @extend %flexbox;
@@ -110,6 +124,12 @@
   @extend %flexbox;
   @include flex-flow(row wrap);
 }
+
+//----------------------------------------
+// column spacing
+//----------------------------------------
+.flex-column-gap--left { padding-left: rem-calc(12); }
+.flex-column-gap--right { padding-right: rem-calc(12); }
 
 //----------------------------------------
 // 2 columns
