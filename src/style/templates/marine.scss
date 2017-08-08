@@ -62,4 +62,11 @@
 
       @include breakpoint($medium){ margin-bottom: 3.25em; }
     }
+
+    &__counter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+    }
 }
