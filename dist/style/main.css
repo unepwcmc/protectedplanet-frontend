@@ -7205,6 +7205,195 @@ table {
   }
 }
 
+sup {
+  font-size: 0.625rem;
+  vertical-align: super;
+  font-family: inherit;
+}
+
+.template--marine {
+  color: #444955;
+}
+
+.template--marine p {
+  font-family: 'MuseoSans';
+}
+
+.t--marine__header {
+  background: url("images/hero/hero-marine-min.jpg") center no-repeat;
+  background-size: cover;
+  height: 37.5rem;
+}
+
+.t--marine__introduction {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  padding: 0.75rem 1.125rem;
+}
+
+@media only screen and (min-width: medium) {
+  .t--marine__introduction {
+    font-size: 1.5rem;
+  }
+}
+
+.t--marine__section {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .t--marine__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.t--marine__section--fact-bottom {
+  padding-bottom: 11.25rem;
+}
+
+@media only screen and (min-width: 64rem) {
+  .t--marine__section--fact-bottom {
+    padding-bottom: 18.75rem;
+  }
+}
+
+.t--marine__section--fact-top {
+  padding-top: 11.25rem;
+}
+
+@media only screen and (min-width: 64rem) {
+  .t--marine__section--fact-top {
+    padding-top: 10rem;
+  }
+}
+
+.t--marine__section__introduction {
+  margin-bottom: 2.25em;
+}
+
+@media only screen and (min-width: 47.6875rem) {
+  .t--marine__section__introduction {
+    margin-bottom: 3.25em;
+  }
+}
+
+.t--marine__counter {
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 2.5rem;
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.template--site .header__links {
+  margin-bottom: 1.5625rem;
+  display: inline-block;
+}
+
+.template--site .button--hide,
+.template--site .button--show {
+  margin-left: 1rem;
+  position: relative;
+  top: -0.0625rem;
+}
+
+.template--site .fullscreen__button-site {
+  top: 14.375rem;
+  right: 0.625rem;
+  z-index: 2000;
+}
+
+.template--site .fullscreen__button-connections {
+  top: 21.5625rem;
+  right: 0.625rem;
+  z-index: 2000;
+}
+
+.template--site .fullscreen--active .map--hero,
+.template--site .fullscreen--active .map--networks {
+  height: 100%;
+}
+
+.template--site .fullscreen--active .fullscreen__button-site {
+  top: auto;
+  right: 1.875rem;
+  bottom: 8.125rem;
+}
+
+.template--site .fullscreen--active .fullscreen__button-connections {
+  top: auto;
+  right: 1.875rem;
+  bottom: 8.125rem;
+}
+
+.template--site .fullscreen--active .disclaimer {
+  display: none;
+}
+
+.template--site .fullscreen--active .tab__content {
+  height: 100%;
+}
+
+.template--site .fullscreen--active .key__list {
+  height: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+  .template--site .section--factsheet {
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .template--site .info-box--factsheet {
+    margin-right: 0;
+  }
+}
+
+.sunburst {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+
+.sunburst__info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sunburst__info--active {
+  display: block;
+}
+
+.sunburst__percentage {
+  font-size: 30px;
+}
+
+.sunburst__type {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.v-interactive-treemap__treemap {
+  padding-right: 10%;
+}
+
+.v-interactive-treemap__instruction {
+  font-size: 0.9375rem;
+  margin-top: 0.625rem;
+}
+
 @media only screen and (min-width: 768px) {
   .u-only-mobile {
     display: none;
@@ -7239,6 +7428,10 @@ table {
 
 .u-up-halfway {
   transform: translateY(-50%);
+}
+
+.u-infront-map {
+  z-index: 1000;
 }
 
 .u-block {
@@ -7374,6 +7567,14 @@ table {
   margin: 0;
 }
 
+.u-no-padding {
+  padding: 0;
+}
+
+.u-no-padding--bottom {
+  padding-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .u-margin--page {
     margin-right: 1.25rem;
@@ -7406,191 +7607,4 @@ table {
 
 .u-pdf-no-break {
   page-break-inside: avoid;
-}
-
-sup {
-  font-size: 0.625rem;
-  vertical-align: super;
-  font-family: inherit;
-}
-
-.template--marine {
-  color: #444955;
-}
-
-.template--marine p {
-  font-family: 'MuseoSans';
-}
-
-.t--marine__header {
-  background: url("images/hero/hero-marine-min.jpg") center no-repeat;
-  background-size: cover;
-  height: 37.5rem;
-}
-
-.t--marine__introduction {
-  color: #ffffff;
-  font-size: 1.125rem;
-  line-height: 1.4;
-  padding: 0.75rem 1.125rem;
-}
-
-@media only screen and (min-width: medium) {
-  .t--marine__introduction {
-    font-size: 1.5rem;
-  }
-}
-
-.t--marine__section {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  position: relative;
-}
-
-@media only screen and (min-width: 768px) {
-  .t--marine__section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-.t--marine__section--fact-bottom {
-  padding-bottom: 11.25rem;
-}
-
-@media only screen and (min-width: 64rem) {
-  .t--marine__section--fact-bottom {
-    padding-bottom: 18.75rem;
-  }
-}
-
-.t--marine__section--fact-top {
-  padding-top: 11.25rem;
-}
-
-@media only screen and (min-width: 64rem) {
-  .t--marine__section--fact-top {
-    padding-top: 10rem;
-  }
-}
-
-.t--marine__section__introduction {
-  margin-bottom: 2.25em;
-}
-
-@media only screen and (min-width: 47.6875rem) {
-  .t--marine__section__introduction {
-    margin-bottom: 3.25em;
-  }
-}
-
-.t--marine__counter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-.template--site .header__links {
-  margin-bottom: 1.5625rem;
-  display: inline-block;
-}
-
-.template--site .button--hide,
-.template--site .button--show {
-  margin-left: 1rem;
-  position: relative;
-  top: -0.0625rem;
-}
-
-.template--site .fullscreen__button-site {
-  top: 14.375rem;
-  right: 0.625rem;
-  z-index: 2000;
-}
-
-.template--site .fullscreen__button-connections {
-  top: 21.5625rem;
-  right: 0.625rem;
-  z-index: 2000;
-}
-
-.template--site .fullscreen--active .map--hero,
-.template--site .fullscreen--active .map--networks {
-  height: 100%;
-}
-
-.template--site .fullscreen--active .fullscreen__button-site {
-  top: auto;
-  right: 1.875rem;
-  bottom: 8.125rem;
-}
-
-.template--site .fullscreen--active .fullscreen__button-connections {
-  top: auto;
-  right: 1.875rem;
-  bottom: 8.125rem;
-}
-
-.template--site .fullscreen--active .disclaimer {
-  display: none;
-}
-
-.template--site .fullscreen--active .tab__content {
-  height: 100%;
-}
-
-.template--site .fullscreen--active .key__list {
-  height: 80%;
-}
-
-@media only screen and (min-width: 768px) {
-  .template--site .section--factsheet {
-    -webkit-flex-flow: row nowrap;
-    -moz-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .template--site .info-box--factsheet {
-    margin-right: 0;
-  }
-}
-
-.sunburst {
-  margin: 0 auto;
-  width: 50%;
-  position: relative;
-}
-
-.sunburst__info {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.sunburst__info--active {
-  display: block;
-}
-
-.sunburst__percentage {
-  font-size: 30px;
-}
-
-.sunburst__type {
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.v-interactive-treemap__treemap {
-  padding-right: 10%;
-}
-
-.v-interactive-treemap__instruction {
-  font-size: 0.9375rem;
-  margin-top: 0.625rem;
 }

@@ -64,9 +64,12 @@
     }
 
     &__counter {
+      background: rgba(white, .4);
+      margin-top: rem-calc(40);
+      padding: rem-calc(20 0 20 24);
+
       position: absolute;
       top: 0;
       right: 0;
-      z-index: 1000;
     }
 }

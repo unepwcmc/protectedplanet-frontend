@@ -124,7 +124,6 @@
 // utilities
 @import 'utilities/reset';
 @import 'utilities/grid';
-@import 'utilities/u-classes';
 @import 'utilities/html-elements';
 // utilities
 
@@ -137,3 +136,5 @@
 @import 'charts/sunburst';
 @import 'charts/interactive-treemap';
 //charts
+
+@import 'utilities/u-classes';

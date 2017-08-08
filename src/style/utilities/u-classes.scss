@@ -20,6 +20,7 @@
 .u-relative         { position: relative;                  }
 .u-fixed            { position: fixed;                     }
 .u-up-halfway       { transform: translateY(-50%);         }
+.u-infront-map      { z-index: 1000;                       }
 
 // display
 .u-block            { display: block;                      }
@@ -64,6 +65,8 @@
 .u-push-top           { margin-top: auto;                  }
 .u-margin-auto        { margin: auto;                      }
 .u-no-margin          { margin: 0;                         }
+.u-no-padding         { padding: 0;                        }
+.u-no-padding--bottom { padding-bottom: 0;                 }
 
 .u-margin--page { 
   @include only-desktop {
