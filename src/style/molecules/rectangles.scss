@@ -1,0 +1,39 @@
+.v-rectangles {
+  padding-top: 100%;
+
+  position: relative;
+
+  &__rectangle {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+
+    transform-origin: bottom right;
+    transform: scale(0);
+
+    &-animate {
+      animation: showRectangle .8s ease-in forwards;
+    }
+  }
+
+    &__content {
+      position: relative;
+    }
+
+    &__title {
+      color: white;
+      font-family: 'MuseoSans';
+      font-size: rem-calc(18);
+      opacity: 0;
+
+      position: absolute;
+      top: rem-calc(14);
+      left: rem-calc(14);
+      }
+}
+
+@keyframes showRectangle {
+  to {
+    transform: scale(1);
+  }
+}
