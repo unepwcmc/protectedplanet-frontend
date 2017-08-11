@@ -1,0 +1,61 @@
+.v-horizontal-bars {
+  margin-bottom: rem-calc(20);
+  
+  &__bar-wrapper {
+    position: relative;
+
+    @include breakpoint($large){
+      display: inline;  
+    }
+  }
+
+    &__bar {
+      background-color: $blue--marine-3;
+      margin: rem-calc(3 0 9 0);
+      text-align: right;
+      height: rem-calc(24);
+
+      display: inline-block;
+
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+
+    &__bar-animate {
+      animation: showBar .8s linear forwards;
+    }
+
+      &__value {
+        color: white;
+        font-family: 'MuseoSans';
+        font-size: rem-calc(15);
+        opacity: 0;
+        text-align: right;
+
+        position: absolute;
+        top: 8px;
+        left: 5px;
+
+        @include breakpoint($large){
+          top: -13px;
+          right: 5px;
+          left: initial;
+        }
+      }
+
+      &__value-animate {
+        animation: showBarValue .2s linear forwards;
+      }
+}
+
+@keyframes showBarValue {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showBar {
+  to {
+    transform: scaleX(1);
+  }
+}

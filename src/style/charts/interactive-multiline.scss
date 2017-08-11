@@ -25,12 +25,12 @@
 
       .tick {
         line { stroke: $grey-55; }
-        text { fill: $blue--marine; }
+        text { fill: $blue--marine-4; }
       }
     }
 
     &__line {
-      stroke: $blue--marine;
+      stroke: $blue--marine-4;
       stroke-linecap: round;
       stroke-width: 5;
 
@@ -45,7 +45,7 @@
     &__datapoint {
       cursor: pointer;
       fill: white;
-      stroke: $blue--marine;
+      stroke: $blue--marine-4;
       
       transform-origin: 50%;
       transform: scale(0);
@@ -60,42 +60,11 @@
   }
 
   &__tooltip {
-    // background-color: $blue--marine-light;
-    // border: solid rem-calc(1) #77A5AA;
-    // color: white;
     fill: white;
     font-family: 'MuseoSans';
     font-size: rem-calc(22);
     display: none;
     text-anchor: middle;
-
-    // padding: rem-calc(8 14);
-
-    // &:before {
-    //   border: solid rem-calc(14) transparent;
-    //   border-top: solid rem-calc(10) #77A5AA;
-    //   content: '';
-    //   width: 0; height: 0;
-
-    //   position: absolute;
-    //   top: 100%;
-    //   left: 50%;
-
-    //   transform: translateX(-50%);
-    // }
-
-    // &:after {
-    //   border: solid rem-calc(14) transparent;
-    //   border-top: solid rem-calc(10) $blue--marine-light;
-    //   content: '';
-    //   width: 0; height: 0;
-
-    //   position: absolute;
-    //   top: 100%;
-    //   left: 50%;
-
-    //   transform: translate(-50%, -1px);
-    // }
   }
 
   &__tooltip-active {

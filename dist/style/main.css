@@ -1682,7 +1682,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 47.6875rem) {
+@media only screen and (min-width: 48.6875rem) {
   .header--h1-insights {
     font-size: 4rem;
   }
@@ -1692,7 +1692,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 47.6875rem) {
+@media only screen and (min-width: 48.6875rem) {
   .header--h1-insights-small {
     font-size: 3rem;
   }
@@ -1721,13 +1721,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: .83em;
 }
 
-@media only screen and (min-width: 47.6875rem) {
+@media only screen and (min-width: 48.6875rem) {
   .header--h2-insights {
     font-size: 2.5rem;
   }
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
   .header--h2-insights {
     font-size: 3rem;
   }
@@ -2515,6 +2515,69 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   left: 0;
   height: 100%;
   background-color: #415519;
+}
+
+.v-horizontal-bars {
+  margin-bottom: 1.25rem;
+}
+
+.v-horizontal-bars__bar-wrapper {
+  position: relative;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-horizontal-bars__bar-wrapper {
+    display: inline;
+  }
+}
+
+.v-horizontal-bars__bar {
+  background-color: #90BDC4;
+  margin: 0.1875rem 0 0.5625rem 0;
+  text-align: right;
+  height: 1.5rem;
+  display: inline-block;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.v-horizontal-bars__bar-animate {
+  animation: showBar .8s linear forwards;
+}
+
+.v-horizontal-bars__value {
+  color: white;
+  font-family: 'MuseoSans';
+  font-size: 0.9375rem;
+  opacity: 0;
+  text-align: right;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-horizontal-bars__value {
+    top: -13px;
+    right: 5px;
+    left: initial;
+  }
+}
+
+.v-horizontal-bars__value-animate {
+  animation: showBarValue .2s linear forwards;
+}
+
+@keyframes showBarValue {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showBar {
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .key-container {
@@ -4085,7 +4148,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: relative;
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
   .fact--circle {
     font-size: 2.25rem;
     padding-top: 24.375rem;
@@ -7083,7 +7146,7 @@ table {
   justify-content: center;
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
   .justify-content-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -7205,6 +7268,16 @@ table {
   }
 }
 
+.flex-column-mobile {
+  margin-bottom: 0.625rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-column-mobile {
+    flex: 0 0 100%;
+  }
+}
+
 sup {
   font-size: 0.625rem;
   vertical-align: super;
@@ -7232,7 +7305,7 @@ sup {
   padding: 0.75rem 1.125rem;
 }
 
-@media only screen and (min-width: medium) {
+@media only screen and (min-width: medium1) {
   .t--marine__introduction {
     font-size: 1.5rem;
   }
@@ -7255,7 +7328,7 @@ sup {
   padding-bottom: 11.25rem;
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
   .t--marine__section--fact-bottom {
     padding-bottom: 18.75rem;
   }
@@ -7265,7 +7338,7 @@ sup {
   padding-top: 11.25rem;
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 65rem) {
   .t--marine__section--fact-top {
     padding-top: 10rem;
   }
@@ -7275,7 +7348,7 @@ sup {
   margin-bottom: 2.25em;
 }
 
-@media only screen and (min-width: 47.6875rem) {
+@media only screen and (min-width: 48.6875rem) {
   .t--marine__section__introduction {
     margin-bottom: 3.25em;
   }
@@ -7483,7 +7556,7 @@ sup {
   background-color: #ffffff;
 }
 
-.u-bg--marine-light, .template--marine .section--block-color {
+.u-bg--marine-2, .template--marine .section--block-color {
   background-color: #A1D8DE;
 }
 

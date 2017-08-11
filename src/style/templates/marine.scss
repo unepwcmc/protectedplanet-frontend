@@ -2,14 +2,14 @@
 // marine page template
 //----------------------------------------
 .template--marine {
-  color: $blue--marine;
+  color: $blue--marine-4;
 
   p {
     font-family: 'MuseoSans';
   }
 
   .section--block-color {
-    @extend .u-bg--marine-light;
+    @extend .u-bg--marine-2;
   }
 }
 
