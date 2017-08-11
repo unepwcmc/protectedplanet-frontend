@@ -72,4 +72,12 @@
       top: 0;
       right: 0;
     }
+
+  &__map-disclaimer {
+    color: lighten($blue--marine-4, 15%);
+    font-family: 'MuseoSans';
+    padding-top: rem-calc(14);
+    padding-bottom: rem-calc(14);
+    text-align: center;
+  }
 }

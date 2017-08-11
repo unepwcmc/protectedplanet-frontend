@@ -7400,6 +7400,14 @@ sup {
   right: 0;
 }
 
+.t--marine__map-disclaimer {
+  color: #666e80;
+  font-family: 'MuseoSans';
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  text-align: center;
+}
+
 .template--site .header__links {
   margin-bottom: 1.5625rem;
   display: inline-block;
@@ -7591,6 +7599,10 @@ sup {
 
 .u-bg--white {
   background-color: #ffffff;
+}
+
+.u-bg--marine-1 {
+  background-color: #bfe5e9;
 }
 
 .u-bg--marine-2, .template--marine .section--block-color {
