@@ -1904,7 +1904,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .text--48 {
-  font-size: 3rem;
+  font-size: 1.375rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .text--48 {
+    font-size: 3rem;
+  }
 }
 
 .text--48 sup {
@@ -1912,7 +1918,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .text--100 {
-  font-size: 6.25rem;
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .text--100 {
+    font-size: 6.25rem;
+  }
 }
 
 .text--120 {
@@ -1920,7 +1932,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .text--144 {
-  font-size: 9rem;
+  font-size: 3.75rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .text--144 {
+    font-size: 9rem;
+  }
 }
 
 .text--standard, .t--marine__section__introduction {
@@ -1928,6 +1946,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.3125rem;
+  line-height: 1.3;
   margin-bottom: 1.25rem;
 }
 
@@ -2742,6 +2761,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .map--main {
   height: 570px;
+}
+
+.map--marine {
+  height: 43.75rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .map--marine {
+    height: 570px;
+  }
 }
 
 .map--networks {
@@ -7403,9 +7432,16 @@ sup {
 .t--marine__map-disclaimer {
   color: #666e80;
   font-family: 'MuseoSans';
+  font-size: 0.5rem;
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .t--marine__map-disclaimer {
+    font-size: 0.8125rem;
+  }
 }
 
 .template--site .header__links {

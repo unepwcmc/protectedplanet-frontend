@@ -76,8 +76,11 @@
   &__map-disclaimer {
     color: lighten($blue--marine-4, 15%);
     font-family: 'MuseoSans';
+    font-size: rem-calc(8);
     padding-top: rem-calc(14);
     padding-bottom: rem-calc(14);
     text-align: center;
+
+    @include breakpoint($medium){ font-size: rem-calc(13); }
   }
 }
