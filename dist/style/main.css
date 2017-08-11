@@ -7358,6 +7358,88 @@ sup {
   }
 }
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1);
+  }
+}
+
+.v-interactive-multiline__button {
+  font-family: 'MuseoSans';
+  padding: 0 0.625rem;
+}
+
+.v-interactive-multiline__chart {
+  position: relative;
+}
+
+.v-interactive-multiline__axis .domain {
+  stroke: #8f8f8f;
+}
+
+.v-interactive-multiline__axis .tick line {
+  stroke: #8f8f8f;
+}
+
+.v-interactive-multiline__axis .tick text {
+  fill: #444955;
+}
+
+.v-interactive-multiline__line {
+  stroke: #444955;
+  stroke-linecap: round;
+  stroke-width: 5;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.v-interactive-multiline__line-active {
+  animation: dash 2s linear forwards 1;
+}
+
+.v-interactive-multiline__datapoint {
+  cursor: pointer;
+  fill: white;
+  stroke: #444955;
+  transform-origin: 50%;
+  transform: scale(0);
+}
+
+.v-interactive-multiline__datapoints-active .v-interactive-multiline__datapoint {
+  animation: grow .2s linear forwards 1s;
+}
+
+.v-interactive-multiline__tooltip-wrapper {
+  position: absolute;
+}
+
+.v-interactive-multiline__tooltip {
+  fill: white;
+  font-family: 'MuseoSans';
+  font-size: 1.375rem;
+  display: none;
+  text-anchor: middle;
+}
+
+.v-interactive-multiline__tooltip-active {
+  display: block;
+}
+
+.v-interactive-treemap__treemap {
+  padding-right: 10%;
+}
+
+.v-interactive-treemap__instruction {
+  font-size: 0.9375rem;
+  margin-top: 0.625rem;
+}
+
 .sunburst {
   margin: 0 auto;
   width: 50%;
@@ -7383,15 +7465,6 @@ sup {
 .sunburst__type {
   font-size: 30px;
   text-transform: capitalize;
-}
-
-.v-interactive-treemap__treemap {
-  padding-right: 10%;
-}
-
-.v-interactive-treemap__instruction {
-  font-size: 0.9375rem;
-  margin-top: 0.625rem;
 }
 
 @media only screen and (min-width: 768px) {
