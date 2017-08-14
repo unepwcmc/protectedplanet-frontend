@@ -2,7 +2,7 @@
 // marine page template
 //----------------------------------------
 .template--marine {
-  color: $blue--marine-4;
+  color: $blue--marine-5;
 
   p {
     font-family: 'MuseoSans';
@@ -74,7 +74,7 @@
     }
 
   &__map-disclaimer {
-    color: lighten($blue--marine-4, 15%);
+    color: $blue--marine-4;
     font-family: 'MuseoSans';
     font-size: rem-calc(8);
     padding-top: rem-calc(14);

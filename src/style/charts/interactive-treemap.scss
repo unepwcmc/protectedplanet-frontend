@@ -1,7 +1,36 @@
 .v-interactive-treemap {
-  &__treemap {
-    padding-right: 10%;
+  &__info {
+    line-height: 1.2;
+    margin-top: rem-calc(30);
+    padding: rem-calc(22 18);
   }
+
+    .v-interactive-treemap__title {
+      color: $blue--marine-4;
+      border-bottom: solid rem-calc(1) $grey-55;
+      font-size: rem-calc(40);
+      margin-bottom: rem-calc(26); 
+      padding-bottom: rem-calc(10);
+    }
+
+    .v-interactive-treemap__stat {
+      margin: rem-calc(30 0);
+    }
+
+      .v-interactive-treemap__percent {
+        color: $orange--marine;
+        font-size: rem-calc(50);
+
+        display: block;
+      }
+
+      .v-interactive-treemap__km {
+        color: $orange--marine;
+        font-size: rem-calc(30);
+        margin-bottom: rem-calc(8);
+
+        display: block;
+      }
 
   &__instruction {
     font-size: rem-calc(15);

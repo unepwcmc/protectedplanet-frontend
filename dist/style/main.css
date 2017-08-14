@@ -3111,11 +3111,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .v-rectangles__rectangle {
+  opacity: 0;
   position: absolute;
   bottom: 0;
   right: 0;
-  transform-origin: bottom right;
-  transform: scale(0);
+}
+
+.v-rectangles__rectangle:first-child {
+  opacity: 1;
 }
 
 .v-rectangles__rectangle-animate {
@@ -3138,7 +3141,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @keyframes showRectangle {
   to {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -7430,7 +7433,7 @@ sup {
 }
 
 .t--marine__map-disclaimer {
-  color: #666e80;
+  color: #729099;
   font-family: 'MuseoSans';
   font-size: 0.5rem;
   padding-top: 0.875rem;
@@ -7585,8 +7588,35 @@ sup {
   display: block;
 }
 
-.v-interactive-treemap__treemap {
-  padding-right: 10%;
+.v-interactive-treemap__info {
+  line-height: 1.2;
+  margin-top: 1.875rem;
+  padding: 1.375rem 1.125rem;
+}
+
+.v-interactive-treemap .v-interactive-treemap__title {
+  color: #729099;
+  border-bottom: solid 0.0625rem #8f8f8f;
+  font-size: 2.5rem;
+  margin-bottom: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.v-interactive-treemap .v-interactive-treemap__stat {
+  margin: 1.875rem 0;
+}
+
+.v-interactive-treemap .v-interactive-treemap__percent {
+  color: #F5A623;
+  font-size: 3.125rem;
+  display: block;
+}
+
+.v-interactive-treemap .v-interactive-treemap__km {
+  color: #F5A623;
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .v-interactive-treemap__instruction {
@@ -7647,6 +7677,10 @@ sup {
 
 .u-bg--black-transparent {
   background-color: rgba(0, 0, 0, 0.23);
+}
+
+.u-bg--grey {
+  background-color: #f2f2f2;
 }
 
 .u-relative {
