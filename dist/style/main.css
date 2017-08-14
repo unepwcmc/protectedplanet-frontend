@@ -7527,9 +7527,37 @@ sup {
   }
 }
 
-.v-interactive-multiline__button {
+.v-interactive-multiline__tabs {
+  border-bottom: solid 0.0625rem #8f8f8f;
   font-family: 'MuseoSans';
-  padding: 0 0.625rem;
+  font-weight: thin;
+}
+
+.v-interactive-multiline__tab-title {
+  background-color: #90BDC4;
+  border-right: solid 0.0625rem #A1D8DE;
+  border-left: solid 0.0625rem #A1D8DE;
+  cursor: pointer;
+  padding: 0.5rem 0.625rem 0.3125rem 0.625rem;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+}
+
+.v-interactive-multiline__tab-title.active {
+  background-color: transparent;
+  border: solid 0.0625rem #8f8f8f;
+  border-bottom: 0;
+}
+
+.v-interactive-multiline__tab-title.active:after {
+  background-color: #A1D8DE;
+  content: '';
+  width: 100%;
+  height: 0.0625rem;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 .v-interactive-multiline__chart {

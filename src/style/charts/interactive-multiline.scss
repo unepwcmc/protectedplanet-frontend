@@ -11,10 +11,39 @@
     }
   }
   
-  &__button {
+  &__tabs {
+    border-bottom: solid rem-calc(1) $grey-55;
     font-family: 'MuseoSans';
-    padding: rem-calc(0 10);
+    font-weight: thin;
   }
+
+    &__tab-title {
+      background-color: $blue--marine-3;
+      border-right: solid rem-calc(1) $blue--marine-2;
+      border-left: solid rem-calc(1) $blue--marine-2;
+      cursor: pointer;
+      padding: rem-calc(8 10 5 10);
+      text-transform: capitalize;
+
+      display: inline-block;
+      position: relative;
+
+      &.active { 
+        background-color: transparent; 
+        border: solid rem-calc(1) $grey-55;
+        border-bottom: 0;
+
+        &:after {
+          background-color: $blue--marine-2;
+          content: '';
+          width: 100%; height: rem-calc(1);
+
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+        }
+      }
+    }
 
   &__chart {
     position: relative;
