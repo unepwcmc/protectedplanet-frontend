@@ -32,6 +32,10 @@
         display: block;
       }
 
+  &__cell-active rect {
+    fill: $orange--marine;
+  }
+
   &__instruction {
     font-size: rem-calc(15);
     margin-top: rem-calc(10);
