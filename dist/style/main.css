@@ -7589,17 +7589,15 @@ sup {
 }
 
 .v-interactive-multiline__target .tick line {
-  stroke: #F5A623;
+  stroke: #ffffff;
   stroke-width: 3;
   stroke-dasharray: 10px;
 }
 
 .v-interactive-multiline__target .tick text {
-  fill: #F5A623;
-  font-size: 12px;
+  fill: #ffffff;
   font-weight: bold;
-  text-anchor: start;
-  transform: translate(10px, -21px);
+  transform: translateY(6px);
 }
 
 .v-interactive-multiline__line {

@@ -71,18 +71,16 @@
 
       .tick { 
         line { 
-          stroke: $orange--marine; 
+          stroke: $white; 
           stroke-width: 3;
           stroke-dasharray: 10px;
         }
 
         text {
-          fill: $orange--marine;
-          font-size: 12px;
+          fill: $white;
           font-weight: bold;
-          text-anchor: start;
 
-          transform: translate(10px, -21px);
+          transform: translateY(6px);
         }
       } 
     }
