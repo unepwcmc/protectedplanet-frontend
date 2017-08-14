@@ -24,9 +24,38 @@
       .domain { stroke: $grey-55; }
 
       .tick {
-        line { stroke: $grey-55; }
+        line { stroke-width: 0; }
         text { fill: $blue--marine-5; }
       }
+    }
+
+    &__gridlines {
+      .domain { stroke-width: 0; }
+
+      .tick { 
+        line { stroke: $grey-33; }
+      }
+    }
+
+    &__target {
+      .domain { stroke-width: 0; }
+
+      .tick { 
+        line { 
+          stroke: $orange--marine; 
+          stroke-width: 3;
+          stroke-dasharray: 10px;
+        }
+
+        text {
+          fill: $orange--marine;
+          font-size: 12px;
+          font-weight: bold;
+          text-anchor: start;
+
+          transform: translate(10px, -21px);
+        }
+      } 
     }
 
     &__line {
