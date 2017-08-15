@@ -32,8 +32,8 @@
         display: block;
       }
 
-  &__cell-active rect {
-    fill: $marine-accent-color;
+  &__cell-active text {
+    font-weight: bold;
   }
 
   &__instruction {

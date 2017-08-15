@@ -7880,8 +7880,8 @@ sup {
   display: block;
 }
 
-.v-interactive-treemap__cell-active rect {
-  fill: #F5A623;
+.v-interactive-treemap__cell-active text {
+  font-weight: bold;
 }
 
 .v-interactive-treemap__instruction {
