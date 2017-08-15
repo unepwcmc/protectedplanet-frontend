@@ -7724,6 +7724,14 @@ sup {
   }
 }
 
+.d3-horizontal-bar-chart .bar {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.d3-horizontal-bar-chart .bar-label {
+  fill: #ffffff;
+}
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
