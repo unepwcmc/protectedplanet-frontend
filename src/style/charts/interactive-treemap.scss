@@ -18,14 +18,14 @@
     }
 
       .v-interactive-treemap__percent {
-        color: $orange--marine;
+        color: $marine-accent-color;
         font-size: rem-calc(50);
 
         display: block;
       }
 
       .v-interactive-treemap__km {
-        color: $orange--marine;
+        color: $marine-accent-color;
         font-size: rem-calc(30);
         margin-bottom: rem-calc(8);
 
@@ -33,7 +33,7 @@
       }
 
   &__cell-active rect {
-    fill: $orange--marine;
+    fill: $marine-accent-color;
   }
 
   &__instruction {

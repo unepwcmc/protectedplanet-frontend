@@ -55,8 +55,10 @@
 .u-alt-xxlarge      { @include text--alt(xxlarge, x-bold); }
 .u-mono             { font-family: monospace;              }
 .u-alt-font         { font-family: 'MuseoSlab';            }
+.u-text-sans        { font-family: 'MuseoSans';            }
 .u-text-left        { text-align: left;                    }
 .u-text-right       { text-align: right;                   }
+.u-marine-accent-color { color: $marine-accent-color;      }
 
 // floats
 .u-left             { float: left;                         }

@@ -1,8 +1,19 @@
 //----------------------------------------
+// marine page template variables
+//----------------------------------------
+$marine-accent-color: $orange--lighest;
+
+//----------------------------------------
 // marine page template
 //----------------------------------------
 .template--marine {
   color: $blue--marine-5;
+
+  h4 {
+    border-bottom: solid rem-calc(1) $grey-55;
+    margin-bottom: rem-calc(22);
+    padding-bottom: rem-calc(8);
+  }
 
   p {
     font-family: 'MuseoSans';
@@ -82,5 +93,34 @@
     text-align: center;
 
     @include breakpoint($medium){ font-size: rem-calc(13); }
+  }
+}
+
+.template--marine {
+  //----------------------------------------
+  // national waters vs high seas
+  // infographic
+  //----------------------------------------
+  .infographic {
+    &--left {
+      border-right: dashed rem-calc(3) $grey-15;
+      padding: rem-calc(20 0 20 24);
+    }
+
+    &--right {
+      padding: rem-calc(20 24 20 0);
+    }
+
+    &__bar {
+      width: 100%; height: rem-calc(140);
+    }
+
+    &__bar--left {
+      background-color: $blue--marine-1;
+    }
+
+    &__bar--right {
+      background-color: $blue--marine-4; 
+    }
   }
 }

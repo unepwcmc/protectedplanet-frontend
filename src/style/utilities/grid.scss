@@ -63,18 +63,6 @@
   @media (max-width: 769px) { @include span-columns(12); }
 }
 
-@include b(two-fiths) { 
-  @include only-mobile { flex: 0 0 100%; }
-
-  flex: 0 0 40%; 
-}
-
-@include b(three-fiths) { 
-  @include only-mobile { flex: 0 0 100%; }
-
-  flex: 0 0 60%; 
-}
-
 //----------------------------------------
 // flex positioning
 //----------------------------------------
@@ -175,12 +163,25 @@
 }
 
 //----------------------------------------
-// 4 columns
+// 5 columns
 //----------------------------------------
 .flex-1-fith {
   @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 20%;
+}
+
+.flex-2-fiths { 
+  @include only-mobile { flex: 0 0 100%; }
+
+  flex: 0 0 40%; 
+}
+
+
+.flex-3-fiths { 
+  @include only-mobile { flex: 0 0 100%; }
+
+  flex: 0 0 60%; 
 }
 
 .flex-4-fiths {

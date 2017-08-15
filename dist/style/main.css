@@ -7162,26 +7162,6 @@ table {
   }
 }
 
-.two-fiths {
-  flex: 0 0 40%;
-}
-
-@media only screen and (max-width: 768px) {
-  .two-fiths {
-    flex: 0 0 100%;
-  }
-}
-
-.three-fiths {
-  flex: 0 0 60%;
-}
-
-@media only screen and (max-width: 768px) {
-  .three-fiths {
-    flex: 0 0 100%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .flex-start {
     flex-direction: column;
@@ -7327,6 +7307,26 @@ table {
   }
 }
 
+.flex-2-fiths {
+  flex: 0 0 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-2-fiths {
+    flex: 0 0 100%;
+  }
+}
+
+.flex-3-fiths {
+  flex: 0 0 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-3-fiths {
+    flex: 0 0 100%;
+  }
+}
+
 .flex-4-fiths {
   flex: 0 0 80%;
 }
@@ -7355,6 +7355,12 @@ sup {
 
 .template--marine {
   color: #444955;
+}
+
+.template--marine h4 {
+  border-bottom: solid 0.0625rem #8f8f8f;
+  margin-bottom: 1.375rem;
+  padding-bottom: 0.5rem;
 }
 
 .template--marine p {
@@ -7445,6 +7451,28 @@ sup {
   .t--marine__map-disclaimer {
     font-size: 0.8125rem;
   }
+}
+
+.template--marine .infographic--left {
+  border-right: dashed 0.1875rem #dfe0e1;
+  padding: 1.25rem 0 1.25rem 1.5rem;
+}
+
+.template--marine .infographic--right {
+  padding: 1.25rem 1.5rem 1.25rem 0;
+}
+
+.template--marine .infographic__bar {
+  width: 100%;
+  height: 8.75rem;
+}
+
+.template--marine .infographic__bar--left {
+  background-color: #bfe5e9;
+}
+
+.template--marine .infographic__bar--right {
+  background-color: #729099;
 }
 
 .template--site .header__links {
@@ -7856,12 +7884,20 @@ sup {
   font-family: 'MuseoSlab';
 }
 
+.u-text-sans {
+  font-family: 'MuseoSans';
+}
+
 .u-text-left {
   text-align: left;
 }
 
 .u-text-right {
   text-align: right;
+}
+
+.u-marine-accent-color {
+  color: #F5A623;
 }
 
 .u-left {
