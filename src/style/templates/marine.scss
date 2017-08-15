@@ -4,19 +4,32 @@
 $marine-accent-color: $orange--lighest;
 
 //----------------------------------------
+// marine page utility classes
+//----------------------------------------
+.marine-4 { color: $blue--marine-4; }
+
+//----------------------------------------
 // marine page template
 //----------------------------------------
 .template--marine {
   color: $blue--marine-5;
 
   h4 {
-    border-bottom: solid rem-calc(1) $grey-55;
+    border-bottom: solid rem-calc(1) $blue--marine-5;
+    color: $blue--marine-5;
     margin-bottom: rem-calc(22);
     padding-bottom: rem-calc(8);
   }
 
   p {
     font-family: 'MuseoSans';
+  }
+
+  a {
+    color: $blue--marine-3;
+    text-decoration: underline;
+
+    &:hover { text-decoration: none; }
   }
 
   .section--block-color {
@@ -102,25 +115,53 @@ $marine-accent-color: $orange--lighest;
   // infographic
   //----------------------------------------
   .infographic {
-    &--left {
-      border-right: dashed rem-calc(3) $grey-15;
-      padding: rem-calc(20 0 20 24);
+    padding: rem-calc(30 24);
+
+    &__header {
+      font-size: rem-calc(22);
+      border-bottom: solid rem-calc(1) $blue--marine-5;
+      padding-bottom: rem-calc(8);
+      margin-bottom: rem-calc(18);
+
+      @include breakpoint($medium){ margin-bottom: rem-calc(22); }
     }
 
-    &--right {
-      padding: rem-calc(20 24 20 0);
+    &__intro { 
+      margin-bottom: rem-calc(30); 
+
+      @include breakpoint($medium){ margin-bottom: rem-calc(50); }
     }
 
     &__bar {
-      width: 100%; height: rem-calc(140);
-    }
-
-    &__bar--left {
       background-color: $blue--marine-1;
+      margin: rem-calc(24 0 34 0);
+      width: 100%; height: rem-calc(90);
+
+      position: relative;
+      
+      @include breakpoint($medium){ margin: rem-calc(34 0 54 0); }
+
+      @include breakpoint($large){ height: rem-calc(140); }
     }
 
-    &__bar--right {
-      background-color: $blue--marine-4; 
+      &__bar-percentage {
+        height: 100%;
+
+        display: block;
+        position: absolute;
+        left: 0;
+      }
+
+      &__bar-coverage { background-color: $blue--marine-4; }
+
+      &__bar-pa { background-color: $marine-accent-color; }
+
+    &__pa { 
+      margin-bottom: rem-calc(24); 
+
+      display: block;
+
+      @include breakpoint($medium){ margin-bottom: rem-calc(34); }
     }
   }
 }

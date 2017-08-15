@@ -1909,12 +1909,30 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (min-width: 48.6875rem) {
   .text--48 {
+    font-size: 2.375rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .text--48 {
     font-size: 3rem;
   }
 }
 
 .text--48 sup {
-  font-size: 1.875rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .text--48 sup {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .text--48 sup {
+    font-size: 1.875rem;
+  }
 }
 
 .text--100 {
@@ -1922,6 +1940,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 @media only screen and (min-width: 48.6875rem) {
+  .text--100 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
   .text--100 {
     font-size: 6.25rem;
   }
@@ -7314,16 +7338,32 @@ table {
   flex-flow: row wrap;
 }
 
-.flex-column-gap--left {
-  padding-left: 0.75rem;
+@media only screen and (min-width: 48.6875rem) {
+  .flex-column-gap--left {
+    padding-left: 0.75rem;
+  }
 }
 
-.flex-column-gap--right {
-  padding-right: 0.75rem;
+@media only screen and (min-width: 48.6875rem) {
+  .flex-column-gap--right {
+    padding-right: 0.75rem;
+  }
 }
 
 .flex-column-2 {
   flex: 0 0 50%;
+}
+
+.flex-1-half {
+  flex: 0 0 100%;
+  margin-bottom: 0.625rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .flex-1-half {
+    flex: 0 0 50%;
+    margin-bottom: 0;
+  }
 }
 
 .flex-column-3 {
@@ -7416,13 +7456,10 @@ table {
   }
 }
 
-.flex-column-mobile {
-  margin-bottom: 0.625rem;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 39.25rem) {
   .flex-column-mobile {
     flex: 0 0 100%;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -7432,18 +7469,32 @@ sup {
   font-family: inherit;
 }
 
+.marine-4 {
+  color: #729099;
+}
+
 .template--marine {
   color: #444955;
 }
 
 .template--marine h4 {
-  border-bottom: solid 0.0625rem #8f8f8f;
+  border-bottom: solid 0.0625rem #444955;
+  color: #444955;
   margin-bottom: 1.375rem;
   padding-bottom: 0.5rem;
 }
 
 .template--marine p {
   font-family: 'MuseoSans';
+}
+
+.template--marine a {
+  color: #90BDC4;
+  text-decoration: underline;
+}
+
+.template--marine a:hover {
+  text-decoration: none;
 }
 
 .t--marine__header {
@@ -7532,26 +7583,77 @@ sup {
   }
 }
 
-.template--marine .infographic--left {
-  border-right: dashed 0.1875rem #dfe0e1;
-  padding: 1.25rem 0 1.25rem 1.5rem;
+.template--marine .infographic {
+  padding: 1.875rem 1.5rem;
 }
 
-.template--marine .infographic--right {
-  padding: 1.25rem 1.5rem 1.25rem 0;
+.template--marine .infographic__header {
+  font-size: 1.375rem;
+  border-bottom: solid 0.0625rem #444955;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.125rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__header {
+    margin-bottom: 1.375rem;
+  }
+}
+
+.template--marine .infographic__intro {
+  margin-bottom: 1.875rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__intro {
+    margin-bottom: 3.125rem;
+  }
 }
 
 .template--marine .infographic__bar {
-  width: 100%;
-  height: 8.75rem;
-}
-
-.template--marine .infographic__bar--left {
   background-color: #bfe5e9;
+  margin: 1.5rem 0 2.125rem 0;
+  width: 100%;
+  height: 5.625rem;
+  position: relative;
 }
 
-.template--marine .infographic__bar--right {
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__bar {
+    margin: 2.125rem 0 3.375rem 0;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine .infographic__bar {
+    height: 8.75rem;
+  }
+}
+
+.template--marine .infographic__bar-percentage {
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.template--marine .infographic__bar-coverage {
   background-color: #729099;
+}
+
+.template--marine .infographic__bar-pa {
+  background-color: #F5A623;
+}
+
+.template--marine .infographic__pa {
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__pa {
+    margin-bottom: 2.125rem;
+  }
 }
 
 .template--site .header__links {
@@ -7977,6 +8079,10 @@ sup {
 
 .u-marine-accent-color {
   color: #F5A623;
+}
+
+.u-word-break {
+  word-break: break-word;
 }
 
 .u-left {

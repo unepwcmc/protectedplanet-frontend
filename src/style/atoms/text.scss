@@ -3,15 +3,21 @@
   &--48 {
     font-size: rem-calc(22);
 
-    @include breakpoint($medium){ font-size: rem-calc(48); }
+    @include breakpoint($medium){ font-size: rem-calc(38); }
+    @include breakpoint($large){ font-size: rem-calc(48); }
 
-    sup { font-size: rem-calc(30); }
+    sup { 
+      font-size: rem-calc(16);
+      @include breakpoint($medium){ font-size: rem-calc(20); }
+      @include breakpoint($large){ font-size: rem-calc(30); }
+    }
   }
 
   &--100 {
     font-size: rem-calc(40);
 
-    @include breakpoint($medium){ font-size: rem-calc(100); }
+    @include breakpoint($medium){ font-size: rem-calc(80); }
+    @include breakpoint($large){ font-size: rem-calc(100); }
   }
 
   &--120 {
