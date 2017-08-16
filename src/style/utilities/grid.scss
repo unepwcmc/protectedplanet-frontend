@@ -88,6 +88,7 @@
   padding-right: 5%;
 }
 
+.justify-content-between { @include justify-content(between); }
 .justify-content-center { @include justify-content(center); }
 
 .justify-content-end { 

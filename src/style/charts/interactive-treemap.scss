@@ -1,43 +1,109 @@
 .v-interactive-treemap {
-  &__info {
-    line-height: 1.2;
-    margin-top: rem-calc(30);
-    padding: rem-calc(22 18);
+  
+  //----------------------------------------
+  // grid
+  //----------------------------------------
+  .flex-2-fiths,
+  .flex-3-fiths {
+    @media only screen and (max-width: $large){
+      flex: 0 0 100%;
+    }
   }
 
-    .v-interactive-treemap__title {
-      color: $blue--marine-4;
-      border-bottom: solid rem-calc(1) $grey-55;
+  //----------------------------------------
+  // info panel
+  //----------------------------------------
+  &__info-panel {
+    display: none;
+
+    @include breakpoint($medium){ display: block; }
+  }
+
+  &__list {
+    @include breakpoint($medium){ display: none; }
+  }
+
+    &__list-item {
+      border: solid rem-calc(1) $grey-5;
+      font-size: rem-calc(14);
+      padding: rem-calc(14 12 2 12);
+
+      &:nth-child(even){ background-color: $grey-5; }
+    }
+
+      &__info {
+        line-height: 1.2;
+        margin-top: rem-calc(30);
+        padding: rem-calc(22 18);
+      }
+
+      &__title {
+        border-bottom: solid rem-calc(1) $grey-55; 
+        color: $blue--marine-4;
+        font-size: rem-calc(20);
+        margin-bottom: rem-calc(16); 
+        padding-bottom: rem-calc(6);
+
+        @include breakpoint($medium){ 
+          font-size: rem-calc(40);
+          margin-bottom: rem-calc(26); 
+          padding-bottom: rem-calc(10);
+        }
+      }
+
+      &__stat {
+        margin: rem-calc(20 0);
+        flex: 0 0 50%;
+        
+        @include breakpoint($medium){ margin: rem-calc(30 0); }
+        @include breakpoint($large){ flex: 0 0 100%; }
+      }
+
+        &__percent {
+          color: $marine-accent-color;
+          font-size: rem-calc(30);
+
+          display: block;
+
+          @include breakpoint($medium){ font-size: rem-calc(50); }
+        }
+
+        &__km {
+          color: $marine-accent-color;
+          font-size: rem-calc(18);
+          margin-bottom: rem-calc(8);
+
+          display: block;
+
+          @include breakpoint($medium){ font-size: rem-calc(30); }
+        }
+  
+  //----------------------------------------
+  // treemap
+  //----------------------------------------
+  &__cell {
+    text { 
       font-size: rem-calc(40);
-      margin-bottom: rem-calc(26); 
-      padding-bottom: rem-calc(10);
+      
+      @include breakpoint($medium){ font-size: rem-calc(16); }
     }
 
-    .v-interactive-treemap__stat {
-      margin: rem-calc(30 0);
+    &-active { 
+      text { 
+        @include breakpoint($medium){ font-weight: bold; }
+      }
     }
-
-      .v-interactive-treemap__percent {
-        color: $marine-accent-color;
-        font-size: rem-calc(50);
-
-        display: block;
-      }
-
-      .v-interactive-treemap__km {
-        color: $marine-accent-color;
-        font-size: rem-calc(30);
-        margin-bottom: rem-calc(8);
-
-        display: block;
-      }
-
-  &__cell-active text {
-    font-weight: bold;
   }
 
+  //----------------------------------------
+  // instruction
+  //----------------------------------------
   &__instruction {
     font-size: rem-calc(15);
     margin-top: rem-calc(10);
+
+    display: none;
+
+    @include breakpoint($medium){ display: block; }
   }
 }
