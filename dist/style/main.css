@@ -7724,12 +7724,43 @@ sup {
   }
 }
 
+.d3-horizontal-bar-chart .background {
+  fill: rgba(191, 229, 233, 0.4);
+}
+
 .d3-horizontal-bar-chart .bar {
-  fill: rgba(0, 0, 0, 0.5);
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 .d3-horizontal-bar-chart .bar-label {
   fill: #ffffff;
+  font-size: 0.75rem;
+}
+
+.d3-horizontal-bar-chart .gridlines .domain {
+  stroke-width: 0;
+}
+
+.d3-horizontal-bar-chart .gridlines .tick line {
+  stroke: #ffffff;
+}
+
+.d3-horizontal-bar-chart .xaxis .domain {
+  stroke-width: 0;
+}
+
+.d3-horizontal-bar-chart .xaxis text {
+  fill: #444955;
+  font-size: 0.75rem;
+}
+
+.d3-horizontal-bar-chart .yaxis .domain {
+  stroke-width: 0;
+}
+
+.d3-horizontal-bar-chart .yaxis text {
+  fill: #444955;
+  font-size: 1rem;
 }
 
 @keyframes dash {
@@ -8073,7 +8104,7 @@ sup {
   font-family: 'MuseoSlab';
 }
 
-.u-text-sans, .table--grey {
+.u-text-sans, .table--grey, .d3-horizontal-bar-chart .bar-label {
   font-family: 'MuseoSans';
 }
 

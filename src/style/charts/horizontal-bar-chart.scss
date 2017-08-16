@@ -1,9 +1,39 @@
 .d3-horizontal-bar-chart {
+  .background { fill: rgba($blue--marine-1, 0.4); }
+
   .bar {
-    fill: rgba(0, 0, 0, .5);
+    fill: rgba(0, 0, 0, .4);
   }
 
   .bar-label {
+    @extend .u-text-sans;
     fill: $white;
+    font-size: rem-calc(12);
+  }
+
+  .gridlines {
+    .domain { stroke-width: 0; }
+
+    .tick { 
+      line { stroke: $white; }
+    }
+  }
+
+  .xaxis {
+    .domain { stroke-width: 0; }
+
+    text { 
+      fill: $blue--marine-5;
+      font-size: rem-calc(12);
+    }
+  }
+
+  .yaxis {
+    .domain { stroke-width: 0; }    
+
+    text {
+      fill: $blue--marine-5;
+      font-size: rem-calc(16); 
+    }
   }
 }
