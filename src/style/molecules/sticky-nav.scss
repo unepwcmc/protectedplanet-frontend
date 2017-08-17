@@ -1,0 +1,159 @@
+//----------------------------------------
+// variables
+//----------------------------------------
+$navHeightMobile: rem-calc(48);
+
+//----------------------------------------
+// shared styles
+//----------------------------------------
+%burger-line {
+  background-color: $white;
+  width: rem-calc(30); height: rem-calc(3);
+  display: block;
+}
+
+//----------------------------------------
+// animations
+//----------------------------------------
+@keyframes showNav {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+//----------------------------------------
+// sticky nav styles
+//----------------------------------------
+.v-sticky-nav {
+  @extend .u-text-sans;
+
+  @include breakpoint($large){ 
+    margin: auto;
+    max-width: 80rem;
+    width: 80%;
+  }
+
+  &__wrapper {
+    background-color: $blue--marine-4;
+    height: $navHeightMobile;
+
+    display: none;
+    position: relative;
+
+    @include breakpoint($large){ 
+      height: rem-calc(55); 
+
+      display: flex;
+    }
+
+    &--stuck {
+      width: 100%;
+      
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 100000;
+
+      animation: showNav .25s forwards linear;
+    }
+  }
+
+    &__burger {
+      cursor: pointer;
+      margin-left: auto;
+      
+      align-self: center;
+      justify-self: flex-end;
+      position: relative;
+
+      @include breakpoint($large){ display: none; }
+
+      &:not('.sticky-nav__burger--open') .v-sticky-nav__burger-icon:hover { 
+        background-color: $blue--marine-1;
+      }
+
+      &-icon {
+        @extend %burger-line;
+        margin: rem-calc(10 14 10 0);
+
+        &:before {
+          @extend %burger-line;
+          content: '';
+
+          position: absolute;
+          top: 0;
+
+          transform-origin: top right;
+        }
+
+        &:after {
+          @extend %burger-line;
+          content: '';
+
+          position: absolute;
+          bottom: 0;
+
+          transform-origin: bottom right;
+        }
+        
+        .v-sticky-nav__burger--open & {
+          background-color: transparent;
+
+          &:before { transform: rotateZ(-45deg); }
+
+          &:after { transform: rotateZ(45deg);
+          }
+        }
+      }
+    }
+
+    &__menu {
+      @include flex-flow(row wrap);
+
+      display: none;
+      position: absolute;
+      right: 0;
+      top: $navHeightMobile;
+      left: 0;
+
+      @include breakpoint($large){
+        @include flex-flow(row nowrap);
+        width: 100%;
+      
+        display: flex;
+        position: static;
+      }
+
+      &--open {
+        display: block; 
+      }
+    }
+
+      &__menu-item {
+        flex: 1 1 auto;
+      }
+
+        a.v-sticky-nav__link {
+          background-color: $blue--marine-4;
+          border-top: solid rem-calc(1) $blue--marine-3;
+          color: white;
+          padding: rem-calc(16 10 15 10);
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+
+          @include breakpoint($large){
+            padding: rem-calc(20 10 19 10);
+            border: none;
+          }
+
+          &:hover {
+            background-color: $blue--marine-3;
+          }
+        }
+}

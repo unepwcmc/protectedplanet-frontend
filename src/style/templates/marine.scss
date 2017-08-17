@@ -14,6 +14,10 @@ $marine-accent-color: $orange--lighest;
 .template--marine {
   color: $blue--marine-5;
 
+  //----------------------------------------
+  // html elements
+  //----------------------------------------
+
   h4 {
     border-bottom: solid rem-calc(1) $blue--marine-5;
     color: $blue--marine-5;
@@ -32,84 +36,44 @@ $marine-accent-color: $orange--lighest;
     &:hover { text-decoration: none; }
   }
 
+  //----------------------------------------
+  // sections
+  //----------------------------------------
+
   .section--block-color {
     @extend .u-bg--marine-2;
   }
-}
 
-//----------------------------------------
-// sections within the marine page 
-// template
-//----------------------------------------
-.t--marine {
+  //----------------------------------------
+  // header
+  //----------------------------------------
   &__header {
     background: asset-url('images/hero/hero-marine-min.jpg') center no-repeat;
     background-size: cover;
     height: rem-calc(600);
-  }
 
-    &__introduction {
-      color: $white;
-      font-size: rem-calc(18);
-      line-height: 1.4;
-      padding: rem-calc(12 18);
-
-      @include breakpoint(medium){ font-size: rem-calc(24); }
-    }
-
-  &__section {
-    padding-top: rem-calc(30);
-    padding-bottom: rem-calc(30);
     position: relative;
-
-    @include only-desktop {
-      padding-top: rem-calc(80);
-      padding-bottom: rem-calc(80);  
-    }
   }
 
-  &__section--fact-bottom {
-    padding-bottom: rem-calc(180);
+  .header__introduction {
+    color: $white;
+    font-size: rem-calc(18);
+    line-height: 1.4;
+    padding: rem-calc(12 18);
 
-    @include breakpoint($large){ padding-bottom: rem-calc(300); }
+    @include breakpoint(medium){ font-size: rem-calc(24); }
   }
 
-  &__section--fact-top {
-    padding-top: rem-calc(180);
-
-    @include breakpoint($large){ padding-top: rem-calc(160); }
+  //----------------------------------------
+  // sticky nav
+  //----------------------------------------
+  .v-sticky-nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
-    &__section__introduction {
-      @extend .text--standard;
-      margin-bottom: 2.25em;
-
-      @include breakpoint($medium){ margin-bottom: 3.25em; }
-    }
-
-    &__counter {
-      background: rgba(white, .4);
-      margin-top: rem-calc(40);
-      padding: rem-calc(20 0 20 24);
-
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-  &__map-disclaimer {
-    color: $blue--marine-4;
-    font-family: 'MuseoSans';
-    font-size: rem-calc(8);
-    padding-top: rem-calc(14);
-    padding-bottom: rem-calc(14);
-    text-align: center;
-
-    @include breakpoint($medium){ font-size: rem-calc(13); }
-  }
-}
-
-.template--marine {
   //----------------------------------------
   // national waters vs high seas
   // infographic
@@ -163,5 +127,62 @@ $marine-accent-color: $orange--lighest;
 
       @include breakpoint($medium){ margin-bottom: rem-calc(34); }
     }
+  }
+}
+
+//----------------------------------------
+// sections within the marine page 
+// template
+//----------------------------------------
+.t--marine {
+  &__section {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(30);
+    position: relative;
+
+    @include only-desktop {
+      padding-top: rem-calc(80);
+      padding-bottom: rem-calc(80);  
+    }
+  }
+
+  &__section--fact-bottom {
+    padding-bottom: rem-calc(180);
+
+    @include breakpoint($large){ padding-bottom: rem-calc(300); }
+  }
+
+  &__section--fact-top {
+    padding-top: rem-calc(180);
+
+    @include breakpoint($large){ padding-top: rem-calc(160); }
+  }
+
+    &__section__introduction {
+      @extend .text--standard;
+      margin-bottom: 2.25em;
+
+      @include breakpoint($medium){ margin-bottom: 3.25em; }
+    }
+
+    &__counter {
+      background: rgba(white, .4);
+      margin-top: rem-calc(40);
+      padding: rem-calc(20 0 20 24);
+
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+  &__map-disclaimer {
+    color: $blue--marine-4;
+    font-family: 'MuseoSans';
+    font-size: rem-calc(8);
+    padding-top: rem-calc(14);
+    padding-bottom: rem-calc(14);
+    text-align: center;
+
+    @include breakpoint($medium){ font-size: rem-calc(13); }
   }
 }

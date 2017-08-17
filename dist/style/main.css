@@ -3363,6 +3363,156 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-right: 0.4375rem;
 }
 
+.v-sticky-nav__burger-icon, .v-sticky-nav__burger-icon:before, .v-sticky-nav__burger-icon:after {
+  background-color: #ffffff;
+  width: 1.875rem;
+  height: 0.1875rem;
+  display: block;
+}
+
+@keyframes showNav {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav {
+    margin: auto;
+    max-width: 80rem;
+    width: 80%;
+  }
+}
+
+.v-sticky-nav__wrapper {
+  background-color: #729099;
+  height: 3rem;
+  display: none;
+  position: relative;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav__wrapper {
+    height: 3.4375rem;
+    display: flex;
+  }
+}
+
+.v-sticky-nav__wrapper--stuck {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100000;
+  animation: showNav .25s forwards linear;
+}
+
+.v-sticky-nav__burger {
+  cursor: pointer;
+  margin-left: auto;
+  align-self: center;
+  justify-self: flex-end;
+  position: relative;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav__burger {
+    display: none;
+  }
+}
+
+.v-sticky-nav__burger:not('.sticky-nav__burger--open') .v-sticky-nav__burger-icon:hover {
+  background-color: #bfe5e9;
+}
+
+.v-sticky-nav__burger-icon {
+  margin: 0.625rem 0.875rem 0.625rem 0;
+}
+
+.v-sticky-nav__burger-icon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  transform-origin: top right;
+}
+
+.v-sticky-nav__burger-icon:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.v-sticky-nav__burger--open .v-sticky-nav__burger-icon {
+  background-color: transparent;
+}
+
+.v-sticky-nav__burger--open .v-sticky-nav__burger-icon:before {
+  transform: rotateZ(-45deg);
+}
+
+.v-sticky-nav__burger--open .v-sticky-nav__burger-icon:after {
+  transform: rotateZ(45deg);
+}
+
+.v-sticky-nav__menu {
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 3rem;
+  left: 0;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav__menu {
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    display: flex;
+    position: static;
+  }
+}
+
+.v-sticky-nav__menu--open {
+  display: block;
+}
+
+.v-sticky-nav__menu-item {
+  flex: 1 1 auto;
+}
+
+.v-sticky-nav a.v-sticky-nav__link {
+  background-color: #729099;
+  border-top: solid 0.0625rem #90BDC4;
+  color: white;
+  padding: 1rem 0.625rem 0.9375rem 0.625rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav a.v-sticky-nav__link {
+    padding: 1.25rem 0.625rem 1.1875rem 0.625rem;
+    border: none;
+  }
+}
+
+.v-sticky-nav a.v-sticky-nav__link:hover {
+  background-color: #90BDC4;
+}
+
 .table, .s-article table {
   width: 100%;
 }
@@ -7505,13 +7655,14 @@ sup {
   text-decoration: none;
 }
 
-.t--marine__header {
+.template--marine__header {
   background: url("images/hero/hero-marine-min.jpg") center no-repeat;
   background-size: cover;
   height: 37.5rem;
+  position: relative;
 }
 
-.t--marine__introduction {
+.template--marine .header__introduction {
   color: #ffffff;
   font-size: 1.125rem;
   line-height: 1.4;
@@ -7519,76 +7670,16 @@ sup {
 }
 
 @media only screen and (min-width: medium1) {
-  .t--marine__introduction {
+  .template--marine .header__introduction {
     font-size: 1.5rem;
   }
 }
 
-.t--marine__section {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  position: relative;
-}
-
-@media only screen and (min-width: 768px) {
-  .t--marine__section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-.t--marine__section--fact-bottom {
-  padding-bottom: 11.25rem;
-}
-
-@media only screen and (min-width: 65rem) {
-  .t--marine__section--fact-bottom {
-    padding-bottom: 18.75rem;
-  }
-}
-
-.t--marine__section--fact-top {
-  padding-top: 11.25rem;
-}
-
-@media only screen and (min-width: 65rem) {
-  .t--marine__section--fact-top {
-    padding-top: 10rem;
-  }
-}
-
-.t--marine__section__introduction {
-  margin-bottom: 2.25em;
-}
-
-@media only screen and (min-width: 48.6875rem) {
-  .t--marine__section__introduction {
-    margin-bottom: 3.25em;
-  }
-}
-
-.t--marine__counter {
-  background: rgba(255, 255, 255, 0.4);
-  margin-top: 2.5rem;
-  padding: 1.25rem 0 1.25rem 1.5rem;
+.template--marine .v-sticky-nav {
   position: absolute;
-  top: 0;
   right: 0;
-}
-
-.t--marine__map-disclaimer {
-  color: #729099;
-  font-family: 'MuseoSans';
-  font-size: 0.5rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-  text-align: center;
-}
-
-@media only screen and (min-width: 48.6875rem) {
-  .t--marine__map-disclaimer {
-    font-size: 0.8125rem;
-  }
+  bottom: 0;
+  left: 0;
 }
 
 .template--marine .infographic {
@@ -7661,6 +7752,73 @@ sup {
 @media only screen and (min-width: 48.6875rem) {
   .template--marine .infographic__pa {
     margin-bottom: 2.125rem;
+  }
+}
+
+.t--marine__section {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .t--marine__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.t--marine__section--fact-bottom {
+  padding-bottom: 11.25rem;
+}
+
+@media only screen and (min-width: 65rem) {
+  .t--marine__section--fact-bottom {
+    padding-bottom: 18.75rem;
+  }
+}
+
+.t--marine__section--fact-top {
+  padding-top: 11.25rem;
+}
+
+@media only screen and (min-width: 65rem) {
+  .t--marine__section--fact-top {
+    padding-top: 10rem;
+  }
+}
+
+.t--marine__section__introduction {
+  margin-bottom: 2.25em;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .t--marine__section__introduction {
+    margin-bottom: 3.25em;
+  }
+}
+
+.t--marine__counter {
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 2.5rem;
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.t--marine__map-disclaimer {
+  color: #729099;
+  font-family: 'MuseoSans';
+  font-size: 0.5rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .t--marine__map-disclaimer {
+    font-size: 0.8125rem;
   }
 }
 
@@ -8197,7 +8355,7 @@ sup {
   font-family: 'MuseoSlab';
 }
 
-.u-text-sans, .table--grey, .d3-horizontal-bar-chart .bar-label {
+.u-text-sans, .v-sticky-nav, .table--grey, .d3-horizontal-bar-chart .bar-label {
   font-family: 'MuseoSans';
 }
 
