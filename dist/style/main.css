@@ -3426,6 +3426,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   animation: showNav .25s forwards linear;
 }
 
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav__wrapper--stuck .v-sticky-nav__menu {
+    margin: auto;
+    max-width: 80rem;
+    width: 80%;
+  }
+}
+
 .v-sticky-nav__burger {
   cursor: pointer;
   margin-left: auto;

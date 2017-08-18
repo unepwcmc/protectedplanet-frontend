@@ -74,6 +74,14 @@ $navHeightMobile: rem-calc(48);
       z-index: 100000;
 
       animation: showNav .25s forwards linear;
+
+      & .v-sticky-nav__menu {
+        @include breakpoint($large){ 
+          margin: auto;
+          max-width: 80rem;
+          width: 80%;
+        }
+      }
     }
   }
 
