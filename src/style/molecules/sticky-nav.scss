@@ -24,6 +24,15 @@ $navHeightMobile: rem-calc(48);
   }
 }
 
+@keyframes unstickNav {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 //----------------------------------------
 // sticky nav styles
 //----------------------------------------
@@ -33,6 +42,7 @@ $navHeightMobile: rem-calc(48);
   @include breakpoint($large){ 
     margin: auto;
     max-width: 80rem;
+    overflow: hidden;
     width: 80%;
   }
 
@@ -47,6 +57,10 @@ $navHeightMobile: rem-calc(48);
       height: rem-calc(55); 
 
       display: flex;
+    }
+
+    &--unstick {
+      animation: unstickNav .25s forwards linear;
     }
 
     &--stuck {

@@ -3379,10 +3379,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
 }
 
+@keyframes unstickNav {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (min-width: 65rem) {
   .v-sticky-nav {
     margin: auto;
     max-width: 80rem;
+    overflow: hidden;
     width: 80%;
   }
 }
@@ -3399,6 +3409,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     height: 3.4375rem;
     display: flex;
   }
+}
+
+.v-sticky-nav__wrapper--unstick {
+  animation: unstickNav .25s forwards linear;
 }
 
 .v-sticky-nav__wrapper--stuck {
