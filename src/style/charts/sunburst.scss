@@ -1,14 +1,13 @@
-.sunburst {
+.d3-sunburst {
   margin: 0 auto;
-  width: 50%;
+  text-align: center;
+  width: 70%;
 
   position: relative;
 
-  &__svg {
-    
-  }
-
   &__info {
+    padding: rem-calc(12);
+
     display: none;
     position: absolute;
     top: 50%;
@@ -19,8 +18,16 @@
     &--active { display: block; }
   }
 
-    &__percentage{
-      font-size: 30px;
+    &__title {
+      font-size: rem-calc(22);
+      margin-bottom: rem-calc(12);
+    }
+
+    &__subtitle {
+      font-weight: bold;
+      margin-top: rem-calc(12);
+
+      display: block;
     }
 
     &__type {
