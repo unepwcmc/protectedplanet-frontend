@@ -7686,6 +7686,36 @@ sup {
   padding: 1.875rem 1.5rem;
 }
 
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__left {
+    padding-right: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine .infographic__left {
+    padding-right: 3.75rem;
+  }
+}
+
+.template--marine .infographic__right {
+  margin-top: 1.125rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__right {
+    margin-top: 0;
+    padding-left: 0.75rem;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine .infographic__right {
+    padding-left: 3.75rem;
+  }
+}
+
 .template--marine .infographic__header {
   font-size: 1.375rem;
   border-bottom: solid 0.0625rem #444955;
@@ -7697,6 +7727,40 @@ sup {
   .template--marine .infographic__header {
     margin-bottom: 1.375rem;
   }
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__header--fancy {
+    border-bottom: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__header--fancy:before, .template--marine .infographic__header--fancy:after {
+    background-color: #444955;
+    content: '';
+    width: 30%;
+    height: 0.0625rem;
+    position: absolute;
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine .infographic__header--fancy:before, .template--marine .infographic__header--fancy:after {
+    width: 36%;
+  }
+}
+
+.template--marine .infographic__header--fancy:before {
+  left: 0;
+}
+
+.template--marine .infographic__header--fancy:after {
+  right: 0;
 }
 
 .template--marine .infographic__intro {
@@ -7720,28 +7784,30 @@ sup {
 @media only screen and (min-width: 48.6875rem) {
   .template--marine .infographic__bar {
     margin: 2.125rem 0 3.375rem 0;
-  }
-}
-
-@media only screen and (min-width: 65rem) {
-  .template--marine .infographic__bar {
     height: 8.75rem;
   }
 }
 
-.template--marine .infographic__bar-percentage {
+.template--marine .infographic__bar--national {
+  background-color: #729099;
+}
+
+.template--marine .infographic__bar--pa {
+  background-color: #F5A623;
+}
+
+.template--marine .infographic__bar-layer {
   height: 100%;
   display: block;
   position: absolute;
   left: 0;
 }
 
-.template--marine .infographic__bar-coverage {
-  background-color: #729099;
-}
-
-.template--marine .infographic__bar-pa {
-  background-color: #F5A623;
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__bar-layer--highseas {
+    left: auto;
+    right: 0;
+  }
 }
 
 .template--marine .infographic__pa {
@@ -7752,6 +7818,53 @@ sup {
 @media only screen and (min-width: 48.6875rem) {
   .template--marine .infographic__pa {
     margin-bottom: 2.125rem;
+  }
+}
+
+.template--marine .infographic__percent {
+  height: 100%;
+  position: absolute;
+  top: 1rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__percent {
+    top: 0.75rem;
+  }
+}
+
+.template--marine .infographic__percent--national {
+  color: #bfe5e9;
+  left: 0.625rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__percent--national {
+    left: 0.875rem;
+  }
+}
+
+.template--marine .infographic__percent--highseas {
+  color: #729099;
+  text-align: right;
+  right: 0.625rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__percent--highseas {
+    right: 0.875rem;
+  }
+}
+
+.template--marine .infographic__percent__title {
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__percent__title {
+    font-size: 1.375rem;
   }
 }
 
@@ -8369,10 +8482,6 @@ sup {
 
 .u-marine-accent-color {
   color: #F5A623;
-}
-
-.u-word-break {
-  word-break: break-word;
 }
 
 .u-left {

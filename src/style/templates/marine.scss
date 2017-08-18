@@ -81,52 +81,140 @@ $marine-accent-color: $orange--lighest;
   .infographic {
     padding: rem-calc(30 24);
 
-    &__header {
-      font-size: rem-calc(22);
-      border-bottom: solid rem-calc(1) $blue--marine-5;
-      padding-bottom: rem-calc(8);
-      margin-bottom: rem-calc(18);
-
-      @include breakpoint($medium){ margin-bottom: rem-calc(22); }
+    &__left {
+      @include breakpoint($medium){ padding-right: rem-calc(12); }
+      @include breakpoint($large){ padding-right: rem-calc(60); }
     }
 
-    &__intro { 
-      margin-bottom: rem-calc(30); 
+    &__right {
+      margin-top: rem-calc(18);
 
-      @include breakpoint($medium){ margin-bottom: rem-calc(50); }
-    }
-
-    &__bar {
-      background-color: $blue--marine-1;
-      margin: rem-calc(24 0 34 0);
-      width: 100%; height: rem-calc(90);
-
-      position: relative;
-      
-      @include breakpoint($medium){ margin: rem-calc(34 0 54 0); }
-
-      @include breakpoint($large){ height: rem-calc(140); }
-    }
-
-      &__bar-percentage {
-        height: 100%;
-
-        display: block;
-        position: absolute;
-        left: 0;
+      @include breakpoint($medium){ 
+        margin-top: 0;
+        padding-left: rem-calc(12);
+        text-align: right; 
       }
 
-      &__bar-coverage { background-color: $blue--marine-4; }
-
-      &__bar-pa { background-color: $marine-accent-color; }
-
-    &__pa { 
-      margin-bottom: rem-calc(24); 
-
-      display: block;
-
-      @include breakpoint($medium){ margin-bottom: rem-calc(34); }
+      @include breakpoint($large){ padding-left: rem-calc(60); }
     }
+
+      &__header {
+        font-size: rem-calc(22);
+        border-bottom: solid rem-calc(1) $blue--marine-5;
+        padding-bottom: rem-calc(8);
+        margin-bottom: rem-calc(18);
+
+        @include breakpoint($medium){ margin-bottom: rem-calc(22); }
+
+        &--fancy {
+          @include breakpoint($medium){ 
+            border-bottom: none;
+            padding: 0; 
+            text-align: center;
+
+            position: relative;
+          }
+
+          &:before,
+          &:after {
+            @include breakpoint($medium){ 
+              background-color: $blue--marine-5;
+              content: '';
+              width: 30%; height: rem-calc(1); 
+
+              position: absolute;
+              top: 50%;
+            }
+
+            @include breakpoint($large){ width: 36%; }
+          }
+          
+          &:before { left: 0; }
+          &:after { right: 0; }
+        }
+      }
+
+      &__intro { 
+        margin-bottom: rem-calc(30); 
+
+        @include breakpoint($medium){ margin-bottom: rem-calc(50); }
+      }
+
+      &__bar {
+        background-color: $blue--marine-1;
+        margin: rem-calc(24 0 34 0);
+        width: 100%; height: rem-calc(90);
+
+        position: relative;
+        
+        @include breakpoint($medium){ 
+          margin: rem-calc(34 0 54 0); 
+          height: rem-calc(140);
+        }
+
+        @include breakpoint($large){  }
+
+        &--national { background-color: $blue--marine-4; }
+        &--pa { background-color: $marine-accent-color; }
+      }
+
+        &__bar-layer {
+          height: 100%;
+
+          display: block;
+          position: absolute;
+          left: 0;
+
+          &--highseas {
+            @include breakpoint($medium){
+              left: auto;
+              right: 0;
+            }
+          }
+        }
+
+      &__pa { 
+        margin-bottom: rem-calc(24); 
+
+        display: block;
+
+        @include breakpoint($medium){ margin-bottom: rem-calc(34); }
+      }
+
+      &__percent {
+        height: 100%;
+
+        position: absolute;
+        top: rem-calc(16);
+
+        @include breakpoint($medium){ top: rem-calc(12); }
+
+        &--national {
+          color: $blue--marine-1;
+
+          left: rem-calc(10);
+
+          @include breakpoint($medium){ left: rem-calc(14); }
+        }
+
+        &--highseas {
+          color: $blue--marine-4;
+          text-align: right;
+
+          right: rem-calc(10);
+
+          @include breakpoint($medium){ right: rem-calc(14); }
+        }
+
+        &__title {
+          font-size: rem-calc(12);
+          margin-bottom: rem-calc(10);
+
+          display: block;
+
+          @include breakpoint($medium){ font-size: rem-calc(22); }
+        }
+      }
   }
 }
 
