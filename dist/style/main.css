@@ -3448,8 +3448,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
 }
 
-.v-sticky-nav__burger:not('.sticky-nav__burger--open') .v-sticky-nav__burger-icon:hover {
+.v-sticky-nav__burger:hover .v-sticky-nav__burger-icon,
+.v-sticky-nav__burger:hover .v-sticky-nav__burger-icon:before,
+.v-sticky-nav__burger:hover .v-sticky-nav__burger-icon:after {
   background-color: #bfe5e9;
+}
+
+.v-sticky-nav__burger--open:hover .v-sticky-nav__burger-icon {
+  background-color: transparent;
 }
 
 .v-sticky-nav__burger-icon {
@@ -7697,6 +7703,10 @@ sup {
   }
 }
 
+.template--marine .header__introduction p:first-child {
+  margin-bottom: 0.875rem;
+}
+
 .template--marine .v-sticky-nav {
   position: absolute;
   right: 0;
@@ -7793,6 +7803,10 @@ sup {
   .template--marine .infographic__intro {
     margin-bottom: 3.125rem;
   }
+}
+
+.template--marine .infographic__intro p {
+  margin-bottom: 0.875rem;
 }
 
 .template--marine .infographic__bar {
@@ -7931,6 +7945,10 @@ sup {
   .t--marine__section__introduction {
     margin-bottom: 3.25em;
   }
+}
+
+.t--marine__section__introduction p {
+  margin-bottom: 0.875rem;
 }
 
 .t--marine__counter {

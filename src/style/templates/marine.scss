@@ -62,6 +62,8 @@ $marine-accent-color: $orange--lighest;
     padding: rem-calc(12 18);
 
     @include breakpoint(medium){ font-size: rem-calc(24); }
+
+    p:first-child { margin-bottom: rem-calc(14); }
   }
 
   //----------------------------------------
@@ -138,6 +140,8 @@ $marine-accent-color: $orange--lighest;
         margin-bottom: rem-calc(30); 
 
         @include breakpoint($medium){ margin-bottom: rem-calc(50); }
+
+        p { margin-bottom: rem-calc(14); }
       }
 
       &__bar {
@@ -251,6 +255,8 @@ $marine-accent-color: $orange--lighest;
       margin-bottom: 2.25em;
 
       @include breakpoint($medium){ margin-bottom: 3.25em; }
+
+      p { margin-bottom: rem-calc(14); }
     }
 
     &__counter {

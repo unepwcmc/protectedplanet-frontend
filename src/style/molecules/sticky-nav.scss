@@ -95,8 +95,14 @@ $navHeightMobile: rem-calc(48);
 
       @include breakpoint($large){ display: none; }
 
-      &:not('.sticky-nav__burger--open') .v-sticky-nav__burger-icon:hover { 
-        background-color: $blue--marine-1;
+      &:hover .v-sticky-nav__burger-icon,
+      &:hover .v-sticky-nav__burger-icon:before,
+      &:hover .v-sticky-nav__burger-icon:after { 
+        background-color: $blue--marine-1; 
+      }
+      
+      &--open:hover .v-sticky-nav__burger-icon {
+        background-color: transparent;
       }
 
       &-icon {
