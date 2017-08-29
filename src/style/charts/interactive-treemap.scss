@@ -88,16 +88,10 @@
   }
 
     &__cell {
-      text { 
-        font-size: rem-calc(40);
-        
-        @include breakpoint($medium){ font-size: rem-calc(16); }
-      }
+      text { font-size: rem-calc(16); }
 
       &-active { 
-        text { 
-          @include breakpoint($medium){ font-weight: bold; }
-        }
+        text { font-weight: bold; }
       }
     }
 
