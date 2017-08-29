@@ -81,19 +81,25 @@
   //----------------------------------------
   // treemap
   //----------------------------------------
-  &__cell {
-    text { 
-      font-size: rem-calc(40);
-      
-      @include breakpoint($medium){ font-size: rem-calc(16); }
-    }
+  &__treemap {
+    display: none;
 
-    &-active { 
+    @include breakpoint($medium){ display: block; }
+  }
+
+    &__cell {
       text { 
-        @include breakpoint($medium){ font-weight: bold; }
+        font-size: rem-calc(40);
+        
+        @include breakpoint($medium){ font-size: rem-calc(16); }
+      }
+
+      &-active { 
+        text { 
+          @include breakpoint($medium){ font-weight: bold; }
+        }
       }
     }
-  }
 
   //----------------------------------------
   // instruction
