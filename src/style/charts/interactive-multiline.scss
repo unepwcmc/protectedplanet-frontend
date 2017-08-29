@@ -1,16 +1,4 @@
 .v-interactive-multiline {
-  @keyframes dash {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  @keyframes grow {
-    to {
-      transform: scale(1);
-    }
-  }
-  
   &__tabs {
     border-bottom: solid rem-calc(1) $grey-55;
     font-family: 'MuseoSans';
@@ -95,7 +83,7 @@
     }
 
     &__line-active {
-      animation: dash 2s linear forwards 1;
+      animation: dashOffsetNone 2s linear forwards 1;
     }
 
     &__datapoint {
@@ -107,7 +95,7 @@
       transform: scale(0);
 
       .v-interactive-multiline__datapoints-active & {
-        animation: grow .2s linear forwards 1s;
+        animation: fullScaleXY .2s linear forwards 1s;
       }
     }
 

@@ -1,14 +1,21 @@
 .d3-horizontal-bar-chart {
+    &-animate {
+      .bar { animation: fullScaleX .8s forwards linear; }
+      .bar-label { animation: fullOpacity .2s .8s forwards linear; }
+    }
+
   .background { fill: rgba($blue--marine-1, 0.4); }
 
   .bar {
     fill: rgba(0, 0, 0, .4);
+    transform: scaleX(0);
   }
 
   .bar-label {
     @extend .u-text-sans;
     fill: $white;
     font-size: rem-calc(12);
+    opacity: 0;
   }
 
   .gridlines {

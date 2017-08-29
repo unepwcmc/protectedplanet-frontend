@@ -13,7 +13,7 @@
     &:first-child { opacity: 1; }
 
     &-animate {
-      animation: showRectangle .8s ease-in forwards;
+      animation: fullOpacity .8s ease-in forwards;
     }
   }
 
@@ -30,11 +30,9 @@
       position: absolute;
       top: rem-calc(14);
       left: rem-calc(14);
-      }
-}
 
-@keyframes showRectangle {
-  to {
-    opacity: 1
-  }
+      .v-rectangles__rectangle-animate & {
+        animation: fullOpacity .2s .8s ease-in forwards;
+      }
+    }
 }
