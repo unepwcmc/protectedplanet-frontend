@@ -2590,7 +2590,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .v-horizontal-bars__bar-wrapper-animate .v-horizontal-bars__bar {
-  animation: showBar .8s linear forwards;
+  animation: fullScaleX .8s linear forwards;
 }
 
 .v-horizontal-bars__value {
@@ -2613,19 +2613,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .v-horizontal-bars__bar-wrapper-animate .v-horizontal-bars__value {
-  animation: showBarValue .2s .8s linear forwards;
-}
-
-@keyframes showBarValue {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes showBar {
-  to {
-    transform: scaleX(1);
-  }
+  animation: fullOpacity .2s .8s linear forwards;
 }
 
 .key-container {
@@ -3151,7 +3139,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .v-rectangles__rectangle-animate {
-  animation: showRectangle .8s ease-in forwards;
+  animation: fullOpacity .8s ease-in forwards;
 }
 
 .v-rectangles__content {
@@ -3169,13 +3157,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .v-rectangles__rectangle-animate .v-rectangles__title {
-  animation: showRectangle .2s .8s ease-in forwards;
-}
-
-@keyframes showRectangle {
-  to {
-    opacity: 1;
-  }
+  animation: fullOpacity .2s .8s ease-in forwards;
 }
 
 .reference:not(:last-child) {
@@ -7221,6 +7203,30 @@ div div.shared-links a:last-child {
   padding: 0.5rem;
 }
 
+@keyframes dashOffsetNone {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fullOpacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fullScaleX {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fullScaleXY {
+  to {
+    transform: scale(1);
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -8060,11 +8066,11 @@ sup {
 }
 
 .d3-horizontal-bar-chart-animate .bar {
-  animation: showBar .8s forwards linear;
+  animation: fullScaleX .8s forwards linear;
 }
 
 .d3-horizontal-bar-chart-animate .bar-label {
-  animation: showBarValue .2s .8s forwards linear;
+  animation: fullOpacity .2s .8s forwards linear;
 }
 
 .d3-horizontal-bar-chart .background {
@@ -8106,30 +8112,6 @@ sup {
 .d3-horizontal-bar-chart .yaxis text {
   fill: #444955;
   font-size: 1rem;
-}
-
-@keyframes showBarValue {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes showBar {
-  to {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes grow {
-  to {
-    transform: scale(1);
-  }
 }
 
 .v-interactive-multiline__tabs {
@@ -8214,7 +8196,7 @@ sup {
 }
 
 .v-interactive-multiline__line-active {
-  animation: dash 2s linear forwards 1;
+  animation: dashOffsetNone 2s linear forwards 1;
 }
 
 .v-interactive-multiline__datapoint {
@@ -8226,7 +8208,7 @@ sup {
 }
 
 .v-interactive-multiline__datapoints-active .v-interactive-multiline__datapoint {
-  animation: grow .2s linear forwards 1s;
+  animation: fullScaleXY .2s linear forwards 1s;
 }
 
 .v-interactive-multiline__tooltip-wrapper {

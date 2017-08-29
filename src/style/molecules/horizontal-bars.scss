@@ -26,7 +26,7 @@
       transform-origin: left;
 
       .v-horizontal-bars__bar-wrapper-animate & {
-        animation: showBar .8s linear forwards;
+        animation: fullScaleX .8s linear forwards;
       }
     }
 
@@ -48,19 +48,7 @@
         }
 
         .v-horizontal-bars__bar-wrapper-animate & {
-          animation: showBarValue .2s .8s linear forwards;
+          animation: fullOpacity .2s .8s linear forwards;
         }
       }
-}
-
-@keyframes showBarValue {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes showBar {
-  to {
-    transform: scaleX(1);
-  }
 }

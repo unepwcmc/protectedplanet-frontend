@@ -13,7 +13,7 @@
     &:first-child { opacity: 1; }
 
     &-animate {
-      animation: showRectangle .8s ease-in forwards;
+      animation: fullOpacity .8s ease-in forwards;
     }
   }
 
@@ -32,13 +32,7 @@
       left: rem-calc(14);
 
       .v-rectangles__rectangle-animate & {
-        animation: showRectangle .2s .8s ease-in forwards;
+        animation: fullOpacity .2s .8s ease-in forwards;
       }
     }
-}
-
-@keyframes showRectangle {
-  to {
-    opacity: 1;
-  }
 }
