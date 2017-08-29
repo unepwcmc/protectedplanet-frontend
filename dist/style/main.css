@@ -8059,17 +8059,27 @@ sup {
   }
 }
 
+.d3-horizontal-bar-chart-animate .bar {
+  animation: showBar .8s forwards linear;
+}
+
+.d3-horizontal-bar-chart-animate .bar-label {
+  animation: showBarValue .2s .8s forwards linear;
+}
+
 .d3-horizontal-bar-chart .background {
   fill: rgba(191, 229, 233, 0.4);
 }
 
 .d3-horizontal-bar-chart .bar {
   fill: rgba(0, 0, 0, 0.4);
+  transform: scaleX(0);
 }
 
 .d3-horizontal-bar-chart .bar-label {
   fill: #ffffff;
   font-size: 0.75rem;
+  opacity: 0;
 }
 
 .d3-horizontal-bar-chart .gridlines .domain {
@@ -8096,6 +8106,18 @@ sup {
 .d3-horizontal-bar-chart .yaxis text {
   fill: #444955;
   font-size: 1rem;
+}
+
+@keyframes showBarValue {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showBar {
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes dash {
