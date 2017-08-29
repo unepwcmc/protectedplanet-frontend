@@ -2589,7 +2589,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   transform-origin: left;
 }
 
-.v-horizontal-bars__bar-animate {
+.v-horizontal-bars__bar-wrapper-animate .v-horizontal-bars__bar {
   animation: showBar .8s linear forwards;
 }
 
@@ -2612,8 +2612,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
 }
 
-.v-horizontal-bars__value-animate {
-  animation: showBarValue .2s linear forwards;
+.v-horizontal-bars__bar-wrapper-animate .v-horizontal-bars__value {
+  animation: showBarValue .2s .8s linear forwards;
 }
 
 @keyframes showBarValue {
@@ -3166,6 +3166,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: absolute;
   top: 0.875rem;
   left: 0.875rem;
+}
+
+.v-rectangles__rectangle-animate .v-rectangles__title {
+  animation: showRectangle .2s .8s ease-in forwards;
 }
 
 @keyframes showRectangle {

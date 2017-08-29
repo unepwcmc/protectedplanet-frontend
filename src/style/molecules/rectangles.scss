@@ -30,11 +30,15 @@
       position: absolute;
       top: rem-calc(14);
       left: rem-calc(14);
+
+      .v-rectangles__rectangle-animate & {
+        animation: showRectangle .2s .8s ease-in forwards;
       }
+    }
 }
 
 @keyframes showRectangle {
   to {
-    opacity: 1
+    opacity: 1;
   }
 }

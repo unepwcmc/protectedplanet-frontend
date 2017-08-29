@@ -24,10 +24,10 @@
 
       transform: scaleX(0);
       transform-origin: left;
-    }
 
-    &__bar-animate {
-      animation: showBar .8s linear forwards;
+      .v-horizontal-bars__bar-wrapper-animate & {
+        animation: showBar .8s linear forwards;
+      }
     }
 
       &__value {
@@ -46,10 +46,10 @@
           right: 5px;
           left: initial;
         }
-      }
 
-      &__value-animate {
-        animation: showBarValue .2s linear forwards;
+        .v-horizontal-bars__bar-wrapper-animate & {
+          animation: showBarValue .2s .8s linear forwards;
+        }
       }
 }
 
