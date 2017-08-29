@@ -9,6 +9,11 @@
     }
   }
 
+    &__title {
+      font-size: rem-calc(14);
+      font-weight: $thin;
+    }
+
     &__bar {
       background-color: $blue--marine-3;
       margin: rem-calc(3 0 9 0);
