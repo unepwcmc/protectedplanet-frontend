@@ -72,7 +72,7 @@
       .tick { 
         line { 
           stroke: $white; 
-          stroke-width: 3;
+          stroke-width: 2;
           stroke-dasharray: 10px;
         }
 
@@ -88,7 +88,7 @@
     &__line {
       stroke: $blue--marine-5;
       stroke-linecap: round;
-      stroke-width: 5;
+      stroke-width: 3;
 
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
