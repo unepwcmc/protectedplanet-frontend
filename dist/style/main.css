@@ -7847,13 +7847,16 @@ sup {
 }
 
 .template--marine .infographic__pa {
-  margin-bottom: 1.5rem;
   display: block;
 }
 
+.template--marine .infographic__km {
+  font-size: 1.25rem;
+}
+
 @media only screen and (min-width: 48.6875rem) {
-  .template--marine .infographic__pa {
-    margin-bottom: 2.125rem;
+  .template--marine .infographic__km {
+    font-size: 2.25rem;
   }
 }
 

@@ -177,12 +177,12 @@ $marine-accent-color: $orange--lighest;
           }
         }
 
-      &__pa { 
-        margin-bottom: rem-calc(24); 
+      &__pa { display: block; }
 
-        display: block;
+      &__km { 
+        font-size: rem-calc(20);
 
-        @include breakpoint($medium){ margin-bottom: rem-calc(34); }
+        @include breakpoint($medium){ font-size: rem-calc(36); }
       }
 
       &__percent {
