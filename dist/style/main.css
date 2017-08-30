@@ -3425,6 +3425,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
 }
 
+.v-sticky-nav__title {
+  color: white;
+  font-weight: bold;
+  margin-left: 0.875rem;
+  text-transform: uppercase;
+  align-self: center;
+  transform: translateY(2px);
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-sticky-nav__title {
+    display: none;
+  }
+}
+
 .v-sticky-nav__burger {
   cursor: pointer;
   margin-left: auto;
@@ -3523,6 +3538,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (min-width: 65rem) {
   .v-sticky-nav a.v-sticky-nav__link {
+    font-size: 0.9375rem;
     padding: 1.25rem 0.625rem 1.1875rem 0.625rem;
     border: none;
   }
@@ -8129,10 +8145,17 @@ sup {
   border-right: solid 0.0625rem #A1D8DE;
   border-left: solid 0.0625rem #A1D8DE;
   cursor: pointer;
+  font-size: 0.75rem;
   padding: 0.5rem 0.625rem 0.3125rem 0.625rem;
   text-transform: capitalize;
   display: inline-block;
   position: relative;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-interactive-multiline__tab-title {
+    font-size: 1rem;
+  }
 }
 
 .v-interactive-multiline__tab-title.active {
@@ -8164,7 +8187,14 @@ sup {
 }
 
 .v-interactive-multiline__axis .tick text {
+  font-size: 0.875rem;
   fill: #444955;
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-interactive-multiline__axis .tick text {
+    font-size: 0.625rem;
+  }
 }
 
 .v-interactive-multiline__gridlines .domain {
@@ -8187,8 +8217,15 @@ sup {
 
 .v-interactive-multiline__target .tick text {
   fill: #ffffff;
+  font-size: 0.875rem;
   font-weight: bold;
   transform: translateY(6px);
+}
+
+@media only screen and (min-width: 65rem) {
+  .v-interactive-multiline__target .tick text {
+    font-size: 0.625rem;
+  }
 }
 
 .v-interactive-multiline__line {
@@ -8197,6 +8234,12 @@ sup {
   stroke-width: 3;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .v-interactive-multiline__line {
+    stroke-width: 2;
+  }
 }
 
 .v-interactive-multiline__line-active {

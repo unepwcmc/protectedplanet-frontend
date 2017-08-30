@@ -10,11 +10,14 @@
       border-right: solid rem-calc(1) $blue--marine-2;
       border-left: solid rem-calc(1) $blue--marine-2;
       cursor: pointer;
+      font-size: rem-calc(12);
       padding: rem-calc(8 10 5 10);
       text-transform: capitalize;
 
       display: inline-block;
       position: relative;
+
+      @include breakpoint($large){ font-size: rem-calc(16); }
 
       &.active { 
         background-color: transparent; 
@@ -42,7 +45,13 @@
 
       .tick {
         line { stroke-width: 0; }
-        text { fill: $blue--marine-5; }
+
+        text { 
+          font-size: rem-calc(14);
+          fill: $blue--marine-5; 
+
+          @include breakpoint($large){ font-size: rem-calc(10); }
+        }
       }
     }
 
@@ -66,9 +75,12 @@
 
         text {
           fill: $white;
+          font-size: rem-calc(14);
           font-weight: bold;
 
           transform: translateY(6px);
+
+          @include breakpoint($large){ font-size: rem-calc(10); }
         }
       } 
     }
@@ -80,6 +92,8 @@
 
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
+
+      @include breakpoint($medium){ stroke-width: 2; }
     }
 
     &__line-active {
