@@ -85,6 +85,18 @@ $navHeightMobile: rem-calc(48);
     }
   }
 
+    &__title {
+      color: white;
+      font-weight: bold;
+      margin-left: rem-calc(14);
+      text-transform: uppercase;
+      
+      align-self: center;
+      transform: translateY(2px);
+
+      @include breakpoint($large){ display: none; }
+    }
+
     &__burger {
       cursor: pointer;
       margin-left: auto;
@@ -170,6 +182,7 @@ $navHeightMobile: rem-calc(48);
           background-color: $blue--marine-4;
           border-top: solid rem-calc(1) $blue--marine-3;
           color: white;
+          font-size: rem-calc(15);
           padding: rem-calc(16 10 15 10);
           text-align: center;
           text-decoration: none;
