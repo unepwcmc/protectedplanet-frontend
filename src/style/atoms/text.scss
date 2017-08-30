@@ -13,6 +13,13 @@
     }
   }
 
+  &--60 {
+    font-size: rem-calc(28);
+
+    @include breakpoint($medium){ font-size: rem-calc(48); }
+    @include breakpoint($large){ font-size: rem-calc(60); }
+  }
+
   &--100 {
     font-size: rem-calc(40);
 

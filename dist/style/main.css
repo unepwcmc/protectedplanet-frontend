@@ -1935,6 +1935,22 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
 }
 
+.text--60 {
+  font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .text--60 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .text--60 {
+    font-size: 3.75rem;
+  }
+}
+
 .text--100 {
   font-size: 2.5rem;
 }
@@ -7697,8 +7713,22 @@ sup {
 .template--marine h4 {
   border-bottom: solid 0.0625rem #444955;
   color: #444955;
-  margin-bottom: 1.375rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.25rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine h4 {
+    margin-bottom: 1.125rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine h4 {
+    margin-bottom: 1.375rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .template--marine p {
@@ -7754,7 +7784,13 @@ sup {
 }
 
 .template--marine .infographic {
-  padding: 1.875rem 1.5rem;
+  padding: 1rem 1.125rem 0.625rem 1.125rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic {
+    padding: 1.875rem 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 48.6875rem) {
@@ -7770,7 +7806,7 @@ sup {
 }
 
 .template--marine .infographic__right {
-  margin-top: 1.125rem;
+  margin-top: 1.375rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
@@ -7791,7 +7827,7 @@ sup {
   font-size: 1.375rem;
   border-bottom: solid 0.0625rem #444955;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.125rem;
+  margin-bottom: 0.875rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
@@ -7850,16 +7886,23 @@ sup {
 
 .template--marine .infographic__bar {
   background-color: #bfe5e9;
-  margin: 1.5rem 0 2.125rem 0;
+  margin: 0.875rem 0 0.875rem 0;
   width: 100%;
-  height: 5.625rem;
+  height: 3.625rem;
   position: relative;
 }
 
 @media only screen and (min-width: 48.6875rem) {
   .template--marine .infographic__bar {
-    margin: 2.125rem 0 3.375rem 0;
-    height: 8.75rem;
+    margin: 2.125rem 0 1.25rem 0;
+    height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine .infographic__bar {
+    height: 6.625rem;
+    margin: 2.125rem 0 1.625rem 0;
   }
 }
 
@@ -7869,6 +7912,16 @@ sup {
 
 .template--marine .infographic__bar--pa {
   background-color: #F5A623;
+}
+
+.template--marine .infographic__bar--global {
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine .infographic__bar--global {
+    margin-bottom: 3.75rem;
+  }
 }
 
 .template--marine .infographic__bar-layer {
@@ -7886,23 +7939,30 @@ sup {
 }
 
 .template--marine .infographic__pa {
+  margin-bottom: 0.125rem;
   display: block;
 }
 
 .template--marine .infographic__km {
-  font-size: 1.25rem;
+  font-size: 0.875rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
   .template--marine .infographic__km {
-    font-size: 2.25rem;
+    font-size: 1.375rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine .infographic__km {
+    font-size: 1.75rem;
   }
 }
 
 .template--marine .infographic__percent {
   height: 100%;
   position: absolute;
-  top: 1rem;
+  top: 0.375rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
@@ -7913,7 +7973,7 @@ sup {
 
 .template--marine .infographic__percent--national {
   color: #bfe5e9;
-  left: 0.625rem;
+  left: 0.25rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
@@ -7925,7 +7985,7 @@ sup {
 .template--marine .infographic__percent--highseas {
   color: #729099;
   text-align: right;
-  right: 0.625rem;
+  right: 0.25rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
