@@ -7206,6 +7206,38 @@ table {
   margin-right: 1.25rem;
 }
 
+.u-margin--y {
+  margin: 1.25rem 0;
+}
+
+.u-margin--x {
+  margin: 0 1.25rem;
+}
+
+.u-margin--top {
+  margin-top: 1.25rem;
+}
+
+.u-margin--bottom {
+  margin-bottom: 1.25rem;
+}
+
+.u-padding--y {
+  padding: 1.25rem 0;
+}
+
+.u-padding--x {
+  padding: 0 1.25rem;
+}
+
+.u-padding--top {
+  padding-top: 1.25rem;
+}
+
+.u-padding--bottom {
+  padding-bottom: 1.25rem;
+}
+
 .u-click-through {
   pointer-events: none;
 }

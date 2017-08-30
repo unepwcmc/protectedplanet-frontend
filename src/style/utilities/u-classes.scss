@@ -76,15 +76,15 @@
 .u-margin--page-right { margin-right: rem-calc(20);        }
 
 // spacing
-.u-margin--y      { margin: rem-calm(20, 0); }
-.u-margin--x      { margin: rem-calc(0, 20); }
-.u-margin--top    { margin-top: rem-calc(20); }
-.u-margin--bottom { margin-bottom: rem-calc(20); }
+.u-margin--y      { margin: rem-calc(20 0);        }
+.u-margin--x      { margin: rem-calc(0 20);        }
+.u-margin--top    { margin-top: rem-calc(20);       }
+.u-margin--bottom { margin-bottom: rem-calc(20);    }
 
-.u-padding--y      { padding: rem-calm(20, 0); }
-.u-padding--x      { padding: rem-calc(0, 20); }
-.u-padding--top    { padding-top: rem-calc(20); }
-.u-padding--bottom { padding-bottom: rem-calc(20); }
+.u-padding--y      { padding: rem-calc(20 0);      }
+.u-padding--x      { padding: rem-calc(0 20);      }
+.u-padding--top    { padding-top: rem-calc(20);     }
+.u-padding--bottom { padding-bottom: rem-calc(20);  }
 
 // misc
 .u-click-through    { pointer-events: none;                }
