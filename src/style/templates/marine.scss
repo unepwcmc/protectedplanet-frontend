@@ -45,6 +45,8 @@ $marine-accent-color: $orange--lighest;
 
   .section--block-color {
     @extend .u-bg--marine-2;
+
+    a { color: white; }
   }
 
   //----------------------------------------

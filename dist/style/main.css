@@ -7702,6 +7702,10 @@ sup {
   text-decoration: none;
 }
 
+.template--marine .section--block-color a {
+  color: white;
+}
+
 .template--marine__header {
   background: url("images/hero/hero-marine-min.jpg") center no-repeat;
   background-size: cover;
