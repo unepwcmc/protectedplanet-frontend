@@ -6078,6 +6078,12 @@ a.btn:hover {
   width: 125px;
 }
 
+.marine-download {
+  top: -120px;
+  left: 650px;
+  z-index: 400;
+}
+
 .btn-map-download {
   text-align: center;
   font-family: 'MuseoSlab';
@@ -6091,6 +6097,14 @@ a.btn:hover {
   box-sizing: border-box;
   border-radius: 0.3125rem;
   color: #ffffff;
+}
+
+.btn-map-download.btn-map-download--marine {
+  background-color: #729099;
+}
+
+.btn-map-download.btn-map-download--marine:hover {
+  background-color: #90BDC4;
 }
 
 .btn-map-download:hover {
