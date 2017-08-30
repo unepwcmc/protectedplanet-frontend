@@ -180,7 +180,8 @@ $navHeightMobile: rem-calc(48);
             border: none;
           }
 
-          &:hover {
+          &:hover,
+          &-active {
             background-color: $blue--marine-3;
           }
         }
