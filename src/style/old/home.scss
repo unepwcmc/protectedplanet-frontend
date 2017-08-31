@@ -15,6 +15,20 @@
 
   border-radius: $big-button__border-radius;
   color: $big-button__color;
+  &--marine {
+    background-color: $blue--marine-1;
+    color: $blue--marine-5;
+    padding: 5px 10px;
+    &:hover {
+      background-color: $blue--marine-2;
+    }
+  }
+}
+
+.marine-download {
+  top: -120px;
+  left: 570px;
+  z-index: 400;
 }
 
 .btn.btn-marine-toggle {
