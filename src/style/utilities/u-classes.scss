@@ -28,6 +28,7 @@
 .u-block            { display: block;                      }
 .u-inline-block     { display: inline-block;               }
 .u-hide             { display: none;                       }
+.u-hide-mobile      { @media only screen and (max-width: $small) { display: none; } }
 .u-clearfix         { @extend %clearfix;                   }
 .u-flex             { @include flexbox;                    }
 

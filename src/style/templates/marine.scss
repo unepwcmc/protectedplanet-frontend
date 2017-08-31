@@ -37,27 +37,24 @@ $marine-accent-color: $orange--lighest;
   p {
     font-family: 'MuseoSans';
   }
-
-  a:not(.button--external, .button--green-link, .info-box__link, .v-sticky-nav__link) {
+  
+  a:not(.button--external, .button--green-link, .button--basic-link, .info-box__link, .v-sticky-nav__link, .leaflet-control-zoom-in, .leaflet-control-zoom-out) {
     color: $blue--marine-3;
     text-decoration: underline;
 
     &:hover { text-decoration: none; }
-
-    &.leaflet-control-zoom-in,
-    &.leaflet-control-zoom-out { text-decoration: none; }
   }
+  
+  .button--basic-link { color: $blue--marine-3; } 
+
+  a.leaflet-control-zoom-in,
+  a.leaflet-control-zoom-out { color: $blue--marine-5; }
 
   //----------------------------------------
   // sections
   //----------------------------------------
   .section--block-color {
     @extend .u-bg--marine-2;
-
-    a { 
-      color: $blue--marine-5;
-      text-decoration: underline; 
-    }
   }
 
   &__fact-padding-top {
@@ -124,6 +121,67 @@ $marine-accent-color: $orange--lighest;
   //----------------------------------------
   &__footer {
     .reference__body { margin-bottom: rem-calc(14); }
+  }
+
+  //----------------------------------------
+  // commitments and pledges
+  //----------------------------------------
+  &__pledges { 
+    position: relative;
+
+    @include breakpoint($medium){ margin-top: rem-calc(50); }
+
+    &-title {
+      @extend .u-text-sans;
+      border-bottom: solid rem-calc(1) $blue--marine-5;
+      color: $blue--marine-5;
+      margin-bottom: rem-calc(20);
+      padding-bottom: rem-calc(4);
+
+      @include breakpoint($medium){ 
+        margin-bottom: rem-calc(24); 
+        padding-top: rem-calc(21);
+        padding-bottom: rem-calc(6);
+      }
+
+      @include breakpoint($large){ 
+        margin-bottom: rem-calc(36); 
+        padding-bottom: rem-calc(8);
+      }
+
+      h4 { 
+        border: none; 
+        margin: 0;
+        padding: 0;
+      }
+
+      a { text-decoration: none; }
+    }
+
+    &-counter {
+      padding: rem-calc(20 0 20 24);
+
+      width: rem-calc(226);
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @include breakpoint($medium){ width: rem-calc(320); }
+      @include breakpoint($large){ width: rem-calc(394); }
+    }
+
+    &-sunburst {
+      padding-top: rem-calc(138);
+      width: 100%;
+
+      @include breakpoint($medium){ 
+        padding-top: 0;
+        width: 60%;
+      }
+
+      @include breakpoint($large){ width: 64%; }
+    }
   }
 
   //----------------------------------------

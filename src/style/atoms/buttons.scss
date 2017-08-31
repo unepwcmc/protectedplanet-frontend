@@ -16,6 +16,12 @@
 }
 
 .button {
+  &--basic-link {
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
   &--green-link {
     color: $green;
 
