@@ -16,6 +16,12 @@
 }
 
 .button {
+  &--green-link {
+    color: $green;
+
+    &:hover { text-decoration: underline; }
+  }
+
   &--grey {
     @include font-weight(bold);
 
@@ -52,5 +58,20 @@
     &:hover {
       background-color: $button--fullscreen-hover-color;
     }
+  }
+
+  &--external {
+    color: $button--external-color;
+    text-decoration: none;
+
+    display: block;
+
+    &:before {
+      @extend .u-font-icon;
+      content: '\f14c';
+      margin-right: rem-calc(8);
+    }
+
+    &:hover { text-decoration: underline; }
   }
 }

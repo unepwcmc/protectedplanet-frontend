@@ -63,17 +63,9 @@
   @media (max-width: 769px) { @include span-columns(12); }
 }
 
-@include b(two-fiths) { 
-  @include only-mobile { flex: 0 0 100% };
-
-  flex: 0 0 40%; 
-}
-
-@include b(three-fiths) { 
-  @include only-mobile { flex: 0 0 100% };
-
-  flex: 0 0 60%; 
-}
+//----------------------------------------
+// flex positioning
+//----------------------------------------
 
 @include b(flex-start) {
   @extend %flexbox;
@@ -96,8 +88,21 @@
   padding-right: 5%;
 }
 
+.justify-content-between { @include justify-content(between); }
+.justify-content-center { @include justify-content(center); }
+
+.justify-content-end { 
+  @extend .justify-content-center;
+  @include breakpoint($large){ @include justify-content(flex-end); }
+}
+
+
 .align-items-end { @include align-items(flex-end); }
 .align-items-center { @include align-items(center); }
+
+//----------------------------------------
+// rows
+//----------------------------------------
 
 .flex-row {
   @extend %flexbox;
@@ -110,29 +115,50 @@
 }
 
 //----------------------------------------
+// column spacing
+//----------------------------------------
+.flex-column-gap--left { 
+  @include breakpoint($medium){ padding-left: rem-calc(12); }
+}
+
+.flex-column-gap--right { 
+  @include breakpoint($medium){ padding-right: rem-calc(12); }
+}
+
+//----------------------------------------
 // 2 columns
 //----------------------------------------
 .flex-column-2 {
   flex: 0 0 50%;
 }
 
+.flex-1-half {
+  flex: 0 0 100%;
+  margin-bottom: rem-calc(10);
+  
+  @include breakpoint($medium){ 
+    flex: 0 0 50%; 
+    margin-bottom: 0;
+  }
+}
+
 //----------------------------------------
 // 3 columns
 //----------------------------------------
 .flex-column-3 {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 33.3%;
 }
 
 .flex-1-third {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 33.3%;
 }
 
 .flex-2-thirds {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 66.6%;
 }
@@ -141,28 +167,51 @@
 // 4 columns
 //----------------------------------------
 .flex-1-quarter {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 25%;
 }
 
 .flex-3-quarters {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 75%;
 }
 
 //----------------------------------------
-// 4 columns
+// 5 columns
 //----------------------------------------
 .flex-1-fith {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 20%;
 }
 
+.flex-2-fiths { 
+  @include only-mobile { flex: 0 0 100%; }
+
+  flex: 0 0 40%; 
+}
+
+
+.flex-3-fiths { 
+  @include only-mobile { flex: 0 0 100%; }
+
+  flex: 0 0 60%; 
+}
+
 .flex-4-fiths {
-  @include only-mobile { flex: 0 0 100% };
+  @include only-mobile { flex: 0 0 100%; }
 
   flex: 0 0 80%;
+}
+
+//----------------------------------------
+// mobile
+//----------------------------------------
+.flex-column-mobile {
+  @media only screen and (max-width: $small) { 
+    flex: 0 0 100%;
+    margin-bottom: rem-calc(10);
+  }
 }

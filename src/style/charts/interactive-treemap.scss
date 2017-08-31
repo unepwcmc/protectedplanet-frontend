@@ -1,0 +1,112 @@
+.v-interactive-treemap {
+  
+  //----------------------------------------
+  // grid
+  //----------------------------------------
+  .flex-2-fiths,
+  .flex-3-fiths {
+    @media only screen and (max-width: $large){
+      flex: 0 0 100%;
+    }
+  }
+
+  //----------------------------------------
+  // info panel
+  //----------------------------------------
+  &__info-panel {
+    display: none;
+
+    @include breakpoint($medium){ display: block; }
+  }
+
+  &__list {
+    @include breakpoint($medium){ display: none; }
+  }
+
+    &__list-item {
+      border: solid rem-calc(1) $grey-5;
+      font-size: rem-calc(14);
+      padding: rem-calc(14 12 2 12);
+
+      &:nth-child(even){ background-color: $grey-5; }
+    }
+
+      &__info {
+        line-height: 1.2;
+        margin-top: rem-calc(30);
+        padding: rem-calc(22 18);
+      }
+
+      &__title {
+        border-bottom: solid rem-calc(1) $grey-55; 
+        color: $blue--marine-4;
+        font-size: rem-calc(20);
+        line-height: 1;
+        margin-bottom: rem-calc(16); 
+        padding-bottom: rem-calc(6);
+
+        @include breakpoint($medium){ 
+          font-size: rem-calc(40);
+          margin-bottom: rem-calc(26); 
+          padding-bottom: rem-calc(10);
+        }
+
+        a { text-decoration: none; }
+      }
+
+      &__stat {
+        margin-top: rem-calc(10);
+        flex: 0 0 50%;
+        
+        @include breakpoint($medium){ margin-top: rem-calc(20); }
+        @include breakpoint($large){ flex: 0 0 100%; }
+      }
+
+        &__percent {
+          color: $marine-accent-color;
+          font-size: rem-calc(30);
+
+          display: block;
+
+          @include breakpoint($medium){ font-size: rem-calc(50); }
+        }
+
+        &__km {
+          color: $marine-accent-color;
+          font-size: rem-calc(18);
+          margin-bottom: rem-calc(8);
+
+          display: block;
+
+          @include breakpoint($medium){ font-size: rem-calc(30); }
+        }
+  
+  //----------------------------------------
+  // treemap
+  //----------------------------------------
+  &__treemap {
+    display: none;
+
+    @include breakpoint($medium){ display: block; }
+  }
+
+    &__cell {
+      text { font-size: rem-calc(16); }
+
+      &-active { 
+        text { font-weight: bold; }
+      }
+    }
+
+  //----------------------------------------
+  // instruction
+  //----------------------------------------
+  &__instruction {
+    font-size: rem-calc(15);
+    margin-top: rem-calc(10);
+
+    display: none;
+
+    @include breakpoint($medium){ display: block; }
+  }
+}

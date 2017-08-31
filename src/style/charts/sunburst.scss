@@ -1,0 +1,37 @@
+.d3-sunburst {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+
+  position: relative;
+
+  &__info {
+    padding: rem-calc(12);
+
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    &--active { display: block; }
+  }
+
+    &__title {
+      font-size: rem-calc(22);
+      margin-bottom: rem-calc(12);
+    }
+
+    &__subtitle {
+      font-weight: bold;
+      margin-top: rem-calc(12);
+
+      display: block;
+    }
+
+    &__type {
+      font-size: 30px;
+      text-transform: capitalize;
+    }
+}

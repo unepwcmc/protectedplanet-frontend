@@ -100,3 +100,9 @@
     transition: background-color .1s;
   }
 }
+
+.leaflet-container {
+  &#map-marine {
+    background: transparent;
+  }
+}

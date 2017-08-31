@@ -1,9 +1,16 @@
+$x-thin: 100;
+$thin:   300;
+$normal: 500;
+$bold:   700;
+$x-bold: 900;
+
+
 $weights: (
-  x-thin: 100,
-  thin:   300,
-  normal: 500,
-  bold:   700,
-  x-bold: 900
+  x-thin: $x-thin,
+  thin:   $thin,
+  normal: $normal,
+  bold:   $bold,
+  x-bold: $x-bold
 );
 
 $form-factors: (

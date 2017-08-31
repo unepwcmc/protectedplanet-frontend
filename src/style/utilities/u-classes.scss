@@ -13,10 +13,16 @@
 
 // background
 .u-bg--white        { background-color: $white;            }
+.u-bg--marine-1     { background-color: $blue--marine-1;   }
+.u-bg--marine-2     { background-color: $blue--marine-2;   }
+.u-bg--black-transparent { background-color: rgba(black, .23); }
+.u-bg--grey         { background-color: $grey-5;           }
 
 // position
 .u-relative         { position: relative;                  }
 .u-fixed            { position: fixed;                     }
+.u-up-halfway       { transform: translateY(-50%);         }
+.u-infront-map      { z-index: 1000;                       }
 
 // display
 .u-block            { display: block;                      }
@@ -35,6 +41,7 @@
 .u-width-60         { width: 60%;                          }
 .u-width-80         { width: 80%;                          }
 .u-width-100        { width: 100%;                         }
+.u-height-0         { height: 0;                           }
 
 .u-height-100       { height: 100%;                        }
 .u-map-height       { height: 380px;                       }
@@ -50,9 +57,12 @@
 .u-alt-xlarge       { @include text--alt(xlarge, x-bold);  }
 .u-alt-xxlarge      { @include text--alt(xxlarge, x-bold); }
 .u-mono             { font-family: monospace;              }
+.u-font-icon        { font-family: FontAwesome;            }
 .u-alt-font         { font-family: 'MuseoSlab';            }
+.u-text-sans        { font-family: 'MuseoSans';            }
 .u-text-left        { text-align: left;                    }
 .u-text-right       { text-align: right;                   }
+.u-marine-accent-color { color: $marine-accent-color;      }
 
 // floats
 .u-left             { float: left;                         }
@@ -63,6 +73,8 @@
 .u-push-top           { margin-top: auto;                  }
 .u-margin-auto        { margin: auto;                      }
 .u-no-margin          { margin: 0;                         }
+.u-no-padding         { padding: 0;                        }
+.u-no-padding--bottom { padding-bottom: 0;                 }
 
 .u-margin--page {
   @include only-desktop {

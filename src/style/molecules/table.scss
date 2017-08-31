@@ -8,3 +8,83 @@
   @import "table/_row";
   @import "table/_value";
 }
+
+//----------------------------------------
+// grey table
+//
+// - responsive (list on mobile)
+// - alternate coloured rows
+// - used on the marine page
+//----------------------------------------
+.table--grey {
+  @extend .u-text-sans;
+
+  text-align: left;
+  width: 100%;
+
+  &__headers {
+    display: none;
+
+    @include breakpoint($medium){
+      border-bottom: solid rem-calc(1) $grey-77;  
+
+      display: flex;
+    }
+  }
+    
+    &__header-cell {
+      padding: rem-calc(8 4);
+
+      @include breakpoint($medium){ flex: 0 0 25%; }
+    }
+
+  &__row {
+    padding: rem-calc(8 0 6 0);
+
+    @include breakpoint($medium){ 
+      padding: 0; 
+
+      display: flex;
+    }
+
+    &:nth-child(even) {
+      background-color: $grey-5;
+    }
+  }
+
+    &__cell {
+      padding: rem-calc(8);
+
+      @include breakpoint($medium){ 
+        flex: 0 0 25%; 
+        padding: rem-calc(12 4);
+      }
+
+      &:before {
+        font-weight: bold; 
+        margin-right: rem-calc(6);
+
+        @include breakpoint($medium){ display: none; }
+      }
+      
+      // Add copy for the table header
+      // These are shown on mobile only
+      // Check _pledges.html.erb for the copy
+
+      &:nth-child(1) {
+        &:before { content: 'PA name:'; }
+      }
+
+      &:nth-child(2) {
+        &:before { content: 'Country:'; }
+      }
+
+      &:nth-child(3) {
+        &:before { content: 'Size:'; }
+      }
+
+      &:nth-child(4) {
+        &:before { content: 'Date of designation:'; }
+      }
+    }
+}

@@ -46,3 +46,53 @@
     color: $fact-external-link__color;
   }
 }
+
+.fact {
+  &--circle {
+    border-radius: 100%;
+    font-family: 'MuseoSans';
+    font-size: rem-calc(15);
+    line-height: 1.2;
+    padding-top: rem-calc(160);
+    text-align: center;
+    width: rem-calc(160);
+
+    position: relative;
+
+    @include breakpoint($medium){ 
+      font-size: rem-calc(18);
+      padding-top: rem-calc(200);
+      width: rem-calc(200);
+    }
+
+    @include breakpoint($large){
+      font-size: rem-calc(24);
+      padding-top: rem-calc(260);
+      width: rem-calc(260);
+    }
+  }
+
+  &--marine {
+    background-color: $blue--marine-1;
+    border: solid rem-calc(4) $blue--marine-3;
+
+    @include breakpoint($medium){ 
+      margin-left: rem-calc(32); 
+      transform: translateY(-50px);
+    }
+
+    @include breakpoint($large){ margin-left: rem-calc(50); }
+  }
+
+  &__content {
+    padding: rem-calc(17);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    @include breakpoint($medium){ padding: rem-calc(32); }
+  }
+}

@@ -1,25 +1,31 @@
-@include b(map) {
+.map {
   width: $map__width;
 
-  @include m(hero) {
+  &--hero {
     height: $map--hero__height;
   }
 
-  @include m(main) {
+  &--main {
     height: $map--main__height;
   }
 
-  @include m(networks) {
+  &--marine {
+    height: rem-calc(700);
+
+    @include breakpoint($medium){ height: $map--main__height; }
+  }
+
+  &--networks {
     height: rem-calc(360);
 
     @include only-desktop { height: $map--networks__height; }
   }
 
-  @include m(double) {
+  &--double {
     height: $map--main__height*2;
   }
 
-  @include m(margin-top-bottom) {
+  &--margin-top-bottom {
     margin: rem-calc(30 0);
   }
 

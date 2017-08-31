@@ -17,6 +17,13 @@ $blue--dark: #1a589f;
 $blue--light: #3a76bb;
 $blue--lighter: #d2e0ef;
 
+//used on marine insights page
+$blue--marine-1: #bfe5e9; 
+$blue--marine-2: #A1D8DE;
+$blue--marine-3: #90BDC4;
+$blue--marine-4: #729099;
+$blue--marine-5: #444955;
+
 // red palette
 $red: #d80000;
 $red--dark: #c20000;
@@ -27,6 +34,7 @@ $red--lighter: #f7cccc;
 $orange: #ef5833;
 $orange--dark: #de522f;
 $orange--lighter: #f16e4d;
+$orange--lighest: #F5A623; //highlight color on the marine page
 $brown-bg: #fcded6;
 $yellow: #ffe600;
 
@@ -63,6 +71,7 @@ $button--grey-border-color: $grey-4 !default;
 $button--grey-text-color: $green !default;
 $button--fullscreen-text-color: $green !default;
 $button--fullscreen-hover-color: $grey-5 !default;
+$button--external-color: $green;
 
 // atoms/colors
 $link__color: $green !default;
