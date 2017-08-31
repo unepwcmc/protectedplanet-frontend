@@ -51,11 +51,22 @@ $marine-accent-color: $orange--lighest;
   //----------------------------------------
   // sections
   //----------------------------------------
-
   .section--block-color {
     @extend .u-bg--marine-2;
 
     a { color: white; }
+  }
+
+  &__fact-padding-top {
+   margin-top: rem-calc(86);
+
+    @include breakpoint($medium){ margin-top: 0; }
+  }
+
+  &__fact-padding-bottom {
+   padding-bottom: rem-calc(44);
+
+    @include breakpoint($medium){ padding-bottom: 0; }
   }
 
   //----------------------------------------
@@ -88,6 +99,21 @@ $marine-accent-color: $orange--lighest;
     right: 0;
     bottom: 0;
     left: 0;
+  }
+
+  //----------------------------------------
+  // fact
+  //----------------------------------------
+  &__fact {
+    position: absolute;
+    top: rem-calc(-150);
+    right: rem-calc(20);
+
+    @include breakpoint($medium){
+      flex: 0 0 25%;
+
+      position: static;
+    }
   }
 
   //----------------------------------------
@@ -266,18 +292,6 @@ $marine-accent-color: $orange--lighest;
       padding-top: rem-calc(80);
       padding-bottom: rem-calc(80);  
     }
-  }
-
-  &__section--fact-bottom {
-    padding-bottom: rem-calc(180);
-
-    @include breakpoint($large){ padding-bottom: rem-calc(300); }
-  }
-
-  &__section--fact-top {
-    padding-top: rem-calc(180);
-
-    @include breakpoint($large){ padding-top: rem-calc(160); }
   }
 
     &__section__introduction {
