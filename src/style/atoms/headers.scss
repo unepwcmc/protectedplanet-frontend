@@ -33,7 +33,7 @@
 %header--h1-insights {
   color: white;
   font-family: 'MuseoSans';
-  font-size: rem-calc(44);
+  font-size: rem-calc(38);
   padding: rem-calc(14 18);
 
   display: inline-block;
@@ -47,14 +47,16 @@
     @extend %header--h1-insights;
     text-transform: uppercase;
 
-    @include breakpoint($medium){ font-size: rem-calc(64); } 
+    @include breakpoint($medium){ font-size: rem-calc(52); } 
+    @include breakpoint($large){ font-size: rem-calc(64); } 
   }
 
   &--h1-insights-small {
     @extend %header--h1-insights;
-    font-size: rem-calc(32);
+    font-size: rem-calc(24);
 
-    @include breakpoint($medium){ font-size: rem-calc(48); } 
+    @include breakpoint($medium){ font-size: rem-calc(38); } 
+    @include breakpoint($large){ font-size: rem-calc(48); } 
   }
 
   &--h1-small {

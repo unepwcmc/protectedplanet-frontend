@@ -1704,7 +1704,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .header--h1-insights, .header--h1-insights-small {
   color: white;
   font-family: 'MuseoSans';
-  font-size: 2.75rem;
+  font-size: 2.375rem;
   padding: 0.875rem 1.125rem;
   display: inline-block;
 }
@@ -1715,15 +1715,27 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (min-width: 48.6875rem) {
   .header--h1-insights {
+    font-size: 3.25rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .header--h1-insights {
     font-size: 4rem;
   }
 }
 
 .header--h1-insights-small {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
+  .header--h1-insights-small {
+    font-size: 2.375rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
   .header--h1-insights-small {
     font-size: 3rem;
   }
@@ -7857,20 +7869,27 @@ sup {
 .template--marine__header {
   background: url("images/hero/hero-marine-min.jpg") center no-repeat;
   background-size: cover;
-  height: 37.5rem;
+  padding: 1.875rem 0;
   position: relative;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine__header {
+    height: 37.5rem;
+    padding: 0;
+  }
 }
 
 .template--marine .header__introduction {
   color: #ffffff;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.3;
   padding: 0.75rem 1.125rem;
 }
 
-@media only screen and (min-width: medium1) {
+@media only screen and (min-width: 48.6875rem) {
   .template--marine .header__introduction {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
 }
 
