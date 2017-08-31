@@ -3538,6 +3538,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  height: 100%;
   display: none;
   position: absolute;
   right: 0;
@@ -3563,6 +3564,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .v-sticky-nav__menu-item {
   flex: 1 1 auto;
+  display: flex;
 }
 
 .v-sticky-nav a.v-sticky-nav__link {
@@ -3574,11 +3576,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   text-align: center;
   text-decoration: none;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 65rem) {
   .v-sticky-nav a.v-sticky-nav__link {
-    padding: 1.25rem 0.625rem 1.1875rem 0.625rem;
+    padding: 0 0.625rem;
     border: none;
   }
 }
@@ -7802,16 +7808,16 @@ sup {
   font-family: 'MuseoSans';
 }
 
-.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link) {
+.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link):not(.v-sticky-nav__link) {
   color: #90BDC4;
   text-decoration: underline;
 }
 
-.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link):hover {
+.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link):not(.v-sticky-nav__link):hover {
   text-decoration: none;
 }
 
-.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link).leaflet-control-zoom-in, .template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link).leaflet-control-zoom-out {
+.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link):not(.v-sticky-nav__link).leaflet-control-zoom-in, .template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link):not(.v-sticky-nav__link).leaflet-control-zoom-out {
   text-decoration: none;
 }
 

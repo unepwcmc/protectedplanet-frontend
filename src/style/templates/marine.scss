@@ -38,7 +38,7 @@ $marine-accent-color: $orange--lighest;
     font-family: 'MuseoSans';
   }
 
-  a:not(.button--external, .button--green-link, .info-box__link) {
+  a:not(.button--external, .button--green-link, .info-box__link, .v-sticky-nav__link) {
     color: $blue--marine-3;
     text-decoration: underline;
 
