@@ -27,7 +27,8 @@
 
 .marine-download {
   top: -120px;
-  left: 570px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 400;
 }
 
