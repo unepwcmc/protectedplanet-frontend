@@ -6188,6 +6188,22 @@ a.btn:hover {
   background-color: #e3edd5;
 }
 
+.btn-map-download--marine {
+  background-color: #bfe5e9;
+  color: #444955;
+  padding: 5px 10px;
+}
+
+.btn-map-download--marine:hover {
+  background-color: #A1D8DE;
+}
+
+.marine-download {
+  top: -120px;
+  left: 570px;
+  z-index: 400;
+}
+
 .btn.btn-marine-toggle {
   position: fixed;
   top: 181px;
