@@ -6140,7 +6140,7 @@ a.btn:hover {
 
 .marine-download {
   top: -120px;
-  left: 650px;
+  left: 620px;
   z-index: 400;
 }
 
@@ -6160,7 +6160,9 @@ a.btn:hover {
 }
 
 .btn-map-download.btn-map-download--marine {
-  background-color: #729099;
+  background-color: #C2E5E9;
+  color: #444955;
+  padding: 5px 10px;
 }
 
 .btn-map-download.btn-map-download--marine:hover {
