@@ -38,7 +38,7 @@ $marine-accent-color: $orange--lighest;
     font-family: 'MuseoSans';
   }
   
-  a:not(.button--external, .button--green-link, .button--basic-link, .info-box__link, .v-sticky-nav__link, .leaflet-control-zoom-in, .leaflet-control-zoom-out) {
+  a:not(.button--external, .button--green-link, .button--basic-link, .info-box__link, .v-sticky-nav__link, .leaflet-control-zoom-in, .leaflet-control-zoom-out, .result &) {
     color: $blue--marine-3;
     text-decoration: underline;
 
@@ -57,303 +57,6 @@ $marine-accent-color: $orange--lighest;
     @extend .u-bg--marine-2;
   }
 
-  &__fact-padding-top {
-   margin-top: rem-calc(86);
-
-    @include breakpoint($medium){ margin-top: 0; }
-  }
-
-  &__fact-padding-bottom {
-   padding-bottom: rem-calc(44);
-
-    @include breakpoint($medium){ padding-bottom: 0; }
-  }
-
-  //----------------------------------------
-  // header
-  //----------------------------------------
-  &__header {
-    background: asset-url('images/hero/hero-marine-min.jpg') center no-repeat;
-    background-size: cover;
-    padding: rem-calc(30 0);
-
-    position: relative;
-
-    @include breakpoint($medium){ 
-      height: rem-calc(600);
-      padding: 0;
-    }
-  }
-
-  .header__introduction {
-    color: $white;
-    font-size: rem-calc(16);
-    line-height: 1.3;
-    padding: rem-calc(12 18);
-
-    @include breakpoint($medium){ font-size: rem-calc(18); }
-
-    p:first-child { margin-bottom: rem-calc(14); }
-  }
-
-  //----------------------------------------
-  // sticky nav
-  //----------------------------------------
-  .v-sticky-nav {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  //----------------------------------------
-  // fact
-  //----------------------------------------
-  &__fact {
-    position: absolute;
-    top: rem-calc(-150);
-    right: rem-calc(20);
-
-    @include breakpoint($medium){
-      flex: 0 0 25%;
-
-      position: static;
-    }
-  }
-
-  //----------------------------------------
-  // footer
-  //----------------------------------------
-  &__footer {
-    .reference__body { margin-bottom: rem-calc(14); }
-  }
-
-  //----------------------------------------
-  // commitments and pledges
-  //----------------------------------------
-  &__pledges { 
-    position: relative;
-
-    &-title {
-      @extend .u-text-sans;
-      border-bottom: solid rem-calc(1) $blue--marine-5;
-      color: $blue--marine-5;
-      margin-bottom: rem-calc(20);
-      padding-bottom: rem-calc(4);
-
-      @include breakpoint($medium){ 
-        margin-bottom: rem-calc(24); 
-        padding-top: rem-calc(21);
-        padding-bottom: rem-calc(6);
-      }
-
-      @include breakpoint($large){ 
-        margin-bottom: rem-calc(36); 
-        padding-bottom: rem-calc(8);
-      }
-
-      h4 { 
-        border: none; 
-        margin: 0;
-        padding: 0;
-      }
-
-      a { text-decoration: none; }
-    }
-
-    &-counter {
-      padding: rem-calc(20 0 20 24);
-
-      width: rem-calc(226);
-
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      @include breakpoint($medium){ width: rem-calc(320); }
-      @include breakpoint($large){ width: rem-calc(394); }
-    }
-
-    &-sunburst {
-      padding-top: rem-calc(138);
-      width: 100%;
-
-      @include breakpoint($medium){ 
-        padding-top: 0;
-        width: 60%;
-      }
-
-      @include breakpoint($large){ width: 64%; }
-    }
-  }
-
-  //----------------------------------------
-  // national waters vs high seas
-  // infographic
-  //----------------------------------------
-  .infographic {
-    padding: rem-calc(16 18 10 18);
-
-    @include breakpoint($medium){ padding: rem-calc(30 24); }
-
-    &__left {
-      @include breakpoint($medium){ padding-right: rem-calc(12); }
-      @include breakpoint($large){ padding-right: rem-calc(60); }
-    }
-
-    &__right {
-      margin-top: rem-calc(22);
-
-      @include breakpoint($medium){ 
-        margin-top: 0;
-        padding-left: rem-calc(12);
-        text-align: right; 
-      }
-
-      @include breakpoint($large){ padding-left: rem-calc(60); }
-    }
-
-      &__header {
-        font-size: rem-calc(22);
-        border-bottom: solid rem-calc(1) $blue--marine-5;
-        padding-bottom: rem-calc(8);
-        margin-bottom: rem-calc(14);
-
-        @include breakpoint($medium){ margin-bottom: rem-calc(22); }
-
-        &--fancy {
-          @include breakpoint($medium){ 
-            border-bottom: none;
-            padding: 0; 
-            text-align: center;
-
-            position: relative;
-          }
-
-          &:before,
-          &:after {
-            @include breakpoint($medium){ 
-              background-color: $blue--marine-5;
-              content: '';
-              width: 30%; height: rem-calc(1); 
-
-              position: absolute;
-              top: 50%;
-            }
-
-            @include breakpoint($large){ width: 36%; }
-          }
-          
-          &:before { left: 0; }
-          &:after { right: 0; }
-        }
-      }
-
-      &__intro { 
-        margin-bottom: rem-calc(30); 
-
-        @include breakpoint($medium){ margin-bottom: rem-calc(50); }
-
-        p { margin-bottom: rem-calc(14); }
-      }
-
-      &__bar {
-        background-color: $blue--marine-1;
-        margin: rem-calc(14 0 14 0);
-        width: 100%; height: rem-calc(58);
-
-        position: relative;
-        
-        @include breakpoint($medium){ 
-          margin: rem-calc(34 0 20 0); 
-          height: rem-calc(96);
-        }
-
-        @include breakpoint($large){ 
-          height: rem-calc(106); 
-          margin: rem-calc(34 0 26 0); 
-        }
-        
-        &--national { background-color: $blue--marine-4; }
-        &--pa { background-color: $marine-accent-color; }
-
-        &--global { 
-          margin-bottom: rem-calc(40);
-
-          @include breakpoint($medium){ margin-bottom: rem-calc(60); }
-        }
-      }
-
-        &__bar-layer {
-          height: 100%;
-
-          display: block;
-          position: absolute;
-          left: 0;
-
-          &--highseas {
-            @include breakpoint($medium){
-              left: auto;
-              right: 0;
-            }
-          }
-        }
-
-      &__pa { 
-        margin-bottom: rem-calc(2);
-
-        display: block; 
-      }
-
-      &__km { 
-        font-size: rem-calc(14);
-
-        @include breakpoint($medium){ font-size: rem-calc(22); }
-        @include breakpoint($large){ font-size: rem-calc(28); }
-      }
-
-      &__percent {
-        height: 100%;
-
-        position: absolute;
-        top: rem-calc(6);
-
-        @include breakpoint($medium){ top: rem-calc(12); }
-
-        &--national {
-          color: $blue--marine-1;
-
-          left: rem-calc(4);
-
-          @include breakpoint($medium){ left: rem-calc(14); }
-        }
-
-        &--highseas {
-          color: $blue--marine-4;
-          text-align: right;
-
-          right: rem-calc(4);
-
-          @include breakpoint($medium){ right: rem-calc(14); }
-        }
-
-        &__title {
-          font-size: rem-calc(12);
-          margin-bottom: rem-calc(10);
-
-          display: block;
-
-          @include breakpoint($medium){ font-size: rem-calc(22); }
-        }
-      }
-  }
-}
-
-//----------------------------------------
-// sections within the marine page 
-// template
-//----------------------------------------
-.t--marine {
   &__section {
     padding-top: rem-calc(30);
     padding-bottom: rem-calc(30);
@@ -374,24 +77,41 @@ $marine-accent-color: $orange--lighest;
       p { margin-bottom: rem-calc(14); }
     }
 
-    &__counter {
-      background: rgba(white, .4);
-      margin-top: rem-calc(40);
-      padding: rem-calc(20 0 20 24);
+  &__fact-padding-top {
+   margin-top: rem-calc(86);
 
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+    @include breakpoint($medium){ margin-top: 0; }
+  }
 
-  &__map-disclaimer {
-    color: $blue--marine-4;
-    font-family: 'MuseoSans';
-    font-size: rem-calc(8);
-    padding-top: rem-calc(14);
-    padding-bottom: rem-calc(14);
-    text-align: center;
+  &__fact-padding-bottom {
+   padding-bottom: rem-calc(44);
 
-    @include breakpoint($medium){ font-size: rem-calc(13); }
+    @include breakpoint($medium){ padding-bottom: 0; }
+  }
+
+  //----------------------------------------
+  // sticky nav
+  //----------------------------------------
+  .v-sticky-nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  //----------------------------------------
+  // page sections
+  //----------------------------------------
+  @import 'marine/header';
+  @import 'marine/map';
+  @import 'marine/ecoregions';
+  @import 'marine/distribution';
+  @import 'marine/pledges';  
+
+  //----------------------------------------
+  // footer
+  //----------------------------------------
+  &__footer {
+    .reference__body { margin-bottom: rem-calc(14); }
   }
 }

@@ -2024,7 +2024,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   }
 }
 
-.text--standard, .t--marine__section__introduction {
+.text--standard, .template--marine__section__introduction {
   font-family: 'MuseoSans';
   font-weight: 300;
   font-size: 1rem;
@@ -7829,12 +7829,12 @@ sup {
   font-family: 'MuseoSans';
 }
 
-.template--marine a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.info-box__link):not(.v-sticky-nav__link):not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out) {
+a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.info-box__link):not(.v-sticky-nav__link):not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out):not(.result .template--marine) {
   color: #90BDC4;
   text-decoration: underline;
 }
 
-.template--marine a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.info-box__link):not(.v-sticky-nav__link):not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out):hover {
+a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.info-box__link):not(.v-sticky-nav__link):not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out):not(.result .template--marine):hover {
   text-decoration: none;
 }
 
@@ -7845,6 +7845,33 @@ sup {
 .template--marine a.leaflet-control-zoom-in,
 .template--marine a.leaflet-control-zoom-out {
   color: #444955;
+}
+
+.template--marine__section {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .template--marine__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.template--marine__section__introduction {
+  margin-bottom: 2.25em;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine__section__introduction {
+    margin-bottom: 3.25em;
+  }
+}
+
+.template--marine__section__introduction p {
+  margin-bottom: 0.875rem;
 }
 
 .template--marine__fact-padding-top {
@@ -7865,6 +7892,13 @@ sup {
   .template--marine__fact-padding-bottom {
     padding-bottom: 0;
   }
+}
+
+.template--marine .v-sticky-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .template--marine__header {
@@ -7898,11 +7932,28 @@ sup {
   margin-bottom: 0.875rem;
 }
 
-.template--marine .v-sticky-nav {
+.template--marine__counter {
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 2.5rem;
+  padding: 1.25rem 0 1.25rem 1.5rem;
   position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
+}
+
+.template--marine__map-disclaimer {
+  color: #729099;
+  font-family: 'MuseoSans';
+  font-size: 0.5rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine__map-disclaimer {
+    font-size: 0.8125rem;
+  }
 }
 
 .template--marine__fact {
@@ -7915,84 +7966,6 @@ sup {
   .template--marine__fact {
     flex: 0 0 25%;
     position: static;
-  }
-}
-
-.template--marine__footer .reference__body {
-  margin-bottom: 0.875rem;
-}
-
-.template--marine__pledges {
-  position: relative;
-}
-
-.template--marine__pledges-title {
-  border-bottom: solid 0.0625rem #444955;
-  color: #444955;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.25rem;
-}
-
-@media only screen and (min-width: 48.6875rem) {
-  .template--marine__pledges-title {
-    margin-bottom: 1.5rem;
-    padding-top: 1.3125rem;
-    padding-bottom: 0.375rem;
-  }
-}
-
-@media only screen and (min-width: 65rem) {
-  .template--marine__pledges-title {
-    margin-bottom: 2.25rem;
-    padding-bottom: 0.5rem;
-  }
-}
-
-.template--marine__pledges-title h4 {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.template--marine__pledges-title a {
-  text-decoration: none;
-}
-
-.template--marine__pledges-counter {
-  padding: 1.25rem 0 1.25rem 1.5rem;
-  width: 14.125rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-@media only screen and (min-width: 48.6875rem) {
-  .template--marine__pledges-counter {
-    width: 20rem;
-  }
-}
-
-@media only screen and (min-width: 65rem) {
-  .template--marine__pledges-counter {
-    width: 24.625rem;
-  }
-}
-
-.template--marine__pledges-sunburst {
-  padding-top: 8.625rem;
-  width: 100%;
-}
-
-@media only screen and (min-width: 48.6875rem) {
-  .template--marine__pledges-sunburst {
-    padding-top: 0;
-    width: 60%;
-  }
-}
-
-@media only screen and (min-width: 65rem) {
-  .template--marine__pledges-sunburst {
-    width: 64%;
   }
 }
 
@@ -8219,55 +8192,82 @@ sup {
   }
 }
 
-.t--marine__section {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
+.template--marine__pledges {
   position: relative;
 }
 
-@media only screen and (min-width: 768px) {
-  .t--marine__section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-.t--marine__section__introduction {
-  margin-bottom: 2.25em;
+.template--marine__pledges-title {
+  border-bottom: solid 0.0625rem #444955;
+  color: #444955;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.25rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
-  .t--marine__section__introduction {
-    margin-bottom: 3.25em;
+  .template--marine__pledges-title {
+    margin-bottom: 1.5rem;
+    padding-top: 1.3125rem;
+    padding-bottom: 0.375rem;
   }
 }
 
-.t--marine__section__introduction p {
-  margin-bottom: 0.875rem;
+@media only screen and (min-width: 65rem) {
+  .template--marine__pledges-title {
+    margin-bottom: 2.25rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
-.t--marine__counter {
-  background: rgba(255, 255, 255, 0.4);
-  margin-top: 2.5rem;
+.template--marine__pledges-title h4 {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.template--marine__pledges-title a {
+  text-decoration: none;
+}
+
+.template--marine__pledges-counter {
   padding: 1.25rem 0 1.25rem 1.5rem;
+  width: 14.125rem;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.t--marine__map-disclaimer {
-  color: #729099;
-  font-family: 'MuseoSans';
-  font-size: 0.5rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-  text-align: center;
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine__pledges-counter {
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine__pledges-counter {
+    width: 24.625rem;
+  }
+}
+
+.template--marine__pledges-sunburst {
+  padding-top: 8.625rem;
+  width: 100%;
 }
 
 @media only screen and (min-width: 48.6875rem) {
-  .t--marine__map-disclaimer {
-    font-size: 0.8125rem;
+  .template--marine__pledges-sunburst {
+    padding-top: 0;
+    width: 60%;
   }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine__pledges-sunburst {
+    width: 64%;
+  }
+}
+
+.template--marine__footer .reference__body {
+  margin-bottom: 0.875rem;
 }
 
 .template--site .header__links {
