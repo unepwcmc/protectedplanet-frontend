@@ -1529,6 +1529,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-right: 0.5rem;
 }
 
+.button--green-link {
+  color: #71a32b;
+}
+
+.button--green-link:hover {
+  text-decoration: underline;
+}
+
 .button--grey {
   font-weight: 700;
   border: solid 0.125rem #d8d8d8;
@@ -1560,6 +1568,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .button--fullscreen:hover {
   background-color: #f2f2f2;
+}
+
+.button--external {
+  color: #71a32b;
+  text-decoration: none;
+  display: block;
+}
+
+.button--external:before {
+  content: '\f14c';
+  margin-right: 0.5rem;
+}
+
+.button--external:hover {
+  text-decoration: underline;
 }
 
 .disclaimer {
@@ -6138,12 +6161,6 @@ a.btn:hover {
   width: 125px;
 }
 
-.marine-download {
-  top: -120px;
-  left: 650px;
-  z-index: 400;
-}
-
 .btn-map-download {
   text-align: center;
   font-family: 'MuseoSlab';
@@ -6157,14 +6174,6 @@ a.btn:hover {
   box-sizing: border-box;
   border-radius: 0.3125rem;
   color: #ffffff;
-}
-
-.btn-map-download.btn-map-download--marine {
-  background-color: #729099;
-}
-
-.btn-map-download.btn-map-download--marine:hover {
-  background-color: #90BDC4;
 }
 
 .btn-map-download:hover {
@@ -7777,21 +7786,22 @@ sup {
   font-family: 'MuseoSans';
 }
 
-.template--marine a {
+.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link) {
   color: #90BDC4;
   text-decoration: underline;
 }
 
-.template--marine a:hover {
+.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link):hover {
   text-decoration: none;
 }
 
-.template--marine a.leaflet-control-zoom-in, .template--marine a.leaflet-control-zoom-out {
+.template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link).leaflet-control-zoom-in, .template--marine a:not(.button--external):not(.button--green-link):not(.info-box__link).leaflet-control-zoom-out {
   text-decoration: none;
 }
 
 .template--marine .section--block-color a {
-  color: white;
+  color: #444955;
+  text-decoration: underline;
 }
 
 .template--marine__fact-padding-top {
@@ -7856,6 +7866,10 @@ sup {
     flex: 0 0 25%;
     position: static;
   }
+}
+
+.template--marine__footer .reference__body {
+  margin-bottom: 0.875rem;
 }
 
 .template--marine .infographic {
@@ -8700,6 +8714,10 @@ sup {
 
 .u-mono {
   font-family: monospace;
+}
+
+.u-font-icon, .button--external:before {
+  font-family: FontAwesome;
 }
 
 .u-alt-font {
