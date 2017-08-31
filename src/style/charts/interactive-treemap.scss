@@ -24,34 +24,43 @@
   }
 
     &__list-item {
-      border: solid rem-calc(1) $grey-5;
       font-size: rem-calc(14);
-      padding: rem-calc(14 12 2 12);
+      padding: rem-calc(14 12 16 12);
 
       &:nth-child(even){ background-color: $grey-5; }
+
+      @include breakpoint($medium){ padding: rem-calc(14 12 2 12); }
     }
 
-      &__info {
-        line-height: 1.2;
-        margin-top: rem-calc(30);
-        padding: rem-calc(22 18);
+      &__info { 
+        line-height: 1.2; 
+
+        @include breakpoint($medium){
+          margin-bottom: rem-calc(16);
+        }
+
+        @include breakpoint($large){ margin-right: rem-calc(24); }
       }
 
       &__title {
         border-bottom: solid rem-calc(1) $grey-55; 
         color: $blue--marine-4;
-        font-size: rem-calc(20);
+        font-size: rem-calc(24);
         line-height: 1;
         margin-bottom: rem-calc(16); 
         padding-bottom: rem-calc(6);
 
         @include breakpoint($medium){ 
-          font-size: rem-calc(40);
+          font-size: rem-calc(28);
+          margin-bottom: rem-calc(20); 
+          padding-bottom: rem-calc(8);
+        }
+
+        @include breakpoint($large){ 
+          font-size: rem-calc(34);
           margin-bottom: rem-calc(26); 
           padding-bottom: rem-calc(10);
         }
-
-        a { text-decoration: none; }
       }
 
       &__stat {
@@ -64,21 +73,23 @@
 
         &__percent {
           color: $marine-accent-color;
-          font-size: rem-calc(30);
+          font-size: rem-calc(20);
 
           display: block;
-
-          @include breakpoint($medium){ font-size: rem-calc(50); }
+          
+          @include breakpoint($medium){ font-size: rem-calc(34); }
+          @include breakpoint($large){ font-size: rem-calc(46); }
         }
 
         &__km {
           color: $marine-accent-color;
-          font-size: rem-calc(18);
+          font-size: rem-calc(14);
           margin-bottom: rem-calc(8);
 
           display: block;
-
-          @include breakpoint($medium){ font-size: rem-calc(30); }
+          
+          @include breakpoint($medium){ font-size: rem-calc(22); }
+          @include breakpoint($large){ font-size: rem-calc(28); }
         }
   
   //----------------------------------------
@@ -104,9 +115,5 @@
   &__instruction {
     font-size: rem-calc(15);
     margin-top: rem-calc(10);
-
-    display: none;
-
-    @include breakpoint($medium){ display: block; }
   }
 }

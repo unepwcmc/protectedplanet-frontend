@@ -129,8 +129,6 @@ $marine-accent-color: $orange--lighest;
   &__pledges { 
     position: relative;
 
-    @include breakpoint($medium){ margin-top: rem-calc(50); }
-
     &-title {
       @extend .u-text-sans;
       border-bottom: solid rem-calc(1) $blue--marine-5;
