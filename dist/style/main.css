@@ -7681,6 +7681,12 @@ table {
   flex: 0 0 50%;
 }
 
+@media only screen and (max-width: 768px) {
+  .flex-column-2 {
+    flex: 0 0 100%;
+  }
+}
+
 .flex-1-half {
   flex: 0 0 100%;
   margin-bottom: 0.625rem;

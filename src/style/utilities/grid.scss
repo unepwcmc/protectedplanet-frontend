@@ -54,7 +54,7 @@
 
 @include b(one-fourths) {
   @include span-columns(3);
-  
+
   @media (max-width: 769px) { @include span-columns(12); }
 }
 
@@ -81,7 +81,7 @@
 }
 
 .space-around {
-  @include justify-content(space-around); 
+  @include justify-content(space-around);
 }
 
 @include b(right-padded) {
@@ -91,7 +91,7 @@
 .justify-content-between { @include justify-content(space-between); }
 .justify-content-center { @include justify-content(center); }
 
-.justify-content-end { 
+.justify-content-end {
   @extend .justify-content-center;
   @include breakpoint($large){ @include justify-content(flex-end); }
 }
@@ -117,11 +117,11 @@
 //----------------------------------------
 // column spacing
 //----------------------------------------
-.flex-column-gap--left { 
+.flex-column-gap--left {
   @include breakpoint($medium){ padding-left: rem-calc(12); }
 }
 
-.flex-column-gap--right { 
+.flex-column-gap--right {
   @include breakpoint($medium){ padding-right: rem-calc(12); }
 }
 
@@ -130,14 +130,16 @@
 //----------------------------------------
 .flex-column-2 {
   flex: 0 0 50%;
+
+  @include only-mobile { flex: 0 0 100%; }
 }
 
 .flex-1-half {
   flex: 0 0 100%;
   margin-bottom: rem-calc(10);
-  
-  @include breakpoint($medium){ 
-    flex: 0 0 50%; 
+
+  @include breakpoint($medium){
+    flex: 0 0 50%;
     margin-bottom: 0;
   }
 }
@@ -187,17 +189,17 @@
   flex: 0 0 20%;
 }
 
-.flex-2-fiths { 
+.flex-2-fiths {
   @include only-mobile { flex: 0 0 100%; }
 
-  flex: 0 0 40%; 
+  flex: 0 0 40%;
 }
 
 
-.flex-3-fiths { 
+.flex-3-fiths {
   @include only-mobile { flex: 0 0 100%; }
 
-  flex: 0 0 60%; 
+  flex: 0 0 60%;
 }
 
 .flex-4-fiths {
@@ -210,7 +212,7 @@
 // mobile
 //----------------------------------------
 .flex-column-mobile {
-  @media only screen and (max-width: $small) { 
+  @media only screen and (max-width: $small) {
     flex: 0 0 100%;
     margin-bottom: rem-calc(10);
   }
