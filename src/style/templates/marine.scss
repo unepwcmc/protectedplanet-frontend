@@ -70,6 +70,7 @@ $marine-accent-color: $orange--lighest;
 
     &__section__introduction {
       @extend .text--standard;
+      line-height: 1.7;
       margin-bottom: 2.25em;
 
       @include breakpoint($medium){ margin-bottom: 3.25em; }

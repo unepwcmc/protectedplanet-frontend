@@ -7889,6 +7889,7 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
 }
 
 .template--marine__section__introduction {
+  line-height: 1.7;
   margin-bottom: 2.25em;
 }
 
