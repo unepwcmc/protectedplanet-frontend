@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .flex-row-wrap, .template--site .section--factsheet {
+.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .flex-row-wrap, .template--site .section--factsheet, .flex-row-responsive {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -4498,6 +4498,18 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   background-color: #699728;
 }
 
+.navbar__element button {
+  background-color: #71a32b;
+}
+
+.navbar__element button.active, .navbar__element button:hover {
+  background-color: #83af46;
+}
+
+.navbar__element button:active {
+  background-color: #699728;
+}
+
 .fact {
   margin-bottom: .666em;
 }
@@ -7665,6 +7677,16 @@ table {
   flex-flow: row wrap;
 }
 
+.flex-row-responsive {
+  flex-flow: row wrap;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .flex-row-responsive {
+    flex-flow: row nowrap;
+  }
+}
+
 @media only screen and (min-width: 48.6875rem) {
   .flex-column-gap--left {
     padding-left: 0.75rem;
@@ -7688,7 +7710,7 @@ table {
 
 @media only screen and (min-width: 48.6875rem) {
   .flex-1-half {
-    flex: 0 0 50%;
+    flex: 0 1 50%;
     margin-bottom: 0;
   }
 }
@@ -7906,6 +7928,7 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   background-size: cover;
   padding: 1.875rem 0;
   position: relative;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 48.6875rem) {
@@ -8338,12 +8361,24 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   }
 }
 
+.d3-horizontal-bar-chart {
+  width: 100%;
+  position: relative;
+}
+
 .d3-horizontal-bar-chart-animate .bar {
   animation: fullScaleX .8s forwards linear;
 }
 
 .d3-horizontal-bar-chart-animate .bar-label {
   animation: fullOpacity .2s .8s forwards linear;
+}
+
+.d3-horizontal-bar-chart__svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .d3-horizontal-bar-chart .background {
@@ -8428,7 +8463,15 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
 }
 
 .v-interactive-multiline__chart {
+  width: 100%;
   position: relative;
+}
+
+.v-interactive-multiline__svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .v-interactive-multiline__axis .domain {
@@ -8495,8 +8538,21 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   }
 }
 
+@media screen\0 {
+  .v-interactive-multiline__line {
+    opacity: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
 .v-interactive-multiline__line-active {
   animation: dashOffsetNone 2s linear forwards 1;
+}
+
+@media screen\0 {
+  .v-interactive-multiline__line-active {
+    animation: fullOpacity .1s linear forwards;
+  }
 }
 
 .v-interactive-multiline__datapoint {
@@ -8507,8 +8563,20 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   transform: scale(0);
 }
 
+@media screen\0 {
+  .v-interactive-multiline__datapoint {
+    opacity: 0;
+  }
+}
+
 .v-interactive-multiline__datapoints-active .v-interactive-multiline__datapoint {
   animation: fullScaleXY .2s linear forwards 1s;
+}
+
+@media screen\0 {
+  .v-interactive-multiline__datapoints-active .v-interactive-multiline__datapoint {
+    animation: fullOpacity .1s linear forwards;
+  }
 }
 
 .v-interactive-multiline__tooltip-wrapper {
@@ -8683,6 +8751,18 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   margin-top: 0.625rem;
 }
 
+.d3-treemap {
+  width: 100%;
+  position: relative;
+}
+
+.d3-treemap__svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .d3-sunburst {
   margin: 0 auto 1rem auto;
   width: 60%;
@@ -8694,6 +8774,13 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
     margin: 0 auto;
     width: 100%;
   }
+}
+
+.d3-sunburst__svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .d3-sunburst__info-wrapper {

@@ -66,6 +66,18 @@
 //----------------------------------------
 // flex positioning
 //----------------------------------------
+// ***************************************
+// NB: IMPORTANT NOTE
+// ***************************************
+//
+// Flexbox has unexpected results in IE
+// it calculates percentage width using
+// the box-sizing: content-box instead of
+// border-box. 
+// 
+// If you are using borders or padding make 
+// sure you test it in IE before deploying
+//----------------------------------------
 
 @include b(flex-start) {
   @extend %flexbox;
@@ -114,6 +126,13 @@
   @include flex-flow(row wrap);
 }
 
+.flex-row-responsive {
+  @extend %flexbox;
+  flex-flow: row wrap;    
+
+  @include breakpoint($medium){ flex-flow: row nowrap; } //required for IE 11
+}
+
 //----------------------------------------
 // column spacing
 //----------------------------------------
@@ -137,7 +156,7 @@
   margin-bottom: rem-calc(10);
   
   @include breakpoint($medium){ 
-    flex: 0 0 50%; 
+    flex: 0 1 50%; //shrink true required for IE
     margin-bottom: 0;
   }
 }
