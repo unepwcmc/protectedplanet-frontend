@@ -60,6 +60,19 @@ $marine-accent-color: $orange--lighest;
   //----------------------------------------
   // sections
   //----------------------------------------
+  .container--profile {
+    @media only screen and (max-width: $medium){ 
+      padding-left: rem-calc(18);
+      padding-right: rem-calc(18);
+    }
+
+    @media only screen and (min-width: $medium) and (max-width: $large){ 
+      padding-left: rem-calc(38);
+      padding-right: rem-calc(38);
+      width: 100%;
+    }
+  }
+
   .section--block-color {
     @extend .u-bg--marine-2;
 

@@ -7879,6 +7879,21 @@ sup {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 47.6875rem) {
+  .template--marine .container--profile {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 47.6875rem) and (max-width: 64rem) {
+  .template--marine .container--profile {
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
+    width: 100%;
+  }
+}
+
 .template--marine .section--block-color a {
   color: #444955;
   text-decoration: underline;
