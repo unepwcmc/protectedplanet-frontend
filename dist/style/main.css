@@ -7966,9 +7966,16 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   background: rgba(255, 255, 255, 0.4);
   margin-top: 2.5rem;
   padding: 1.25rem 0 1.25rem 1.5rem;
+  width: 18.125rem;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine__counter {
+    width: 26.875rem;
+  }
 }
 
 .template--marine__map-disclaimer {
