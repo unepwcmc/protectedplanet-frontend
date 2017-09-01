@@ -7857,22 +7857,35 @@ sup {
   font-family: 'MuseoSans';
 }
 
-a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.info-box__link):not(.v-sticky-nav__link):not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out):not(.result .template--marine) {
+.template--marine a {
   color: #90BDC4;
   text-decoration: underline;
 }
 
-a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.info-box__link):not(.v-sticky-nav__link):not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out):not(.result .template--marine):hover {
+.template--marine a:hover {
   text-decoration: none;
 }
 
-.template--marine .button--basic-link {
-  color: #90BDC4;
+.template--marine a.button--basic-link {
+  text-decoration: none;
 }
 
-.template--marine a.leaflet-control-zoom-in,
-.template--marine a.leaflet-control-zoom-out {
+.template--marine a.button--basic-link:hover {
+  text-decoration: underline;
+}
+
+.template--marine a.leaflet-control-zoom-in, .template--marine a.leaflet-control-zoom-out {
   color: #444955;
+  text-decoration: none;
+}
+
+.template--marine .section--block-color a {
+  color: #444955;
+  text-decoration: underline;
+}
+
+.template--marine .section--block-color a:hover {
+  text-decoration: none;
 }
 
 .template--marine__section {
@@ -8301,6 +8314,11 @@ a:not(.button--external):not(.button--green-link):not(.button--basic-link):not(.
   .template--marine__pledges-sunburst {
     width: 64%;
   }
+}
+
+.template--marine__footer a {
+  color: #71a32b;
+  text-decoration: none;
 }
 
 .template--marine__footer .reference__body {
