@@ -38,10 +38,6 @@ $marine-accent-color: $orange--lighest;
     font-family: 'MuseoSans';
   }
   
-  a:not(, .button--green-link, .button--basic-link, .info-box__link, .v-sticky-nav__link, .leaflet-control-zoom-in, .leaflet-control-zoom-out, .result &) {
-    
-  }
-
   a {
     color: $blue--marine-3;
     text-decoration: underline;
