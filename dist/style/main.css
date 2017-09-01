@@ -8316,6 +8316,35 @@ sup {
   }
 }
 
+.template--marine__greenlist-result {
+  padding-bottom: 1.875rem;
+  flex: 0 0 100%;
+  width: auto;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .template--marine__greenlist-result {
+    padding-right: 1.875rem;
+    flex: 0 1 50%;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .template--marine__greenlist-result {
+    padding: 0 2.5rem 2.5rem 0;
+    flex: 0 0 33%;
+  }
+}
+
+.template--marine .result {
+  margin: 0;
+  width: 100%;
+}
+
+.template--marine .result img {
+  width: 100%;
+}
+
 .template--marine .inner-result a {
   color: #71a32b;
   text-decoration: none;
