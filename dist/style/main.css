@@ -8316,6 +8316,16 @@ sup {
   }
 }
 
+.template--marine .inner-result a {
+  color: #71a32b;
+  text-decoration: none;
+}
+
+.template--marine .inner-result p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .template--marine__footer a {
   color: #71a32b;
   text-decoration: none;

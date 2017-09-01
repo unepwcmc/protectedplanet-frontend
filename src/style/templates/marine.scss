@@ -125,7 +125,8 @@ $marine-accent-color: $orange--lighest;
   @import 'marine/map';
   @import 'marine/ecoregions';
   @import 'marine/distribution';
-  @import 'marine/pledges';  
+  @import 'marine/pledges';
+  @import 'marine/greenlist';
 
   //----------------------------------------
   // footer
@@ -135,7 +136,7 @@ $marine-accent-color: $orange--lighest;
       color: $green; 
       text-decoration: none;
     }
-    
+
     .reference__body { margin-bottom: rem-calc(14); }
   }
 }
