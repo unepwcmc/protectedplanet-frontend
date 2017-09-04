@@ -8854,13 +8854,16 @@ sup {
 }
 
 .d3-sunburst {
-  margin: 0 auto 1rem auto;
-  width: 60%;
   position: relative;
 }
 
+.d3-sunburst-wrapper {
+  margin: 0 auto 1rem auto;
+  width: 60%;
+}
+
 @media only screen and (min-width: 48.6875rem) {
-  .d3-sunburst {
+  .d3-sunburst-wrapper {
     margin: 0 auto;
     width: 100%;
   }
