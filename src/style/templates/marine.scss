@@ -49,12 +49,6 @@ $marine-accent-color: $orange--lighest;
 
       &:hover { text-decoration: underline; }
     }
-
-    &.leaflet-control-zoom-in,
-    &.leaflet-control-zoom-out { 
-      color: $blue--marine-5; 
-      text-decoration: none;
-    }
   }
 
   //----------------------------------------
@@ -81,6 +75,13 @@ $marine-accent-color: $orange--lighest;
       text-decoration: underline;
 
       &:hover { text-decoration: none; }
+
+      &.leaflet-control-zoom-in,
+      &.leaflet-control-zoom-out { 
+        text-decoration: none;
+
+        &:hover { background-color: lighten($blue--marine-1, 12%); }
+      }
     }
   }
 
