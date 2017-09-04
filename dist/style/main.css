@@ -8163,6 +8163,12 @@ sup {
 
 .template--marine .infographic__bar--pa {
   background-color: #F5A623;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.template--marine .infographic__bar--pa--animate {
+  animation: fullScaleX .8s linear forwards;
 }
 
 .template--marine .infographic__bar--global {
