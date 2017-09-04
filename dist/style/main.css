@@ -8344,10 +8344,22 @@ sup {
   }
 }
 
+@media (min-width: 48.6875rem \0) {
+  .template--marine__greenlist-result {
+    flex-basis: calc(50% - 30px);
+  }
+}
+
 @media only screen and (min-width: 65rem) {
   .template--marine__greenlist-result {
     padding: 0 2.5rem 2.5rem 0;
     flex: 0 0 33%;
+  }
+}
+
+@media (min-width: 65rem \0) {
+  .template--marine__greenlist-result {
+    flex-basis: calc(33% - 40px);
   }
 }
 

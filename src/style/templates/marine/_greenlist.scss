@@ -11,9 +11,17 @@
       flex: 0 1 50%;
     }
 
+    @media (min-width: ($medium + 1)\0) { 
+      flex-basis: calc(50% - 30px); //target IE11
+    }
+
     @include breakpoint($large){
       padding: rem-calc(0 40 40 0);
       flex: 0 0 33%;
+    }
+
+    @media (min-width: ($large + 1)\0) { 
+      flex-basis: calc(33% - 40px); //target IE11
     }
   }
 }
