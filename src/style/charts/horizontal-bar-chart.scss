@@ -32,6 +32,8 @@
       fill: $white;
       font-size: rem-calc(14);
       opacity: 0;
+
+      &--dark { fill: #666666; }
     }
 
     .gridlines {

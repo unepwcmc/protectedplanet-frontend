@@ -8482,6 +8482,10 @@ sup {
   opacity: 0;
 }
 
+.d3-horizontal-bar-chart .bar-label--dark {
+  fill: #666666;
+}
+
 .d3-horizontal-bar-chart .gridlines .domain {
   stroke-width: 0;
 }
