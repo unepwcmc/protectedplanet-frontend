@@ -8216,6 +8216,10 @@ sup {
   }
 }
 
+.template--marine .infographic__km sup {
+  font-size: .6em;
+}
+
 .template--marine .infographic__percent {
   height: 100%;
   position: absolute;
