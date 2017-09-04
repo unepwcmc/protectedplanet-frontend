@@ -117,3 +117,23 @@
     margin-top: rem-calc(10);
   }
 }
+
+//----------------------------------------
+// treemap component
+//----------------------------------------
+.d3-treemap {
+  // hack to get the svg to scale in IE11
+  width: 100%;
+  
+  position: relative;
+  // end hack
+  
+  &__svg { 
+    // hack to get the svg to scale in IE11
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // end hack
+  }
+}

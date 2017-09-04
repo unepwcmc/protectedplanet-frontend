@@ -38,23 +38,50 @@ $marine-accent-color: $orange--lighest;
     font-family: 'MuseoSans';
   }
   
-  a:not(.button--external, .button--green-link, .button--basic-link, .info-box__link, .v-sticky-nav__link, .leaflet-control-zoom-in, .leaflet-control-zoom-out, .result &) {
+  a {
     color: $blue--marine-3;
     text-decoration: underline;
 
     &:hover { text-decoration: none; }
-  }
-  
-  .button--basic-link { color: $blue--marine-3; } 
 
-  a.leaflet-control-zoom-in,
-  a.leaflet-control-zoom-out { color: $blue--marine-5; }
+    &.button--basic-link {
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+    }
+
+    &.leaflet-control-zoom-in,
+    &.leaflet-control-zoom-out { 
+      color: $blue--marine-5; 
+      text-decoration: none;
+    }
+  }
 
   //----------------------------------------
   // sections
   //----------------------------------------
+  .container--profile {
+    @media only screen and (max-width: $medium){ 
+      padding-left: rem-calc(18);
+      padding-right: rem-calc(18);
+    }
+
+    @media only screen and (min-width: $medium) and (max-width: $large){ 
+      padding-left: rem-calc(38);
+      padding-right: rem-calc(38);
+      width: 100%;
+    }
+  }
+
   .section--block-color {
     @extend .u-bg--marine-2;
+
+    a { 
+      color: $blue--marine-5; 
+      text-decoration: underline;
+
+      &:hover { text-decoration: none; }
+    }
   }
 
   &__section {
@@ -70,6 +97,7 @@ $marine-accent-color: $orange--lighest;
 
     &__section__introduction {
       @extend .text--standard;
+      line-height: 1.7;
       margin-bottom: 2.25em;
 
       @include breakpoint($medium){ margin-bottom: 3.25em; }
@@ -106,12 +134,18 @@ $marine-accent-color: $orange--lighest;
   @import 'marine/map';
   @import 'marine/ecoregions';
   @import 'marine/distribution';
-  @import 'marine/pledges';  
+  @import 'marine/pledges';
+  @import 'marine/greenlist';
 
   //----------------------------------------
   // footer
   //----------------------------------------
   &__footer {
+    a {
+      color: $green; 
+      text-decoration: none;
+    }
+
     .reference__body { margin-bottom: rem-calc(14); }
   }
 }

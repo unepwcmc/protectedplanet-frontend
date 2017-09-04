@@ -5,6 +5,8 @@
 
   position: relative;
 
+  flex-direction: column; //needed for IE11
+
   @include breakpoint($medium){ 
     height: rem-calc(600);
     padding: 0;

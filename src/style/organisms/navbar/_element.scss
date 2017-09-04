@@ -72,5 +72,12 @@
 
   &.active, &:hover { background-color: $navbar-element-hover__bg-color; }
   &:active { background-color: $navbar-element-active__bg-color; }
+
+  button { 
+    background-color: $navbar__bg-color; //required for IE11
+    
+    &.active, &:hover { background-color: $navbar-element-hover__bg-color; } //required for IE11
+    &:active { background-color: $navbar-element-active__bg-color; } //required for IE11
+  }
 }
 
