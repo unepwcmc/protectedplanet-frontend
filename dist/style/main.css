@@ -7874,11 +7874,6 @@ sup {
   text-decoration: underline;
 }
 
-.template--marine a.leaflet-control-zoom-in, .template--marine a.leaflet-control-zoom-out {
-  color: #444955;
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 47.6875rem) {
   .template--marine .container--profile {
     padding-left: 1.125rem;
@@ -7901,6 +7896,14 @@ sup {
 
 .template--marine .section--block-color a:hover {
   text-decoration: none;
+}
+
+.template--marine .section--block-color a.leaflet-control-zoom-in, .template--marine .section--block-color a.leaflet-control-zoom-out {
+  text-decoration: none;
+}
+
+.template--marine .section--block-color a.leaflet-control-zoom-in:hover, .template--marine .section--block-color a.leaflet-control-zoom-out:hover {
+  background-color: #edf8f9;
 }
 
 .template--marine__section {
