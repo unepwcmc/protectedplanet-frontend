@@ -8844,12 +8844,12 @@ sup {
 }
 
 .v-interactive-treemap__treemap {
-  display: none;
+  margin-bottom: 1.25rem;
 }
 
 @media only screen and (min-width: 48.6875rem) {
   .v-interactive-treemap__treemap {
-    display: block;
+    margin-bottom: 0;
   }
 }
 

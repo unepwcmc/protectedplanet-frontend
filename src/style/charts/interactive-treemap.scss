@@ -96,9 +96,9 @@
   // treemap
   //----------------------------------------
   &__treemap {
-    display: none;
+    margin-bottom: rem-calc(20);
 
-    @include breakpoint($medium){ display: block; }
+    @include breakpoint($medium){ margin-bottom: 0; }
   }
 
     &__cell {
