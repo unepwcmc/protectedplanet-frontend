@@ -77,11 +77,23 @@ $marine-accent-color: $orange--lighest;
       &:hover { text-decoration: none; }
 
       &.leaflet-control-zoom-in,
-      &.leaflet-control-zoom-out { 
+      &.leaflet-control-zoom-out {
         text-decoration: none;
 
         &:hover { background-color: lighten($blue--marine-1, 12%); }
       }
+
+      &.leaflet-popup-close-button { 
+        text-decoration: none;
+
+        &:hover { color: lighten($blue--marine-5, 12%); }
+      }
+    }
+
+    .leaflet-popup-content a { 
+      text-decoration: none;
+
+      &:hover { color: lighten($blue--marine-5, 10%); }   
     }
   }
 
