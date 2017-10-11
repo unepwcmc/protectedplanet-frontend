@@ -48,6 +48,10 @@
   }
 
   @content;
+
+  &--no-underline {
+    &:hover { text-decoration: none; }
+  }
 }
 
 @include b(link-with-icon) {
