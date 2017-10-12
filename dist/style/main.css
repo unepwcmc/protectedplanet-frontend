@@ -4906,15 +4906,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  width: 100%;
-  padding-left: 1.5rem;
-  font-size: 0.938em;
   background-color: #71a32b;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 48.6875rem) {
   .footer {
-    padding: 1rem 1.25rem;
+    flex-direction: row;
+    padding: 0.1875rem 1.5rem;
+    text-align: left;
   }
 }
 
@@ -4924,25 +4928,50 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.3125rem;
+  align-content: center;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer__element--right:nth-child(2) {
-  margin-left: auto;
+@media only screen and (min-width: 48.6875rem) {
+  .footer__element {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
 }
 
 .footer__element--with-separator {
-  padding-left: 1rem;
   border-left: solid 0.125rem #699728;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer__element {
-    margin-right: 1rem;
-  }
+  padding-left: 1rem;
+  margin-left: 0.75rem;
 }
 
 .footer__element--logos {
   min-width: 5rem;
+}
+
+.footer__element--logos .unepwcmc-logo {
+  width: 6.25rem;
+  height: 2.125rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .footer__element--logos .unepwcmc-logo {
+    width: 7.5625rem;
+    height: 3.25rem;
+  }
+}
+
+.footer__element--logos .iucn-logo {
+  width: 2.375rem;
+  height: 2.375rem;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .footer__element--logos .iucn-logo {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 
 .form, .s-form {
