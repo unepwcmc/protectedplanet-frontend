@@ -1,10 +1,8 @@
 @include b(circle-story) {
-  height: rem-calc(240);
+  padding: rem-calc(0 0 28 0);
 
-  @include only-mobile {
-    height: initial;
-    margin-bottom: rem-calc(32);
-  }
+  @include breakpoint($medium){ padding: rem-calc(0 26 40 0); }
+  @include breakpoint($large){ padding: rem-calc(0 26 90 0); }
 
   @include m(flex) {
     @include flexbox;

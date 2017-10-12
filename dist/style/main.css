@@ -2381,13 +2381,18 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .circle-story {
-  height: 15rem;
+  padding: 0 0 1.75rem 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 48.6875rem) {
   .circle-story {
-    height: initial;
-    margin-bottom: 2rem;
+    padding: 0 1.625rem 2.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .circle-story {
+    padding: 0 1.625rem 5.625rem 0;
   }
 }
 
@@ -2421,10 +2426,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-size: 1rem;
   line-height: 1.3125rem;
   padding-left: 0.5rem;
-}
-
-.circle-story__circle {
-  height: 100%;
 }
 
 .circle-story__circle--above {
@@ -4312,15 +4313,15 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .section {
   max-width: 80rem;
-  padding: 0 7rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 65rem) {
   .section {
-    padding: 0 1rem;
+    padding: 0 7rem;
   }
 }
 
