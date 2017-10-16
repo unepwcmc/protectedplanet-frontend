@@ -1,6 +1,4 @@
 @include e(circle) {
-  height: 100%;
-
   @include m(above) {
     margin: rem-calc(28 0);
     margin-right: 0;

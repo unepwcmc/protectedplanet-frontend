@@ -1,12 +1,10 @@
 @include b(section) {
   max-width: $max-width--desktop;
-  padding: rem-calc(0 112);
+  padding: rem-calc(0 16);
   margin-bottom: rem-calc(16);
   margin: {left: auto; right: auto;}
 
-  @include only-mobile {
-    padding: rem-calc(0 16);
-  }
+  @include breakpoint($large){ padding: rem-calc(0 112); }
 
   @include m(padding-top) {
     padding-top: rem-calc(32);
