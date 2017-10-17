@@ -167,21 +167,21 @@
 // 3 columns
 //----------------------------------------
 .flex-column-3 {
-  @include only-mobile { flex: 0 0 100%; }
+  flex: 0 0 100%;
 
-  flex: 0 0 33.3%;
+  @include breakpoint($medium){ flex: 0 0 33.3%; }
 }
 
 .flex-1-third {
-  @include only-mobile { flex: 0 0 100%; }
+  flex: 0 0 100%;
 
-  flex: 0 0 33.3%;
+  @include breakpoint($medium){ flex: 0 0 33.3%; }
 }
 
 .flex-2-thirds {
-  @include only-mobile { flex: 0 0 100%; }
+  flex: 0 0 100%;
 
-  flex: 0 0 66.6%;
+  @include breakpoint($medium){ flex: 0 0 66.6%; }
 }
 
 //----------------------------------------
