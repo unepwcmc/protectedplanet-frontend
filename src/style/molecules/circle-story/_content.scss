@@ -1,7 +1,0 @@
-@include e(content) {
-  margin-bottom: rem-calc(16);
-
-  @include only-mobile {
-    display: inline;
-  }
-}

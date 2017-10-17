@@ -1,5 +1,0 @@
-@include e(body) {
-  @include text(body, thin);
-
-  padding-left: rem-calc(8);
-}

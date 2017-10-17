@@ -1,6 +1,0 @@
-@include e(title) {
-  @include text(medium, bold);
-  @include color($green);
-
-  margin-bottom: rem-calc(4);
-}
