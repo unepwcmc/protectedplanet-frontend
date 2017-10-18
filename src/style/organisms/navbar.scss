@@ -16,6 +16,8 @@
 // burger
 //----------------------------------------
   &__burger {
+    margin-left: auto; // required for IE11
+
     &.is-open .burger-icon { @extend %burger-open; }
 
     &.is-open:hover .burger-icon { background-color: transparent; }
