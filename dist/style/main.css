@@ -1483,7 +1483,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .header--section, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color {
+.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .header--section, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color, .select-with-content {
   color: #666666;
 }
 
@@ -3244,6 +3244,32 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .reference__link-icon {
   color: #71a32b;
   margin-right: 0.5rem;
+}
+
+.select-with-content {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+
+.select-with-content select {
+  appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
+.select-with-content__content {
+  padding: 1.25rem 0 0.625rem 0;
+}
+
+.select-with-content__text {
+  margin: 0.5rem 0 1.375rem 0;
+}
+
+@media only screen and (min-width: 65rem) {
+  .select-with-content__text {
+    margin: 1rem 0 1.375rem 0;
+  }
 }
 
 .search-bar {
