@@ -13,7 +13,7 @@
   @include m(search-dropdown) {
     background-color: $white;
 
-    left: initial;
+    left: auto; // needs to be auto for IE11
     right: 0;
 
     min-width: rem-calc(480);

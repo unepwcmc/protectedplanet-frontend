@@ -2494,7 +2494,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .dropdown--search-dropdown {
   background-color: #ffffff;
-  left: initial;
+  left: auto;
   right: 0;
   min-width: 30rem;
   padding-bottom: initial;
@@ -4369,10 +4369,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   .navbar__menu {
     border: none;
     flex-direction: row;
-    position: initial;
-    top: unset;
-    right: unset;
-    left: unset;
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
   }
 }
 
@@ -4407,6 +4407,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .navbar__element.active, .navbar__element:hover {
   background-color: #83af46;
   text-decoration: none;
+}
+
+.navbar__element.active .navbar__submenu__title, .navbar__element:hover .navbar__submenu__title {
+  background-color: #83af46;
 }
 
 .navbar__element.is-active {
@@ -4464,6 +4468,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   flex-direction: column;
 }
 
+.navbar__element--search {
+  background-color: transparent;
+}
+
+.navbar__element--search.is-open {
+  background-color: white;
+}
+
 .navbar__element--for-search-dropdown {
   min-width: 7.375rem;
 }
@@ -4514,6 +4526,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .navbar__submenu__title {
+  background-color: #71a32b;
   width: 100%;
 }
 
