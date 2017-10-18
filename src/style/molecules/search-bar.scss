@@ -30,8 +30,7 @@
       &:after {
         @include fa(search);
         position: absolute;
-        top: 0;
-        line-height: rem-calc(40);
+        top: rem-calc(12); // required for IE11
         right: 0;
         margin-right: 5%;
         color: $grey-15;
