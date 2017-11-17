@@ -18,7 +18,7 @@
   &--linkedin { @include social-icon(#0077b5,'\f0e1'); }
   &--twitter { @include social-icon(#1da1f2,'\f099'); }
   &--email { 
-    @include social-icon(#ffbb00, '\f0e0'); 
+    @include social-icon(#00a2e8, '\f0e0'); 
     font-size: rem-calc(17);
   }
 
@@ -27,8 +27,13 @@
 //----------------------------------------
   &--sharing {
     position: absolute;
-    top: rem-calc(8);
-    right: 0;
+    top: rem-calc(5);
+    right: rem-calc(4);
+    
+    @include breakpoint($medium){
+      top: rem-calc(8);
+      right: rem-calc(6);
+    }
   }
 
     &--share {
