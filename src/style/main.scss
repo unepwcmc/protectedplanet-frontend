@@ -7,6 +7,9 @@
 // flexbox
 @import '../../../sass-flex-mixin/flexbox';
 
+// fonts
+@import '../../../font-awesome/scss/font-awesome';
+
 // forms
 @import '../../../select2/select2';
 
@@ -74,6 +77,7 @@
 @import 'molecules/reference';
 @import 'molecules/select-with-content';
 @import 'molecules/search-bar';
+@import 'molecules/social';
 @import 'molecules/stats';
 @import 'molecules/sticky-nav';
 @import 'molecules/table';
