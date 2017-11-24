@@ -6715,6 +6715,63 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   background-color: #90BDC4;
 }
 
+.sticky-tab {
+  background-color: white;
+  border: solid 0.0625rem #444955;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-right-radius: 0.1875rem;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: -23.5625rem;
+  z-index: 2000;
+  transition: left .2s ease-in-out;
+}
+
+@media only screen and (min-width: 48.6875rem) {
+  .sticky-tab {
+    display: block;
+  }
+}
+
+.sticky-tab--open {
+  left: 0;
+}
+
+.sticky-tab__icon {
+  background-color: #444955;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+}
+
+.sticky-tab__icon:hover {
+  background-color: #393d47;
+}
+
+.sticky-tab__icon:before {
+  color: white;
+  content: '\f1e0';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.125rem;
+  position: relative;
+  top: 0.4375rem;
+  left: 0.4375rem;
+}
+
+.sticky-tab--open .sticky-tab__icon:before {
+  content: '\f053';
+  top: 0.5rem;
+  left: 0.5625rem;
+}
+
+.sticky-tab__text {
+  padding: 0 0.375rem;
+  display: inline-block;
+  transform: translateY(6px);
+}
+
 .table, .s-article table {
   width: 100%;
 }
@@ -6951,6 +7008,53 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   margin-bottom: 0.25rem;
   border-bottom: solid 0.0625rem #dfe0e1;
   text-align: left;
+}
+
+.twitter-share {
+  background: white;
+  border: solid 0.125rem #729099;
+  border-radius: 0.1875rem;
+  padding: 0.25rem 0.3125rem 0.25rem 0.625rem;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  transform: translate(-50%, -100%);
+}
+
+.twitter-share--active {
+  display: block;
+}
+
+.twitter-share:before {
+  border-top: solid 0.5rem #729099;
+  border-right: solid 0.5rem transparent;
+  border-left: solid 0.5rem transparent;
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.twitter-share:after {
+  border-top: solid 0.3125rem white;
+  border-right: solid 0.3125rem transparent;
+  border-left: solid 0.3125rem transparent;
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -0.3125rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.twitter-share__title {
+  margin-right: 0.25rem;
+  display: inline-block;
+  transform: translateY(-1px);
 }
 
 .uservoice {
@@ -12388,7 +12492,7 @@ sup {
   font-family: 'MuseoSlab';
 }
 
-.u-text-sans, .v-sticky-nav, .table--grey, .template--marine__pledges-title, .d3-horizontal-bar-chart .bar-label {
+.u-text-sans, .v-sticky-nav, .table--grey, .twitter-share, .template--marine__pledges-title, .d3-horizontal-bar-chart .bar-label {
   font-family: 'MuseoSans';
 }
 
