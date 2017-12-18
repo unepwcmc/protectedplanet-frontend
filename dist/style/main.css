@@ -6824,6 +6824,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-bottom: solid 0.0625rem #bbbbbb;
 }
 
+.table__header th, .s-article table tr:first-child th {
+  padding-right: 0.625rem;
+}
+
 .table__label {
   font-family: 'MuseoSans';
   font-weight: 300;
@@ -6870,6 +6874,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   text-align: right;
   line-height: 1.666em;
   vertical-align: middle;
+  padding-right: 0.625rem;
   padding-top: 0.625rem;
 }
 

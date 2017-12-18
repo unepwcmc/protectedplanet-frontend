@@ -3,6 +3,7 @@
 
   @include line-height(1.666em);
   vertical-align: middle;
+  padding-right: 0.625rem;
   padding-top: rem-calc(10);
 
   @include m(link) {
