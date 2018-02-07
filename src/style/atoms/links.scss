@@ -5,6 +5,7 @@
   @include font-weight(normal);
 
   &--hero-download {
+    cursor: pointer;
     margin-right: rem-calc(20);
 
     & i { margin-right: rem-calc(8); }
