@@ -11,4 +11,7 @@ Please note that various versions of this repo are being used by the sites below
 
 ## Installation
 
-`npm install` to install
+- `npm install`
+- `npm install --global gulp`
+- `bower install`
+
