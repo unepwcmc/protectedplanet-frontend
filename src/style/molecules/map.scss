@@ -25,6 +25,10 @@
     height: $map--main__height*2;
   }
 
+  &--half {
+    height: $map--hero__height/2;
+  }
+
   &--margin-top-bottom {
     margin: rem-calc(30 0);
   }
