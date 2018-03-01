@@ -5955,6 +5955,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   height: 1140px;
 }
 
+.map--half {
+  height: 190px;
+}
+
 .map--margin-top-bottom {
   margin: 1.875rem 0;
 }
