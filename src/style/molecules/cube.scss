@@ -3,6 +3,7 @@
     position: relative;
     height: $size;
     width: $size;
+    @include align-self(self-start);
 
     background-color: $bg-color;
 

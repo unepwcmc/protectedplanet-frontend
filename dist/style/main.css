@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-.alert--flex, .hero__cover, .footer, .stats-card__body, .flex-start, .space-between, .flex-row, .attribute, .flex-row-wrap, .template--site .section--factsheet, .flex-row-responsive {
+.alert--flex, .hero__cover, .footer, .stats-card__body, .stats-card__row, .flex-start, .space-between, .flex-row, .attribute, .flex-row-wrap, .template--site .section--factsheet, .flex-row-responsive {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -4531,7 +4531,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
 }
 
-.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .header--section, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color, .select-with-content {
+.header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .header--section, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .stats-card__body--color-light .value__label, .stats-card__body--alt-color-light .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color, .select-with-content {
   color: #666666;
 }
 
@@ -8752,6 +8752,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: relative;
   height: 6.25rem;
   width: 6.25rem;
+  -webkit-align-self: self-start;
+  -moz-align-self: self-start;
+  -ms-flex-item-align: self-start;
+  align-self: self-start;
   background-color: #dfe0e1;
 }
 
@@ -8846,6 +8850,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: relative;
   height: 6.25rem;
   width: 6.25rem;
+  -webkit-align-self: self-start;
+  -moz-align-self: self-start;
+  -ms-flex-item-align: self-start;
+  align-self: self-start;
   background-color: #dfe0e1;
 }
 
@@ -8854,6 +8862,186 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   top: 0;
   left: 0;
   background-color: #3a76bb;
+}
+
+.stats-card__body--color-light .value {
+  position: relative;
+}
+
+.stats-card__body--color-light .value__number {
+  color: #b2391d;
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+
+.stats-card__body--color-light .value__number--inherit {
+  font: inherit;
+}
+
+.stats-card__body--color-light .value__number--xxlarge {
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
+}
+
+.stats-card__body--color-light .value__number--xxxxlarge {
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
+}
+
+@media print {
+  .stats-card__body--color-light .value__number--xxxxlarge {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2rem;
+  }
+}
+
+.stats-card__body--color-light .value__number--large {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
+}
+
+.stats-card__body--color-light .value__number--alt-color {
+  color: #415519;
+}
+
+@media only screen and (max-width: 768px) {
+  .stats-card__body--color-light .value__number {
+    margin-right: 0.5rem;
+  }
+}
+
+.stats-card__body--color-light .value__label {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+
+.stats-card__body--color-light .value__label--right {
+  float: right;
+}
+
+.stats-card__body--color-light .value__label--side {
+  float: left;
+  margin: 0 1rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .stats-card__body--color-light .value__label--side {
+    float: none;
+    margin: 0;
+  }
+}
+
+.stats-card__body--alt-color-light .value {
+  position: relative;
+}
+
+.stats-card__body--alt-color-light .value__number {
+  color: #6f9dd2;
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+
+.stats-card__body--alt-color-light .value__number--inherit {
+  font: inherit;
+}
+
+.stats-card__body--alt-color-light .value__number--xxlarge {
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 3.1875rem;
+  line-height: 3.5625rem;
+}
+
+.stats-card__body--alt-color-light .value__number--xxxxlarge {
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-size: 4.8125rem;
+  line-height: 4.6875rem;
+}
+
+@media print {
+  .stats-card__body--alt-color-light .value__number--xxxxlarge {
+    font-family: 'MuseoSlab';
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2rem;
+  }
+}
+
+.stats-card__body--alt-color-light .value__number--large {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 2.6875rem;
+}
+
+.stats-card__body--alt-color-light .value__number--alt-color {
+  color: #415519;
+}
+
+@media only screen and (max-width: 768px) {
+  .stats-card__body--alt-color-light .value__number {
+    margin-right: 0.5rem;
+  }
+}
+
+.stats-card__body--alt-color-light .value__label {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+}
+
+.stats-card__body--alt-color-light .value__label--right {
+  float: right;
+}
+
+.stats-card__body--alt-color-light .value__label--side {
+  float: left;
+  margin: 0 1rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .stats-card__body--alt-color-light .value__label--side {
+    float: none;
+    margin: 0;
+  }
+}
+
+.stats-card__row {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 40.25rem) {
+  .stats-card__row {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .stats-card__element {
