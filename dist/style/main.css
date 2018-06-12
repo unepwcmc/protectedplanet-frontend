@@ -12702,6 +12702,10 @@ sup {
   color: #F5A623;
 }
 
+.u-text-muted {
+  color: #bbbbbb;
+}
+
 .u-left {
   float: left;
 }
