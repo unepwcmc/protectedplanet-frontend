@@ -8,6 +8,8 @@
 
   position: relative;
 
+  @include breakpoint($large) { padding-right: 0; }
+
   &--darker {
     background-color: $navbar__bg-color--darker;
   }
@@ -70,7 +72,7 @@
     position: relative;
 
     @include breakpoint($large){ 
-      padding: rem-calc(0 12);
+      padding: rem-calc(0 10);
       width: auto;
     }
 
@@ -89,11 +91,6 @@
       &:active { background-color: $navbar-element-dark__bg-color; }
     }
 
-    &--for-search-dropdown {
-      display: none;
-
-      @include breakpoint($large){ display: flex; }
-    }
     // delete?
     &--dark {
       background-color: $navbar-element-dark__bg-color;
@@ -125,8 +122,14 @@
     } 
 
     &--for-search-dropdown {
-      min-width: rem-calc(118);
+      display: none;
 
+      @include breakpoint($large){ 
+        width: rem-calc(50);
+
+        display: flex; 
+      }
+      
       &.is-active {
         color: $navbar-element-for-search-dropdown-is-active__color;
         background-color: $white;
