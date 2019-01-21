@@ -7598,6 +7598,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   position: relative;
 }
 
+@media only screen and (min-width: 65rem) {
+  .navbar {
+    padding-right: 0;
+  }
+}
+
 .navbar--darker {
   background-color: #699728;
 }
@@ -7665,7 +7671,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 @media only screen and (min-width: 65rem) {
   .navbar__element {
-    padding: 0 0.75rem;
+    padding: 0 0.625rem;
     width: auto;
   }
 }
@@ -7689,16 +7695,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .navbar__element.is-active:active {
   background-color: #699728;
-}
-
-.navbar__element--for-search-dropdown {
-  display: none;
-}
-
-@media only screen and (min-width: 65rem) {
-  .navbar__element--for-search-dropdown {
-    display: flex;
-  }
 }
 
 .navbar__element--dark {
@@ -7743,7 +7739,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .navbar__element--for-search-dropdown {
-  min-width: 7.375rem;
+  display: none;
+}
+
+@media only screen and (min-width: 65rem) {
+  .navbar__element--for-search-dropdown {
+    width: 3.125rem;
+    display: flex;
+  }
 }
 
 .navbar__element--for-search-dropdown.is-active {
