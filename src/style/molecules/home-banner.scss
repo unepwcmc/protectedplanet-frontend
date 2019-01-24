@@ -1,0 +1,31 @@
+.home-banner {
+  background-color: lightgrey;
+  padding: rem-calc(20 20 30 0);
+
+  display: flex;
+  align-items: center;
+
+  &__title {
+    color: $white;
+    
+    @include breakpoint($small) {
+      @include text(large, x-bold);
+      padding: 0 rem-calc(40);
+    }
+    @include breakpoint($medium) {
+      @include text(xxlarge, x-bold);
+      padding: 0 rem-calc(80);
+    }
+    @include breakpoint($large) {
+      @include text(xxxxlarge, x-bold);
+      padding: 0 rem-calc(100);
+    }
+  }
+
+  &__carousel {
+    background-color: $green;
+    width: rem-calc(380); height: rem-calc(320);
+  
+    flex-shrink: 0;
+  }
+}

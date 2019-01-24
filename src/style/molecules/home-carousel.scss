@@ -1,0 +1,30 @@
+.home-carousel-slide {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__title {
+    @include text(large, thin);
+
+    margin-bottom: rem-calc(14)
+  }
+
+  &__description {
+    @include text(body, thin);
+  }
+
+  &__link {
+    @include text(body, bold);
+    line-height: 1;
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+  }
+
+  &__link-icon {
+    margin-left: rem-calc(4);
+  }
+}
