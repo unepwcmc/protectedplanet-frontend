@@ -5,13 +5,21 @@
   height: 100%;
 
   &__title {
-    @include text(large, thin);
+    @include text(headline, thin);
 
-    margin-bottom: rem-calc(14)
+    margin-bottom: rem-calc(14);
+
+    @include breakpoint($small) {
+      @include text(large, thin)
+    }
   }
 
   &__description {
     @include text(body, thin);
+    
+    display: none;
+
+    @include breakpoint($small) {display: block}
   }
 
   &__link {
