@@ -38,10 +38,7 @@ $transition-options: 0.6s ease-in-out;
 
       &__arrow {
         background-color: rgba($white, 0.4);
-        padding: rem-calc(16 8);
-
-        &-icon {
-        }
+        padding: rem-calc(18 8);
       }
 
   &__indicators {    
