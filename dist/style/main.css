@@ -5437,6 +5437,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   transform-origin: bottom right;
 }
 
+.slide-transition {
+  transition: left 0.6s ease-in-out;
+}
+
 .carousel {
   padding-top: 1.5625rem;
   position: relative;
@@ -5451,6 +5455,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .carousel__slides {
   height: 100%;
   position: relative;
+}
+
+.carousel__arrow-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel__arrow {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1rem 0.5rem;
 }
 
 .carousel__indicators {
@@ -5477,7 +5495,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .carousel-slide {
   flex-shrink: 0;
   position: absolute;
-  transition: left 0.6s ease-in-out;
 }
 
 .carousel-slide--full-width {
