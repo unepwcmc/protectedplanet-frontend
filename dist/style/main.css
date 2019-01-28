@@ -5450,8 +5450,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .carousel__slides {
   height: 100%;
-  display: flex;
-  transition: transform 0.6s ease-in-out;
+  position: relative;
 }
 
 .carousel__indicators {
@@ -5477,11 +5476,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .carousel-slide {
   flex-shrink: 0;
+  position: absolute;
+  transition: left 0.6s ease-in-out;
 }
 
 .carousel-slide--full-width {
   margin: 0 1.5625rem;
   width: calc(100% - 2 * 1.5625rem);
+  height: 100%;
+}
+
+.carousel-slide--half-width {
+  margin: 0 1.5625rem;
+  width: calc(50% - 2 * 1.5625rem);
   height: 100%;
 }
 
@@ -5798,7 +5805,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .home-banner__carousel {
-  background-color: #71a32b;
+  background-color: #415519;
   width: 100%;
   height: 12.5rem;
   flex-shrink: 0;
