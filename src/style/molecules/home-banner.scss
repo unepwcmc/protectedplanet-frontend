@@ -22,7 +22,7 @@
     }
     @include breakpoint($medium) {
       @include text(xxlarge, x-bold);
-      padding: 0 rem-calc(80);
+      padding: 0 rem-calc(60);
     }
     @include breakpoint($large) {
       @include text(xxxxlarge, x-bold);
@@ -38,7 +38,7 @@
     flex-shrink: 0;
 
     @include breakpoint($small) {
-      width: rem-calc(380); height: rem-calc(320);
+      width: rem-calc(400); height: rem-calc(340);
     }
   }
 }
