@@ -5,8 +5,10 @@ $indicator-height: rem-calc(14);
 $indicator-row-height: $indicator-height + $padding-top-bottom * 2;
 $transition-options: 0.6s ease-in-out;
 
-.slide-transition {
-  transition: left $transition-options;
+.transition {
+  &.carousel__slides {
+    transition: transform $transition-options;
+  }
 }
 
 .carousel {
@@ -23,6 +25,7 @@ $transition-options: 0.6s ease-in-out;
       height: 100%;
       
       position: relative;
+      display: flex;
     }
 
     &__arrow-buttons {
@@ -68,8 +71,6 @@ $transition-options: 0.6s ease-in-out;
 .carousel-slide {
   flex-shrink: 0;
 
-  position: absolute;
-
   &--full-width {
     margin: 0 $padding-side;
     width: calc(100% - 2 * #{$padding-side}); height: 100%;
@@ -78,5 +79,11 @@ $transition-options: 0.6s ease-in-out;
   &--half-width {
     margin: 0 $padding-side;
     width: calc(50% - 2 * #{$padding-side}); height: 100%;
+  }
+
+  &--third-width {
+    margin: 0 $padding-side;
+    $one-third: 100/3;
+    width: calc(#{$one-third}% - 2 * #{$padding-side}); height: 100%;
   }
 }
