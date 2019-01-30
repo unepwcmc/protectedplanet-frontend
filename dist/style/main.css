@@ -4480,14 +4480,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: rem-calc(1);
 }
 
-[v-cloak] {
-  display: none;
-}
-
-.init-hidden {
-  visibility: hidden;
-}
-
 @font-face {
   font-family: 'MuseoSans';
   font-weight: 700;
@@ -5882,9 +5874,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .home-carousel-slide {
   color: #ffffff;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .home-carousel-slide__title {
