@@ -5530,19 +5530,16 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .carousel-slide--full-width {
   margin: 0 2.5rem;
   width: calc(100% - 2 * 2.5rem);
-  height: 100%;
 }
 
 .carousel-slide--half-width {
   margin: 0 2.5rem;
   width: calc(50% - 2 * 2.5rem);
-  height: 100%;
 }
 
 .carousel-slide--third-width {
   margin: 0 2.5rem;
   width: calc(33.33333% - 2 * 2.5rem);
-  height: 100%;
 }
 
 .circle-story {
@@ -5861,7 +5858,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .home-banner__carousel {
   background-color: #415519;
   width: 100%;
-  height: 12.5rem;
+  height: auto;
   flex-shrink: 0;
 }
 
@@ -5884,6 +5881,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.6875rem;
+  overflow-wrap: break-word;
   margin-bottom: 0.875rem;
 }
 
@@ -5901,6 +5899,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.3125rem;
+  overflow-wrap: break-word;
   display: none;
 }
 
@@ -5920,6 +5919,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   display: flex;
   align-items: center;
   justify-self: flex-end;
+}
+
+.home-carousel-slide__link-text:hover {
+  text-decoration: underline;
 }
 
 .home-carousel-slide__link-icon {
