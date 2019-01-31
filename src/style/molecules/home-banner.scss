@@ -27,12 +27,14 @@
     }
     @include breakpoint($large) {
       @include text(xxxxlarge, x-bold);
-      padding: 0 rem-calc(100);
+      padding: rem-calc(0 100);  
+      width: rem-calc(1200);
     }
   }
 
   &__carousel {
     background-color: $green--darker;
+    margin-left: auto;
 
     width: 100%; height: auto;
     
