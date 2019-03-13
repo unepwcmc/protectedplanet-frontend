@@ -4,11 +4,14 @@
   left:0;
   padding: rem-calc(0 10);
   padding-bottom: rem-calc(24);
-  position: absolute;
   min-width: 100%;
   white-space: nowrap;
   z-index: 1000;
-  top: 100%;
+
+  @include breakpoint($large) { 
+    position: absolute; 
+    top: 100%;
+  }
 
   @include m(search-dropdown) {
     background-color: $white;

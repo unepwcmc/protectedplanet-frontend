@@ -160,9 +160,6 @@
     &__submenu {
       background-color: $navbar__bg-color--darker;
       padding: 0;
-      position: relative;
-
-      @include breakpoint($large){ position: absolute; }
     }
 
       &__submenu__title {
