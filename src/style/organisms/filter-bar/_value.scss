@@ -1,9 +1,4 @@
-@include e(value) {
-  @include color-with-state(inherit, (
-    hover: $filter-bar-value-hover__bg-color,
-    active: $filter-bar-value-active__bg-color,
-  ), background-color);
-
+&__value {
   @include color-with-state($color--base, (
     hover: $link__color--hover,
     active: $link__color--pressed,
@@ -11,10 +6,14 @@
 
   display: block;
   width: 100%;
-  padding: rem-calc(8);
+  padding: rem-calc(4);
   cursor: pointer;
 
-  @include m(smaller) {
+  &--smaller {
     @include text(small);
   }
+}
+
+&__sub-value {
+  padding-left: rem-calc(14);
 }

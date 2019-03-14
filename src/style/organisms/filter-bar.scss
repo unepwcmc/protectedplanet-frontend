@@ -1,20 +1,20 @@
-@include b(filter-bar) {
+.filter-bar {
   position: fixed;
   overflow: scroll;
   height: 80%;
 
   @include span-columns(2.5);
 
-  @include m(larger) {
+  &--larger {
     @include span-columns(3);
   }
 
-  @include m(non-fixed) {
+  &--non-fixed {
     position: relative;
     overflow: hidden;
   }
 
-  @include e(inner) {
+  &__inner {
     background-color: $grey-3;
 
     @include text(body);

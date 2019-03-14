@@ -8370,20 +8370,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .filter-bar__value {
-  background-color: inherit;
   color: #666666;
   display: block;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.25rem;
   cursor: pointer;
-}
-
-.filter-bar__value:hover {
-  background-color: #f2f2f2;
-}
-
-.filter-bar__value:active {
-  background-color: #dfe0e1;
 }
 
 .filter-bar__value:hover {
@@ -8399,6 +8390,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1.3125rem;
+}
+
+.filter-bar__sub-value {
+  padding-left: 0.875rem;
 }
 
 .footer {
