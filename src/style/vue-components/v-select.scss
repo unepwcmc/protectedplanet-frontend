@@ -1,0 +1,124 @@
+$border: solid rem-calc(1) $grey-55;
+$padding-side: rem-calc(14);
+
+.hover--pointer:hover {
+  cursor: pointer;
+}
+.v-select {
+  background-color: $white;
+  width: rem-calc(320); max-width: 100%;
+  
+  &--disabled {
+    opacity: 0.5;
+  }
+
+  &__search {
+    @extend .flex;
+    @extend .flex-v-center;
+    @extend .flex-h-between;
+
+    background-color: transparent;
+    border: $border;
+    padding: 0 $padding-side;
+    width: 100%;
+  
+    &--active {
+      .drop-arrow {
+        transform: rotate(180deg)
+      }
+    }
+  }
+
+    &__dropdown-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__search-input {
+      @include text(small);
+      font-style: italic;
+
+      border: none;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      width: 100%; height: $wdpa-download-tool-select-height;
+    }
+
+      &__search-icon {
+        border: none;
+        background: url('images/icons/search.svg') no-repeat center;
+        background-size: 85%;
+        font: inherit;
+        margin: 0 $padding-side;
+        padding: 0;
+        width: 0.4 * $wdpa-download-tool-select-height; height: 0.4 * $wdpa-download-tool-select-height;
+
+        display: inline-block;
+
+        position: relative;
+
+        &--reset {
+          background-image: url('images/icons/close.svg');
+          background-size: 75%;
+        }
+
+        &::after {
+          background-color: $grey-55;
+          content: '';
+          width: rem-calc(1); height: 0.8 * $wdpa-download-tool-select-height;
+
+          display: inline-block;
+
+          position: absolute;
+          right: - $padding-side / 2;
+          top: - 0.2 * $wdpa-download-tool-select-height;
+        }
+      }
+
+  &__dropdown {
+    background-color: $white;
+    border: $border;
+    border-top: none;
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+  }
+
+    &__option-label {
+      @extend .flex;
+      @extend .flex-v-center;
+
+      position: relative;
+
+      &:hover {
+        background-color: rgba($green, 0.5);
+        cursor: pointer;
+      }
+    }
+
+      &__option-text {
+        @include text(small);
+        font-style: italic;
+        line-height: 1;
+
+
+        padding: rem-calc(10) $padding-side;
+        width: 100%;
+      }
+
+      &__default-radio {
+        @extend %hidden-input;
+        top: 100%;
+        left: 50%;
+      }
+}
+
+@include custom_input_checked('.v-select__default-radio', '.v-select__option-text') {
+  background-color: rgba($green, 0.85);
+  color: $white;
+}
+
+@include custom_input_focus_default('.v-select__default-radio', '.v-select__option-text');

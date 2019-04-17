@@ -80,4 +80,10 @@
 
     &:hover { text-decoration: underline; }
   }
+
+  &--disabled {
+    background-color: $big-button__bg-color--disabled;
+    cursor: default;
+    pointer-events: none;
+  }
 }

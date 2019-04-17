@@ -1,0 +1,18 @@
+.drop-arrow {
+  transform: rotate(0deg);
+
+  &--end {
+    @extend .flex-hs-end;
+    @extend .flex-no-shrink;
+  }
+}
+
+.arrow-svg {
+  content: '';
+  background-image: url('images/icons/drop-arrow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem-calc(18); height: rem-calc(10);
+
+  display: inline-block;
+}
