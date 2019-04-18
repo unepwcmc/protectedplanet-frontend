@@ -13328,7 +13328,8 @@ sup {
   background-color: #71a32b;
   color: #ffffff;
   line-height: 3rem;
-  padding: 0 3.75rem;
+  text-align: center;
+  width: 15rem;
   display: inline-block;
 }
 
