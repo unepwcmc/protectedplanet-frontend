@@ -20,7 +20,7 @@ $padding-side: rem-calc(14);
     background-color: transparent;
     border: $border;
     padding: 0 $padding-side;
-    width: 100%;
+    width: 100%; height: $wdpa-download-tool-select-height;
   
     &--active {
       .drop-arrow {
@@ -43,7 +43,7 @@ $padding-side: rem-calc(14);
       line-height: 1;
       margin: 0;
       padding: 0;
-      width: 100%; height: $wdpa-download-tool-select-height;
+      width: 100%;
     }
 
       &__search-icon {
@@ -81,7 +81,8 @@ $padding-side: rem-calc(14);
     background-color: $white;
     border: $border;
     border-top: none;
-    width: 100%;
+    overflow-y: scroll; 
+    width: 100%; max-height: rem-calc(200);
 
     position: absolute;
     left: 0;
