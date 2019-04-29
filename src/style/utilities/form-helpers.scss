@@ -36,3 +36,10 @@
     }
   }
 }
+@mixin custom_input_focus($default-input-selector, $custom-input-selector) {
+  #{$default-input-selector} {
+    &:focus + #{$custom-input-selector} {
+      @content;
+    }
+  }
+}

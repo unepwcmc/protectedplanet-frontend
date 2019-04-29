@@ -13476,14 +13476,6 @@ sup {
 }
 
 .v-select__default-radio:focus + .v-select__option-text {
-  outline-width: 0.125rem;
-  outline-style: solid;
-  outline-color: Highlight;
-}
-
-@media (-webkit-min-device-pixel-ratio: 0) {
-  .v-select__default-radio:focus + .v-select__option-text {
-    outline-color: -webkit-focus-ring-color;
-    outline-style: auto;
-  }
+  border: solid 0.125rem #5E9ED6;
+  padding: 0.5rem 0.75rem;
 }

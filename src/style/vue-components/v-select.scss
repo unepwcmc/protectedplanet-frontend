@@ -1,5 +1,6 @@
 $border: solid rem-calc(1) $grey-55;
 $padding-side: rem-calc(14);
+$option-padding-top: rem-calc(10);
 
 .hover--pointer:hover {
   cursor: pointer;
@@ -122,4 +123,10 @@ $padding-side: rem-calc(14);
   color: $white;
 }
 
-@include custom_input_focus_default('.v-select__default-radio', '.v-select__option-text');
+@include custom_input_focus('.v-select__default-radio', '.v-select__option-text') {
+  $focus-border-width: rem-calc(2);
+  $focus-blue: #5E9ED6;
+  
+  border: solid $focus-border-width #5E9ED6;
+  padding: ($option-padding-top - $focus-border-width) ($padding-side - $focus-border-width)
+}
