@@ -13410,12 +13410,26 @@ sup {
   display: none;
 }
 
+.v-select__search-input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.v-select__search-input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.v-select__search-input:focus::placeholder {
+  opacity: 0;
+}
+
 .v-select__search-input--has-selected::-webkit-input-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 .v-select__search-input--has-selected:-ms-input-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 .v-select__search-input--has-selected::placeholder {

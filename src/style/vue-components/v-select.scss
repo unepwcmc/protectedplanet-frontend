@@ -50,10 +50,12 @@ $search-icons-width: $search-icon-padding-right + 2 * $padding-side + $search-ic
         display: none;
       }
 
+      &:focus {
+        @include placeholder { opacity: 0; }
+      }
+
       &--has-selected {
-        &::-webkit-input-placeholder { color: $black; }
-        &:-ms-input-placeholder { color: $black; }
-        &::placeholder { 
+        @include placeholder {
           color: $black;
           opacity: 1;
         }
