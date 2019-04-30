@@ -1,6 +1,10 @@
 $border: solid rem-calc(1) $grey-55;
 $padding-side: rem-calc(14);
 $option-padding-top: rem-calc(10);
+$search-icon-padding-right: 2 * $padding-side;
+$search-icon-width: 0.4 * $wdpa-download-tool-select-height;
+$drop-arrow-width: rem-calc(18);
+$search-icons-width: $search-icon-padding-right + 2 * $padding-side + $search-icon-width + $drop-arrow-width;
 
 .hover--pointer:hover {
   cursor: pointer;
@@ -14,13 +18,9 @@ $option-padding-top: rem-calc(10);
   }
 
   &__search {
-    @extend .flex;
-    @extend .flex-v-center;
-    @extend .flex-h-between;
-
     background-color: transparent;
     border: $border;
-    padding: 0 $padding-side;
+    padding: 0;
     width: 100%; height: $wdpa-download-tool-select-height;
   
     &--active {
@@ -41,10 +41,33 @@ $option-padding-top: rem-calc(10);
       font-style: italic;
 
       border: none;
-      line-height: 1;
       margin: 0;
-      padding: 0;
-      width: 100%;
+      padding-left: $padding-side;
+      padding-right: $search-icons-width;
+      width: 100%; height: 100%;
+
+      &::-ms-clear {
+        display: none;
+      }
+
+      &--has-selected {
+        &::-webkit-input-placeholder { color: $black; }
+        &:-ms-input-placeholder { color: $black; }
+        &::placeholder { 
+          color: $black;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__search-icons {
+      @extend .flex-center;
+
+      height: 100%;
+      position: absolute;
+
+      right: 0;
+      top: 0;
     }
 
       &__search-icon {
@@ -52,9 +75,10 @@ $option-padding-top: rem-calc(10);
         background: url('images/icons/search.svg') no-repeat center;
         background-size: 85%;
         font: inherit;
-        margin: 0 $padding-side;
+        margin-right: $search-icon-padding-right;
+        margin-left: $padding-side;
         padding: 0;
-        width: 0.4 * $wdpa-download-tool-select-height; height: 0.4 * $wdpa-download-tool-select-height;
+        width: $search-icon-width; height: $search-icon-width;
 
         display: inline-block;
 
@@ -73,9 +97,13 @@ $option-padding-top: rem-calc(10);
           display: inline-block;
 
           position: absolute;
-          right: - $padding-side / 2;
+          right: - $search-icon-padding-right / 2;
           top: - 0.2 * $wdpa-download-tool-select-height;
         }
+      }
+
+      .drop-arrow {
+        margin-right: $padding-side;
       }
 
   &__dropdown {
