@@ -41,7 +41,16 @@
 }
 
 @include only-mobile {
-  .leaflet-control-container {
+  .leaflet-control-zoom,
+  .leaflet-control-layers {
     display: none;
+  }
+
+  .leaflet-control-attribution {
+    width: 160px;
+  }
+
+  .leaflet-control.mapbox-logo {
+    margin-bottom: 6px;
   }
 }

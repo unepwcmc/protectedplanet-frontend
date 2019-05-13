@@ -9786,8 +9786,15 @@ section::after {
 }
 
 @media only screen and (max-width: 768px) {
-  .leaflet-control-container {
+  .leaflet-control-zoom,
+  .leaflet-control-layers {
     display: none;
+  }
+  .leaflet-control-attribution {
+    width: 160px;
+  }
+  .leaflet-control.mapbox-logo {
+    margin-bottom: 6px;
   }
 }
 
