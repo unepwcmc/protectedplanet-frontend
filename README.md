@@ -1,7 +1,8 @@
 # Protected Planet Frontend
 
-Please note that various versions of this repo are being used by the sites below:
-(Correct as of 12/10/17)
+Please note that various versions of this repo are being used by the sites below.
+Note that Protected Planet will no longer rely on these styles when the Rails upgrade is complete and merged into master.
+(Correct as of 8/07/19)
 
 - [Protected Planet - master](https://github.com/unepwcmc/ProtectedPlanet)
 - [PARCC - 4.3.2](https://github.com/unepwcmc/parcc)
