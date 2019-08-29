@@ -1,10 +1,8 @@
 # Protected Planet Frontend
 
 Please note that various versions of this repo are being used by the sites below.
-Note that Protected Planet will no longer rely on these styles when the Rails upgrade is complete and merged into master.
-(Correct as of 8/07/19)
+Note that Protected Planet no longer relies on these styles.
 
-- [Protected Planet - master](https://github.com/unepwcmc/ProtectedPlanet)
 - [PARCC - 4.3.2](https://github.com/unepwcmc/parcc)
 - [Protected Planet API - latest](https://github.com/unepwcmc/protectedplanet-api)
 - [ICCA Registry - 11.1.2](https://github.com/unepwcmc/icca-registry)
