@@ -23,8 +23,7 @@ html {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -3070,9 +3069,6 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   margin: 0;
   position: relative;
   display: inline-block;
-  /* inline-block for ie7 */
-  zoom: 1;
-  *display: inline;
   vertical-align: middle;
 }
 
@@ -4541,6 +4537,48 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   font-weight: 100;
   font-style: normal;
   src: url("fonts/MuseoSlab-100.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 100;
+  font-style: italic;
+  src: url("fonts/MuseoSlab-100Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 300;
+  font-style: italic;
+  src: url("fonts/MuseoSlab-300Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 700;
+  font-style: italic;
+  src: url("fonts/MuseoSlab-700Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 900;
+  font-style: italic;
+  src: url("fonts/MuseoSlab-900Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 1000;
+  font-style: normal;
+  src: url("fonts/MuseoSlab-1000.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  font-weight: 1000;
+  font-style: italic;
+  src: url("fonts/MuseoSlab-1000Italic.otf") format("opentype");
 }
 
 .header-with-delimiter, .label, .s-article pre, .s-article code, .accordion__header, .accordion__switch:after, .accordion__body, .alert__body, .breadcrumbs, .expandable-section__header, .expandable-section__switch:after, .fullscreen-message__body, .header__text, .modal, .table, .s-article table, .value__label, .cover-story__story-content, .section__header, .fact__header, .header--section, .filter-bar__inner, .form, .s-form, .form__input, .s-form input, .s-form textarea, .s-form select, .info-box, .gallery__counter, .search-result, .search-result__tag, .stats-card__body .value__label, .stats-card__body--color .value__label, .stats-card__body--alt-color .value__label, .stats-card__body--color-light .value__label, .stats-card__body--alt-color-light .value__label, .article__paragraph, .article__list-item, .s-article ul li, .s-article ol li, .s-article p, .inner-result, .pagination, .u-base-color, .select-with-content {
@@ -12155,7 +12193,7 @@ sup {
   }
 }
 
-@media (min-width: 48.6875rem \0) {
+@media (min-width: 48.6875rem) {
   .template--marine__greenlist-result {
     flex-basis: calc(50% - 30px);
   }
@@ -12168,7 +12206,7 @@ sup {
   }
 }
 
-@media (min-width: 65rem \0) {
+@media (min-width: 65rem) {
   .template--marine__greenlist-result {
     flex-basis: calc(33% - 40px);
   }
