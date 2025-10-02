@@ -4,7 +4,6 @@ Please note that various versions of this repo are being used by the sites below
 Note that Protected Planet no longer relies on these styles.
 
 - [PARCC - 4.3.2](https://github.com/unepwcmc/parcc)
-- [Protected Planet API - latest](https://github.com/unepwcmc/protectedplanet-api)
 - [WDPA Tracker - latest](https://github.com/unepwcmc/wdpa-tracker)
 
 ## Installation
